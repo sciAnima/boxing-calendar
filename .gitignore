@@ -1,6 +1,6 @@
 venv/
 __pycache__/
 *.pyc
-boxing_schedule.ics
+
 *.log
 .DS_Store
