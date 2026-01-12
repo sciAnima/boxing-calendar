@@ -1,0 +1,488 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <META name="y_key" content="cd77bbf1d7b646fb" />
+        <meta name="verify-v1" content="90w2SJAQo13ELeLJeWBlwjN3JprLf81redy1CXU2oGY=" />
+        <meta name="msvalidate.01" content="D1229CED770158F65E35256F31681E7B" />
+        <link href="https://plus.google.com/+QuitanoGonzalez" rel="author">
+        <link rel="author" href="humans.txt" />
+        <link href="https://plus.google.com/+QuitanoGonzalez" rel="publisher">
+
+        <title>Live Pro Boxing News Schedule & Results 2026</title>
+<meta name="description" content=" Live Boxing  - Records, Schedule, Results.  Tale of the tape with official weights for every bout. With The Most Comprehensive Up-to-Date Fight Schedule On The Internet - HBO Showtime ESPN NBC ">
+
+        <meta name="keywords" content=""></meta>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+        <link rel="stylesheet" href="/css/uikit.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css" >
+       <link rel="stylesheet" href="/fonts/themify/themify.css" >
+
+
+        <script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:'auto'});
+  !function (e, f, u) {
+    e.async = 1;
+    e.src = u;
+    f.parentNode.insertBefore(e, f);
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  'http://cdn.taboola.com/libtrc/fightnights/loader.js');
+</script>
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9912596304273780",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+<script data-ad-client="ca-pub-9912596304273780" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    </head>
+
+    <body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40372716-1', 'fightnights.com');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script><!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TSPJCK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TSPJCK');</script>
+<!-- End Google Tag Manager -->        <!-- Main Navbar -->
+<nav class="main-navbar unibar unibar-lg shadow-card bg-base unibar-inverse">
+<!-- unibar container -->
+<div class="container unibar-container bg-inherit">
+<!-- header block -->
+<div class="unibar-block header-block bg-primary hide-border">
+<!-- /brand cell -->
+<!-- brand cell -->
+<div class="unibar-cell brand-cell">
+<a href="/" class="unibar-brand fw-bold"> <span style="color:#bd3330;">Fight</span><span style="color:#578cd6;">Nights</span></a>
+
+</div>
+          <!-- /brand cell -->
+
+          <!-- brand cell -->
+          <div class="unibar-cell search-toggle-cell">
+            <div class="ie-fix">
+              <a class="search-toggle" href="#" data-ctoggle="unhide-search" data-target=".main-navbar"><i class="fa-search hidden-toggled"></i><i class="fa-close visible-toggled"></i></a>
+            </div>
+          </div>
+          <!-- /brand cell -->
+
+        </div>
+        <!-- /header block -->
+
+        <!-- nav block -->
+        <div class="unibar-block nav-block bg-inherit">
+
+          <!-- nav cell -->
+          <div class="unibar-cell nav-cell cell-max">
+
+            <!-- unibar search -->
+            <form class="unibar-search" role="search" action="/results" method="get">
+              <div class="search-box">
+                <input class="text-box" type="search" class="form-control" id="k" name="q" placeholder="Search....">
+                <input id="cn" name="cn" type="hidden" value="false" />
+                <button type="button" class="btn btn-primary case-u"><i class="fa-search mgr-5"></i>search</button>
+              </div>
+            </form>
+        <!-- end search -->
+
+            <div id="menu-col1">
+
+              <!-- uninav -->
+              <ul class="uninav unibar-uninav uninav-fga-primary uninav-fillh auto-invert case-u fw-bold">
+                   <li><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
+                 <li><a href="/schedules"><span class="glyphicon glyphicon-calendar"></span> Schedules</a></li>
+                <li><a href="/boxing-results"><i class ="fa fa-line-chart"></i> Results</a></li>
+                <li><a href="/news"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a></li>
+               <!-- <li class="uninav uninav-icons color-icons-bg-hovered color-icons"> <a href="https://twitter.com/boxing"> <i class="fa-twitter"></i></a></li>-->
+
+
+              </ul>
+              <!-- /uninav -->
+
+            </div>
+            <!-- collapsible menu -->
+
+          </div>
+          <!-- /nav cell -->
+
+          <!-- cell -->
+          <div class="unibar-cell hidden-xs hidden-sm cell-min case-u">
+            Monday January 12th          </div>
+          <!-- /cell -->
+
+        </div>
+        <!-- /nav block -->
+
+<!--         mega menu
+        <div id="fullmenu" class="mega-menu efx-slide-down">
+
+           Cont
+          <div class="menu-cont">
+
+             Col
+            <div class="cont-col nav-col bg-primary-d">
+
+              <ul class="uninav uninav-v uninav-inverse uninav-lline uninav-bga-accent-xl uninav-fga-accent-xl uninav-default case-u uninav-ruled">
+                <li><a href="#">home</a></li>
+                <li><a href="#">videos</a></li>
+                <li><a href="#">photos</a></li>
+                <li><a href="#">trending</a></li>
+                <li><a href="#">photos</a></li>
+                <li><a href="#">music</a></li>
+                <li><a href="#">technology</a></li>
+                <li><a href="#">celebrities</a></li>
+                <li><a href="#">fashion</a></li>
+                <li><a href="#">television</a></li>
+              </ul>
+
+            </div>
+             /Col
+
+             Col
+            <div class="cont-col extras-col hidden-xs">
+
+               extras block
+              <div class="extras-block">
+
+                <h5>top stories</h5>
+
+                 row
+                <div class="row">
+
+                   col
+                  <div class="col-sm-3">
+
+                    <div class="post-img mgb-10">
+                      <a href="#" class="img-link"><img src="images/story2.jpg" alt="" /></a>
+                    </div>
+                    <h6 class="post-title case-c"><a href="#">Kanye Launches Personal Time Capsule Into Space As "Gift To Aliens"</a></h6>
+
+                  </div>
+                   /col
+
+                   col
+                  <div class="col-sm-3">
+
+                    <div class="post-img mgb-10">
+                      <a href="#" class="img-link"><img src="images/story3.jpg" alt="" /></a>
+                    </div>
+                    <h6 class="post-title case-c"><a href="#">Beautiful woman has no incentive to be less annoying</a></h6>
+
+                  </div>
+                   /col
+
+                   col
+                  <div class="col-sm-3">
+
+                    <div class="post-img mgb-10">
+                      <a href="#" class="img-link"><img src="images/story5.jpg" alt="" /></a>
+                    </div>
+                    <h6 class="post-title case-c"><a href="#">This Melbourne Cafe Is Now Selling Deconstructed Irony</a></h6>
+
+                  </div>
+                   /col
+
+                   col
+                  <div class="col-sm-3">
+
+                    <div class="post-img mgb-10">
+                      <a href="#" class="img-link"><img src="images/story10.jpg" alt="" /></a>
+                    </div>
+                    <h6 class="post-title case-c"><a href="#">Whoops! Reality TV Contestant Goes To Air Without A Backstory</a></h6>
+
+                  </div>
+                   /col
+
+                </div>
+                 /row
+
+              </div>
+               /extras block
+
+               extras block
+              <div class="extras-block">
+
+                <h5>popular tags</h5>
+
+                <ul class="unitags">
+                  <li><a href="#">kardashians (634)</a></li>
+                  <li><a href="#">trump (220)</a></li>
+                  <li><a href="#">bieber (180)</a></li>
+                  <li><a href="#">kanye west (98)</a></li>
+                  <li><a href="#">kylie jenner (74)</a></li>
+                  <li><a href="#">blac chyna (61)</a></li>
+                  <li><a href="#">nba finals (59)</a></li>
+                  <li><a href="#">Amber Heard (34)</a></li>
+                </ul>
+
+              </div>
+               /extras block
+
+            </div>
+             /Col
+
+          </div>
+           /Cont
+
+        </div>
+         /mega menu -->
+
+      </div>
+      <!-- /unibar Cont -->
+
+    </nav>
+    <!-- /Main Navbar -->
+
+
+
+
+
+
+
+
+<!-- Content -->
+<section class="content bg-black-3">
+<!-- uninav -->
+
+<!-- /uninav -->
+<!-- Container -->
+<div class="container">
+
+<!-- Row -->
+<div class="row">
+
+<!-- Main Col -->
+<div class="col-md-8 main-col">
+
+   <!-- Unicard -->
+ <h3><center><span style='border:2px black solid; padding: 5px; font-size:15px;'>3THINGS</span></center></h3>
+
+
+<div class="unicard unicard-framed pad-10">
+
+ <!-- post list -->
+    <ul class="unimedia-list post-list">
+
+        <li>
+            <!-- unimedia -->
+            <div class="unimedia-cell">
+                <div class="unimedia-img">
+                                        <a href="https://fightnights.com/2026/01/11/7101/dalton-smith-stops-matias">
+                        <img src="https://fightnights.com/uploads/1768133841-IMG_0323.jpeg"></a>
+                                    </div>
+            </div>
+            <div class="unimedia-cell cell-max">
+                <h1 class="post-title-front fw-bold fs-xs-150">
+                    <a  href="
+                        https://fightnights.com/2026/01/11/7101/dalton-smith-stops-matias">Dalton Smith Stops Matias
+                    </a>
+
+                </h1>
+
+                <div class="unimeta post-meta hidden-xs">
+                    <span><i class="ti-time fg-text-l"></i>Sun, Jan 11 2026</span>
+                    <span><i class="fa fa-user"></i>Gabriel J Gonzalez</span>
+                </div>
+            </div>
+            <!-- /unimedia -->
+        </li>
+
+    </ul>
+    <!-- /post list -->
+
+
+
+</div>
+
+<!-- /Unicard -->
+
+<div class='pad-10' ><div id="google-ads-1"></div>
+<script type="text/javascript">
+
+    /* Calculate the width of available ad space */
+    ad = document.getElementById('google-ads-1');
+
+    if (ad.getBoundingClientRect().width) {
+        adWidth = ad.getBoundingClientRect().width; // for modern browsers
+    } else {
+        adWidth = ad.offsetWidth; // for old IE
+    }
+
+    /* Replace ca-pub-XXX with your AdSense Publisher ID */
+    google_ad_client = "pub-9912596304273780";
+
+    /* Replace 1234567890 with the AdSense Ad Slot ID */
+    google_ad_slot = "5557722328";
+
+    /* Do not change anything after this line */
+    if ( adWidth >= 728 )
+      google_ad_size = ["728", "90"];  /* Leaderboard 728x90 */
+    else if ( adWidth >= 300 )
+      google_ad_size = ["300", "250"]; /* Medium Rectangle (300 x 250) */
+    else
+      google_ad_size = ["728", "90"];  /* Leaderboard 728x90 */
+
+    document.write (
+     '<ins class="adsbygoogle" style="display:inline-block;width:'
+      + google_ad_size[0] + 'px;height:'
+      + google_ad_size[1] + 'px" data-ad-client="'
+      + google_ad_client + '" data-ad-slot="'
+      + google_ad_slot + '"></ins>'
+    );
+
+    (adsbygoogle = window.adsbygoogle || []).push({});
+
+</script>
+
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script></div>
+ <center><h3><center><span style='border:2px black solid; padding: 5px; font-size:15px;'><span class='glyphicon glyphicon-star-empty'></span>FEATURED EVENT</span></center></h3></center><section class='upcoming-events'><div class='event-preview'><div class='event-preview__content unicard-framed'><header class='event-preview__header'><h3><a class='event-preview__title' href='event-3771'>Teofimo Lopez vs  Shakur Stevenson WBO World Super Light</a></h3></header><div class='unicard-img'><a href='/event-3771 ' > <img src=/uploads/1764694317-loeps.png > </a></div><section class='event-preview__body'><div class='event-preview__excerpt'><p>Teofimo Lopez and Shakur Stevenson will meet in a 140-pound clash on Jan. 31 in New York, Turki Alalshikh announced Monday.
+
+Lopez (21-1, 13 KOs) will put his WBO and Ring welterweight titles on the line against Stevenson (24-0, 11 KOs), who will make his debut at junior welterweight. The showdown between two of boxing's brightest young talents will headline "The Ring 6" and will be streamed on DAZN.
+
+</p>  ...<a href='event-3771'> Continue Reading</a></div><center><h5 class='event-preview__backlined-heading'>Date / TV</h5><h6><span class='glyphicon glyphicon-calendar'></span> Sat, Jan 31 2026   <i class ='fa fa-youtube-play'> </i> DAZN<br /><i class='fa fa-map-marker'></i> New York, USA</h6></center><h5 class='event-preview__backlined-heading'>Card</h5><div class='event-undercard'><h6>Shakur Stevenson&nbsp; vs &nbsp;Teofimo Lopez</h6><h6>Carlos Adames&nbsp; vs &nbsp;Austin Williams</h6><h6>Jamaine Ortiz&nbsp; vs &nbsp;Keyshawn Davis</h6><h6>Carlos Castro&nbsp; vs &nbsp;Bruce Carrington</h6></div></section><div class='event-preview__buttons'><a class='btn btn--secondary no-ticket-link' href='event-3771'>Event Page</a></div></div></div></section>
+
+  <div id="google-ads-1"></div>
+<script type="text/javascript">
+
+    /* Calculate the width of available ad space */
+    ad = document.getElementById('google-ads-1');
+
+    if (ad.getBoundingClientRect().width) {
+        adWidth = ad.getBoundingClientRect().width; // for modern browsers
+    } else {
+        adWidth = ad.offsetWidth; // for old IE
+    }
+
+    /* Replace ca-pub-XXX with your AdSense Publisher ID */
+    google_ad_client = "pub-9912596304273780";
+
+    /* Replace 1234567890 with the AdSense Ad Slot ID */
+    google_ad_slot = "5557722328";
+
+    /* Do not change anything after this line */
+    if ( adWidth >= 728 )
+      google_ad_size = ["728", "90"];  /* Leaderboard 728x90 */
+    else if ( adWidth >= 300 )
+      google_ad_size = ["300", "250"]; /* Medium Rectangle (300 x 250) */
+    else
+      google_ad_size = ["728", "90"];  /* Leaderboard 728x90 */
+
+    document.write (
+     '<ins class="adsbygoogle" style="display:inline-block;width:'
+      + google_ad_size[0] + 'px;height:'
+      + google_ad_size[1] + 'px" data-ad-client="'
+      + google_ad_client + '" data-ad-slot="'
+      + google_ad_slot + '"></ins>'
+    );
+
+    (adsbygoogle = window.adsbygoogle || []).push({});
+
+</script>
+
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script><center><h3><center><span style='border:2px black solid; padding: 5px; font-size:15px;'>FIVE<span class='glyphicon glyphicon-star-empty'></span>EVENTS</span></center></h3></center><div class= 'adminwell' ></div><ul class='event-list'><li><time datetime='2014-07-20 0000' class='hidden-xs'><span class='day'>Sat</span><span class='month'>Jan</span><span class='month'>31</span></time><time datetime='2014-07-20 0000' class='visible-xs'><span class='day'>Sat, Jan 31 2026</span></time><div class='info'><h2 class='title'> <a href='event-3771'>Shakur Stevenson<span class='circle' > vs. </span>Teofimo Lopez</a> </h2><p class='desc'> <i class='fa fa-map-marker'></i> New York, USA</p><p class='desc'>  <span class='glyphicon glyphicon-time'></span>  <i class ='fa fa-youtube-play'> </i> DAZN</p><ul><li style='width:100%;'> <a href='event-3771'><span class='fa fa-long-arrow-right'></span> EVENT PAGE</a> </li></ul></div></li></ul>
+
+
+
+ <div id="google-ads-1"></div>
+<script type="text/javascript">
+
+    /* Calculate the width of available ad space */
+    ad = document.getElementById('google-ads-1');
+
+    if (ad.getBoundingClientRect().width) {
+        adWidth = ad.getBoundingClientRect().width; // for modern browsers
+    } else {
+        adWidth = ad.offsetWidth; // for old IE
+    }
+
+    /* Replace ca-pub-XXX with your AdSense Publisher ID */
+    google_ad_client = "pub-9912596304273780";
+
+    /* Replace 1234567890 with the AdSense Ad Slot ID */
+    google_ad_slot = "5557722328";
+
+    /* Do not change anything after this line */
+    if ( adWidth >= 728 )
+      google_ad_size = ["728", "90"];  /* Leaderboard 728x90 */
+    else if ( adWidth >= 300 )
+      google_ad_size = ["300", "250"]; /* Medium Rectangle (300 x 250) */
+    else
+      google_ad_size = ["728", "90"];  /* Leaderboard 728x90 */
+
+    document.write (
+     '<ins class="adsbygoogle" style="display:inline-block;width:'
+      + google_ad_size[0] + 'px;height:'
+      + google_ad_size[1] + 'px" data-ad-client="'
+      + google_ad_client + '" data-ad-slot="'
+      + google_ad_slot + '"></ins>'
+    );
+
+    (adsbygoogle = window.adsbygoogle || []).push({});
+
+</script>
+
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
+
+
+</div>
+<!-- /Main Col -->
+
+<!-- Side Col -->
+<div class="col-md-4 side-col">
+    <div class="row">
+<!-- col -->
+              <div class="col-sm-6 col-md-12">
+
+                <!-- unicard -->
+                <div class="unicard unicard-framed pad-20 side-widget mgb-30">
+
+                  <h4 class="case-u fw-bold fg-primary">News</h4>
+
+                  <!-- post list -->
+                  <ul class="unimedia-list post-list-sm">
+                                      <li>
+                      <div class="unimedia-cell cell-max">
+                        <h4 class="unimedia-title fw-normal">
+                       <a  href="https://fightnights.com/2026/01/11/7101/dalton-smith-stops-matias"><span style="font-size: 0.6em;" class="glyphicon glyphicon-share-alt"></span> Dalton Smith Stops Matias</a>
+                         <br /><small class="article-post-meta"> <span  class="glyphicon glyphicon-time"></span> Sun, Jan 11 2026 </small>
+                        </h4>
+                      </div>
+                      <div class="unimedia-cell">
+                        <div class="unimedia-img">
+                                     <a href="https://fightnights.com/2026/01/11/7101/dalton-smith-stops-matias">
+                <img src="https://fightnights.com/uploads/1768133841-IMG_0323.jpeg"></a>
+                                    </div>
+                      </div>
+                    </li>
+
+
+(venv) PS C:\Users\scien\boxing-calendar>
