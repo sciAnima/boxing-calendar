@@ -25,9 +25,12 @@ LOCATION_TIMEZONES = {
     "Japan": "Asia/Tokyo",
     "United Arab Emirates": "Asia/Dubai",
     "Saudi Arabia": "Asia/Riyadh",
+    "Canada": "America/Toronto",
 }
 
 CT_ZONE = ZoneInfo("America/Chicago")
+
+MONTHS_REGEX = r"(January|February|March|April|May|June|July|August|September|October|November|December)"
 
 
 def fetch_page_text() -> str:
@@ -41,7 +44,8 @@ def fetch_page_text() -> str:
     resp = requests.get(URL, headers=headers, timeout=30)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
-    return soup.get_text(separator="\n")
+    # Visible text, but we’ll parse it as a single blob, not line-by-line
+    return soup.get_text(separator=" ")
 
 
 def infer_timezone_from_location(location: str) -> ZoneInfo | None:
@@ -58,7 +62,7 @@ def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> dat
         return None
 
     # ET ringwalk
-    m_et = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}ET.*ringwalk", info, re.I)
+    m_et = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}ET", info, re.I)
     if m_et:
         t = m_et.group(1)
         dt = datetime.strptime(f"{date_str} {t}", "%B %d, %Y %I:%M %p")
@@ -66,7 +70,7 @@ def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> dat
         return dt.astimezone(CT_ZONE)
 
     # UK ringwalk
-    m_uk = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}UK.*ringwalk", info, re.I)
+    m_uk = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}UK", info, re.I)
     if m_uk:
         t = m_uk.group(1)
         dt = datetime.strptime(f"{date_str} {t}", "%B %d, %Y %I:%M %p")
@@ -74,9 +78,7 @@ def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> dat
         return dt.astimezone(CT_ZONE)
 
     # Local Time ringwalk
-    m_local = re.search(
-        r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}Local Time.*ringwalk", info, re.I
-    )
+    m_local = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}Local Time", info, re.I)
     if m_local:
         t = m_local.group(1)
         tz = infer_timezone_from_location(location)
@@ -88,96 +90,161 @@ def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> dat
     return None
 
 
-def parse_header_line(line: str):
-    m = re.match(r"([A-Za-z]+ \d{1,2}, \d{4}):\s*(.*)", line)
+def normalize_space(text: str) -> str:
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def split_into_cards(text: str) -> list[str]:
+    """
+    Boxing247 now formats the schedule as a long inline blob like:
+
+    February 5: Montreal, Quebec, Canada 🇨🇦 (Live on TBA | at 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧)
+    Albert Ramirez versus Lerrone Richards, ...
+    📅 February 6: Guadalajara, Mexico 🇲🇽 (Live on DAZN | at 7:00 PM Local / 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧)
+    ...
+
+    We treat each 'Month Day:' as the start of a card and slice until the next one.
+    """
+    text = normalize_space(text)
+
+    # Add a marker before each date to make splitting easier
+    pattern = rf"(📅\s*)?{MONTHS_REGEX}\s+\d{{1,2}}:"
+    matches = list(re.finditer(pattern, text))
+
+    cards: list[str] = []
+    for i, m in enumerate(matches):
+        start = m.start()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        segment = text[start:end].strip()
+        if segment:
+            cards.append(segment)
+
+    return cards
+
+
+def parse_card_header_and_fights(card_text: str):
+    """
+    From a card segment like:
+
+    'February 5: Montreal, Quebec, Canada 🇨🇦 (Live on TBA | at 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧) Albert Ramirez versus ...'
+
+    we extract:
+      - date_str: 'February 5, 2025'
+      - location: 'Montreal, Quebec, Canada'
+      - info: 'Live on TBA | at 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧'
+      - main_fight: 'Albert Ramirez versus Lerrone Richards, 12 rds, for Ramirez’s WBA interim light heavyweight title'
+    """
+    card_text = normalize_space(card_text)
+
+    # Date + rest
+    m = re.match(rf"(📅\s*)?({MONTHS_REGEX}\s+\d{{1,2}}):\s*(.*)", card_text)
     if not m:
-        return None, None, None
+        return None, None, None, None
 
-    date_str = m.group(1).strip()
-    rest = m.group(2).strip()
+    date_no_year = m.group(2)  # e.g. 'February 5'
+    rest = m.group(3).strip()
 
-    loc = rest
+    # Infer year as current year
+    current_year = datetime.now(CT_ZONE).year
+    date_str = f"{date_no_year}, {current_year}"
+
+    # Split header (location + parentheses) from fights
+    # We assume first ')' closes the broadcast/time info
+    idx_paren = rest.find(")")
+    if idx_paren != -1:
+        header_part = rest[: idx_paren + 1]
+        fights_part = rest[idx_paren + 1 :].strip()
+    else:
+        header_part = rest
+        fights_part = ""
+
+    # Location: between ':' and '('
+    loc = header_part
     info = None
+    m_loc = re.match(r"(.*?)(\((.*)\))", header_part)
+    if m_loc:
+        loc = m_loc.group(1).strip()
+        info = m_loc.group(3).strip()
 
-    m2 = re.match(r"(.*?)(\((.*)\))\s*$", rest)
-    if m2:
-        loc = m2.group(1).strip()
-        info = m2.group(3).strip()
+    # Strip trailing flags from location
+    loc = re.sub(r"[^\w\s,]+$", "", loc).strip()
 
-    return date_str, loc, info
+    # Main fight: first 'versus' phrase
+    main_fight = None
+    if fights_part:
+        m_fight = re.search(r"([A-Z][^,]+?versus[^📅]+?)(?=(?: [A-Z][a-z]+ [A-Z][a-z]+ versus|📅|$))", fights_part)
+        if m_fight:
+            main_fight = m_fight.group(1).strip()
+        else:
+            # Fallback: take first chunk up to next '📅' or 200 chars
+            main_fight = fights_part.split("📅")[0].strip()
+            if len(main_fight) > 200:
+                main_fight = main_fight[:200] + "..."
 
-
-def normalize_line(line: str) -> str:
-    return " ".join(line.split())
+    return date_str, loc, info, main_fight
 
 
 def build_events_from_text(text: str) -> list[Event]:
-    lines = [normalize_line(l) for l in text.splitlines()]
+    cards = split_into_cards(text)
     events: list[Event] = []
 
-    current_date_str = None
-    current_location = None
-    current_info = None
-
-    for line in lines:
-        if not line:
-            continue
-
-        date_str, loc, info = parse_header_line(line)
-        if date_str:
-            current_date_str = date_str
-            current_location = loc
-            current_info = info
-            continue
-
-        if current_date_str and current_location:
-            fight_line = line
-
-            if re.search(r"^TV:|^PPV:|^Stream:", fight_line, re.I):
+    for card in cards:
+        try:
+            date_str, location, info, main_fight = parse_card_header_and_fights(card)
+            if not date_str or not location:
                 continue
 
-            try:
-                start_dt_ct = extract_ringwalk_time(
-                    current_info or "", current_date_str, current_location
+            # Infer start time from ringwalk info if possible
+            start_dt_ct = extract_ringwalk_time(info or "", date_str, location)
+
+            if not start_dt_ct:
+                # Default: 9:00 PM CT on that date
+                base_date = datetime.strptime(date_str, "%B %d, %Y")
+                start_dt_ct = datetime(
+                    year=base_date.year,
+                    month=base_date.month,
+                    day=base_date.day,
+                    hour=21,
+                    minute=0,
+                    tzinfo=CT_ZONE,
                 )
 
-                if not start_dt_ct:
-                    base_date = datetime.strptime(current_date_str, "%B %d, %Y")
-                    start_dt_ct = datetime(
-                        year=base_date.year,
-                        month=base_date.month,
-                        day=base_date.day,
-                        hour=21,
-                        minute=0,
-                        tzinfo=CT_ZONE,
-                    )
+            end_dt_ct = start_dt_ct + timedelta(hours=3)
 
-                end_dt_ct = start_dt_ct + timedelta(hours=3)
+            start_utc = start_dt_ct.astimezone(timezone.utc)
+            end_utc = end_dt_ct.astimezone(timezone.utc)
 
-                start_utc = start_dt_ct.astimezone(timezone.utc)
-                end_utc = end_dt_ct.astimezone(timezone.utc)
+            ev = Event()
+            # Event name: main fight or generic label
+            if main_fight:
+                ev.name = main_fight
+            else:
+                ev.name = f"Boxing card – {location}"
 
-                ev = Event()
-                ev.name = fight_line
-                ev.begin = start_utc
-                ev.end = end_utc
+            ev.begin = start_utc
+            ev.end = end_utc
 
-                desc_parts = [
-                    f"Location: {current_location}",
-                    f"Info: {current_info}" if current_info else "",
-                    "Source: Boxing247.com",
-                ]
-                ev.description = "\n".join([d for d in desc_parts if d])
+            desc_parts = [
+                f"Date: {date_str}",
+                f"Location: {location}",
+            ]
+            if info:
+                desc_parts.append(f"Info: {info}")
+            desc_parts.append("Source: Boxing247.com")
 
-                slug = re.sub(r"[^a-zA-Z0-9]+", "-", fight_line).strip("-").lower()
-                uid_date = datetime.strptime(current_date_str, "%B %d, %Y").strftime(
-                    "%Y%m%d"
-                )
-                ev.uid = f"{uid_date}-{slug}@boxing247-calendar"
+            ev.description = "\n".join(desc_parts)
 
-                events.append(ev)
-            except Exception:
-                continue
+            # UID: date + slug of location + optional main fight
+            slug_base = location
+            if main_fight:
+                slug_base = f"{location} {main_fight}"
+            slug = re.sub(r"[^a-zA-Z0-9]+", "-", slug_base).strip("-").lower()
+            uid_date = datetime.strptime(date_str, "%B %d, %Y").strftime("%Y%m%d")
+            ev.uid = f"{uid_date}-{slug}@boxing247-calendar"
+
+            events.append(ev)
+        except Exception:
+            continue
 
     return events
 
@@ -189,8 +256,6 @@ def main():
     events = build_events_from_text(text)
 
     cal = Calendar()
-
-    # Correct ICS metadata
     cal.extra.append(ContentLine(name="CALSCALE", value="GREGORIAN"))
     cal.extra.append(ContentLine(name="COMMENT", value="Event data sourced from Boxing247.com"))
 
