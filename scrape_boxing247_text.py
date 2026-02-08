@@ -8,6 +8,10 @@ from ics.grammar.parse import ContentLine
 
 URL = "https://www.boxing247.com/fight-schedule"
 
+CT_ZONE = ZoneInfo("America/Chicago")
+
+MONTHS_REGEX = r"(January|February|March|April|May|June|July|August|September|October|November|December)"
+
 LOCATION_TIMEZONES = {
     "USA": "America/New_York",
     "United States": "America/New_York",
@@ -26,9 +30,6 @@ LOCATION_TIMEZONES = {
     "Saudi Arabia": "Asia/Riyadh",
     "Canada": "America/Toronto",
 }
-
-CT_ZONE = ZoneInfo("America/Chicago")
-MONTHS_REGEX = r"(January|February|March|April|May|June|July|August|September|October|November|December)"
 
 
 def fetch_page_text() -> str:
@@ -62,6 +63,7 @@ def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> dat
     if not info:
         return None
 
+    # ET
     m_et = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}ET", info, re.I)
     if m_et:
         t = m_et.group(1)
@@ -69,6 +71,7 @@ def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> dat
         dt = dt.replace(tzinfo=ZoneInfo("America/New_York"))
         return dt.astimezone(CT_ZONE)
 
+    # UK
     m_uk = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}UK", info, re.I)
     if m_uk:
         t = m_uk.group(1)
@@ -76,6 +79,7 @@ def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> dat
         dt = dt.replace(tzinfo=ZoneInfo("Europe/London"))
         return dt.astimezone(CT_ZONE)
 
+    # Local
     m_local = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}Local", info, re.I)
     if m_local:
         t = m_local.group(1)
@@ -90,11 +94,10 @@ def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> dat
 
 def split_into_cards(text: str) -> list[str]:
     text = normalize_space(text)
-
     pattern = rf"📅\s+{MONTHS_REGEX}\s+\d{{1,2}}:"
     matches = list(re.finditer(pattern, text))
 
-    cards: list[str] = []
+    cards = []
     for i, m in enumerate(matches):
         start = m.start()
         end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
@@ -111,6 +114,7 @@ def parse_card(card_text: str):
     if card_text.startswith("📅"):
         card_text = card_text[1:].strip()
 
+    # Extract date + rest
     m = re.match(rf"({MONTHS_REGEX}\s+\d{{1,2}}):\s*(.*)", card_text)
     if not m:
         return None, None, None, None
@@ -121,47 +125,38 @@ def parse_card(card_text: str):
     current_year = datetime.now(CT_ZONE).year
     date_str = f"{date_no_year}, {current_year}"
 
-    idx_paren = rest.find(")")
-    if idx_paren != -1:
-        header_part = rest[: idx_paren + 1]
-        fights_part = rest[idx_paren + 1:].strip()
-    else:
-        header_part = rest
-        fights_part = ""
-
-    loc = header_part
-    info = None
-    m_loc = re.match(r"(.*?)(\((.*)\))", header_part)
+    # Extract location + info
+    m_loc = re.match(r"([^()]+)\(([^)]*)\)", rest)
     if m_loc:
-        loc = m_loc.group(1).strip()
-        info = m_loc.group(3).strip()
+        location = m_loc.group(1).strip()
+        info = m_loc.group(2).strip()
+        fights_part = rest[m_loc.end():].strip()
+    else:
+        # No parentheses
+        parts = rest.split(" ", 1)
+        location = parts[0].strip()
+        info = None
+        fights_part = rest[len(location):].strip()
 
-    loc = re.sub(r"[^\w\s,]+$", "", loc).strip()
+    # Clean location
+    location = re.sub(r"[^\w\s,]+$", "", location).strip()
 
-    # ⭐ Collapse all whitespace in fights block (Option A)
+    # Extract main fight (supports vs, v, vs., versus)
     fights_part = normalize_space(fights_part)
-
     main_fight = None
-    if fights_part:
-        m_fight = re.search(
-            r"([A-Z][A-Za-zÀ-ÖØ-öø-ÿ'’\-\. ]+?\s+versus\s+[A-Z][A-Za-zÀ-ÖØ-öø-ÿ'’\-\. ]+?)",
-            fights_part,
-            re.IGNORECASE,
-        )
-        if m_fight:
-            main_fight = m_fight.group(1).strip()
-            main_fight = re.sub(r"\s+versus\s+", " versus ", main_fight, flags=re.I)
-        else:
-            main_fight = fights_part.split("📅")[0].strip()
-            if len(main_fight) > 200:
-                main_fight = main_fight[:200] + "..."
 
-    return date_str, loc, info, main_fight
+    fight_regex = r"([A-Z][A-Za-zÀ-ÖØ-öø-ÿ'’\-\. ]+?)\s+(?:vs\.?|v\.?|versus)\s+([A-Z][A-Za-zÀ-ÖØ-öø-ÿ'’\-\. ]+)"
+    m_fight = re.search(fight_regex, fights_part, re.I)
+
+    if m_fight:
+        main_fight = f"{m_fight.group(1).strip()} versus {m_fight.group(2).strip()}"
+
+    return date_str, location, info, main_fight
 
 
 def build_events_from_text(text: str) -> list[Event]:
     cards = split_into_cards(text)
-    events: list[Event] = []
+    events = []
 
     for card in cards:
         try:
