@@ -91,7 +91,6 @@ def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> dat
 def split_into_cards(text: str) -> list[str]:
     text = normalize_space(text)
 
-    # Each card starts with the calendar emoji followed by a month/day
     pattern = rf"📅\s+{MONTHS_REGEX}\s+\d{{1,2}}:"
     matches = list(re.finditer(pattern, text))
 
@@ -109,31 +108,27 @@ def split_into_cards(text: str) -> list[str]:
 def parse_card(card_text: str):
     card_text = normalize_space(card_text)
 
-    # Strip leading emoji
     if card_text.startswith("📅"):
         card_text = card_text[1:].strip()
 
-    # Date + rest
     m = re.match(rf"({MONTHS_REGEX}\s+\d{{1,2}}):\s*(.*)", card_text)
     if not m:
         return None, None, None, None
 
-    date_no_year = m.group(1)  # e.g. 'February 5'
+    date_no_year = m.group(1)
     rest = m.group(2).strip()
 
     current_year = datetime.now(CT_ZONE).year
     date_str = f"{date_no_year}, {current_year}"
 
-    # Header (location + parentheses) vs fights
     idx_paren = rest.find(")")
     if idx_paren != -1:
         header_part = rest[: idx_paren + 1]
-        fights_part = rest[idx_paren + 1 :].strip()
+        fights_part = rest[idx_paren + 1:].strip()
     else:
         header_part = rest
         fights_part = ""
 
-    # Location and info
     loc = header_part
     info = None
     m_loc = re.match(r"(.*?)(\((.*)\))", header_part)
@@ -141,18 +136,18 @@ def parse_card(card_text: str):
         loc = m_loc.group(1).strip()
         info = m_loc.group(3).strip()
 
-    # Strip trailing flags from location
     loc = re.sub(r"[^\w\s,]+$", "", loc).strip()
 
-    # Main fight: first 'versus' phrase
     main_fight = None
     if fights_part:
         m_fight = re.search(
-            r"([A-Z][^,]+?versus[^📅]+?)(?=(?: [A-Z][a-z]+ [A-Z][a-z]+ versus|📅|$))",
+            r"([A-Z][A-Za-zÀ-ÖØ-öø-ÿ'’\-\. ]+?\s+versus\s+[A-Z][A-Za-zÀ-ÖØ-öø-ÿ'’\-\. ]+?)",
             fights_part,
+            re.IGNORECASE,
         )
         if m_fight:
             main_fight = m_fight.group(1).strip()
+            main_fight = re.sub(r"\s+versus\s+", " versus ", main_fight, flags=re.I)
         else:
             main_fight = fights_part.split("📅")[0].strip()
             if len(main_fight) > 200:
@@ -190,11 +185,7 @@ def build_events_from_text(text: str) -> list[Event]:
             end_utc = end_dt_ct.astimezone(timezone.utc)
 
             ev = Event()
-            if main_fight:
-                ev.name = main_fight
-            else:
-                ev.name = f"Boxing card – {location}"
-
+            ev.name = main_fight if main_fight else f"Boxing card – {location}"
             ev.begin = start_utc
             ev.end = end_utc
 
@@ -207,9 +198,7 @@ def build_events_from_text(text: str) -> list[Event]:
             desc_parts.append("Source: Boxing247.com")
             ev.description = "\n".join(desc_parts)
 
-            slug_base = location
-            if main_fight:
-                slug_base = f"{location} {main_fight}"
+            slug_base = f"{location} {main_fight}" if main_fight else location
             slug = re.sub(r"[^a-zA-Z0-9]+", "-", slug_base).strip("-").lower()
             uid_date = datetime.strptime(date_str, "%B %d, %Y").strftime("%Y%m%d")
             ev.uid = f"{uid_date}-{slug}@boxing247-calendar"
