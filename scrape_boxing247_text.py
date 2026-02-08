@@ -134,7 +134,8 @@ def parse_card(card_text: str):
         loc = m_loc.group(1).strip()
         info = m_loc.group(3).strip()
 
-    loc = re.sub(r"[^\w\s,]+$", "", loc).strip()
+    # Remove ONLY emojis and symbols, but keep letters, commas, and spaces
+    loc = re.sub(r"[^\w\s,.-]", "", loc, flags=re.UNICODE).strip()
 
     # Normalize fights block
     fights_part = normalize_space(fights_part)
