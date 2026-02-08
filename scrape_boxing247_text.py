@@ -96,4 +96,3 @@ def parse_header_line(line):
     m2 = re.match(r"(.*?)(\((.*)\))\s*$", rest)
     if m2:
         loc = m2.group(1).strip()
-        in
