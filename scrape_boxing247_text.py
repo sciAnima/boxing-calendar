@@ -1,9 +1,8 @@
-import undetected_chromedriver as uc
-from selenium.webdriver.common.by import By
-import time
 import re
-from datetime import datetime, timedelta
+import requests
+from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
+from bs4 import BeautifulSoup
 from ics import Calendar, Event
 
 URL = "https://www.boxing247.com/fight-schedule"
@@ -11,8 +10,12 @@ URL = "https://www.boxing247.com/fight-schedule"
 # Map country keywords to time zones
 LOCATION_TIMEZONES = {
     "USA": "America/New_York",  # ET default for US cards
+    "United States": "America/New_York",
     "England": "Europe/London",
     "UK": "Europe/London",
+    "Scotland": "Europe/London",
+    "Wales": "Europe/London",
+    "Ireland": "Europe/Dublin",
     "Mexico": "America/Mexico_City",
     "Australia": "Australia/Brisbane",
     "Puerto Rico": "America/Puerto_Rico",
@@ -20,40 +23,44 @@ LOCATION_TIMEZONES = {
     "Denmark": "Europe/Copenhagen",
     "Japan": "Asia/Tokyo",
     "United Arab Emirates": "Asia/Dubai",
+    "Saudi Arabia": "Asia/Riyadh",
 }
 
 CT_ZONE = ZoneInfo("America/Chicago")
 
 
-def load_page():
-    options = uc.ChromeOptions()
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-blink-features=AutomationControlled")
+def fetch_page_text() -> str:
+    """Fetch the fight schedule page and return plain text."""
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/122.0 Safari/537.36"
+        )
+    }
+    resp = requests.get(URL, headers=headers, timeout=30)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+    # Get visible text with line breaks
+    return soup.get_text(separator="\n")
 
-    driver = uc.Chrome(options=options)
-    driver.get(URL)
-    time.sleep(5)
-    return driver
 
-
-def extract_text(driver):
-    body = driver.find_element(By.TAG_NAME, "body")
-    return body.text
-
-
-def infer_timezone_from_location(location):
+def infer_timezone_from_location(location: str) -> ZoneInfo | None:
+    if not location:
+        return None
     for key, tz in LOCATION_TIMEZONES.items():
         if key.lower() in location.lower():
             return ZoneInfo(tz)
     return None
 
 
-def extract_ringwalk_time(info, date_str, location):
+def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> datetime | None:
+    """Try to infer ringwalk time from the info string."""
     if not info:
         return None
 
     # ET ringwalk
-    m_et = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,20}ET.*ringwalk", info, re.I)
+    m_et = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}ET.*ringwalk", info, re.I)
     if m_et:
         t = m_et.group(1)
         dt = datetime.strptime(f"{date_str} {t}", "%B %d, %Y %I:%M %p")
@@ -61,7 +68,7 @@ def extract_ringwalk_time(info, date_str, location):
         return dt.astimezone(CT_ZONE)
 
     # UK ringwalk
-    m_uk = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,20}UK.*ringwalk", info, re.I)
+    m_uk = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}UK.*ringwalk", info, re.I)
     if m_uk:
         t = m_uk.group(1)
         dt = datetime.strptime(f"{date_str} {t}", "%B %d, %Y %I:%M %p")
@@ -70,7 +77,7 @@ def extract_ringwalk_time(info, date_str, location):
 
     # Local Time ringwalk
     m_local = re.search(
-        r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,20}Local Time.*ringwalk", info, re.I
+        r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}Local Time.*ringwalk", info, re.I
     )
     if m_local:
         t = m_local.group(1)
@@ -83,16 +90,138 @@ def extract_ringwalk_time(info, date_str, location):
     return None
 
 
-def parse_header_line(line):
+def parse_header_line(line: str):
+    """
+    Parse lines like:
+    'March 15, 2025: Las Vegas, USA (Some broadcast / ringwalk info)'
+    Returns: date_str, location, info
+    """
     m = re.match(r"([A-Za-z]+ \d{1,2}, \d{4}):\s*(.*)", line)
     if not m:
-        return None, None, None, None
+        return None, None, None
 
-    date_str = m.group(1)
-    rest = m.group(2)
+    date_str = m.group(1).strip()
+    rest = m.group(2).strip()
 
     loc = rest
     info = None
+
+    # If there's a trailing (...) treat that as info
     m2 = re.match(r"(.*?)(\((.*)\))\s*$", rest)
     if m2:
         loc = m2.group(1).strip()
+        info = m2.group(3).strip()
+
+    return date_str, loc, info
+
+
+def normalize_line(line: str) -> str:
+    return " ".join(line.split())
+
+
+def build_events_from_text(text: str) -> list[Event]:
+    """
+    Walk through the plain text, detect date headers and fight lines,
+    and build ICS events.
+    """
+    lines = [normalize_line(l) for l in text.splitlines()]
+    events: list[Event] = []
+
+    current_date_str: str | None = None
+    current_location: str | None = None
+    current_info: str | None = None
+
+    for line in lines:
+        if not line:
+            continue
+
+        # Try to parse as a header line first
+        date_str, loc, info = parse_header_line(line)
+        if date_str:
+            current_date_str = date_str
+            current_location = loc
+            current_info = info
+            continue
+
+        # If we have an active date header, treat subsequent non-empty lines as fights
+        if current_date_str and current_location:
+            fight_line = line
+
+            # Skip obvious non-fight noise if needed
+            if re.search(r"^TV:|^PPV:|^Stream:", fight_line, re.I):
+                continue
+
+            # Build event
+            try:
+                # Try to infer start time from ringwalk info
+                start_dt_ct = extract_ringwalk_time(
+                    current_info or "", current_date_str, current_location
+                )
+
+                if not start_dt_ct:
+                    # Default: 9:00 PM CT on that date
+                    base_date = datetime.strptime(current_date_str, "%B %d, %Y")
+                    start_dt_ct = datetime(
+                        year=base_date.year,
+                        month=base_date.month,
+                        day=base_date.day,
+                        hour=21,
+                        minute=0,
+                        tzinfo=CT_ZONE,
+                    )
+
+                end_dt_ct = start_dt_ct + timedelta(hours=3)
+
+                # Convert to UTC for ICS cleanliness
+                start_utc = start_dt_ct.astimezone(timezone.utc)
+                end_utc = end_dt_ct.astimezone(timezone.utc)
+
+                ev = Event()
+                ev.name = fight_line
+                ev.begin = start_utc
+                ev.end = end_utc
+
+                desc_parts = []
+                desc_parts.append(f"Location: {current_location}")
+                if current_info:
+                    desc_parts.append(f"Info: {current_info}")
+                desc_parts.append("Source: Boxing247.com")
+                ev.description = "\n".join(desc_parts)
+
+                # UID: date + slug of fight + domain
+                slug = re.sub(r"[^a-zA-Z0-9]+", "-", fight_line).strip("-").lower()
+                uid_date = datetime.strptime(current_date_str, "%B %d, %Y").strftime(
+                    "%Y%m%d"
+                )
+                ev.uid = f"{uid_date}-{slug}@boxing247-calendar"
+
+                events.append(ev)
+            except Exception:
+                # Fail-soft on any weird line; continue parsing others
+                continue
+
+    return events
+
+
+def main():
+    print("Fetching Boxing247 schedule...")
+    text = fetch_page_text()
+    print("Building events...")
+    events = build_events_from_text(text)
+
+    cal = Calendar()
+    # Recommended metadata
+    cal.extra.append(("CALSCALE", "GREGORIAN"))
+    cal.extra.append(("COMMENT", "Event data sourced from Boxing247.com"))
+
+    for ev in events:
+        cal.events.add(ev)
+
+    with open("boxing_schedule.ics", "w", encoding="utf-8") as f:
+        f.writelines(cal)
+
+    print(f"Wrote {len(events)} events to boxing_schedule.ics")
+
+
+if __name__ == "__main__":
+    main()
