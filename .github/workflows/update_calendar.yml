@@ -1,5 +1,8 @@
 name: Update Boxing Calendar
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 8 * * *"   # Runs every day at 08:00 UTC (2 AM Chicago)
