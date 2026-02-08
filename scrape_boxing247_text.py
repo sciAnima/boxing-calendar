@@ -138,6 +138,9 @@ def parse_card(card_text: str):
 
     loc = re.sub(r"[^\w\s,]+$", "", loc).strip()
 
+    # ⭐ Collapse all whitespace in fights block (Option A)
+    fights_part = normalize_space(fights_part)
+
     main_fight = None
     if fights_part:
         m_fight = re.search(
