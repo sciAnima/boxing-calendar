@@ -3,4 +3,116 @@ CALSCALE:GREGORIAN
 COMMENT:Event data sourced from Boxing247.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Date: February 10\, 2026\nLocation: February\nSource: Boxing247.com
+DTEND:20260211T060000Z
+DTSTART:20260211T030000Z
+SUMMARY:Boxing card – February
+UID:20260210-february@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: February 13\, 2026\nLocation: February\nSource: Boxing247.com
+DTEND:20260214T060000Z
+DTSTART:20260214T030000Z
+SUMMARY:Boxing card – February
+UID:20260213-february@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: February 19\, 2026\nLocation: February\nSource: Boxing247.com
+DTEND:20260220T060000Z
+DTSTART:20260220T030000Z
+SUMMARY:Boxing card – February
+UID:20260219-february@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: February 6\, 2026\nLocation: February\nSource: Boxing247.com
+DTEND:20260207T060000Z
+DTSTART:20260207T030000Z
+SUMMARY:Boxing card – February
+UID:20260206-february@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: February 21\, 2026\nLocation: February\nSource: Boxing247.com
+DTEND:20260222T060000Z
+DTSTART:20260222T030000Z
+SUMMARY:Boxing card – February
+UID:20260221-february@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: February 27\, 2026\nLocation: February\nSource: Boxing247.com
+DTEND:20260228T060000Z
+DTSTART:20260228T030000Z
+SUMMARY:Boxing card – February
+UID:20260227-february@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: February 14\, 2026\nLocation: February\nSource: Boxing247.com
+DTEND:20260215T060000Z
+DTSTART:20260215T030000Z
+SUMMARY:Boxing card – February
+UID:20260214-february@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: March 6\, 2026\nLocation: March\nSource: Boxing247.com
+DTEND:20260307T060000Z
+DTSTART:20260307T030000Z
+SUMMARY:Boxing card – March
+UID:20260306-march@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: February 7\, 2026\nLocation: February\nSource: Boxing247.com
+DTEND:20260208T060000Z
+DTSTART:20260208T030000Z
+SUMMARY:Boxing card – February
+UID:20260207-february@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: February 22\, 2026\nLocation: February\nSource: Boxing247.com
+DTEND:20260223T060000Z
+DTSTART:20260223T030000Z
+SUMMARY:Boxing card – February
+UID:20260222-february@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: March 7\, 2026\nLocation: March\nSource: Boxing247.com
+DTEND:20260308T060000Z
+DTSTART:20260308T030000Z
+SUMMARY:Boxing card – March
+UID:20260307-march@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: February 28\, 2026\nLocation: February\nSource: Boxing247.com
+DTEND:20260301T060000Z
+DTSTART:20260301T030000Z
+SUMMARY:Boxing card – February
+UID:20260228-february@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: February 15\, 2026\nLocation: February\nSource: Boxing247.com
+DTEND:20260216T060000Z
+DTSTART:20260216T030000Z
+SUMMARY:Boxing card – February
+UID:20260215-february@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: February 5\, 2026\nLocation: February\nSource: Boxing247.com
+DTEND:20260206T060000Z
+DTSTART:20260206T030000Z
+SUMMARY:Boxing card – February
+UID:20260205-february@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: February 20\, 2026\nLocation: February\nSource: Boxing247.com
+DTEND:20260221T060000Z
+DTSTART:20260221T030000Z
+SUMMARY:Boxing card – February
+UID:20260220-february@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: March 5\, 2026\nLocation: March\nSource: Boxing247.com
+DTEND:20260306T060000Z
+DTSTART:20260306T030000Z
+SUMMARY:Boxing card – March
+UID:20260305-march@boxing247-calendar
+END:VEVENT
 END:VCALENDAR
