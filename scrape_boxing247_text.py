@@ -4,12 +4,13 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 from ics import Calendar, Event
+from ics.grammar.parse import ContentLine
 
 URL = "https://www.boxing247.com/fight-schedule"
 
 # Map country keywords to time zones
 LOCATION_TIMEZONES = {
-    "USA": "America/New_York",  # ET default for US cards
+    "USA": "America/New_York",
     "United States": "America/New_York",
     "England": "Europe/London",
     "UK": "Europe/London",
@@ -30,7 +31,6 @@ CT_ZONE = ZoneInfo("America/Chicago")
 
 
 def fetch_page_text() -> str:
-    """Fetch the fight schedule page and return plain text."""
     headers = {
         "User-Agent": (
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -41,7 +41,6 @@ def fetch_page_text() -> str:
     resp = requests.get(URL, headers=headers, timeout=30)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
-    # Get visible text with line breaks
     return soup.get_text(separator="\n")
 
 
@@ -55,7 +54,6 @@ def infer_timezone_from_location(location: str) -> ZoneInfo | None:
 
 
 def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> datetime | None:
-    """Try to infer ringwalk time from the info string."""
     if not info:
         return None
 
@@ -91,11 +89,6 @@ def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> dat
 
 
 def parse_header_line(line: str):
-    """
-    Parse lines like:
-    'March 15, 2025: Las Vegas, USA (Some broadcast / ringwalk info)'
-    Returns: date_str, location, info
-    """
     m = re.match(r"([A-Za-z]+ \d{1,2}, \d{4}):\s*(.*)", line)
     if not m:
         return None, None, None
@@ -106,7 +99,6 @@ def parse_header_line(line: str):
     loc = rest
     info = None
 
-    # If there's a trailing (...) treat that as info
     m2 = re.match(r"(.*?)(\((.*)\))\s*$", rest)
     if m2:
         loc = m2.group(1).strip()
@@ -120,22 +112,17 @@ def normalize_line(line: str) -> str:
 
 
 def build_events_from_text(text: str) -> list[Event]:
-    """
-    Walk through the plain text, detect date headers and fight lines,
-    and build ICS events.
-    """
     lines = [normalize_line(l) for l in text.splitlines()]
     events: list[Event] = []
 
-    current_date_str: str | None = None
-    current_location: str | None = None
-    current_info: str | None = None
+    current_date_str = None
+    current_location = None
+    current_info = None
 
     for line in lines:
         if not line:
             continue
 
-        # Try to parse as a header line first
         date_str, loc, info = parse_header_line(line)
         if date_str:
             current_date_str = date_str
@@ -143,23 +130,18 @@ def build_events_from_text(text: str) -> list[Event]:
             current_info = info
             continue
 
-        # If we have an active date header, treat subsequent non-empty lines as fights
         if current_date_str and current_location:
             fight_line = line
 
-            # Skip obvious non-fight noise if needed
             if re.search(r"^TV:|^PPV:|^Stream:", fight_line, re.I):
                 continue
 
-            # Build event
             try:
-                # Try to infer start time from ringwalk info
                 start_dt_ct = extract_ringwalk_time(
                     current_info or "", current_date_str, current_location
                 )
 
                 if not start_dt_ct:
-                    # Default: 9:00 PM CT on that date
                     base_date = datetime.strptime(current_date_str, "%B %d, %Y")
                     start_dt_ct = datetime(
                         year=base_date.year,
@@ -172,7 +154,6 @@ def build_events_from_text(text: str) -> list[Event]:
 
                 end_dt_ct = start_dt_ct + timedelta(hours=3)
 
-                # Convert to UTC for ICS cleanliness
                 start_utc = start_dt_ct.astimezone(timezone.utc)
                 end_utc = end_dt_ct.astimezone(timezone.utc)
 
@@ -181,14 +162,13 @@ def build_events_from_text(text: str) -> list[Event]:
                 ev.begin = start_utc
                 ev.end = end_utc
 
-                desc_parts = []
-                desc_parts.append(f"Location: {current_location}")
-                if current_info:
-                    desc_parts.append(f"Info: {current_info}")
-                desc_parts.append("Source: Boxing247.com")
-                ev.description = "\n".join(desc_parts)
+                desc_parts = [
+                    f"Location: {current_location}",
+                    f"Info: {current_info}" if current_info else "",
+                    "Source: Boxing247.com",
+                ]
+                ev.description = "\n".join([d for d in desc_parts if d])
 
-                # UID: date + slug of fight + domain
                 slug = re.sub(r"[^a-zA-Z0-9]+", "-", fight_line).strip("-").lower()
                 uid_date = datetime.strptime(current_date_str, "%B %d, %Y").strftime(
                     "%Y%m%d"
@@ -197,7 +177,6 @@ def build_events_from_text(text: str) -> list[Event]:
 
                 events.append(ev)
             except Exception:
-                # Fail-soft on any weird line; continue parsing others
                 continue
 
     return events
@@ -210,9 +189,10 @@ def main():
     events = build_events_from_text(text)
 
     cal = Calendar()
-    # Recommended metadata
-    cal.extra.append(("CALSCALE", "GREGORIAN"))
-    cal.extra.append(("COMMENT", "Event data sourced from Boxing247.com"))
+
+    # Correct ICS metadata
+    cal.extra.append(ContentLine(name="CALSCALE", value="GREGORIAN"))
+    cal.extra.append(ContentLine(name="COMMENT", value="Event data sourced from Boxing247.com"))
 
     for ev in events:
         cal.events.add(ev)
