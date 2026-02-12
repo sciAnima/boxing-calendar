@@ -4,27 +4,6 @@ COMMENT:Event data sourced from Boxing247.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Date: February 6\, 2026\nLocation: Tacoma\, Washington\, USA\nInfo: Live on TBA | at 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260207T040000Z
-DTSTART:20260207T010000Z
-SUMMARY:Dedrick Crocklem versus William Flenoy
-UID:20260206-tacoma-washington-usa-dedrick-crocklem-versus-william-flenoy@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 14\, 2026\nLocation: Chelyabinsk\, Russia\nInfo: Live on TBA | at 7:00 PM Local / 9:00 AM ET 🇺🇸 / 2:00 PM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260215T030000Z
-DTSTART:20260215T000000Z
-SUMMARY:Elnur Samedov versus John Lenon Gutierrez
-UID:20260214-chelyabinsk-russia-elnur-samedov-versus-john-lenon-gutierrez@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 10\, 2026\nLocation: Grand Rapids\, Michigan\, USA\nInfo: Live on DAZN | at 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260211T040000Z
-DTSTART:20260211T010000Z
-SUMMARY:Joshua Pagan versus Bryan Jimenez
-UID:20260210-grand-rapids-michigan-usa-joshua-pagan-versus-bryan-jimenez@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: February 14\, 2026\nLocation: Halle\, Germany\nInfo: Live on DAZN | at 7:00 PM Local / 1:00 PM ET 🇺🇸 / 6:00 PM UK 🇬🇧\nSource: Boxing247.com
 DTEND:20260215T030000Z
 DTSTART:20260215T000000Z
@@ -88,13 +67,6 @@ SUMMARY:Mykal Fox versus Ray Robinson
 UID:20260221-hanover-maryland-usa-mykal-fox-versus-ray-robinson@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: February 7\, 2026\nLocation: Liverpool\, England\nInfo: Live on DAZN | at 7:00 PM UK 🇬🇧 / 2:00 PM ET 🇺🇸\nSource: Boxing247.com
-DTEND:20260208T030000Z
-DTSTART:20260208T000000Z
-SUMMARY:Nick Ball versus Brandon Figueroa
-UID:20260207-liverpool-england-nick-ball-versus-brandon-figueroa@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: February 14\, 2026\nLocation: Woodbury\, Georgia\, USA\nInfo: Live on TBA | at 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
 DTEND:20260215T040000Z
 DTSTART:20260215T010000Z
@@ -107,13 +79,6 @@ DTEND:20260306T040000Z
 DTSTART:20260306T010000Z
 SUMMARY:Steven Butler versus Ramadan Hiseni
 UID:20260305-montreal-quebec-canada-steven-butler-versus-ramadan-hiseni@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 14\, 2026\nLocation: Lahr\, Germany\nInfo: Live on TBA | at 7:00 PM Local / 1:00 PM ET 🇺🇸 / 6:00 PM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260215T030000Z
-DTSTART:20260215T000000Z
-SUMMARY:Labinot Xhoxhaj versus Pezhman Seifkhani
-UID:20260214-lahr-germany-labinot-xhoxhaj-versus-pezhman-seifkhani@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: February 15\, 2026\nLocation: Osaka\, Japan\nInfo: Live on TBA | at 7:00 PM Local / 5:00 AM ET 🇺🇸 / 10:00 AM UK 🇬🇧\nSource: Boxing247.com
@@ -135,13 +100,6 @@ DTEND:20260223T040000Z
 DTSTART:20260223T010000Z
 SUMMARY:Claressa Shields versus Franchon Crews-Dezurn
 UID:20260222-detroit-michigan-usa-claressa-shields-versus-franchon-crews-dezurn@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 5\, 2026\nLocation: Montreal\, Quebec\, Canada\nInfo: Live on TBA | at 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260206T040000Z
-DTSTART:20260206T010000Z
-SUMMARY:Albert Ramirez versus Lerrone Richards
-UID:20260205-montreal-quebec-canada-albert-ramirez-versus-lerrone-richards@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: February 28\, 2026\nLocation: Buenos Aires\, Argentina\nInfo: Live on TBA | 7:00 PM Local / 5:00 PM ET 🇺🇸 / 10:00 PM UK 🇬🇧\nSource: Boxing247.com
@@ -186,32 +144,11 @@ SUMMARY:Steven Navarro versus Mario Hernandez
 UID:20260214-burbank-california-usa-steven-navarro-versus-mario-hernandez@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: February 13\, 2026\nLocation: Moscow\, Russia\nInfo: Live on TBA | at 7:00 PM Local / 11:00 AM ET 🇺🇸 / 4:00 PM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260214T030000Z
-DTSTART:20260214T000000Z
-SUMMARY:Aznaur Kalsynov versus Gabriel Tapales
-UID:20260213-moscow-russia-aznaur-kalsynov-versus-gabriel-tapales@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 28\, 2026\nLocation: Huntington\, New York\, USA\nInfo: Live on TBA | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260301T040000Z
-DTSTART:20260301T010000Z
-SUMMARY:Star Boxing “Rockin’ Fights 53”
-UID:20260228-huntington-new-york-usa-star-boxing-rockin-fights-53@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 6\, 2026\nLocation: Guadalajara\, Mexico\nInfo: Live on DAZN | at 7:00 PM Local / 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260207T030000Z
-DTSTART:20260207T000000Z
-SUMMARY:Christian Medina versus Adrian Curiel
-UID:20260206-guadalajara-mexico-christian-medina-versus-adrian-curiel@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 7\, 2026\nLocation: Cranston\, Rhode Island\, USA\nInfo: Live on TBA | at 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260208T040000Z
-DTSTART:20260208T010000Z
-SUMMARY:Victor Reynoso versus Ray Oliveira Jr.
-UID:20260207-cranston-rhode-island-usa-victor-reynoso-versus-ray-oliveira-jr@boxing247-calendar
+DESCRIPTION:Date: February 20\, 2026\nLocation: Orlando\, Florida\, USA\nInfo: Live on Boxlab Promotions YouTube | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
+DTEND:20260221T040000Z
+DTSTART:20260221T010000Z
+SUMMARY:Alex Bray versus Rodrigo Damian Coria
+UID:20260220-orlando-florida-usa-alex-bray-versus-rodrigo-damian-coria@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: February 15\, 2026\nLocation: Brentwood\, England\nInfo: Live on DAZN | at 7:00 PM UK 🇬🇧 / 2:00 PM ET 🇺🇸\nSource: Boxing247.com
@@ -219,13 +156,6 @@ DTEND:20260216T030000Z
 DTSTART:20260216T000000Z
 SUMMARY:Tiago Osorio Muxanga versus Asinia Byfield
 UID:20260215-brentwood-england-tiago-osorio-muxanga-versus-asinia-byfield@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 20\, 2026\nLocation: Orlando\, Florida\, USA\nInfo: Live on Boxlab Promotions YouTube | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260221T040000Z
-DTSTART:20260221T010000Z
-SUMMARY:Alex Bray versus Rodrigo Damian Coria
-UID:20260220-orlando-florida-usa-alex-bray-versus-rodrigo-damian-coria@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: March 7\, 2026\nLocation: Magdeburg\, Germany\nInfo: Live on TBA | 7:00 PM Local / 1:00 PM ET 🇺🇸 / 6:00 PM UK 🇬🇧\nSource: Boxing247.com
