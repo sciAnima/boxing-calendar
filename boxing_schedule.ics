@@ -4,13 +4,6 @@ COMMENT:Event data sourced from Boxing247.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Date: February 14\, 2026\nLocation: Halle\, Germany\nInfo: Live on DAZN | at 7:00 PM Local / 1:00 PM ET 🇺🇸 / 6:00 PM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260215T030000Z
-DTSTART:20260215T000000Z
-SUMMARY:Marco Huck versus Vaclav Pejsar
-UID:20260214-halle-germany-marco-huck-versus-vaclav-pejsar@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: February 28\, 2026\nLocation: Verona\, New York\, USA\nInfo: Live on Prime Video | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
 DTEND:20260301T040000Z
 DTSTART:20260301T010000Z
@@ -65,13 +58,6 @@ DTEND:20260222T040000Z
 DTSTART:20260222T010000Z
 SUMMARY:Mykal Fox versus Ray Robinson
 UID:20260221-hanover-maryland-usa-mykal-fox-versus-ray-robinson@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 14\, 2026\nLocation: Woodbury\, Georgia\, USA\nInfo: Live on TBA | at 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260215T040000Z
-DTSTART:20260215T010000Z
-SUMMARY:Raiko Santana versus Henriques Lando
-UID:20260214-woodbury-georgia-usa-raiko-santana-versus-henriques-lando@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: March 5\, 2026\nLocation: Montreal\, Quebec\, Canada\nInfo: Live on TBA | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
@@ -135,13 +121,6 @@ DTEND:20260216T040000Z
 DTSTART:20260216T010000Z
 SUMMARY:Efe Ajagba versus Charles Martin
 UID:20260215-las-vegas-nevada-usa-efe-ajagba-versus-charles-martin@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 14\, 2026\nLocation: Burbank\, California\, USA\nInfo: Live on TBA | at 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260215T040000Z
-DTSTART:20260215T010000Z
-SUMMARY:Steven Navarro versus Mario Hernandez
-UID:20260214-burbank-california-usa-steven-navarro-versus-mario-hernandez@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: February 20\, 2026\nLocation: Orlando\, Florida\, USA\nInfo: Live on Boxlab Promotions YouTube | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
