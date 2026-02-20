@@ -32,13 +32,6 @@ SUMMARY:Leigh Wood versus Josh Warrington
 UID:20260221-nottingham-england-leigh-wood-versus-josh-warrington@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: February 28\, 2026\nLocation: Glendale\, Arizona\, USA\nInfo: Live on DAZN | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260301T040000Z
-DTSTART:20260301T010000Z
-SUMMARY:Emanuel Navarrete versus Eduardo Nunez
-UID:20260228-glendale-arizona-usa-emanuel-navarrete-versus-eduardo-nunez@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: February 21\, 2026\nLocation: Las Vegas\, Nevada\, USA\nInfo: Live on DAZN PPV | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
 DTEND:20260222T040000Z
 DTSTART:20260222T010000Z
@@ -60,11 +53,11 @@ SUMMARY:Victor Santillan versus Noel Reyes
 UID:20260221-santo-domingo-dominican-republic-victor-santillan-versus-noel-reyes@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: February 20\, 2026\nLocation: Orlando\, Florida\, USA\nInfo: Live on Boxlab Promotions YouTube | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260221T040000Z
-DTSTART:20260221T010000Z
-SUMMARY:Alex Bray versus Rodrigo Damian Coria
-UID:20260220-orlando-florida-usa-alex-bray-versus-rodrigo-damian-coria@boxing247-calendar
+DESCRIPTION:Date: February 28\, 2026\nLocation: Verona\, New York\, USA\nInfo: Live on Prime Video | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
+DTEND:20260301T040000Z
+DTSTART:20260301T010000Z
+SUMMARY:Elijah Pierce versus Lorenzo Parra
+UID:20260228-verona-new-york-usa-elijah-pierce-versus-lorenzo-parra@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: February 21\, 2026\nLocation: Hanover\, Maryland\, USA\nInfo: Live on TBA | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
@@ -72,13 +65,6 @@ DTEND:20260222T040000Z
 DTSTART:20260222T010000Z
 SUMMARY:Mykal Fox versus Ray Robinson
 UID:20260221-hanover-maryland-usa-mykal-fox-versus-ray-robinson@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 28\, 2026\nLocation: Verona\, New York\, USA\nInfo: Live on Prime Video | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260301T040000Z
-DTSTART:20260301T010000Z
-SUMMARY:Elijah Pierce versus Lorenzo Parra
-UID:20260228-verona-new-york-usa-elijah-pierce-versus-lorenzo-parra@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: March 6\, 2026\nLocation: Managua\, Nicaragua\nInfo: Live on ESPN+ and ESPN Deportes | 7:00 PM Local / 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
@@ -116,10 +102,10 @@ SUMMARY:Camila Zamorano versus Claudia Veronica Ruiz
 UID:20260221-sonora-mexico-camila-zamorano-versus-claudia-veronica-ruiz@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: February 19\, 2026\nLocation: Tokyo\, Japan\nInfo: Live on TBA | 7:00 PM Local / 5:00 AM ET 🇺🇸 / 10:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260220T030000Z
-DTSTART:20260220T000000Z
-SUMMARY:Kai Watanabe versus Shido Arai
-UID:20260219-tokyo-japan-kai-watanabe-versus-shido-arai@boxing247-calendar
+DESCRIPTION:Date: February 28\, 2026\nLocation: Glendale\, Arizona\, USA\nInfo: Live on DAZN | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
+DTEND:20260301T040000Z
+DTSTART:20260301T010000Z
+SUMMARY:Emanuel Navarrete versus Eduardo Nunez
+UID:20260228-glendale-arizona-usa-emanuel-navarrete-versus-eduardo-nunez@boxing247-calendar
 END:VEVENT
 END:VCALENDAR
