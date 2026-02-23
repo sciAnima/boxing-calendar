@@ -4,13 +4,6 @@ COMMENT:Event data sourced from Boxing247.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Date: February 21\, 2026\nLocation: Washington\, D.C.\, USA\nInfo: Live on TBA | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260222T040000Z
-DTSTART:20260222T010000Z
-SUMMARY:Greg Outlaw versus Michael Lee
-UID:20260221-washington-d-c-usa-greg-outlaw-versus-michael-lee@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: February 27\, 2026\nLocation: Arlington\, Texas\, USA\nInfo: Live on ProBoxTV | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
 DTEND:20260228T040000Z
 DTSTART:20260228T010000Z
@@ -25,20 +18,6 @@ SUMMARY:Owen Cooper versus Constantin Ursu
 UID:20260228-derby-england-owen-cooper-versus-constantin-ursu@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: February 21\, 2026\nLocation: Nottingham\, England\nInfo: Live on DAZN | 7:00 PM UK 🇬🇧 / 2:00 PM ET 🇺🇸\nSource: Boxing247.com
-DTEND:20260222T030000Z
-DTSTART:20260222T000000Z
-SUMMARY:Leigh Wood versus Josh Warrington
-UID:20260221-nottingham-england-leigh-wood-versus-josh-warrington@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 21\, 2026\nLocation: Las Vegas\, Nevada\, USA\nInfo: Live on DAZN PPV | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260222T040000Z
-DTSTART:20260222T010000Z
-SUMMARY:Mario Barrios versus Ryan Garcia
-UID:20260221-las-vegas-nevada-usa-mario-barrios-versus-ryan-garcia@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: February 22\, 2026\nLocation: Detroit\, Michigan\, USA\nInfo: Live on DAZN | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
 DTEND:20260223T040000Z
 DTSTART:20260223T010000Z
@@ -46,25 +25,11 @@ SUMMARY:Claressa Shields versus Franchon Crews-Dezurn
 UID:20260222-detroit-michigan-usa-claressa-shields-versus-franchon-crews-dezurn@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: February 21\, 2026\nLocation: Santo Domingo\, Dominican Republic\nInfo: Live on TBA | 7:00 PM Local / 7:00 PM ET 🇺🇸 / 12:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260222T030000Z
-DTSTART:20260222T000000Z
-SUMMARY:Victor Santillan versus Noel Reyes
-UID:20260221-santo-domingo-dominican-republic-victor-santillan-versus-noel-reyes@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: February 28\, 2026\nLocation: Verona\, New York\, USA\nInfo: Live on Prime Video | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
 DTEND:20260301T040000Z
 DTSTART:20260301T010000Z
 SUMMARY:Elijah Pierce versus Lorenzo Parra
 UID:20260228-verona-new-york-usa-elijah-pierce-versus-lorenzo-parra@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 21\, 2026\nLocation: Hanover\, Maryland\, USA\nInfo: Live on TBA | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260222T040000Z
-DTSTART:20260222T010000Z
-SUMMARY:Mykal Fox versus Ray Robinson
-UID:20260221-hanover-maryland-usa-mykal-fox-versus-ray-robinson@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: March 6\, 2026\nLocation: Managua\, Nicaragua\nInfo: Live on ESPN+ and ESPN Deportes | 7:00 PM Local / 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
@@ -93,13 +58,6 @@ DTEND:20260306T040000Z
 DTSTART:20260306T010000Z
 SUMMARY:Steven Butler versus Ramadan Hiseni
 UID:20260305-montreal-quebec-canada-steven-butler-versus-ramadan-hiseni@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 21\, 2026\nLocation: Sonora\, Mexico\nInfo: Live on TBA | 7:00 PM Local / 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260222T030000Z
-DTSTART:20260222T000000Z
-SUMMARY:Camila Zamorano versus Claudia Veronica Ruiz
-UID:20260221-sonora-mexico-camila-zamorano-versus-claudia-veronica-ruiz@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: February 28\, 2026\nLocation: Glendale\, Arizona\, USA\nInfo: Live on DAZN | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
