@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+import sys
+sys.stdout.reconfigure(encoding="utf-8")
+
 import re
 import requests
 from datetime import datetime, timedelta, timezone
@@ -30,19 +34,27 @@ LOCATION_TIMEZONES = {
 CT_ZONE = ZoneInfo("America/Chicago")
 MONTHS_REGEX = r"(January|February|March|April|May|June|July|August|September|October|November|December)"
 
+import cloudscraper
+
 
 def fetch_page_text() -> str:
-    headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/122.0 Safari/537.36"
-        )
-    }
-    resp = requests.get(URL, headers=headers, timeout=30)
+    scraper = cloudscraper.create_scraper(
+        browser={
+            "browser": "chrome",
+            "platform": "windows",
+            "mobile": False,
+        }
+    )
+
+    resp = scraper.get(URL, timeout=30)
+    print(f"DEBUG STATUS: {resp.status_code}")
+    print(f"DEBUG HEADERS: {dict(resp.headers)}")
     resp.raise_for_status()
+    resp.encoding = "utf-8"
+
     soup = BeautifulSoup(resp.text, "html.parser")
-    return soup.get_text(separator=" ")
+    text = soup.get_text(separator="\n")
+    return text
 
 
 def normalize_space(text: str) -> str:
@@ -89,12 +101,13 @@ def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> dat
 
 
 def split_into_cards(text: str) -> list[str]:
-    text = normalize_space(text)
+    # Keep line breaks for easier matching, then normalize later per card
+    # We only care that "Month Day:" appears; ignore any leading emoji/junk.
+    pattern = rf"{MONTHS_REGEX}\s+\d{{1,2}}:"
 
-    pattern = rf"📅\s+{MONTHS_REGEX}\s+\d{{1,2}}:"
     matches = list(re.finditer(pattern, text))
-
     cards: list[str] = []
+
     for i, m in enumerate(matches):
         start = m.start()
         end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
@@ -102,16 +115,20 @@ def split_into_cards(text: str) -> list[str]:
         if segment:
             cards.append(segment)
 
+    print(f"DEBUG: Found {len(cards)} cards")
+    for i, c in enumerate(cards[:10]):
+        print(f"DEBUG CARD {i}: {c[:200].replace(chr(10), ' ')}")
+
     return cards
 
+
 def parse_card(card_text: str):
+    # First, collapse whitespace
     card_text = normalize_space(card_text)
 
-    # Strip leading calendar emoji if present
-    if card_text.startswith("📅"):
-        card_text = card_text[1:].strip()
+    # Strip any junk before the month name (emoji, mojibake, etc.)
+    card_text = re.sub(r"^[^A-Za-z]+", "", card_text).strip()
 
-    # Split date and rest on the first colon
     if ":" not in card_text:
         return None, None, None, None
 
@@ -119,41 +136,32 @@ def parse_card(card_text: str):
     date_part = date_part.strip()
     rest = rest.strip()
 
-    # Basic sanity check: date should look like "February 5"
     if not re.match(rf"^{MONTHS_REGEX}\s+\d{{1,2}}$", date_part):
         return None, None, None, None
 
     current_year = datetime.now(CT_ZONE).year
     date_str = f"{date_part}, {current_year}"
 
-    # Split header (location + info) from fights
     parts = rest.split(")", 1)
     header_part = parts[0] + ")" if len(parts) > 1 else parts[0]
     fights_part = parts[1] if len(parts) > 1 else ""
 
-    # Extract location safely: everything before the first "("
     loc = header_part.split("(", 1)[0].strip()
-
-    # Clean location: keep letters, numbers, spaces, commas, periods, hyphens
     loc = re.sub(r"[^A-Za-z0-9 ,.-]", "", loc).strip()
 
-    # Extract info safely (optional)
     info = None
     if "(" in header_part and ")" in header_part:
         info = header_part.split("(", 1)[1].rsplit(")", 1)[0].strip()
 
-    # Normalize fights block
     fights_part = normalize_space(fights_part)
 
-    # If fights_part is empty, recover from full card text
     if not fights_part.strip():
         m_fallback = re.search(
-            r"[A-Za-z].+?versus.+?(?=📅|$)", card_text, re.I | re.S
+            r"[A-Za-z].+?versus.+?(?=$)", card_text, re.I | re.S
         )
         if m_fallback:
             fights_part = m_fallback.group(0).strip()
 
-    # Extract main fight
     main_fight = None
     if fights_part:
         m_fight = re.search(
@@ -162,11 +170,9 @@ def parse_card(card_text: str):
             re.IGNORECASE,
         )
         if m_fight:
-            main_fight = (
-                f"{m_fight.group(1).strip()} versus {m_fight.group(2).strip()}"
-            )
+            main_fight = f"{m_fight.group(1).strip()} versus {m_fight.group(2).strip()}"
         else:
-            main_fight = fights_part.split("📅")[0].strip()
+            main_fight = fights_part
             if len(main_fight) > 200:
                 main_fight = main_fight[:200] + "..."
 
@@ -177,9 +183,10 @@ def build_events_from_text(text: str) -> list[Event]:
     cards = split_into_cards(text)
     events: list[Event] = []
 
-    for card in cards:
+    for idx, card in enumerate(cards):
         try:
             date_str, location, info, main_fight = parse_card(card)
+            print(f"DEBUG PARSED CARD {idx}: date={date_str}, loc={location}, main_fight={main_fight}")
             if not date_str or not location:
                 continue
 
@@ -221,7 +228,8 @@ def build_events_from_text(text: str) -> list[Event]:
             ev.uid = f"{uid_date}-{slug}@boxing247-calendar"
 
             events.append(ev)
-        except Exception:
+        except Exception as e:
+            print(f"DEBUG ERROR on card {idx}: {e}")
             continue
 
     return events
