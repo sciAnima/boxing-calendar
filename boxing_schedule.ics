@@ -4,27 +4,6 @@ COMMENT:Event data sourced from Boxing247.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Date: February 28\, 2026\nLocation: Derby\, England\nInfo: Live on DAZN | 7:00 PM UK 🇬🇧 / 2:00 PM ET 🇺🇸\nSource: Boxing247.com
-DTEND:20260301T030000Z
-DTSTART:20260301T000000Z
-SUMMARY:Owen Cooper versus Constantin Ursu
-UID:20260228-derby-england-owen-cooper-versus-constantin-ursu@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 27\, 2026\nLocation: Long Beach\, California\nInfo: Live on TrillerTV+ | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260228T040000Z
-DTSTART:20260228T010000Z
-SUMMARY:Ruben Cazales versus Joaquin Lucio
-UID:20260227-long-beach-california-ruben-cazales-versus-joaquin-lucio@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 27\, 2026\nLocation: Arlington\, Texas\nInfo: Live on ProBoxTV | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260228T040000Z
-DTSTART:20260228T010000Z
-SUMMARY:Edward Vazquez versus Grimardi Machuca
-UID:20260227-arlington-texas-edward-vazquez-versus-grimardi-machuca@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: March 7\, 2026\nLocation: Atlantic City\, New Jersey\nInfo: Live on TBA | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
 DTEND:20260308T040000Z
 DTSTART:20260308T010000Z
@@ -32,11 +11,11 @@ SUMMARY:Justin Figueroa versus Gilbert Venegas Jr.
 UID:20260307-atlantic-city-new-jersey-justin-figueroa-versus-gilbert-venegas-jr@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: February 28\, 2026\nLocation: Liverpool\, England\nInfo: Live on TBA | 7:00 PM UK 🇬🇧 / 2:00 PM ET 🇺🇸\nSource: Boxing247.com
-DTEND:20260301T030000Z
-DTSTART:20260301T000000Z
-SUMMARY:Keyvin Lara versus Brandon Daord
-UID:20260228-liverpool-england-keyvin-lara-versus-brandon-daord@boxing247-calendar
+DESCRIPTION:Date: March 8\, 2026\nLocation: Las Vegas\, Nevada\nInfo: Live on Paramount+ | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
+DTEND:20260309T030000Z
+DTSTART:20260309T000000Z
+SUMMARY:Jai Opetaia versus Brandon Glanton
+UID:20260308-las-vegas-nevada-jai-opetaia-versus-brandon-glanton@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: March 7\, 2026\nLocation: Sydney\, Canada\nInfo: Live on TBA | 7:00 PM Local / 6:00 PM ET 🇺🇸 / 11:00 PM UK 🇬🇧\nSource: Boxing247.com
@@ -53,52 +32,10 @@ SUMMARY:Steven Butler versus Ramadan Hiseni
 UID:20260305-montreal-steven-butler-versus-ramadan-hiseni@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: February 28\, 2026\nLocation: Verona\, New York\nInfo: Live on Prime Video | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260301T040000Z
-DTSTART:20260301T010000Z
-SUMMARY:Elijah Pierce versus Lorenzo Parra
-UID:20260228-verona-new-york-elijah-pierce-versus-lorenzo-parra@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: March 8\, 2026\nLocation: Las Vegas\, Nevada\nInfo: Live on Paramount+ | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260309T030000Z
-DTSTART:20260309T000000Z
-SUMMARY:Jai Opetaia versus Brandon Glanton
-UID:20260308-las-vegas-nevada-jai-opetaia-versus-brandon-glanton@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 28\, 2026\nLocation: Glendale\, Arizona\nInfo: Live on DAZN | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260301T040000Z
-DTSTART:20260301T010000Z
-SUMMARY:Emanuel Navarrete versus Eduardo Nunez
-UID:20260228-glendale-arizona-emanuel-navarrete-versus-eduardo-nunez@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: March 6\, 2026\nLocation: Managua\, Nicaragua\nInfo: Live on ESPN+ and ESPN Deportes | 7:00 PM Local / 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
 DTEND:20260307T030000Z
 DTSTART:20260307T000000Z
 SUMMARY:Julio Cabrera versus Gerardo Zapata
 UID:20260306-managua-nicaragua-julio-cabrera-versus-gerardo-zapata@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 28\, 2026\nLocation: Huntington\, New York\nInfo: Live on TBA | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260301T040000Z
-DTSTART:20260301T010000Z
-SUMMARY:Jahi Tucker versus Sona Akale
-UID:20260228-huntington-new-york-jahi-tucker-versus-sona-akale@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 28\, 2026\nLocation: Buenos Aires\, Argentina\nInfo: Live on TBA | 7:00 PM Local / 5:00 PM ET 🇺🇸 / 10:00 PM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260301T030000Z
-DTSTART:20260301T000000Z
-SUMMARY:Moussa Gholam versus Melving Lopez
-UID:20260228-buenos-aires-argentina-moussa-gholam-versus-melving-lopez@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: February 28\, 2026\nLocation: Cranston\, Rhode Island\nInfo: Live on TBA | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260301T040000Z
-DTSTART:20260301T010000Z
-SUMMARY:Lamont Powell versus Rodolfo Puentes
-UID:20260228-cranston-rhode-island-lamont-powell-versus-rodolfo-puentes@boxing247-calendar
 END:VEVENT
 END:VCALENDAR
