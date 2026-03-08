@@ -20,6 +20,7 @@ LOCATION_TIMEZONES = {
     "Scotland": "Europe/London",
     "Wales": "Europe/London",
     "Ireland": "Europe/Dublin",
+    "Northern Ireland": "Europe/London",
     "Mexico": "America/Mexico_City",
     "Australia": "Australia/Brisbane",
     "Puerto Rico": "America/Puerto_Rico",
@@ -29,26 +30,57 @@ LOCATION_TIMEZONES = {
     "United Arab Emirates": "Asia/Dubai",
     "Saudi Arabia": "Asia/Riyadh",
     "Canada": "America/Toronto",
+    "France": "Europe/Paris",
+    "Spain": "Europe/Madrid",
+    "Italy": "Europe/Rome",
+    "Greece": "Europe/Athens",
+    "Egypt": "Africa/Cairo",
+    "Argentina": "America/Argentina/Buenos_Aires",
+    "South Africa": "Africa/Johannesburg",
 }
 
 CT_ZONE = ZoneInfo("America/Chicago")
 MONTHS_REGEX = r"(January|February|March|April|May|June|July|August|September|October|November|December)"
 
-import cloudscraper
+# ── Rotating user-agent list ─────────────────────────────────────────────────
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0",
+]
+
+
+def _pick_agent() -> str:
+    """Pick a user-agent based on the current day of the month so it rotates
+    weekly without needing random state."""
+    return USER_AGENTS[datetime.now().day % len(USER_AGENTS)]
 
 
 def fetch_page_text() -> str:
-    scraper = cloudscraper.create_scraper(
-        browser={
-            "browser": "chrome",
-            "platform": "windows",
-            "mobile": False,
-        }
-    )
+    """Fetch the fight-schedule page using plain requests with realistic headers.
 
-    resp = scraper.get(URL, timeout=30)
+    No cloudscraper needed — the page is server-side rendered HTML.
+    A simple GET with proper Accept/Accept-Language headers is sufficient.
+    """
+    headers = {
+        "User-Agent": _pick_agent(),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Accept-Encoding": "gzip, deflate, br",
+        "DNT": "1",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+        "Cache-Control": "max-age=0",
+        "Referer": "https://www.google.com/",
+    }
+
+    session = requests.Session()
+    session.headers.update(headers)
+
+    resp = session.get(URL, timeout=30)
     print(f"DEBUG STATUS: {resp.status_code}")
-    print(f"DEBUG HEADERS: {dict(resp.headers)}")
     resp.raise_for_status()
     resp.encoding = "utf-8"
 
@@ -56,6 +88,8 @@ def fetch_page_text() -> str:
     text = soup.get_text(separator="\n")
     return text
 
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
 
 def normalize_space(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
@@ -74,37 +108,33 @@ def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> dat
     if not info:
         return None
 
-    m_et = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}ET", info, re.I)
+    # ET / EST / EDT
+    m_et = re.search(r"(\d{1,2}:\d{2}\s*(?:AM|PM)).{0,40}ET", info, re.I)
     if m_et:
-        t = m_et.group(1)
-        dt = datetime.strptime(f"{date_str} {t}", "%B %d, %Y %I:%M %p")
-        dt = dt.replace(tzinfo=ZoneInfo("America/New_York"))
-        return dt.astimezone(CT_ZONE)
+        dt = datetime.strptime(f"{date_str} {m_et.group(1)}", "%B %d, %Y %I:%M %p")
+        return dt.replace(tzinfo=ZoneInfo("America/New_York")).astimezone(CT_ZONE)
 
-    m_uk = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}UK", info, re.I)
+    # UK / BST / GMT
+    m_uk = re.search(r"(\d{1,2}:\d{2}\s*(?:AM|PM)).{0,40}UK", info, re.I)
     if m_uk:
-        t = m_uk.group(1)
-        dt = datetime.strptime(f"{date_str} {t}", "%B %d, %Y %I:%M %p")
-        dt = dt.replace(tzinfo=ZoneInfo("Europe/London"))
-        return dt.astimezone(CT_ZONE)
+        dt = datetime.strptime(f"{date_str} {m_uk.group(1)}", "%B %d, %Y %I:%M %p")
+        return dt.replace(tzinfo=ZoneInfo("Europe/London")).astimezone(CT_ZONE)
 
-    m_local = re.search(r"(\d{1,2}:\d{2}\s*(AM|PM)).{0,40}Local", info, re.I)
+    # Local time — use location to guess TZ
+    m_local = re.search(r"(\d{1,2}:\d{2}\s*(?:AM|PM)).{0,40}Local", info, re.I)
     if m_local:
-        t = m_local.group(1)
         tz = infer_timezone_from_location(location)
         if tz:
-            dt = datetime.strptime(f"{date_str} {t}", "%B %d, %Y %I:%M %p")
-            dt = dt.replace(tzinfo=tz)
-            return dt.astimezone(CT_ZONE)
+            dt = datetime.strptime(f"{date_str} {m_local.group(1)}", "%B %d, %Y %I:%M %p")
+            return dt.replace(tzinfo=tz).astimezone(CT_ZONE)
 
     return None
 
 
-def split_into_cards(text: str) -> list[str]:
-    # Keep line breaks for easier matching, then normalize later per card
-    # We only care that "Month Day:" appears; ignore any leading emoji/junk.
-    pattern = rf"{MONTHS_REGEX}\s+\d{{1,2}}:"
+# ── Parsing ───────────────────────────────────────────────────────────────────
 
+def split_into_cards(text: str) -> list[str]:
+    pattern = rf"{MONTHS_REGEX}\s+\d{{1,2}}:"
     matches = list(re.finditer(pattern, text))
     cards: list[str] = []
 
@@ -116,17 +146,14 @@ def split_into_cards(text: str) -> list[str]:
             cards.append(segment)
 
     print(f"DEBUG: Found {len(cards)} cards")
-    for i, c in enumerate(cards[:10]):
+    for i, c in enumerate(cards[:5]):
         print(f"DEBUG CARD {i}: {c[:200].replace(chr(10), ' ')}")
 
     return cards
 
 
 def parse_card(card_text: str):
-    # First, collapse whitespace
     card_text = normalize_space(card_text)
-
-    # Strip any junk before the month name (emoji, mojibake, etc.)
     card_text = re.sub(r"^[^A-Za-z]+", "", card_text).strip()
 
     if ":" not in card_text:
@@ -155,29 +182,28 @@ def parse_card(card_text: str):
 
     fights_part = normalize_space(fights_part)
 
+    # Fallback: grab any "X versus Y" pattern from the full card text
     if not fights_part.strip():
-        m_fallback = re.search(
-            r"[A-Za-z].+?versus.+?(?=$)", card_text, re.I | re.S
-        )
+        m_fallback = re.search(r"[A-Za-z].+?versus.+?(?=$)", card_text, re.I | re.S)
         if m_fallback:
             fights_part = m_fallback.group(0).strip()
 
     main_fight = None
     if fights_part:
         m_fight = re.search(
-            r"([A-Z][A-Za-zÀ-ÖØ-öø-ÿ'’\-\. ]+?)\s+(?:versus|vs\.?|v\.?)\s+([A-Z][A-Za-zÀ-ÖØ-öø-ÿ'’\-\. ]+)",
+            r"([A-Z][A-Za-zÀ-ÖØ-öø-ÿ''\-\. ]+?)\s+(?:versus|vs\.?|v\.?)\s+([A-Z][A-Za-zÀ-ÖØ-öø-ÿ''\-\. ]+)",
             fights_part,
             re.IGNORECASE,
         )
         if m_fight:
             main_fight = f"{m_fight.group(1).strip()} versus {m_fight.group(2).strip()}"
         else:
-            main_fight = fights_part
-            if len(main_fight) > 200:
-                main_fight = main_fight[:200] + "..."
+            main_fight = fights_part[:200] + ("..." if len(fights_part) > 200 else "")
 
     return date_str, loc, info, main_fight
 
+
+# ── Calendar builder ──────────────────────────────────────────────────────────
 
 def build_events_from_text(text: str) -> list[Event]:
     cards = split_into_cards(text)
@@ -204,7 +230,6 @@ def build_events_from_text(text: str) -> list[Event]:
                 )
 
             end_dt_ct = start_dt_ct + timedelta(hours=3)
-
             start_utc = start_dt_ct.astimezone(timezone.utc)
             end_utc = end_dt_ct.astimezone(timezone.utc)
 
@@ -235,11 +260,13 @@ def build_events_from_text(text: str) -> list[Event]:
     return events
 
 
+# ── Entry point ───────────────────────────────────────────────────────────────
+
 def main():
     print("Fetching Boxing247 schedule...")
     text = fetch_page_text()
-    print("DEBUG: First 5000 characters of scraped text:")
-    print(text[:5000])
+    print(f"DEBUG: Fetched {len(text)} characters")
+
     print("Building events...")
     events = build_events_from_text(text)
 
@@ -250,10 +277,11 @@ def main():
     for ev in events:
         cal.events.add(ev)
 
-    with open("boxing_schedule.ics", "w", encoding="utf-8") as f:
+    output_path = "boxing_schedule.ics"
+    with open(output_path, "w", encoding="utf-8") as f:
         f.writelines(cal)
 
-    print(f"Wrote {len(events)} events to boxing_schedule.ics")
+    print(f"\n✅ Wrote {len(events)} events to {output_path}")
 
 
 if __name__ == "__main__":
