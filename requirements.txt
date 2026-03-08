@@ -1,4 +1,3 @@
-cloudscraper
-playwright
-bs4
+requests
+beautifulsoup4
 ics
