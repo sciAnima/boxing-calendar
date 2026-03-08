@@ -40,9 +40,7 @@ LOCATION_TIMEZONES = {
 }
 
 CT_ZONE = ZoneInfo("America/Chicago")
-MONTHS_REGEX = r"(January|February|March|April|May|June|July|August|September|October|November|December)"
 
-# ── Rotating user-agent list ─────────────────────────────────────────────────
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
@@ -51,51 +49,47 @@ USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0",
 ]
 
+MONTHS = (
+    "January|February|March|April|May|June|"
+    "July|August|September|October|November|December"
+)
 
-def _pick_agent() -> str:
-    """Pick a user-agent based on the current day of the month so it rotates
-    weekly without needing random state."""
-    return USER_AGENTS[datetime.now().day % len(USER_AGENTS)]
+# Matches header lines like:
+# 📅 March 8: Las Vegas, Nevada (Live on DAZN | 8:00 PM ET / 1:00 AM UK)
+CARD_HEADER_RE = re.compile(
+    rf"""
+    (?:📅\s*)?                       # optional calendar emoji
+    ({MONTHS})\s+(\d{{1,2}})         # group1=month  group2=day
+    \s*:\s*
+    ([^(\n]+?)                       # group3=location (before paren)
+    \s*
+    (?:\(([^)]*)\))?                 # group4=optional broadcast info in parens
+    \s*$
+    """,
+    re.VERBOSE | re.MULTILINE,
+)
 
 
-def fetch_page_text() -> str:
-    """Fetch the fight-schedule page using plain requests with realistic headers.
-
-    No cloudscraper needed — the page is server-side rendered HTML.
-    A simple GET with proper Accept/Accept-Language headers is sufficient.
-    """
+def fetch_html() -> str:
     headers = {
-        "User-Agent": _pick_agent(),
+        "User-Agent": USER_AGENTS[datetime.now().day % len(USER_AGENTS)],
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.9",
         "Accept-Encoding": "gzip, deflate, br",
         "DNT": "1",
         "Connection": "keep-alive",
         "Upgrade-Insecure-Requests": "1",
-        "Cache-Control": "max-age=0",
         "Referer": "https://www.google.com/",
     }
-
     session = requests.Session()
     session.headers.update(headers)
-
     resp = session.get(URL, timeout=30)
-    print(f"DEBUG STATUS: {resp.status_code}")
+    print(f"HTTP {resp.status_code}")
     resp.raise_for_status()
-    resp.encoding = "utf-8"
-
-    soup = BeautifulSoup(resp.text, "html.parser")
-    text = soup.get_text(separator="\n")
-    return text
+    return resp.text
 
 
-# ── Helpers ───────────────────────────────────────────────────────────────────
-
-def normalize_space(text: str) -> str:
-    return re.sub(r"\s+", " ", text).strip()
-
-
-def infer_timezone_from_location(location: str) -> ZoneInfo | None:
+def infer_tz(location: str) -> ZoneInfo | None:
     if not location:
         return None
     for key, tz in LOCATION_TIMEZONES.items():
@@ -104,184 +98,157 @@ def infer_timezone_from_location(location: str) -> ZoneInfo | None:
     return None
 
 
-def extract_ringwalk_time(info: str | None, date_str: str, location: str) -> datetime | None:
-    if not info:
-        return None
+def extract_time(info: str, date_str: str, location: str) -> datetime | None:
+    """Parse start time from broadcast info string, return as CT datetime."""
+    for pat, tz_name in [
+        (r"(\d{1,2}:\d{2}\s*(?:AM|PM)).*?ET", "America/New_York"),
+        (r"(\d{1,2}:\d{2}\s*(?:AM|PM)).*?UK", "Europe/London"),
+    ]:
+        m = re.search(pat, info, re.I)
+        if m:
+            try:
+                time_str = re.sub(r"\s+", "", m.group(1)).upper()  # "8:00PM"
+                dt = datetime.strptime(f"{date_str} {time_str}", "%B %d, %Y %I:%M%p")
+                return dt.replace(tzinfo=ZoneInfo(tz_name)).astimezone(CT_ZONE)
+            except ValueError:
+                continue
 
-    # ET / EST / EDT
-    m_et = re.search(r"(\d{1,2}:\d{2}\s*(?:AM|PM)).{0,40}ET", info, re.I)
-    if m_et:
-        dt = datetime.strptime(f"{date_str} {m_et.group(1)}", "%B %d, %Y %I:%M %p")
-        return dt.replace(tzinfo=ZoneInfo("America/New_York")).astimezone(CT_ZONE)
-
-    # UK / BST / GMT
-    m_uk = re.search(r"(\d{1,2}:\d{2}\s*(?:AM|PM)).{0,40}UK", info, re.I)
-    if m_uk:
-        dt = datetime.strptime(f"{date_str} {m_uk.group(1)}", "%B %d, %Y %I:%M %p")
-        return dt.replace(tzinfo=ZoneInfo("Europe/London")).astimezone(CT_ZONE)
-
-    # Local time — use location to guess TZ
-    m_local = re.search(r"(\d{1,2}:\d{2}\s*(?:AM|PM)).{0,40}Local", info, re.I)
-    if m_local:
-        tz = infer_timezone_from_location(location)
+    m = re.search(r"(\d{1,2}:\d{2}\s*(?:AM|PM)).*?Local", info, re.I)
+    if m:
+        tz = infer_tz(location)
         if tz:
-            dt = datetime.strptime(f"{date_str} {m_local.group(1)}", "%B %d, %Y %I:%M %p")
-            return dt.replace(tzinfo=tz).astimezone(CT_ZONE)
+            try:
+                time_str = re.sub(r"\s+", "", m.group(1)).upper()
+                dt = datetime.strptime(f"{date_str} {time_str}", "%B %d, %Y %I:%M%p")
+                return dt.replace(tzinfo=tz).astimezone(CT_ZONE)
+            except ValueError:
+                pass
 
     return None
 
 
-# ── Parsing ───────────────────────────────────────────────────────────────────
-
-def split_into_cards(text: str) -> list[str]:
-    pattern = rf"{MONTHS_REGEX}\s+\d{{1,2}}:"
-    matches = list(re.finditer(pattern, text))
-    cards: list[str] = []
-
-    for i, m in enumerate(matches):
-        start = m.start()
-        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
-        segment = text[start:end].strip()
-        if segment:
-            cards.append(segment)
-
-    print(f"DEBUG: Found {len(cards)} cards")
-    for i, c in enumerate(cards[:5]):
-        print(f"DEBUG CARD {i}: {c[:200].replace(chr(10), ' ')}")
-
-    return cards
+def strip_emoji(s: str) -> str:
+    """Remove emoji and flag characters, keep readable ASCII + accented latin."""
+    return re.sub(r"[^\x20-\x7EÀ-ÖØ-öø-ÿ''\-\.,/|: ]", "", s).strip()
 
 
-def parse_card(card_text: str):
-    card_text = normalize_space(card_text)
-    card_text = re.sub(r"^[^A-Za-z]+", "", card_text).strip()
+def parse_schedule(html: str) -> list[Event]:
+    soup = BeautifulSoup(html, "html.parser")
 
-    if ":" not in card_text:
-        return None, None, None, None
+    # Target the main post content to avoid nav/sidebar noise
+    content = soup.find("div", class_=re.compile(r"entry|post|content|article", re.I))
+    if not content:
+        print("WARNING: Could not isolate content div, using full page")
+        content = soup
 
-    date_part, rest = card_text.split(":", 1)
-    date_part = date_part.strip()
-    rest = rest.strip()
-
-    if not re.match(rf"^{MONTHS_REGEX}\s+\d{{1,2}}$", date_part):
-        return None, None, None, None
-
+    lines = content.get_text(separator="\n").split("\n")
     current_year = datetime.now(CT_ZONE).year
-    date_str = f"{date_part}, {current_year}"
-
-    parts = rest.split(")", 1)
-    header_part = parts[0] + ")" if len(parts) > 1 else parts[0]
-    fights_part = parts[1] if len(parts) > 1 else ""
-
-    loc = header_part.split("(", 1)[0].strip()
-    loc = re.sub(r"[^A-Za-z0-9 ,.-]", "", loc).strip()
-
-    info = None
-    if "(" in header_part and ")" in header_part:
-        info = header_part.split("(", 1)[1].rsplit(")", 1)[0].strip()
-
-    fights_part = normalize_space(fights_part)
-
-    # Fallback: grab any "X versus Y" pattern from the full card text
-    if not fights_part.strip():
-        m_fallback = re.search(r"[A-Za-z].+?versus.+?(?=$)", card_text, re.I | re.S)
-        if m_fallback:
-            fights_part = m_fallback.group(0).strip()
-
-    main_fight = None
-    if fights_part:
-        m_fight = re.search(
-            r"([A-Z][A-Za-zÀ-ÖØ-öø-ÿ''\-\. ]+?)\s+(?:versus|vs\.?|v\.?)\s+([A-Z][A-Za-zÀ-ÖØ-öø-ÿ''\-\. ]+)",
-            fights_part,
-            re.IGNORECASE,
-        )
-        if m_fight:
-            main_fight = f"{m_fight.group(1).strip()} versus {m_fight.group(2).strip()}"
-        else:
-            main_fight = fights_part[:200] + ("..." if len(fights_part) > 200 else "")
-
-    return date_str, loc, info, main_fight
-
-
-# ── Calendar builder ──────────────────────────────────────────────────────────
-
-def build_events_from_text(text: str) -> list[Event]:
-    cards = split_into_cards(text)
     events: list[Event] = []
 
-    for idx, card in enumerate(cards):
-        try:
-            date_str, location, info, main_fight = parse_card(card)
-            print(f"DEBUG PARSED CARD {idx}: date={date_str}, loc={location}, main_fight={main_fight}")
-            if not date_str or not location:
-                continue
+    i = 0
+    while i < len(lines):
+        raw_line = lines[i].strip()
+        # Strip emoji before trying to match
+        line = strip_emoji(raw_line)
+        m = CARD_HEADER_RE.match(line)
 
-            start_dt_ct = extract_ringwalk_time(info or "", date_str, location)
+        if m:
+            month    = m.group(1)
+            day      = m.group(2)
+            location = strip_emoji(m.group(3)).strip()
+            info     = strip_emoji(m.group(4) or "").strip()
+            date_str = f"{month} {day}, {current_year}"
 
-            if not start_dt_ct:
-                base_date = datetime.strptime(date_str, "%B %d, %Y")
-                start_dt_ct = datetime(
-                    year=base_date.year,
-                    month=base_date.month,
-                    day=base_date.day,
-                    hour=21,
-                    minute=0,
-                    tzinfo=CT_ZONE,
+            # Collect fight bullet lines that follow this header
+            fight_lines = []
+            i += 1
+            while i < len(lines):
+                next_raw = lines[i].strip()
+                next_line = strip_emoji(next_raw)
+                # Stop at next card header or horizontal rule
+                if CARD_HEADER_RE.match(next_line) or re.match(r"^-{3,}$", next_line):
+                    break
+                if re.search(r"\bversus\b|\bvs\.?\b", next_line, re.I):
+                    fight_lines.append(next_line)
+                i += 1
+
+            # --- Start time ---
+            start_ct = extract_time(info, date_str, location) if info else None
+            if not start_ct:
+                base = datetime.strptime(date_str, "%B %d, %Y")
+                start_ct = datetime(base.year, base.month, base.day, 21, 0, tzinfo=CT_ZONE)
+
+            end_ct    = start_ct + timedelta(hours=3)
+            start_utc = start_ct.astimezone(timezone.utc)
+            end_utc   = end_ct.astimezone(timezone.utc)
+
+            # --- Main event name: first fight listed ---
+            if fight_lines:
+                fl = re.sub(r"^\s*[*\-•]\s*", "", fight_lines[0])
+                vm = re.search(
+                    r"(.+?)\s+(?:versus|vs\.?)\s+(.+?)(?:,\s*\d|$)", fl, re.I
                 )
+                main_event = (
+                    f"{vm.group(1).strip()} versus {vm.group(2).strip()}"
+                    if vm else fl[:120]
+                )
+            else:
+                main_event = f"Boxing – {location}"
 
-            end_dt_ct = start_dt_ct + timedelta(hours=3)
-            start_utc = start_dt_ct.astimezone(timezone.utc)
-            end_utc = end_dt_ct.astimezone(timezone.utc)
+            undercard = "\n".join(
+                re.sub(r"^\s*[*\-•]\s*", "", fl) for fl in fight_lines
+            )
 
             ev = Event()
-            ev.name = main_fight if main_fight else f"Boxing card – {location}"
-            ev.begin = start_utc
-            ev.end = end_utc
-
-            desc_parts = [
+            ev.name        = main_event
+            ev.begin       = start_utc
+            ev.end         = end_utc
+            ev.description = "\n".join(filter(None, [
                 f"Date: {date_str}",
                 f"Location: {location}",
-            ]
-            if info:
-                desc_parts.append(f"Info: {info}")
-            desc_parts.append("Source: Boxing247.com")
-            ev.description = "\n".join(desc_parts)
+                f"Broadcast: {info}" if info else "",
+                "",
+                undercard,
+                "",
+                "Source: Boxing247.com",
+            ]))
 
-            slug_base = f"{location} {main_fight}" if main_fight else location
-            slug = re.sub(r"[^a-zA-Z0-9]+", "-", slug_base).strip("-").lower()
+            slug     = re.sub(r"[^a-z0-9]+", "-", f"{location} {main_event}".lower()).strip("-")
             uid_date = datetime.strptime(date_str, "%B %d, %Y").strftime("%Y%m%d")
-            ev.uid = f"{uid_date}-{slug}@boxing247-calendar"
+            ev.uid   = f"{uid_date}-{slug}@boxing247-calendar"
 
             events.append(ev)
-        except Exception as e:
-            print(f"DEBUG ERROR on card {idx}: {e}")
-            continue
+            print(f"  + {date_str} | {location} | {main_event}")
+
+        else:
+            i += 1
 
     return events
 
 
-# ── Entry point ───────────────────────────────────────────────────────────────
-
 def main():
     print("Fetching Boxing247 schedule...")
-    text = fetch_page_text()
-    print(f"DEBUG: Fetched {len(text)} characters")
+    html = fetch_html()
 
-    print("Building events...")
-    events = build_events_from_text(text)
+    print("Parsing events...")
+    events = parse_schedule(html)
+
+    if not events:
+        print("\n[DEBUG] No events found. First 3000 chars of page text:")
+        soup = BeautifulSoup(html, "html.parser")
+        print(soup.get_text(separator="\n")[:3000])
 
     cal = Calendar()
     cal.extra.append(ContentLine(name="CALSCALE", value="GREGORIAN"))
     cal.extra.append(ContentLine(name="COMMENT", value="Event data sourced from Boxing247.com"))
-
     for ev in events:
         cal.events.add(ev)
 
-    output_path = "boxing_schedule.ics"
-    with open(output_path, "w", encoding="utf-8") as f:
+    output = "boxing_schedule.ics"
+    with open(output, "w", encoding="utf-8") as f:
         f.writelines(cal)
 
-    print(f"\n✅ Wrote {len(events)} events to {output_path}")
+    print(f"\nDone — {len(events)} events written to {output}")
 
 
 if __name__ == "__main__":
