@@ -3,39 +3,4 @@ CALSCALE:GREGORIAN
 COMMENT:Event data sourced from Boxing247.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
-BEGIN:VEVENT
-DESCRIPTION:Date: March 7\, 2026\nLocation: Atlantic City\, New Jersey\nInfo: Live on TBA | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260308T040000Z
-DTSTART:20260308T010000Z
-SUMMARY:Justin Figueroa versus Gilbert Venegas Jr.
-UID:20260307-atlantic-city-new-jersey-justin-figueroa-versus-gilbert-venegas-jr@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: March 8\, 2026\nLocation: Las Vegas\, Nevada\nInfo: Live on Paramount+ | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260309T030000Z
-DTSTART:20260309T000000Z
-SUMMARY:Jai Opetaia versus Brandon Glanton
-UID:20260308-las-vegas-nevada-jai-opetaia-versus-brandon-glanton@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: March 7\, 2026\nLocation: Sydney\, Canada\nInfo: Live on TBA | 7:00 PM Local / 6:00 PM ET 🇺🇸 / 11:00 PM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260308T030000Z
-DTSTART:20260308T000000Z
-SUMMARY:Ryan Rozicki versus Gerardo Mellado
-UID:20260307-sydney-canada-ryan-rozicki-versus-gerardo-mellado@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: March 5\, 2026\nLocation: Montreal\nInfo: Live on DAZN | 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260306T040000Z
-DTSTART:20260306T010000Z
-SUMMARY:Steven Butler versus Ramadan Hiseni
-UID:20260305-montreal-steven-butler-versus-ramadan-hiseni@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: March 6\, 2026\nLocation: Managua\, Nicaragua\nInfo: Live on ESPN+ and ESPN Deportes | 7:00 PM Local / 8:00 PM ET 🇺🇸 / 1:00 AM UK 🇬🇧\nSource: Boxing247.com
-DTEND:20260307T030000Z
-DTSTART:20260307T000000Z
-SUMMARY:Julio Cabrera versus Gerardo Zapata
-UID:20260306-managua-nicaragua-julio-cabrera-versus-gerardo-zapata@boxing247-calendar
-END:VEVENT
 END:VCALENDAR
