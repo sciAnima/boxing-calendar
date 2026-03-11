@@ -46,13 +46,6 @@ SUMMARY:Callum Smith versus David Morrell
 UID:20260418-liverpool-england-callum-smith-versus-david-morrell@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 8\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Paramount+ | 8:00 PM ET  / 1:00 AM UK\nJai Opetaia versus Brandon Glanton\, 12 rds\, for Opetaias lineal/IBF cruiserweight title\nRicardo Salas versus Jesus Saracho\, 10 rds\, welterweights\nAdan Palma versus Pablo Rubio Jr.\, 8 rds\, featherweights\nVlad Panin versus Shinard Bunch\, 10 rds\, welterweights\nJoshua Juarez versus Jardae Anderson\, 8 rds\, heavyweights\nSource: Boxing247.com
-DTEND:20260309T030000Z
-DTSTART:20260309T000000Z
-SUMMARY:Jai Opetaia versus Brandon Glanton
-UID:20260308-las-vegas-nevada-jai-opetaia-versus-brandon-glanton@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: April 25\, 2026\nLocation: Kolding\, Denmark\nBroadcast: Live on DAZN | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nJacob Bank versus Paulinus Ndjolonimu\, 12 rds\, WBC super middleweight eliminator\nSource: Boxing247.com
 DTEND:20260426T020000Z
 DTSTART:20260425T230000Z
@@ -270,7 +263,7 @@ SUMMARY:Canelo Alvarez versus TBA
 UID:20260912-riyadh-saudi-arabia-canelo-alvarez-versus-tba@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 14\, 2026\nLocation: Anaheim\, California\nBroadcast: Live on DAZN | 8:00 PM ET  / 1:00 AM UK\nArnold Barboza Jr. versus Kenneth Sims Jr.\, 12 rds\, welterweights\nOscar Collazo versus Jesus Haro\, 12 rds\, for Collazos WBO/WBA strawweight title\nGabriela Fundora versus Viviana Ruiz Corredor\, 10 rds\, for Fundoras undisputed womens flyweight title\nAlexis Rocha versus Joseph Diaz Jr.\, 10 rds\, welterweights\nJoel Iriarte versus Rock Myrthil\, 8 rds\, welterweights\nGrant Flores versus TBA\, 8 rds\, junior middleweights\nCayden Griffiths versus TBA\, 6 rds\, welterweights\nDylan Capetillo versus TBA\, 4 rds\, junior welterweights\nFabian Guzman versus Julian Delgado\, 8 rds\, middleweights\nDaniel Garcia versus Blas Caro\, 8 rds\, lightweights\nLeonardo Sanchez versus TBA\, 6 rds\, junior lightweights\nSource: Boxing247.com
+DESCRIPTION:Date: March 14\, 2026\nLocation: Anaheim\, California\nBroadcast: Live on DAZN | 8:00 PM ET  / 1:00 AM UK\nArnold Barboza Jr. versus Kenneth Sims Jr.\, 12 rds\, welterweights\nOscar Collazo versus Jesus Haro\, 12 rds\, for Collazos WBO/WBA strawweight title\nGabriela Fundora versus Viviana Ruiz Corredor\, 10 rds\, for Fundoras undisputed womens flyweight title\nAlexis Rocha versus Joseph Diaz Jr.\, 10 rds\, welterweights\nJoel Iriarte versus Rock Myrthil\, 8 rds\, welterweights\nGrant Flores versus TBA\, 8 rds\, junior middleweights\nCayden Griffiths versus TBA\, 6 rds\, welterweights\nSource: Boxing247.com
 DTEND:20260315T030000Z
 DTSTART:20260315T000000Z
 SUMMARY:Arnold Barboza Jr. versus Kenneth Sims Jr.
@@ -284,7 +277,7 @@ SUMMARY:Thanongsak Simsri versus Sergio Mendoza
 UID:20260413-tokyo-japan-thanongsak-simsri-versus-sergio-mendoza@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 14\, 2026\nLocation: Dublin\, Ireland\nBroadcast: Live on DAZN | 7:00 PM UK  / 2:00 PM ET\nJames Dickens versus Anthony Cacace\, 12 rds\, for Dickens WBA junior lightweight title\nPierce OLeary versus Maxi Hughes\, 12 rds\, junior welterweights\nJono Carroll versus Colm Murphy\, 12 rds\, junior lightweights\nGary Cully versus Benito Sanchez Garcia\, 10 rds\, junior welterweights\nAdam Olaniyan versus TBA\, 4 rds\, heavyweights\nSteven Cairns versus Arnie Dawson\, 10 rds\, lightweights\nEoghan Lavin versus Liam Walsh\, 8 rds\, middleweights\nRyan Garner versus TBA\, 8 rds\, junior lightweights\nBarry McReynolds versus Jonatas Rodrigo Gomes de Oliveira\, 4 rds\, junior welterweights\nDavey Joyce versus TBA\, 4 rds\, junior lightweights\nBobbi Flood versus Bela Istvan Orban\, 4 rds\, middleweights\nThomas Carty versus German Skobenko\, 8 rds\, heavyweights\nSource: Boxing247.com
+DESCRIPTION:Date: March 14\, 2026\nLocation: Dublin\, Ireland\nBroadcast: Live on DAZN | 7:00 PM UK  / 2:00 PM ET\nJames Dickens versus Anthony Cacace\, 12 rds\, for Dickens WBA junior lightweight title\nPierce OLeary versus Maxi Hughes\, 12 rds\, junior welterweights\nJono Carroll versus Colm Murphy\, 12 rds\, junior lightweights\nGary Cully versus Benito Sanchez Garcia\, 10 rds\, junior welterweights\nAdam Olaniyan versus TBA\, 4 rds\, heavyweights\nSteven Cairns versus Arnie Dawson\, 10 rds\, lightweights\nEoghan Lavin versus Liam Walsh\, 8 rds\, middleweights\nSource: Boxing247.com
 DTEND:20260315T020000Z
 DTSTART:20260314T230000Z
 SUMMARY:James Dickens versus Anthony Cacace
@@ -305,7 +298,7 @@ SUMMARY:Jose Luis Navarro versus Oliver Zaren
 UID:20260523-tba-spain-jose-luis-navarro-versus-oliver-zaren@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 13\, 2026\nLocation: Kissimmee\, Florida\nBroadcast: Live on ProBoxTV | 8:00 PM ET  / 1:00 AM UK\nNajee Lopez versus Manuel Gallegos\, 10 rds\, light heavyweights\nDominic Valle versus Eduardo Ramirez\, 10 rds\, junior lightweights\nDante Benjamin versus Angel Lozano\, 8 rds\, light heavyweights\nKenyan Valle versus Anel Dudo\, 6 rds\, junior featherweights\nChristian Chessa versus TBA\, 6 rds\, junior bantamweights\nJeovanny Estela versus Jorge Rodrigo Sosa\, 6 rds\, junior middleweights\nMiguel Paredes versus Shaquille Rushing\, 6 rds\, lightweights\nSource: Boxing247.com
+DESCRIPTION:Date: March 13\, 2026\nLocation: Kissimmee\, Florida\nBroadcast: Live on ProBoxTV | 8:00 PM ET  / 1:00 AM UK\nNajee Lopez versus Manuel Gallegos\, 10 rds\, light heavyweights\nDominic Valle versus Eduardo Ramirez\, 10 rds\, junior lightweights\nDante Benjamin versus Angel Lozano\, 8 rds\, light heavyweights\nSource: Boxing247.com
 DTEND:20260314T030000Z
 DTSTART:20260314T000000Z
 SUMMARY:Najee Lopez versus Manuel Gallegos
@@ -389,7 +382,7 @@ SUMMARY:Naoya Inoue versus Junto Nakatani
 UID:20260502-tokyo-japan-naoya-inoue-versus-junto-nakatani@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: September 19\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Netflix | 8:00 PM ET  / 1:00 AM UK\nFloyd Mayweather versus Manny Pacquiao\, rematch\, 10 or 12 rds\, welterweights\nOleksandr Usyk vs. Rico Verhoeven: May 23\, Start Time\, Undercard\, How to Watch\nJai Opetaia vs. Brandon Glanton: March 8\, Start Time\, Undercard\, How to Watch\nTony Yoka vs. Lawrence Okolie: April 25\, Start Time\, Undercard\, How to Watch\nArnold Barboza Jr. vs. Kenneth Sims Jr.: March 14\, Start Time\, Undercard\, How to Watch\nMoses Itauma vs Jermaine Franklin: March 28\, Start Time\, Undercard\, How to Watch\nSource: Boxing247.com
+DESCRIPTION:Date: September 19\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Netflix | 8:00 PM ET  / 1:00 AM UK\nFloyd Mayweather versus Manny Pacquiao\, rematch\, 10 or 12 rds\, welterweights\nJazza Dickens vs. Anthony Cacace: March 14\, Start Time\, Undercard\, How to Watch\nArnold Barboza Jr. vs. Kenneth Sims Jr.: March 14\, Start Time\, Undercard\, How to Watch\nOleksandr Usyk vs. Rico Verhoeven: May 23\, Start Time\, Undercard\, How to Watch\nJai Opetaia vs. Brandon Glanton: March 8\, Start Time\, Undercard\, How to Watch\nTony Yoka vs. Lawrence Okolie: April 25\, Start Time\, Undercard\, How to Watch\nSource: Boxing247.com
 DTEND:20260920T030000Z
 DTSTART:20260920T000000Z
 SUMMARY:Floyd Mayweather versus Manny Pacquiao\, rematch
