@@ -54,19 +54,9 @@ MONTHS = (
     "July|August|September|October|November|December"
 )
 
-# Matches header lines like:
-# 📅 March 8: Las Vegas, Nevada (Live on DAZN | 8:00 PM ET / 1:00 AM UK)
-CARD_HEADER_RE = re.compile(
-    rf"""
-    (?:📅\s*)?                       # optional calendar emoji
-    ({MONTHS})\s+(\d{{1,2}})         # group1=month  group2=day
-    \s*:\s*
-    ([^(\n]+?)                       # group3=location (before paren)
-    \s*
-    (?:\(([^)]*)\))?                 # group4=optional broadcast info in parens
-    \s*$
-    """,
-    re.VERBOSE | re.MULTILINE,
+# Matches: "March 14: Dublin, Ireland"  (after emoji/whitespace stripped)
+HEADER_DATE_RE = re.compile(
+    rf"({MONTHS})\s+(\d{{1,2}})\s*:\s*(.+)"
 )
 
 
@@ -87,6 +77,11 @@ def fetch_html() -> str:
     print(f"HTTP {resp.status_code}")
     resp.raise_for_status()
     return resp.text
+
+
+def strip_emoji(s: str) -> str:
+    """Remove emoji/flags, keep ASCII + accented latin."""
+    return re.sub(r"[^\x20-\x7EÀ-ÖØ-öø-ÿ''\-\.,/|:()\s]", "", s).strip()
 
 
 def infer_tz(location: str) -> ZoneInfo | None:
@@ -127,137 +122,115 @@ def extract_time(info: str, date_str: str, location: str) -> datetime | None:
     return None
 
 
-def strip_emoji(s: str) -> str:
-    """Remove emoji and flag characters, keep readable ASCII + accented latin."""
-    return re.sub(r"[^\x20-\x7EÀ-ÖØ-öø-ÿ''\-\.,/|: ]", "", s).strip()
-
-
-def join_continuation_lines(lines: list[str]) -> list[str]:
-    """Join lines where a header ends with '(' and the next line has the closing ')'.
-    e.g.  '📅 March 14: Dublin, Ireland ('
-          'Live on DAZN | 7:00 PM UK / 2:00 PM ET)'
-    becomes one line.
-    """
-    joined = []
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-        stripped = line.strip()
-        # If line ends with '(' and next line exists, merge until we find ')'
-        if stripped.endswith("(") and i + 1 < len(lines):
-            merged = stripped
-            i += 1
-            while i < len(lines):
-                next_part = lines[i].strip()
-                merged = merged + next_part
-                i += 1
-                if ")" in next_part:
-                    break
-            joined.append(merged)
-        else:
-            joined.append(line)
-            i += 1
-    return joined
-
-
 def parse_schedule(html: str) -> list[Event]:
+    """Parse using HTML structure (<strong> headers + <li> fight lines)
+    instead of plain text — immune to line-splitting and whitespace quirks."""
+
     soup = BeautifulSoup(html, "html.parser")
 
-    # Target the main post content to avoid nav/sidebar noise
+    # Find the main content div
     content = soup.find("div", class_=re.compile(r"entry|post|content|article", re.I))
     if not content:
         print("WARNING: Could not isolate content div, using full page")
         content = soup
 
-    # Replace <a> tags with their text so hyperlinked words like "DAZN"
-    # don't break the broadcast info paren matching
-    for a in content.find_all("a"):
-        a.replace_with(a.get_text())
-
-    raw_lines = content.get_text(separator="\n").split("\n")
-
-    # Merge split header lines before parsing
-    lines = join_continuation_lines(raw_lines)
-
     current_year = datetime.now(CT_ZONE).year
     events: list[Event] = []
 
-    i = 0
-    while i < len(lines):
-        raw_line = lines[i].strip()
-        line = strip_emoji(raw_line)
-        m = CARD_HEADER_RE.match(line)
+    # Every card header is a <strong> tag inside a <p> tag.
+    # We walk all <strong> tags, check if they look like a card header,
+    # then collect the <li> siblings that follow until the next <strong>.
+    for strong in content.find_all("strong"):
+        # Get full text of the <strong> tag, stripping emoji/flags
+        raw_header = strong.get_text(separator=" ")
+        header = strip_emoji(raw_header).strip()
 
-        if m:
-            month    = m.group(1)
-            day      = m.group(2)
-            location = strip_emoji(m.group(3)).strip()
-            info     = strip_emoji(m.group(4) or "").strip()
-            date_str = f"{month} {day}, {current_year}"
+        m = HEADER_DATE_RE.match(header)
+        if not m:
+            continue
 
-            # Collect fight bullet lines that follow this header
-            fight_lines = []
-            i += 1
-            while i < len(lines):
-                next_raw = lines[i].strip()
-                next_line = strip_emoji(next_raw)
-                # Stop at next card header or horizontal rule
-                if CARD_HEADER_RE.match(next_line) or re.match(r"^-{3,}$", next_line):
-                    break
-                if re.search(r"\bversus\b|\bvs\.?\b", next_line, re.I):
-                    fight_lines.append(next_line)
-                i += 1
+        month    = m.group(1)
+        day      = m.group(2)
+        rest     = m.group(3).strip()  # "Dublin, Ireland (Live on DAZN | 7:00 PM UK...)"
+        date_str = f"{month} {day}, {current_year}"
 
-            # --- Start time ---
-            start_ct = extract_time(info, date_str, location) if info else None
-            if not start_ct:
-                base = datetime.strptime(date_str, "%B %d, %Y")
-                start_ct = datetime(base.year, base.month, base.day, 21, 0, tzinfo=CT_ZONE)
-
-            end_ct    = start_ct + timedelta(hours=3)
-            start_utc = start_ct.astimezone(timezone.utc)
-            end_utc   = end_ct.astimezone(timezone.utc)
-
-            # --- Main event name: first fight listed ---
-            if fight_lines:
-                fl = re.sub(r"^\s*[*\-•]\s*", "", fight_lines[0])
-                vm = re.search(
-                    r"(.+?)\s+(?:versus|vs\.?)\s+(.+?)(?:,\s*\d|$)", fl, re.I
-                )
-                main_event = (
-                    f"{vm.group(1).strip()} versus {vm.group(2).strip()}"
-                    if vm else fl[:120]
-                )
-            else:
-                main_event = f"Boxing – {location}"
-
-            undercard = "\n".join(
-                re.sub(r"^\s*[*\-•]\s*", "", fl) for fl in fight_lines
-            )
-
-            ev = Event()
-            ev.name        = main_event
-            ev.begin       = start_utc
-            ev.end         = end_utc
-            ev.description = "\n".join(filter(None, [
-                f"Date: {date_str}",
-                f"Location: {location}",
-                f"Broadcast: {info}" if info else "",
-                "",
-                undercard,
-                "",
-                "Source: Boxing247.com",
-            ]))
-
-            slug     = re.sub(r"[^a-z0-9]+", "-", f"{location} {main_event}".lower()).strip("-")
-            uid_date = datetime.strptime(date_str, "%B %d, %Y").strftime("%Y%m%d")
-            ev.uid   = f"{uid_date}-{slug}@boxing247-calendar"
-
-            events.append(ev)
-            print(f"  + {date_str} | {location} | {main_event}")
-
+        # Split location from broadcast info
+        if "(" in rest:
+            location = rest[:rest.index("(")].strip(" ,")
+            info     = strip_emoji(rest[rest.index("(")+1:rest.rfind(")")]).strip()
         else:
-            i += 1
+            location = rest.strip()
+            info     = ""
+
+        location = strip_emoji(location).strip()
+
+        # Find fight <li> items — walk siblings of the <strong>'s parent <p>
+        fight_lines = []
+        parent = strong.find_parent(["p", "div"])
+        if parent:
+            sibling = parent.find_next_sibling()
+            while sibling:
+                tag = sibling.name
+                # <ul> contains the fight bullets
+                if tag == "ul":
+                    for li in sibling.find_all("li"):
+                        text = strip_emoji(li.get_text(separator=" ")).strip()
+                        if re.search(r"\bversus\b|\bvs\.?\b", text, re.I):
+                            fight_lines.append(text)
+                # <hr> or next <p> with a <strong> date = end of card
+                elif tag == "hr":
+                    break
+                elif tag == "p" and sibling.find("strong"):
+                    sib_text = strip_emoji(sibling.get_text()).strip()
+                    if HEADER_DATE_RE.match(sib_text):
+                        break
+                sibling = sibling.find_next_sibling()
+
+        # --- Start time ---
+        start_ct = extract_time(info, date_str, location) if info else None
+        if not start_ct:
+            base = datetime.strptime(date_str, "%B %d, %Y")
+            start_ct = datetime(base.year, base.month, base.day, 21, 0, tzinfo=CT_ZONE)
+
+        end_ct    = start_ct + timedelta(hours=3)
+        start_utc = start_ct.astimezone(timezone.utc)
+        end_utc   = end_ct.astimezone(timezone.utc)
+
+        # --- Main event = first fight listed ---
+        if fight_lines:
+            fl = fight_lines[0]
+            vm = re.search(
+                r"(.+?)\s+(?:versus|vs\.?)\s+(.+?)(?:,\s*\d|$)", fl, re.I
+            )
+            main_event = (
+                f"{vm.group(1).strip()} versus {vm.group(2).strip()}"
+                if vm else fl[:120]
+            )
+        else:
+            main_event = f"Boxing - {location}"
+
+        undercard = "\n".join(fight_lines)
+
+        ev = Event()
+        ev.name        = main_event
+        ev.begin       = start_utc
+        ev.end         = end_utc
+        ev.description = "\n".join(filter(None, [
+            f"Date: {date_str}",
+            f"Location: {location}",
+            f"Broadcast: {info}" if info else "",
+            "",
+            undercard,
+            "",
+            "Source: Boxing247.com",
+        ]))
+
+        slug     = re.sub(r"[^a-z0-9]+", "-", f"{location} {main_event}".lower()).strip("-")
+        uid_date = datetime.strptime(date_str, "%B %d, %Y").strftime("%Y%m%d")
+        ev.uid   = f"{uid_date}-{slug}@boxing247-calendar"
+
+        events.append(ev)
+        print(f"  + {date_str} | {location} | {main_event}")
 
     return events
 
@@ -265,18 +238,13 @@ def parse_schedule(html: str) -> list[Event]:
 def main():
     print("Fetching Boxing247 schedule...")
     html = fetch_html()
-
-    with open("debug_raw.html", "w", encoding="utf-8") as f:
-        f.write(html)
-    print(f"[DEBUG] Saved raw HTML ({len(html)} chars) to debug_raw.html")
+    print(f"[DEBUG] Fetched {len(html)} chars")
 
     print("Parsing events...")
     events = parse_schedule(html)
 
     if not events:
-        print("\n[DEBUG] No events found. First 3000 chars of page text:")
-        soup = BeautifulSoup(html, "html.parser")
-        print(soup.get_text(separator="\n")[:3000])
+        print("\n[DEBUG] No events found — check HTML structure")
 
     cal = Calendar()
     cal.extra.append(ContentLine(name="CALSCALE", value="GREGORIAN"))
