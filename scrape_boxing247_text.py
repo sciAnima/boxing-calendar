@@ -141,6 +141,11 @@ def parse_schedule(html: str) -> list[Event]:
         print("WARNING: Could not isolate content div, using full page")
         content = soup
 
+    # Replace <a> tags with their text so hyperlinked words like "DAZN"
+    # don't break the broadcast info paren matching
+    for a in content.find_all("a"):
+        a.replace_with(a.get_text())
+
     lines = content.get_text(separator="\n").split("\n")
     current_year = datetime.now(CT_ZONE).year
     events: list[Event] = []
