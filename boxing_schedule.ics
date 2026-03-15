@@ -249,11 +249,25 @@ SUMMARY:Canelo Alvarez versus TBA
 UID:20260912-riyadh-saudi-arabia-canelo-alvarez-versus-tba@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: March 14\, 2026\nLocation: Anaheim\, California\nBroadcast: Live on DAZN| 8:00 PM ET  / 1:00 AM UK\nArnold Barboza Jr. versus Kenneth Sims Jr.\, 12 rds\, welterweights\nOscar Collazo versus Jesus Haro\, 12 rds\, for Collazos WBO/WBA strawweight title\nGabriela Fundora versus Viviana Ruiz Corredor\, 10 rds\, for Fundoras undisputed womens flyweight title\nAlexis Rocha versus Joseph Diaz Jr.\, 10 rds\, welterweights\nJoel Iriarte versus Rock Myrthil\, 8 rds\, welterweights\nSource: Boxing247.com
+DTEND:20260315T030000Z
+DTSTART:20260315T000000Z
+SUMMARY:Arnold Barboza Jr. versus Kenneth Sims Jr.
+UID:20260314-anaheim-california-arnold-barboza-jr-versus-kenneth-sims-jr@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: April 13\, 2026\nLocation: Tokyo\, Japan\nBroadcast: Live on ESPN+ | 7:00 PM Local / 6:00 AM ET  / 11:00 AM UK\nThanongsak Simsri versus Sergio Mendoza\, 12 rds\, for Simsris IBF junior flyweight title\nSource: Boxing247.com
 DTEND:20260414T020000Z
 DTSTART:20260413T230000Z
 SUMMARY:Thanongsak Simsri versus Sergio Mendoza
 UID:20260413-tokyo-japan-thanongsak-simsri-versus-sergio-mendoza@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: March 14\, 2026\nLocation: Dublin\, Ireland\nBroadcast: Live on DAZN| 7:00 PM UK  / 2:00 PM ET\nJames Dickens versus Anthony Cacace\, 12 rds\, for Dickens WBA junior lightweight title\nPierce OLeary versus Maxi Hughes\, 12 rds\, junior welterweights\nJono Carroll versus Colm Murphy\, 12 rds\, junior lightweights\nGary Cully versus Benito Sanchez Garcia\, 10 rds\, junior welterweights\nSource: Boxing247.com
+DTEND:20260315T020000Z
+DTSTART:20260314T230000Z
+SUMMARY:James Dickens versus Anthony Cacace
+UID:20260314-dublin-ireland-james-dickens-versus-anthony-cacace@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: April 18\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on PPV | 8:00 PM ET  / 1:00 AM UK\nManny Pacquiao versus Ruslan Provodnikov\, exhibition\, 10 rds\, welterweights\nSource: Boxing247.com
