@@ -107,7 +107,7 @@ def extract_time(info: str, date_str: str, location: str) -> datetime | None:
         m = re.search(pat, info, re.I)
         if m:
             try:
-                time_str = re.sub(r"\s+", "", m.group(1)).upper()  # "8:00PM"
+                time_str = re.sub(r"\s+", "", m.group(1)).upper()
                 dt = datetime.strptime(f"{date_str} {time_str}", "%B %d, %Y %I:%M%p")
                 return dt.replace(tzinfo=ZoneInfo(tz_name)).astimezone(CT_ZONE)
             except ValueError:
@@ -132,6 +132,34 @@ def strip_emoji(s: str) -> str:
     return re.sub(r"[^\x20-\x7EÀ-ÖØ-öø-ÿ''\-\.,/|: ]", "", s).strip()
 
 
+def join_continuation_lines(lines: list[str]) -> list[str]:
+    """Join lines where a header ends with '(' and the next line has the closing ')'.
+    e.g.  '📅 March 14: Dublin, Ireland ('
+          'Live on DAZN | 7:00 PM UK / 2:00 PM ET)'
+    becomes one line.
+    """
+    joined = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+        # If line ends with '(' and next line exists, merge until we find ')'
+        if stripped.endswith("(") and i + 1 < len(lines):
+            merged = stripped
+            i += 1
+            while i < len(lines):
+                next_part = lines[i].strip()
+                merged = merged + next_part
+                i += 1
+                if ")" in next_part:
+                    break
+            joined.append(merged)
+        else:
+            joined.append(line)
+            i += 1
+    return joined
+
+
 def parse_schedule(html: str) -> list[Event]:
     soup = BeautifulSoup(html, "html.parser")
 
@@ -146,21 +174,17 @@ def parse_schedule(html: str) -> list[Event]:
     for a in content.find_all("a"):
         a.replace_with(a.get_text())
 
-    raw_text = content.get_text(separator="\n")
+    raw_lines = content.get_text(separator="\n").split("\n")
 
-    # DEBUG: print every line mentioning March 14 so we can see exact characters
-    for line in raw_text.split("\n"):
-        if "March 14" in line and line.strip():
-            print(f"[DEBUG LINE]: {repr(line.strip())}")
+    # Merge split header lines before parsing
+    lines = join_continuation_lines(raw_lines)
 
-    lines = raw_text.split("\n")
     current_year = datetime.now(CT_ZONE).year
     events: list[Event] = []
 
     i = 0
     while i < len(lines):
         raw_line = lines[i].strip()
-        # Strip emoji before trying to match
         line = strip_emoji(raw_line)
         m = CARD_HEADER_RE.match(line)
 
@@ -242,12 +266,9 @@ def main():
     print("Fetching Boxing247 schedule...")
     html = fetch_html()
 
-    # DEBUG: save raw response so we can see what the site actually returned
     with open("debug_raw.html", "w", encoding="utf-8") as f:
         f.write(html)
     print(f"[DEBUG] Saved raw HTML ({len(html)} chars) to debug_raw.html")
-    print("[DEBUG] First 1000 chars of response:")
-    print(html[:1000])
 
     print("Parsing events...")
     events = parse_schedule(html)
