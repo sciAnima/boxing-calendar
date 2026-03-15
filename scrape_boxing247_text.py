@@ -146,7 +146,14 @@ def parse_schedule(html: str) -> list[Event]:
     for a in content.find_all("a"):
         a.replace_with(a.get_text())
 
-    lines = content.get_text(separator="\n").split("\n")
+    raw_text = content.get_text(separator="\n")
+
+    # DEBUG: print every line mentioning March 14 so we can see exact characters
+    for line in raw_text.split("\n"):
+        if "March 14" in line and line.strip():
+            print(f"[DEBUG LINE]: {repr(line.strip())}")
+
+    lines = raw_text.split("\n")
     current_year = datetime.now(CT_ZONE).year
     events: list[Event] = []
 
