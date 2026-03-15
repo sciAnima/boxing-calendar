@@ -1,10 +1,16 @@
 name: Update Boxing Calendar
+
 permissions:
   contents: write
+
 on:
   schedule:
     - cron: "0 8 * * *"   # Runs every day at 08:00 UTC (2 AM Chicago)
   workflow_dispatch:       # Allows manual runs
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,13 +40,5 @@ jobs:
           git commit -m "Auto-update boxing schedule" || echo "No changes to commit"
 
       - name: Push changes
-        uses: ad-m/github-push-action@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload debug HTML
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: debug-raw-html
-          path: debug_raw.html
+        run: |
+          git push
