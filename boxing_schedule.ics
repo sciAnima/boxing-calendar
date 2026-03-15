@@ -46,7 +46,7 @@ SUMMARY:Callum Smith versus David Morrell
 UID:20260418-liverpool-england-callum-smith-versus-david-morrell@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: April 25\, 2026\nLocation: Kolding\, Denmark\nBroadcast: Live on DAZN | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nJacob Bank versus Paulinus Ndjolonimu\, 12 rds\, WBC super middleweight eliminator\nGilberto Zurdo Ramirez versus David Benavidez\, 12 rds\, for Ramirezs WBO/WBA cruiserweight title\nSource: Boxing247.com
+DESCRIPTION:Date: April 25\, 2026\nLocation: Kolding\, Denmark\nBroadcast: Live on DAZN | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nJacob Bank versus Paulinus Ndjolonimu\, 12 rds\, WBC super middleweight eliminator\nSource: Boxing247.com
 DTEND:20260426T020000Z
 DTSTART:20260425T230000Z
 SUMMARY:Jacob Bank versus Paulinus Ndjolonimu
@@ -81,7 +81,7 @@ SUMMARY:Tyson Fury versus Arslanbek Makhmudov
 UID:20260411-london-england-tyson-fury-versus-arslanbek-makhmudov@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 21\, 2026\nLocation: Ocala\, Florida\nBroadcast: Live on TBA | 8:00 PM ET  / 1:00 AM UK\nKamauriay Walker versus Jayson Velez\, 6 rds\, junior welterweights\nGeise Reyes Del Verso versus Bladimir Renteria Palacios\, 6 rds\, welterweights\nLionell Colon Santana versus Jeffrey Flaz\, 6 rds\, welterweights\nElliott Hicks versus Orlenis Licea\, 4 rds\, junior middleweights\nSebastian Fundora versus Keith Thurman\, 12 rds\, for Fundoras WBC junior middleweight title\nFrank Sanchez versus Richard Torrez Jr.\, 12 rds\, IBF heavyweight eliminator\nYoenli Hernandez versus Terrell Gausha\, 10 rds\, middleweights\nElijah Garcia versus Kevin Newman II\, 10 rds\, super middleweights\nSource: Boxing247.com
+DESCRIPTION:Date: March 21\, 2026\nLocation: Ocala\, Florida\nBroadcast: Live on TBA | 8:00 PM ET  / 1:00 AM UK\nKamauriay Walker versus Jayson Velez\, 6 rds\, junior welterweights\nGeise Reyes Del Verso versus Bladimir Renteria Palacios\, 6 rds\, welterweights\nLionell Colon Santana versus Jeffrey Flaz\, 6 rds\, welterweights\nElliott Hicks versus Orlenis Licea\, 4 rds\, junior middleweights\nSource: Boxing247.com
 DTEND:20260322T030000Z
 DTSTART:20260322T000000Z
 SUMMARY:Kamauriay Walker versus Jayson Velez
@@ -100,6 +100,13 @@ DTEND:20260628T020000Z
 DTSTART:20260627T230000Z
 SUMMARY:Floyd Mayweather versus Mike Zambidis\, exhibition
 UID:20260627-athens-greece-floyd-mayweather-versus-mike-zambidis-exhibition@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: May 2\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on  Prime Video  PPV and PPV.COM | 8:00 PM ET  / 1:00 AM UK\nGilberto Zurdo Ramirez versus David Benavidez\, 12 rds\, for Ramirezs WBO/WBA cruiserweight title\nSource: Boxing247.com
+DTEND:20260503T030000Z
+DTSTART:20260503T000000Z
+SUMMARY:Gilberto Zurdo Ramirez versus David Benavidez
+UID:20260502-las-vegas-nevada-gilberto-zurdo-ramirez-versus-david-benavidez@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: April 18\, 2026\nLocation: San Diego\, California\nBroadcast: Live on TBA | 8:00 PM ET  / 1:00 AM UK\nJonny Mansour versus TBA\, 8 rds\, lightweights\nJulius Ballo versus TBA\, 6 rds\, featherweights\nSource: Boxing247.com
@@ -196,7 +203,7 @@ BEGIN:VEVENT
 DESCRIPTION:Date: May 10\, 2026\nLocation: TBA\nBroadcast: Live on Paramount+ | 8:00 PM ET  / 1:00 AM UK\nSource: Boxing247.com
 DTEND:20260511T030000Z
 DTSTART:20260511T000000Z
-SUMMARY:Boxing – TBA
+SUMMARY:Boxing - TBA
 UID:20260510-tba-boxing-tba@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
@@ -249,7 +256,7 @@ SUMMARY:Canelo Alvarez versus TBA
 UID:20260912-riyadh-saudi-arabia-canelo-alvarez-versus-tba@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 14\, 2026\nLocation: Anaheim\, California\nBroadcast: Live on DAZN| 8:00 PM ET  / 1:00 AM UK\nArnold Barboza Jr. versus Kenneth Sims Jr.\, 12 rds\, welterweights\nOscar Collazo versus Jesus Haro\, 12 rds\, for Collazos WBO/WBA strawweight title\nGabriela Fundora versus Viviana Ruiz Corredor\, 10 rds\, for Fundoras undisputed womens flyweight title\nAlexis Rocha versus Joseph Diaz Jr.\, 10 rds\, welterweights\nJoel Iriarte versus Rock Myrthil\, 8 rds\, welterweights\nSource: Boxing247.com
+DESCRIPTION:Date: March 14\, 2026\nLocation: Anaheim\, California\nBroadcast: Live on DAZN  | 8:00 PM ET  / 1:00 AM UK\nArnold Barboza Jr. versus Kenneth Sims Jr.\, 12 rds\, welterweights\nOscar Collazo versus Jesus Haro\, 12 rds\, for Collazos WBO/WBA strawweight title\nGabriela Fundora versus Viviana Ruiz Corredor\, 10 rds\, for Fundoras undisputed womens flyweight title\nAlexis Rocha versus Joseph Diaz Jr.\, 10 rds\, welterweights\nJoel Iriarte versus Rock Myrthil\, 8 rds\, welterweights\nSource: Boxing247.com
 DTEND:20260315T030000Z
 DTSTART:20260315T000000Z
 SUMMARY:Arnold Barboza Jr. versus Kenneth Sims Jr.
@@ -263,7 +270,7 @@ SUMMARY:Thanongsak Simsri versus Sergio Mendoza
 UID:20260413-tokyo-japan-thanongsak-simsri-versus-sergio-mendoza@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 14\, 2026\nLocation: Dublin\, Ireland\nBroadcast: Live on DAZN| 7:00 PM UK  / 2:00 PM ET\nJames Dickens versus Anthony Cacace\, 12 rds\, for Dickens WBA junior lightweight title\nPierce OLeary versus Maxi Hughes\, 12 rds\, junior welterweights\nJono Carroll versus Colm Murphy\, 12 rds\, junior lightweights\nGary Cully versus Benito Sanchez Garcia\, 10 rds\, junior welterweights\nSource: Boxing247.com
+DESCRIPTION:Date: March 14\, 2026\nLocation: Dublin\, Ireland\nBroadcast: Live on DAZN  | 7:00 PM UK  / 2:00 PM ET\nJames Dickens versus Anthony Cacace\, 12 rds\, for Dickens WBA junior lightweight title\nPierce OLeary versus Maxi Hughes\, 12 rds\, junior welterweights\nJono Carroll versus Colm Murphy\, 12 rds\, junior lightweights\nGary Cully versus Benito Sanchez Garcia\, 10 rds\, junior welterweights\nSource: Boxing247.com
 DTEND:20260315T020000Z
 DTSTART:20260314T230000Z
 SUMMARY:James Dickens versus Anthony Cacace
@@ -303,6 +310,13 @@ DTEND:20260411T030000Z
 DTSTART:20260411T000000Z
 SUMMARY:Hebert Conceicao Sousa versus Johan Gonzalez
 UID:20260410-newark-new-jersey-hebert-conceicao-sousa-versus-johan-gonzalez@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: March 28\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on  Prime Video  PPV and PPV.COM | 8:00 PM ET  / 1:00 AM UK\nSebastian Fundora versus Keith Thurman\, 12 rds\, for Fundoras WBC junior middleweight title\nFrank Sanchez versus Richard Torrez Jr.\, 12 rds\, IBF heavyweight eliminator\nYoenli Hernandez versus Terrell Gausha\, 10 rds\, middleweights\nElijah Garcia versus Kevin Newman II\, 10 rds\, super middleweights\nSource: Boxing247.com
+DTEND:20260329T030000Z
+DTSTART:20260329T000000Z
+SUMMARY:Sebastian Fundora versus Keith Thurman
+UID:20260328-las-vegas-nevada-sebastian-fundora-versus-keith-thurman@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: May 16\, 2026\nLocation: Kempton Park\, South Africa\nBroadcast: Live on TBA | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nMelvin Jerusalem versus Siyakholwa Kuse\, rematch\, 12 rds\, for Jerusalems WBC strawweight title\nSource: Boxing247.com
@@ -364,7 +378,7 @@ BEGIN:VEVENT
 DESCRIPTION:Date: June 14\, 2026\nLocation: Verona\, New York\nBroadcast: Live on TBA | 7:00 PM Local / 7:00 PM ET  / 12:00 AM UK\nSource: Boxing247.com
 DTEND:20260615T020000Z
 DTSTART:20260614T230000Z
-SUMMARY:Boxing – Verona\, New York
+SUMMARY:Boxing - Verona\, New York
 UID:20260614-verona-new-york-boxing-verona-new-york@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
