@@ -67,7 +67,7 @@ SUMMARY:Stephanie Han versus Holly Holm\, rematch
 UID:20260530-el-paso-texas-stephanie-han-versus-holly-holm-rematch@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 21\, 2026\nLocation: Orlando\, Florida\nBroadcast: Live on DAZN | 8:00 PM ET  / 1:00 AM UK\nCarlos Adames versus Austin Williams\, 12 rds\, for Adames WBC middleweight title\nOmari Jones versus TBA\, 8 rds\, junior middleweights\nTeremoana Teremoana versus TBA\, 8 rds\, heavyweights\nYoenis Tellez versus TBA\, 8 rds\, junior middleweights\nCarlos Jamil De Leon Castro versus TBA\, 6 rds\, junior lightweights\nRoberto Raul Rivera Gomez versus TBA\, 6 rds\, featherweights\nJordan Orozco versus TBA\, 6 rds\, bantamweights\nAntraveous Ingram versus TBA\, 6 rds\, junior middleweights\nSource: Boxing247.com
+DESCRIPTION:Date: March 21\, 2026\nLocation: Orlando\, Florida\nBroadcast: Live on DAZN  | 8:00 PM ET  / 1:00 AM UK\nCarlos Adames versus Austin Williams\, 12 rds\, for Adames WBC middleweight title\nOmari Jones versus TBA\, 8 rds\, junior middleweights\nTeremoana Teremoana versus TBA\, 8 rds\, heavyweights\nYoenis Tellez versus TBA\, 8 rds\, junior middleweights\nSource: Boxing247.com
 DTEND:20260322T030000Z
 DTSTART:20260322T000000Z
 SUMMARY:Carlos Adames versus Austin Williams
@@ -102,7 +102,7 @@ SUMMARY:Floyd Mayweather versus Mike Zambidis\, exhibition
 UID:20260627-athens-greece-floyd-mayweather-versus-mike-zambidis-exhibition@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: May 2\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Prime Video PPV and PPV.COM | 8:00 PM ET  / 1:00 AM UK\nGilberto Zurdo Ramirez versus David Benavidez\, 12 rds\, for Ramirezs WBO/WBA cruiserweight title\nSource: Boxing247.com
+DESCRIPTION:Date: May 2\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on  Prime Video  PPV and PPV.COM | 8:00 PM ET  / 1:00 AM UK\nGilberto Zurdo Ramirez versus David Benavidez\, 12 rds\, for Ramirezs WBO/WBA cruiserweight title\nSource: Boxing247.com
 DTEND:20260503T030000Z
 DTSTART:20260503T000000Z
 SUMMARY:Gilberto Zurdo Ramirez versus David Benavidez
@@ -151,7 +151,7 @@ SUMMARY:Roman Fress versus Tahir Kahrovic
 UID:20260530-magdeburg-germany-roman-fress-versus-tahir-kahrovic@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 21\, 2026\nLocation: London\, England\nBroadcast: Live on DAZN | 7:00 PM UK  / 2:00 PM ET\nGeorge Liddard versus Tyler Denny\, 12 rds\, for Liddards British and Commonwealth middleweight titles\nJimmy Sains versus Derrick Osaze\, 10 rds\, middleweights\nLeli Buttigieg versus Jake Goodwin\, 10 rds\, middleweights\nGiorgio Visioli versus Levi Giles\, 10 rds\, lightweights\nTaylor Bevan versus Martin Bulacio\, 8 rds\, super middleweights\nSource: Boxing247.com
+DESCRIPTION:Date: March 21\, 2026\nLocation: London\, England\nBroadcast: Live on DAZN  | 7:00 PM UK  / 2:00 PM ET\nGeorge Liddard versus Tyler Denny\, 12 rds\, for Liddards British and Commonwealth middleweight titles\nJimmy Sains versus Derrick Osaze\, 10 rds\, middleweights\nLeli Buttigieg versus Jake Goodwin\, 10 rds\, middleweights\nGiorgio Visioli versus Levi Giles\, 10 rds\, lightweights\nTaylor Bevan versus Martin Bulacio\, 8 rds\, super middleweights\nSource: Boxing247.com
 DTEND:20260322T020000Z
 DTSTART:20260321T230000Z
 SUMMARY:George Liddard versus Tyler Denny
@@ -186,13 +186,6 @@ SUMMARY:Armando Martinez versus Neslan Machado
 UID:20260412-hollywood-florida-armando-martinez-versus-neslan-machado@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 20\, 2026\nLocation: Belfast\, Northern Ireland\nBroadcast: Live on DAZN | 7:00 PM UK  / 2:00 PM ET\nMichael Conlan versus Kevin Walsh\, 10 rds\, featherweights\nKieran Molloy versus Xavier Kohlen\, 10 rds\, welterweights\nNiall Brown versus Darren Johnstone\, 10 rds\, super middleweights\nGlenn Byrne versus Owen ONeill\, 8 rds\, junior middleweights\nCodie Smith versus Lee Gormley\, 8 rds\, junior lightweights\nJak Corrie versus Jacob Quinn\, 6 rds\, junior middleweights\nKurt Walker versus TBA\, 6 rds\, lightweights\nSam Norris versus Eliecer Quezada\, 4 rds\, junior lightweights\nKyle Smith versus Mykhailo Sovtus\, 6 rds\, junior middleweights\nSource: Boxing247.com
-DTEND:20260321T020000Z
-DTSTART:20260320T230000Z
-SUMMARY:Michael Conlan versus Kevin Walsh
-UID:20260320-belfast-northern-ireland-michael-conlan-versus-kevin-walsh@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: March 28\, 2026\nLocation: Beverly\, Massachusetts\nBroadcast: Live on TBA | 8:00 PM ET  / 1:00 AM UK\nFrancis Hogan versus TBA\, 8 rds\, middleweights\nAmelia Moore versus Bonnie Hunter\, 8 rds\, female lightweights\nTevin Regis versus Anuel Rosa\, 6 rds\, lightweights\nJoe Bush versus Giovanni Gutierrez\, 6 rds\, welterweights\nChristian Mouro versus Angelo Ramos\, 4 rds\, bantamweights\nLamin Conteh versus Steven Farrar\, 4 rds\, welterweights\nSource: Boxing247.com
 DTEND:20260329T030000Z
 DTSTART:20260329T000000Z
@@ -212,13 +205,6 @@ DTEND:20260329T020000Z
 DTSTART:20260328T230000Z
 SUMMARY:Conor Kelsall versus Joel Santos
 UID:20260328-rotherham-england-conor-kelsall-versus-joel-santos@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: March 19\, 2026\nLocation: San Juan\, Puerto Rico\nBroadcast: Live on DAZN | 7:00 PM Local / 7:00 PM ET  / 12:00 AM UK\nFelix Parrilla versus Alfredo Cruz\, 10 rds\, featherweights\nSource: Boxing247.com
-DTEND:20260320T020000Z
-DTSTART:20260319T230000Z
-SUMMARY:Felix Parrilla versus Alfredo Cruz
-UID:20260319-san-juan-puerto-rico-felix-parrilla-versus-alfredo-cruz@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: April 11\, 2026\nLocation: Tokyo\, Japan\nBroadcast: Live on TBA | 7:00 PM Local / 5:00 AM ET  / 10:00 AM UK\nJuan Francisco Estrada versus Tenshin Nasukawa\, 12 rds\, WBC bantamweight final eliminator\nTomoya Tsuboi versus Pedro Guevara\, 10 rds\, junior bantamweights\nKyosuke Takami versus Angel Ayala\, 10 rds\, flyweights\nSource: Boxing247.com
@@ -284,7 +270,7 @@ SUMMARY:Hebert Conceicao Sousa versus Johan Gonzalez
 UID:20260410-newark-new-jersey-hebert-conceicao-sousa-versus-johan-gonzalez@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 28\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Prime Video PPV and PPV.COM | 8:00 PM ET  / 1:00 AM UK\nSebastian Fundora versus Keith Thurman\, 12 rds\, for Fundoras WBC junior middleweight title\nFrank Sanchez versus Richard Torrez Jr.\, 12 rds\, IBF heavyweight eliminator\nYoenli Hernandez versus Terrell Gausha\, 10 rds\, middleweights\nElijah Garcia versus Kevin Newman II\, 10 rds\, super middleweights\nSource: Boxing247.com
+DESCRIPTION:Date: March 28\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on  Prime Video  PPV and PPV.COM | 8:00 PM ET  / 1:00 AM UK\nSebastian Fundora versus Keith Thurman\, 12 rds\, for Fundoras WBC junior middleweight title\nFrank Sanchez versus Richard Torrez Jr.\, 12 rds\, IBF heavyweight eliminator\nYoenli Hernandez versus Terrell Gausha\, 10 rds\, middleweights\nElijah Garcia versus Kevin Newman II\, 10 rds\, super middleweights\nSource: Boxing247.com
 DTEND:20260329T030000Z
 DTSTART:20260329T000000Z
 SUMMARY:Sebastian Fundora versus Keith Thurman
@@ -333,7 +319,7 @@ SUMMARY:Naoya Inoue versus Junto Nakatani
 UID:20260502-tokyo-japan-naoya-inoue-versus-junto-nakatani@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: September 19\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Netflix | 8:00 PM ET  / 1:00 AM UK\nFloyd Mayweather versus Manny Pacquiao\, rematch\, 10 or 12 rds\, welterweights\nJazza Dickens vs. Anthony Cacace: March 14\, Start Time\, Undercard\, How to Watch\nArnold Barboza Jr. vs. Kenneth Sims Jr.: March 14\, Start Time\, Undercard\, How to Watch\nOleksandr Usyk vs. Rico Verhoeven: May 23\, Start Time\, Undercard\, How to Watch\nJai Opetaia vs. Brandon Glanton: March 8\, Start Time\, Undercard\, How to Watch\nTony Yoka vs. Lawrence Okolie: April 25\, Start Time\, Undercard\, How to Watch\nSource: Boxing247.com
+DESCRIPTION:Date: September 19\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Netflix | 8:00 PM ET  / 1:00 AM UK\nFloyd Mayweather versus Manny Pacquiao\, rematch\, 10 or 12 rds\, welterweights\nJarrell Miller vs. Lenier Pero: April 25\, Start Time\, Undercard\, How to Watch\nCarlos Adames vs. Austin Williams: March 21\, Start Time\, Undercard\, How to Watch\nMoses Itauma vs Jermaine Franklin: March 28\, Start Time\, Undercard\, How to Watch\nSebastian Fundora vs. Keith Thurman: March 28\, Start Time\, Undercard\, How to Watch\nDeontay Wilder vs Derek Chisora: April 4\, Start Time\, Undercard\, How to Watch\nSource: Boxing247.com
 DTEND:20260920T030000Z
 DTSTART:20260920T000000Z
 SUMMARY:Floyd Mayweather versus Manny Pacquiao\, rematch
