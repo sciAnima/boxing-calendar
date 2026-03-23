@@ -67,25 +67,11 @@ SUMMARY:Stephanie Han versus Holly Holm\, rematch
 UID:20260530-el-paso-texas-stephanie-han-versus-holly-holm-rematch@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 21\, 2026\nLocation: Orlando\, Florida\nBroadcast: Live on DAZN  | 8:00 PM ET  / 1:00 AM UK\nCarlos Adames versus Austin Williams\, 12 rds\, for Adames WBC middleweight title\nOmari Jones versus TBA\, 8 rds\, junior middleweights\nTeremoana Teremoana versus TBA\, 8 rds\, heavyweights\nYoenis Tellez versus TBA\, 8 rds\, junior middleweights\nSource: Boxing247.com
-DTEND:20260322T030000Z
-DTSTART:20260322T000000Z
-SUMMARY:Carlos Adames versus Austin Williams
-UID:20260321-orlando-florida-carlos-adames-versus-austin-williams@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: April 11\, 2026\nLocation: London\, England\nBroadcast: Live on Netflix | 7:00 PM UK  / 2:00 PM ET\nTyson Fury versus Arslanbek Makhmudov\, 12 rds\, heavyweights\nConor Benn versus Regis Prograis\, 10 rds\, junior middleweights\nJeamie TKV Tshikeva versus Richard Riakporhe\, 12 rds\, for Tshikevas British heavyweight title\nJustis Huni versus Frazer Clarke\, 10 rds\, heavyweights\nTroy Williamson versus Simon Zachenhuber\, 12 rds\, super middleweights\nBreyon Gorham versus Eduard Georgiev\, 10 rds\, junior welterweights\nSultan Almohammed versus Hector Avila Lozano\, 4 rds\, lightweights\nSource: Boxing247.com
 DTEND:20260412T020000Z
 DTSTART:20260411T230000Z
 SUMMARY:Tyson Fury versus Arslanbek Makhmudov
 UID:20260411-london-england-tyson-fury-versus-arslanbek-makhmudov@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: March 21\, 2026\nLocation: Ocala\, Florida\nBroadcast: Live on TBA | 8:00 PM ET  / 1:00 AM UK\nKamauriay Walker versus Jayson Velez\, 6 rds\, junior welterweights\nGeise Reyes Del Verso versus Bladimir Renteria Palacios\, 6 rds\, welterweights\nLionell Colon Santana versus Jeffrey Flaz\, 6 rds\, welterweights\nElliott Hicks versus Orlenis Licea\, 4 rds\, junior middleweights\nSource: Boxing247.com
-DTEND:20260322T030000Z
-DTSTART:20260322T000000Z
-SUMMARY:Kamauriay Walker versus Jayson Velez
-UID:20260321-ocala-florida-kamauriay-walker-versus-jayson-velez@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: April 11\, 2026\nLocation: Rome\, Italy\nBroadcast: Live on TBA | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nLuca DOrtenzi versus Robert Parzeczewski\, 12 rds\, for vacant European light heavyweight title\nSource: Boxing247.com
@@ -102,7 +88,7 @@ SUMMARY:Floyd Mayweather versus Mike Zambidis\, exhibition
 UID:20260627-athens-greece-floyd-mayweather-versus-mike-zambidis-exhibition@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: May 2\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on  Prime Video  PPV and PPV.COM | 8:00 PM ET  / 1:00 AM UK\nGilberto Zurdo Ramirez versus David Benavidez\, 12 rds\, for Ramirezs WBO/WBA cruiserweight title\nSource: Boxing247.com
+DESCRIPTION:Date: May 2\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Prime Video PPV and PPV.COM | 8:00 PM ET  / 1:00 AM UK\nGilberto Zurdo Ramirez versus David Benavidez\, 12 rds\, for Ramirezs WBO/WBA cruiserweight title\nSource: Boxing247.com
 DTEND:20260503T030000Z
 DTSTART:20260503T000000Z
 SUMMARY:Gilberto Zurdo Ramirez versus David Benavidez
@@ -149,20 +135,6 @@ DTEND:20260531T020000Z
 DTSTART:20260530T230000Z
 SUMMARY:Roman Fress versus Tahir Kahrovic
 UID:20260530-magdeburg-germany-roman-fress-versus-tahir-kahrovic@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: March 21\, 2026\nLocation: London\, England\nBroadcast: Live on DAZN  | 7:00 PM UK  / 2:00 PM ET\nGeorge Liddard versus Tyler Denny\, 12 rds\, for Liddards British and Commonwealth middleweight titles\nJimmy Sains versus Derrick Osaze\, 10 rds\, middleweights\nLeli Buttigieg versus Jake Goodwin\, 10 rds\, middleweights\nGiorgio Visioli versus Levi Giles\, 10 rds\, lightweights\nTaylor Bevan versus Martin Bulacio\, 8 rds\, super middleweights\nSource: Boxing247.com
-DTEND:20260322T020000Z
-DTSTART:20260321T230000Z
-SUMMARY:George Liddard versus Tyler Denny
-UID:20260321-london-england-george-liddard-versus-tyler-denny@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: March 21\, 2026\nLocation: San Bernardino\, California\nBroadcast: Live on ProBoxTV | 8:00 PM ET  / 1:00 AM UK\nLester Martinez versus Immanuwel Aleem\, 12 rds\, for vacant WBC interim super middleweight title\nAlbert Chop Chop Gonzalez versus TBA\, 10 rds\, featherweights\nLuis Coria versus TBA\, 4 rds\, junior bantamweights\nJoshua Anton versus Kudratillo Abdukakhorov\, 8 rds\, middleweights\nSource: Boxing247.com
-DTEND:20260322T030000Z
-DTSTART:20260322T000000Z
-SUMMARY:Lester Martinez versus Immanuwel Aleem
-UID:20260321-san-bernardino-california-lester-martinez-versus-immanuwel-aleem@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: March 28\, 2026\nLocation: Puebla\, Mexico\nBroadcast: Live on TBA | 7:00 PM Local / 8:00 PM ET  / 1:00 AM UK\nGabriela Sanchez versus Tamara De Marco\, rematch\, 10 rds\, for vacant WBC interim womens flyweight title\nSource: Boxing247.com
@@ -270,7 +242,7 @@ SUMMARY:Hebert Conceicao Sousa versus Johan Gonzalez
 UID:20260410-newark-new-jersey-hebert-conceicao-sousa-versus-johan-gonzalez@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 28\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on  Prime Video  PPV and PPV.COM | 8:00 PM ET  / 1:00 AM UK\nSebastian Fundora versus Keith Thurman\, 12 rds\, for Fundoras WBC junior middleweight title\nFrank Sanchez versus Richard Torrez Jr.\, 12 rds\, IBF heavyweight eliminator\nYoenli Hernandez versus Terrell Gausha\, 10 rds\, middleweights\nElijah Garcia versus Kevin Newman II\, 10 rds\, super middleweights\nSource: Boxing247.com
+DESCRIPTION:Date: March 28\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Prime Video PPV and PPV.COM | 8:00 PM ET  / 1:00 AM UK\nSebastian Fundora versus Keith Thurman\, 12 rds\, for Fundoras WBC junior middleweight title\nFrank Sanchez versus Richard Torrez Jr.\, 12 rds\, IBF heavyweight eliminator\nYoenli Hernandez versus Terrell Gausha\, 10 rds\, middleweights\nElijah Garcia versus Kevin Newman II\, 10 rds\, super middleweights\nSource: Boxing247.com
 DTEND:20260329T030000Z
 DTSTART:20260329T000000Z
 SUMMARY:Sebastian Fundora versus Keith Thurman
