@@ -18,25 +18,11 @@ SUMMARY:Brandon Adams versus Caoimhin Agyarko
 UID:20260411-las-vegas-nevada-brandon-adams-versus-caoimhin-agyarko@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 28\, 2026\nLocation: Long Beach\, California\nBroadcast: Live on ProBoxTV | 8:00 PM ET  / 1:00 AM UK\nBryan Acosta versus Ronny Rios\, 10 rds\, featherweights\nSource: Boxing247.com
-DTEND:20260329T030000Z
-DTSTART:20260329T000000Z
-SUMMARY:Bryan Acosta versus Ronny Rios
-UID:20260328-long-beach-california-bryan-acosta-versus-ronny-rios@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: May 9\, 2026\nLocation: Manchester\, England\nBroadcast: Live on DAZN PPV | 7:00 PM UK  / 2:00 PM ET\nFabio Wardley versus Daniel Dubois\, 12 rds\, for Wardleys WBO heavyweight title\nSource: Boxing247.com
 DTEND:20260510T020000Z
 DTSTART:20260509T230000Z
 SUMMARY:Fabio Wardley versus Daniel Dubois
 UID:20260509-manchester-england-fabio-wardley-versus-daniel-dubois@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: March 28\, 2026\nLocation: Manchester\, England\nBroadcast: Live on DAZN | 7:00 PM UK  / 2:00 PM ET\nMoses Itauma versus Jermaine Franklin\, 10 rds\, heavyweights\nWilly Hutchinson versus Ezra Taylor\, 10 rds\, light heavyweights\nLiam Davies versus Francesco Grandelli\, 12 rds\, for vacant European featherweight title\nShakiel Thompson versus Brad Pauls\, 10 rds\, middleweights\nNathan Heaney versus Gerome Warburton\, 10 rds\, middleweights\nMichael Gomez Jr. versus Jordan Flynn\, 10 rds\, lightweights\nAlex Murphy versus Josh Holmes\, 10 rds\, lightweights\nNelson Birchall versus Ryan Griffiths\, 8 rds\, junior lightweights\nAadam Hamed versus Kasey Bradnum\, 4 rds\, junior welterweights\nJohn Joe Carrigan versus Danny Costello\, 4 rds\, junior middleweights\nSource: Boxing247.com
-DTEND:20260329T020000Z
-DTSTART:20260328T230000Z
-SUMMARY:Moses Itauma versus Jermaine Franklin
-UID:20260328-manchester-england-moses-itauma-versus-jermaine-franklin@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: April 18\, 2026\nLocation: Liverpool\, England\nBroadcast: Live on DAZN | 7:00 PM UK  / 2:00 PM ET\nCallum Smith versus David Morrell\, 12 rds\, for Smiths WBO interim light heavyweight title\nLeo Atang versus TBA\, 6 rds\, heavyweights\nMolly McCann versus Ashleigh Johnson\, 6 rds\, female junior featherweights\nSource: Boxing247.com
@@ -51,13 +37,6 @@ DTEND:20260426T020000Z
 DTSTART:20260425T230000Z
 SUMMARY:Jacob Bank versus Paulinus Ndjolonimu
 UID:20260425-kolding-denmark-jacob-bank-versus-paulinus-ndjolonimu@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: March 28\, 2026\nLocation: Kempton Park\, South Africa\nBroadcast: Live on TBA | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nRoarke Knapp versus Brandon Thysse\, third fight\, 10 rds\, junior middleweights\nSource: Boxing247.com
-DTEND:20260329T020000Z
-DTSTART:20260328T230000Z
-SUMMARY:Roarke Knapp versus Brandon Thysse\, third fight
-UID:20260328-kempton-park-south-africa-roarke-knapp-versus-brandon-thysse-third-fight@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: May 30\, 2026\nLocation: El Paso\, Texas\nBroadcast: Live on ESPN and ESPN+ | 8:00 PM ET  / 1:00 AM UK\nStephanie Han versus Holly Holm\, rematch\, 10 rds\, for Hans WBA womens lightweight title\nSource: Boxing247.com
@@ -116,14 +95,14 @@ SUMMARY:Tony Yoka versus Lawrence Okolie
 UID:20260425-paris-france-tony-yoka-versus-lawrence-okolie@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: April 5\, 2026\nLocation: London\, England\nBroadcast: Live on ESPN+ | 7:00 PM UK  / 2:00 PM ET\nCaroline Dubois versus Terri Harper\, 10 rds\, WBC/WBO womens lightweight unification\nEllie Scotney versus Mayelli Flores\, 10 rds\, undisputed womens junior featherweight championship\nChantelle Cameron versus Michaela Kotaskova\, 10 rds\, for vacant WBO womens junior middleweight title\nIrma Garcia versus Emma Dolan\, 10 rds\, for Garcias IBF womens junior bantamweight title\nTysie Gallagher versus Teresa Makinen\, 8 rds\, female junior featherweights\nShannon Courtenay versus Sasha Booker\, 8 rds\, female bantamweights\nGemma Paige Richardson versus Johana Rajmont\, 6 rds\, female featherweights\nElizabeth Oshoba versus Chelsey Arnell\, 6 rds\, female junior lightweights\nHarvey Smith versus TBA\, 4 rds\, bantamweights\nArjon Basi versus Jake Price\, 4 rds\, junior welterweights\nSource: Boxing247.com
+DESCRIPTION:Date: April 5\, 2026\nLocation: London\, England\nBroadcast: Live on ESPN+ | 7:00 PM UK  / 2:00 PM ET\nCaroline Dubois versus Terri Harper\, 10 rds\, WBC/WBO womens lightweight unification\nEllie Scotney versus Mayelli Flores\, 10 rds\, undisputed womens junior featherweight championship\nChantelle Cameron versus Michaela Kotaskova\, 10 rds\, for vacant WBO womens junior middleweight title\nIrma Garcia versus Emma Dolan\, 10 rds\, for Garcias IBF womens junior bantamweight title\nTysie Gallagher versus Teresa Makinen\, 8 rds\, female junior featherweights\nSource: Boxing247.com
 DTEND:20260406T020000Z
 DTSTART:20260405T230000Z
 SUMMARY:Caroline Dubois versus Terri Harper
 UID:20260405-london-england-caroline-dubois-versus-terri-harper@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: April 3\, 2026\nLocation: Tokyo\, Japan\nBroadcast: Live on TBA | 7:00 PM Local / 5:00 AM ET  / 10:00 AM UK\nRene Santiago versus Masataka Taniguchi\, 12 rds\, for Santiagos WBO/WBA junior flyweight title\nYukinori Oguni versus Marlon Tapales\, 10 rds\, featherweights\nTsukuru Midorikawa versus Hisashi Kato\, 10 rds\, junior middleweights\nShinobu Charlie Hosokawa versus Ryusei Kurobe\, 6 rds\, middleweights\nSource: Boxing247.com
+DESCRIPTION:Date: April 3\, 2026\nLocation: Tokyo\, Japan\nBroadcast: Live on TBA | 7:00 PM Local / 5:00 AM ET  / 10:00 AM UK\nRene Santiago versus Masataka Taniguchi\, 12 rds\, for Santiagos WBO/WBA junior flyweight title\nYukinori Oguni versus Marlon Tapales\, 10 rds\, featherweights\nSource: Boxing247.com
 DTEND:20260404T020000Z
 DTSTART:20260403T230000Z
 SUMMARY:Rene Santiago versus Masataka Taniguchi
@@ -135,13 +114,6 @@ DTEND:20260531T020000Z
 DTSTART:20260530T230000Z
 SUMMARY:Roman Fress versus Tahir Kahrovic
 UID:20260530-magdeburg-germany-roman-fress-versus-tahir-kahrovic@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: March 28\, 2026\nLocation: Puebla\, Mexico\nBroadcast: Live on TBA | 7:00 PM Local / 8:00 PM ET  / 1:00 AM UK\nGabriela Sanchez versus Tamara De Marco\, rematch\, 10 rds\, for vacant WBC interim womens flyweight title\nSource: Boxing247.com
-DTEND:20260329T020000Z
-DTSTART:20260328T230000Z
-SUMMARY:Gabriela Sanchez versus Tamara De Marco\, rematch
-UID:20260328-puebla-mexico-gabriela-sanchez-versus-tamara-de-marco-rematch@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: April 9\, 2026\nLocation: Montreal\, Canada\nBroadcast: Live on DAZN | 8:00 PM ET  / 1:00 AM UK\nOsleys Iglesias versus Pavel Silyagin\, 12 rds\, for vacant IBF super middleweight title\nLeila Beaudoin versus TBA\, 10 rds\, junior lightweights\nAlexandre Gaumont versus TBA\, 10 rds\, middleweights\nLuis Santana versus TBA\, 10 rds\, lightweights\nErik Israyelyan versus TBA\, 6 rds\, junior lightweights\nStephane Fondjo versus TBA\, 10 rds\, super middleweights\nKeven Beausejour versus TBA\, 4 rds\, light heavyweights\nSource: Boxing247.com
@@ -158,25 +130,11 @@ SUMMARY:Armando Martinez versus Neslan Machado
 UID:20260412-hollywood-florida-armando-martinez-versus-neslan-machado@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 28\, 2026\nLocation: Beverly\, Massachusetts\nBroadcast: Live on TBA | 8:00 PM ET  / 1:00 AM UK\nFrancis Hogan versus TBA\, 8 rds\, middleweights\nAmelia Moore versus Bonnie Hunter\, 8 rds\, female lightweights\nTevin Regis versus Anuel Rosa\, 6 rds\, lightweights\nJoe Bush versus Giovanni Gutierrez\, 6 rds\, welterweights\nChristian Mouro versus Angelo Ramos\, 4 rds\, bantamweights\nLamin Conteh versus Steven Farrar\, 4 rds\, welterweights\nSource: Boxing247.com
-DTEND:20260329T030000Z
-DTSTART:20260329T000000Z
-SUMMARY:Francis Hogan versus TBA
-UID:20260328-beverly-massachusetts-francis-hogan-versus-tba@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: May 10\, 2026\nLocation: TBA\nBroadcast: Live on Paramount+ | 8:00 PM ET  / 1:00 AM UK\nSource: Boxing247.com
 DTEND:20260511T030000Z
 DTSTART:20260511T000000Z
 SUMMARY:Boxing - TBA
 UID:20260510-tba-boxing-tba@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: March 28\, 2026\nLocation: Rotherham\, England\nBroadcast: Live on TBA | 7:00 PM UK  / 2:00 PM ET\nConor Kelsall versus Joel Santos\, 12 rds\, for vacant European flyweight title\nSource: Boxing247.com
-DTEND:20260329T020000Z
-DTSTART:20260328T230000Z
-SUMMARY:Conor Kelsall versus Joel Santos
-UID:20260328-rotherham-england-conor-kelsall-versus-joel-santos@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: April 11\, 2026\nLocation: Tokyo\, Japan\nBroadcast: Live on TBA | 7:00 PM Local / 5:00 AM ET  / 10:00 AM UK\nJuan Francisco Estrada versus Tenshin Nasukawa\, 12 rds\, WBC bantamweight final eliminator\nTomoya Tsuboi versus Pedro Guevara\, 10 rds\, junior bantamweights\nKyosuke Takami versus Angel Ayala\, 10 rds\, flyweights\nSource: Boxing247.com
@@ -242,13 +200,6 @@ SUMMARY:Hebert Conceicao Sousa versus Johan Gonzalez
 UID:20260410-newark-new-jersey-hebert-conceicao-sousa-versus-johan-gonzalez@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: March 28\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Prime Video PPV and PPV.COM | 8:00 PM ET  / 1:00 AM UK\nSebastian Fundora versus Keith Thurman\, 12 rds\, for Fundoras WBC junior middleweight title\nFrank Sanchez versus Richard Torrez Jr.\, 12 rds\, IBF heavyweight eliminator\nYoenli Hernandez versus Terrell Gausha\, 10 rds\, middleweights\nElijah Garcia versus Kevin Newman II\, 10 rds\, super middleweights\nSource: Boxing247.com
-DTEND:20260329T030000Z
-DTSTART:20260329T000000Z
-SUMMARY:Sebastian Fundora versus Keith Thurman
-UID:20260328-las-vegas-nevada-sebastian-fundora-versus-keith-thurman@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: May 16\, 2026\nLocation: Kempton Park\, South Africa\nBroadcast: Live on TBA | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nMelvin Jerusalem versus Siyakholwa Kuse\, rematch\, 12 rds\, for Jerusalems WBC strawweight title\nSource: Boxing247.com
 DTEND:20260517T020000Z
 DTSTART:20260516T230000Z
@@ -263,7 +214,7 @@ SUMMARY:Deontay Wilder versus Derek Chisora
 UID:20260404-london-england-deontay-wilder-versus-derek-chisora@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: April 4\, 2026\nLocation: Cardiff\, Wales\nBroadcast: Live on TBA | 7:00 PM UK  / 2:00 PM ET\nLauren Price versus Stephanie Pineiro Aquino\, 10 rds\, for Prices WBC/IBF/WBA womens welterweight title\nRhys Edwards versus Gully Powar\, 12 rds\, for vacant British featherweight title\nKane Shepherd versus Teo Alin\, 10 rds\, featherweights\nLewys Parfitt versus Morgan McIntosh\, 10 rds\, welterweights\nJacob Robinson versus Eduard Georgiev\, 4 rds\, junior lightweights\nKyran Jones versus Connor Goulding\, 6 rds\, middleweights\nMikey OSullivan versus Jose Manuel Perez\, 4 rds\, junior lightweights\nSource: Boxing247.com
+DESCRIPTION:Date: April 4\, 2026\nLocation: Cardiff\, Wales\nBroadcast: Live on TBA | 7:00 PM UK  / 2:00 PM ET\nLauren Price versus Stephanie Pineiro Aquino\, 10 rds\, for Prices WBC/IBF/WBA womens welterweight title\nRhys Edwards versus Gully Powar\, 12 rds\, for vacant British featherweight title\nKane Shepherd versus Teo Alin\, 10 rds\, featherweights\nLewys Parfitt versus Morgan McIntosh\, 10 rds\, welterweights\nJacob Robinson versus Eduard Georgiev\, 4 rds\, junior lightweights\nSource: Boxing247.com
 DTEND:20260405T020000Z
 DTSTART:20260404T230000Z
 SUMMARY:Lauren Price versus Stephanie Pineiro Aquino
@@ -291,7 +242,7 @@ SUMMARY:Naoya Inoue versus Junto Nakatani
 UID:20260502-tokyo-japan-naoya-inoue-versus-junto-nakatani@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: September 19\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Netflix | 8:00 PM ET  / 1:00 AM UK\nFloyd Mayweather versus Manny Pacquiao\, rematch\, 10 or 12 rds\, welterweights\nDalton Smith vs. Alberto Puello: June 6\, Start Time\, Undercard\, How to Watch\nJarrell Miller vs. Lenier Pero: April 25\, Start Time\, Undercard\, How to Watch\nCarlos Adames vs. Austin Williams: March 21\, Start Time\, Undercard\, How to Watch\nMoses Itauma vs Jermaine Franklin: March 28\, Start Time\, Undercard\, How to Watch\nSebastian Fundora vs. Keith Thurman: March 28\, Start Time\, Undercard\, How to Watch\nSource: Boxing247.com
+DESCRIPTION:Date: September 19\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Netflix | 8:00 PM ET  / 1:00 AM UK\nFloyd Mayweather versus Manny Pacquiao\, rematch\, 10 or 12 rds\, welterweights\nDeontay Wilder vs Derek Chisora: April 4\, Start Time\, Undercard\, How to Watch\nTyson Fury vs Arslanbek Makhmudov: April 11\, Start Time\, Undercard\, How to Watch\nCallum Smith vs. David Morrell: April 18\, Start Time\, Undercard\, How to Watch\nManny Pacquiao vs. Ruslan Provodnikov: April 18\, Start Time\, Undercard\, How to Watch\nTony Yoka vs. Lawrence Okolie: April 25\, Start Time\, Undercard\, How to Watch\nSource: Boxing247.com
 DTEND:20260920T030000Z
 DTSTART:20260920T000000Z
 SUMMARY:Floyd Mayweather versus Manny Pacquiao\, rematch
@@ -305,7 +256,7 @@ SUMMARY:Boxing - Verona\, New York
 UID:20260614-verona-new-york-boxing-verona-new-york@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: April 3\, 2026\nLocation: Altrincham\, England\nBroadcast: Live on DAZN | 7:00 PM UK  / 2:00 PM ET\nPat Brown versus Vasil Ducar\, 10 rds\, cruiserweights\nWilliam Crolla versus Jermaine Osbourne-Edwards\, 10 rds\, junior middleweights\nJoe Howarth versus Josh Blenkiron\, 10 rds\, lightweights\nAlfie Middlemiss versus Lewis Morris\, 8 rds\, featherweights\nJordan Thompson versus TBA\, 10 rds\, heavyweights\nIoan Croft versus TBA\, 6 rds\, middleweights\nGaran Croft versus TBA\, 6 rds\, middleweights\nSource: Boxing247.com
+DESCRIPTION:Date: April 3\, 2026\nLocation: Altrincham\, England\nBroadcast: Live on DAZN | 7:00 PM UK  / 2:00 PM ET\nPat Brown versus Vasil Ducar\, 10 rds\, cruiserweights\nWilliam Crolla versus Jermaine Osbourne-Edwards\, 10 rds\, junior middleweights\nJoe Howarth versus Josh Blenkiron\, 10 rds\, lightweights\nAlfie Middlemiss versus Lewis Morris\, 8 rds\, featherweights\nSource: Boxing247.com
 DTEND:20260404T020000Z
 DTSTART:20260403T230000Z
 SUMMARY:Pat Brown versus Vasil Ducar
