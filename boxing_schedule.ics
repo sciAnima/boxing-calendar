@@ -102,13 +102,6 @@ SUMMARY:Caroline Dubois versus Terri Harper
 UID:20260405-london-england-caroline-dubois-versus-terri-harper@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: April 3\, 2026\nLocation: Tokyo\, Japan\nBroadcast: Live on TBA | 7:00 PM Local / 5:00 AM ET  / 10:00 AM UK\nRene Santiago versus Masataka Taniguchi\, 12 rds\, for Santiagos WBO/WBA junior flyweight title\nYukinori Oguni versus Marlon Tapales\, 10 rds\, featherweights\nSource: Boxing247.com
-DTEND:20260404T020000Z
-DTSTART:20260403T230000Z
-SUMMARY:Rene Santiago versus Masataka Taniguchi
-UID:20260403-tokyo-japan-rene-santiago-versus-masataka-taniguchi@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: May 30\, 2026\nLocation: Magdeburg\, Germany\nBroadcast: Live on TBA | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nRoman Fress versus Tahir Kahrovic\, 12 rds\, WBO cruiserweight eliminator\nSource: Boxing247.com
 DTEND:20260531T020000Z
 DTSTART:20260530T230000Z
@@ -116,7 +109,7 @@ SUMMARY:Roman Fress versus Tahir Kahrovic
 UID:20260530-magdeburg-germany-roman-fress-versus-tahir-kahrovic@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: April 9\, 2026\nLocation: Montreal\, Canada\nBroadcast: Live on DAZN | 8:00 PM ET  / 1:00 AM UK\nOsleys Iglesias versus Pavel Silyagin\, 12 rds\, for vacant IBF super middleweight title\nLeila Beaudoin versus TBA\, 10 rds\, junior lightweights\nAlexandre Gaumont versus TBA\, 10 rds\, middleweights\nLuis Santana versus TBA\, 10 rds\, lightweights\nErik Israyelyan versus TBA\, 6 rds\, junior lightweights\nStephane Fondjo versus TBA\, 10 rds\, super middleweights\nKeven Beausejour versus TBA\, 4 rds\, light heavyweights\nSource: Boxing247.com
+DESCRIPTION:Date: April 9\, 2026\nLocation: Montreal\, Canada\nBroadcast: Live on DAZN  | 8:00 PM ET  / 1:00 AM UK\nOsleys Iglesias versus Pavel Silyagin\, 12 rds\, for vacant IBF super middleweight title\nLeila Beaudoin versus TBA\, 10 rds\, junior lightweights\nAlexandre Gaumont versus TBA\, 10 rds\, middleweights\nLuis Santana versus TBA\, 10 rds\, lightweights\nSource: Boxing247.com
 DTEND:20260410T030000Z
 DTSTART:20260410T000000Z
 SUMMARY:Osleys Iglesias versus Pavel Silyagin
@@ -142,13 +135,6 @@ DTEND:20260412T020000Z
 DTSTART:20260411T230000Z
 SUMMARY:Juan Francisco Estrada versus Tenshin Nasukawa
 UID:20260411-tokyo-japan-juan-francisco-estrada-versus-tenshin-nasukawa@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: April 3\, 2026\nLocation: Temecula\, California\nBroadcast: Live on DirecTV | 8:00 PM ET  / 1:00 AM UK\nPedro Taduran versus Gustavo Perez\, 12 rds\, for Tadurans IBF strawweight title\nLazaro Lorenzana versus TBA\, 10 rds\, super middleweights\nSource: Boxing247.com
-DTEND:20260404T030000Z
-DTSTART:20260404T000000Z
-SUMMARY:Pedro Taduran versus Gustavo Perez
-UID:20260403-temecula-california-pedro-taduran-versus-gustavo-perez@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: September 12\, 2026\nLocation: Riyadh\, Saudi Arabia\nBroadcast: Live on TBA | 7:00 PM Local / 12:00 PM ET  / 5:00 PM UK\nCanelo Alvarez versus TBA\, 12 rds\, super middleweights\nSource: Boxing247.com
@@ -254,13 +240,6 @@ DTEND:20260615T020000Z
 DTSTART:20260614T230000Z
 SUMMARY:Boxing - Verona\, New York
 UID:20260614-verona-new-york-boxing-verona-new-york@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: April 3\, 2026\nLocation: Altrincham\, England\nBroadcast: Live on DAZN  | 7:00 PM UK  / 2:00 PM ET\nPat Brown versus Vasil Ducar\, 10 rds\, cruiserweights\nWilliam Crolla versus Jermaine Osbourne-Edwards\, 10 rds\, junior middleweights\nJoe Howarth versus Josh Blenkiron\, 10 rds\, lightweights\nAlfie Middlemiss versus Lewis Morris\, 8 rds\, featherweights\nSource: Boxing247.com
-DTEND:20260404T020000Z
-DTSTART:20260403T230000Z
-SUMMARY:Pat Brown versus Vasil Ducar
-UID:20260403-altrincham-england-pat-brown-versus-vasil-ducar@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: April 11\, 2026\nLocation: Atlantic City\, New Jersey\nBroadcast: Live on ProBoxTV | 8:00 PM ET  / 1:00 AM UK\nVito Mielnicki Jr. versus Omar Ulises Huerta\, 10 rds\, middleweights\nYan Marcos versus Dwyke Flemmings Jr.\, 10 rds\, junior middleweights\nHeidan Martinez Morillo versus Daiyan Butt\, 10 rds\, junior welterweights\nNorman Neely versus TBA\, 6 rds\, heavyweights\nErick Badillo versus TBA\, 8 rds\, junior flyweights\nMalik Nelson versus LaVay Lawrence\, 4 rds\, featherweights\nArjan Iseni versus TBA\, 4 rds\, light heavyweights\nMuadh Abdus Salaam versus TBA\, 4 rds\, welterweights\nZahir Abdus Salaam versus TBA\, 4 rds\, middleweights\nMichael Harris versus TBA\, 4 rds\, junior welterweights\nSource: Boxing247.com
