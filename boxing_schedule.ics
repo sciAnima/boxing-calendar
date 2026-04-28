@@ -4,46 +4,11 @@ COMMENT:Event data sourced from Boxing247.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Date: May 9\, 2026\nLocation: Manchester\, England\nBroadcast: Live on DAZN PPV | 7:00 PM UK  / 2:00 PM ET\nFabio Wardley versus Daniel Dubois\, 12 rds\, for Wardleys WBO heavyweight title\nSource: Boxing247.com
-DTEND:20260510T020000Z
-DTSTART:20260509T230000Z
-SUMMARY:Fabio Wardley versus Daniel Dubois
-UID:20260509-manchester-england-fabio-wardley-versus-daniel-dubois@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: April 25\, 2026\nLocation: Baltimore\, Maryland\nBroadcast: Live on TBA | 7:00 PM ET  / 12:00 AM UK\nDeric Davis versus Moises Garcia\, 8 rds\, lightweights\nTyler Langer versus Ali Ellis\, 8 rds\, cruiserweights\nShera Mae Patricio versus Tania Walters\, 8 rds\, female bantamweights\nDMitrius Ballard versus Jeremy Ramos\, 6 rds\, super middleweights\nYevgeniy Pavlov versus Antonio Dunton El Jr.\, 6 rds\, junior lightweights\nJaqeem Hutcherson versus Vit Yang\, 6 rds\, featherweights\nBria Miller versus Destiny Jones\, 4 rds\, female welterweights\nSource: Boxing247.com
-DTEND:20260426T020000Z
-DTSTART:20260425T230000Z
-SUMMARY:Deric Davis versus Moises Garcia
-UID:20260425-baltimore-maryland-deric-davis-versus-moises-garcia@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: April 25\, 2026\nLocation: Kolding\, Denmark\nBroadcast: Live on DAZN | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nJacob Bank versus Paulinus Ndjolonimu\, 12 rds\, WBC super middleweight eliminator\nConstantino Nanga versus Dylan Colin\, 8 rds\, light heavyweights\nMaher Khatib versus Leevi Salo\, 6 rds\, junior welterweights\nThorbjorn Boudigaard versus Adam Kolarik\, 6 rds\, heavyweights\nMorten Givskov versus Tomas Salek\, 6 rds\, heavyweights\nSource: Boxing247.com
-DTEND:20260426T020000Z
-DTSTART:20260425T230000Z
-SUMMARY:Jacob Bank versus Paulinus Ndjolonimu
-UID:20260425-kolding-denmark-jacob-bank-versus-paulinus-ndjolonimu@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: April 29\, 2026\nLocation: Melbourne\, Australia\nBroadcast: Live on DAZN | 7:00 PM Local / 5:00 AM ET  / 10:00 AM UK\nSkye Nicolson versus Mariah Turner\, 10 rds\, for Nicolsons WBC womens interim junior featherweight title\nJake Wyllie versus Miles Zalewski\, 10 rds\, junior welterweights\nTeremoana Teremoana versus Bowie Tupou\, 8 rds\, heavyweights\nAndrew Hunt versus Benjamin Hussain\, 10 rds\, junior middleweights\nJesse Bolt versus Faavesi Isaako\, 8 rds\, lightweights\nChloe Chaos versus Arlene Blencowe\, 8 rds\, female junior middleweights\nJonte Metaxas versus Troy Toleafoa\, 4 rds\, junior welterweights\nOmar El-Abdallah versus Alivereti Dodomo\, 6 rds\, super middleweights\nSource: Boxing247.com
-DTEND:20260430T020000Z
-DTSTART:20260429T230000Z
-SUMMARY:Skye Nicolson versus Mariah Turner
-UID:20260429-melbourne-australia-skye-nicolson-versus-mariah-turner@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: May 30\, 2026\nLocation: El Paso\, Texas\nBroadcast: Live on ESPN and ESPN+ | 8:00 PM ET  / 1:00 AM UK\nStephanie Han versus Holly Holm\, rematch\, 10 rds\, for Hans WBA womens lightweight title\nSource: Boxing247.com
-DTEND:20260531T030000Z
-DTSTART:20260531T000000Z
-SUMMARY:Stephanie Han versus Holly Holm\, rematch
-UID:20260530-el-paso-texas-stephanie-han-versus-holly-holm-rematch@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: May 2\, 2026\nLocation: Rotherham\, England\nBroadcast: Live on TBA | 7:00 PM UK  / 2:00 PM ET\nConner Kelsall versus Joel Santos\, 12 rds\, for vacant European flyweight title\nSource: Boxing247.com
-DTEND:20260503T020000Z
-DTSTART:20260502T230000Z
-SUMMARY:Conner Kelsall versus Joel Santos
-UID:20260502-rotherham-england-conner-kelsall-versus-joel-santos@boxing247-calendar
+DESCRIPTION:Date: May 2\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Prime Video PPV\, DAZN PPV\, PPV.COM | 8:00 PM ET  / 1:00 AM UK\nGilberto Zurdo Ramirez versus David Benavidez\, 12 rds\, for Ramirezs WBO/WBA cruiserweight title\nArmando Resendiz versus Jaime Munguia\, 12 rds\, for Resendizs WBA super middleweight title\nOscar Duarte versus Angel Fierro\, 10 rds\, junior welterweights\nIsaac Lucero versus Alan Sandoval\, 10 rds\, junior middleweights\nSource: Boxing247.com
+DTEND:20260503T030000Z
+DTSTART:20260503T000000Z
+SUMMARY:Gilberto Zurdo Ramirez versus David Benavidez
+UID:20260502-las-vegas-nevada-gilberto-zurdo-ramirez-versus-david-benavidez@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: June 27\, 2026\nLocation: Athens\, Greece\nBroadcast: Live on TBA | 7:00 PM Local / 12:00 PM ET  / 5:00 PM UK\nFloyd Mayweather versus Mike Zambidis\, exhibition\nSource: Boxing247.com
@@ -53,18 +18,32 @@ SUMMARY:Floyd Mayweather versus Mike Zambidis\, exhibition
 UID:20260627-athens-greece-floyd-mayweather-versus-mike-zambidis-exhibition@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: May 2\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Prime Video PPV\, DAZN PPV\, PPV.COM | 8:00 PM ET  / 1:00 AM UK\nGilberto Zurdo Ramirez versus David Benavidez\, 12 rds\, for Ramirezs WBO/WBA cruiserweight title\nArmando Resendiz versus Jaime Munguia\, 12 rds\, for Resendizs WBA super middleweight title\nOscar Duarte versus Angel Fierro\, 10 rds\, junior welterweights\nIsaac Lucero versus Alan Sandoval\, 10 rds\, junior middleweights\nSource: Boxing247.com
-DTEND:20260503T030000Z
-DTSTART:20260503T000000Z
-SUMMARY:Gilberto Zurdo Ramirez versus David Benavidez
-UID:20260502-las-vegas-nevada-gilberto-zurdo-ramirez-versus-david-benavidez@boxing247-calendar
+DESCRIPTION:Date: May 10\, 2026\nLocation: TBA\nBroadcast: Live on Paramount+ | 8:00 PM ET  / 1:00 AM UK\nSource: Boxing247.com
+DTEND:20260511T030000Z
+DTSTART:20260511T000000Z
+SUMMARY:Boxing - TBA
+UID:20260510-tba-boxing-tba@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: April 23\, 2026\nLocation: Brisbane\, Australia\nBroadcast: Live on TBA | 7:00 PM Local / 5:00 AM ET  / 10:00 AM UK\nJason Moloney versus Andre Donovan\, 10 rds\, bantamweights\nConor Wallace versus Walter Sequeira\, 8 rds\, light heavyweights\nBen Mahoney versus Dan Hill\, 10 rds\, junior middleweights\nMax McIntyre versus Tej Singh\, 8 rds\, super middleweights\nAustin Aokuso versus Wulamu Tulake\, 8 rds\, light heavyweights\nSource: Boxing247.com
-DTEND:20260424T020000Z
-DTSTART:20260423T230000Z
-SUMMARY:Jason Moloney versus Andre Donovan
-UID:20260423-brisbane-australia-jason-moloney-versus-andre-donovan@boxing247-calendar
+DESCRIPTION:Date: May 9\, 2026\nLocation: Manchester\, England\nBroadcast: Live on DAZN PPV | 7:00 PM UK  / 2:00 PM ET\nFabio Wardley versus Daniel Dubois\, 12 rds\, for Wardleys WBO heavyweight title\nSource: Boxing247.com
+DTEND:20260510T020000Z
+DTSTART:20260509T230000Z
+SUMMARY:Fabio Wardley versus Daniel Dubois
+UID:20260509-manchester-england-fabio-wardley-versus-daniel-dubois@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: September 12\, 2026\nLocation: Riyadh\, Saudi Arabia\nBroadcast: Live on TBA | 7:00 PM Local / 12:00 PM ET  / 5:00 PM UK\nCanelo Alvarez versus TBA\, 12 rds\, super middleweights\nSource: Boxing247.com
+DTEND:20260913T020000Z
+DTSTART:20260912T230000Z
+SUMMARY:Canelo Alvarez versus TBA
+UID:20260912-riyadh-saudi-arabia-canelo-alvarez-versus-tba@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: May 2\, 2026\nLocation: Miami\, Florida\nBroadcast: Live on Nothing But Sportz | 7:00 PM ET  / 12:00 AM UK\nYuriorkis Gamboa versus TBA\, 6 rds\, junior welterweights\nGuillermo Rigondeaux versus TBA\, 8 rds\, bantamweights\nDominique Valera versus Colby Madison\, 8 rds\, heavyweights\nRaphael Akpejiori versus Stanley Wright\, 8 rds\, heavyweights\nChristen Biggs versus Marcello Williams\, 6 rds\, junior welterweights\nPierre Nance versus Marcus Smith\, 4 rds\, light heavyweights\nKenzell Williams versus TBA\, 6 rds\, junior featherweights\nLucas Dos Santos versus Javier Mayoral\, 6 rds\, welterweights\nNikita Ababiy versus TBA\, 6 rds\, super middleweights\nJayon Tinnin versus TBA\, 4 rds\, bantamweights\nAkeem Cheetham versus Alexandre Lima Moura\, 4 rds\, welterweights\nPeter Peraza versus TBA\, 4 rds\, welterweights\nEdith Ogoke versus TBA\, 4 rds\, female middleweights\nSource: Boxing247.com
+DTEND:20260503T020000Z
+DTSTART:20260502T230000Z
+SUMMARY:Yuriorkis Gamboa versus TBA
+UID:20260502-miami-florida-yuriorkis-gamboa-versus-tba@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: May 30\, 2026\nLocation: Magdeburg\, Germany\nBroadcast: Live on TBA | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nRoman Fress versus Tahir Kahrovic\, 12 rds\, WBO cruiserweight eliminator\nSource: Boxing247.com
@@ -74,32 +53,39 @@ SUMMARY:Roman Fress versus Tahir Kahrovic
 UID:20260530-magdeburg-germany-roman-fress-versus-tahir-kahrovic@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: April 25\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on DAZN | 8:00 PM ET  / 1:00 AM UK\nJarrell Miller versus Lenier Pero\, 12 rds\, WBA heavyweight eliminator\nAlan Chaves versus Miguel Madueno\, 10 rds\, lightweights\nFreudis Rojas versus Damian Sosa\, 10 rds\, junior middleweights\nAngel Barrientes versus Isaac Rojas Garcia\, 10 rds\, junior featherweights\nSource: Boxing247.com
-DTEND:20260426T030000Z
-DTSTART:20260426T000000Z
-SUMMARY:Jarrell Miller versus Lenier Pero
-UID:20260425-las-vegas-nevada-jarrell-miller-versus-lenier-pero@boxing247-calendar
+DESCRIPTION:Date: April 29\, 2026\nLocation: Melbourne\, Australia\nBroadcast: Live on DAZN | 7:00 PM Local / 5:00 AM ET  / 10:00 AM UK\nSkye Nicolson versus Mariah Turner\, 10 rds\, for Nicolsons WBC womens interim junior featherweight title\nJake Wyllie versus Miles Zalewski\, 10 rds\, junior welterweights\nTeremoana Teremoana versus Bowie Tupou\, 8 rds\, heavyweights\nAndrew Hunt versus Benjamin Hussain\, 10 rds\, junior middleweights\nSource: Boxing247.com
+DTEND:20260430T020000Z
+DTSTART:20260429T230000Z
+SUMMARY:Skye Nicolson versus Mariah Turner
+UID:20260429-melbourne-australia-skye-nicolson-versus-mariah-turner@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: May 10\, 2026\nLocation: TBA\nBroadcast: Live on Paramount+ | 8:00 PM ET  / 1:00 AM UK\nSource: Boxing247.com
-DTEND:20260511T030000Z
-DTSTART:20260511T000000Z
-SUMMARY:Boxing - TBA
-UID:20260510-tba-boxing-tba@boxing247-calendar
+DESCRIPTION:Date: May 2\, 2026\nLocation: Tokyo\, Japan\nBroadcast: Live on DAZN | 7:00 PM Local / 5:00 AM ET  / 10:00 AM UK\nNaoya Inoue versus Junto Nakatani\, 12 rds\, for Inoues undisputed junior featherweight title\nTakuma Inoue versus Kazuto Ioka\, 12 rds\, for Inoues WBC bantamweight title\nYoshiki Takei versus DeKang Wang\, 8 rds\, junior featherweights\nSora Tanaka versus Jin Sasaki\, 10 rds\, welterweights\nDeok No Yun versus Yuito Moriwaki\, rematch\, 10 rds\, super middleweights\nToshiki Shimomachi versus Reiya Abe\, 10 rds\, featherweights\nKosuke Tomioka versus Shogo Tanaka\, 10 rds\, flyweights\nSource: Boxing247.com
+DTEND:20260503T020000Z
+DTSTART:20260502T230000Z
+SUMMARY:Naoya Inoue versus Junto Nakatani
+UID:20260502-tokyo-japan-naoya-inoue-versus-junto-nakatani@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: April 25\, 2026\nLocation: Santiago\, Chile\nBroadcast: Live on TBA | 7:00 PM Local / 6:00 PM ET  / 11:00 PM UK\nJosue Francisco Aguero versus Angel Daniel Garcia\, 10 rds\, junior lightweights\nJoel Agustin Contreras versus Angel Alvarado Soto\, 10 rds\, flyweights\nAndres Campos versus Angel Meza Morales\, 10 rds\, junior bantamweights\nSource: Boxing247.com
-DTEND:20260426T020000Z
-DTSTART:20260425T230000Z
-SUMMARY:Josue Francisco Aguero versus Angel Daniel Garcia
-UID:20260425-santiago-chile-josue-francisco-aguero-versus-angel-daniel-garcia@boxing247-calendar
+DESCRIPTION:Date: May 30\, 2026\nLocation: El Paso\, Texas\nBroadcast: Live on ESPN and ESPN+ | 8:00 PM ET  / 1:00 AM UK\nStephanie Han versus Holly Holm\, rematch\, 10 rds\, for Hans WBA womens lightweight title\nSource: Boxing247.com
+DTEND:20260531T030000Z
+DTSTART:20260531T000000Z
+SUMMARY:Stephanie Han versus Holly Holm\, rematch
+UID:20260530-el-paso-texas-stephanie-han-versus-holly-holm-rematch@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: September 12\, 2026\nLocation: Riyadh\, Saudi Arabia\nBroadcast: Live on TBA | 7:00 PM Local / 12:00 PM ET  / 5:00 PM UK\nCanelo Alvarez versus TBA\, 12 rds\, super middleweights\nSource: Boxing247.com
-DTEND:20260913T020000Z
-DTSTART:20260912T230000Z
-SUMMARY:Canelo Alvarez versus TBA
-UID:20260912-riyadh-saudi-arabia-canelo-alvarez-versus-tba@boxing247-calendar
+DESCRIPTION:Date: September 19\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Netflix | 8:00 PM ET  / 1:00 AM UK\nFloyd Mayweather versus Manny Pacquiao\, rematch\, 10 or 12 rds\, welterweights\nJarrell Miller vs. Lenier Pero: April 25\, Start Time\, Undercard\, How to Watch\nTony Yoka vs. Lawrence Okolie *** Cancelled ***\nDavid Benavidez vs. Gilberto Ramirez: May 2\, Start Time\, Undercard\, How to Watch\nFabio Wardley vs Daniel Dubois: May 9\, Start Time\, Undercard\, How to Watch\nOleksandr Usyk vs. Rico Verhoeven: May 23\, Start Time\, Undercard\, How to Watch\nSource: Boxing247.com
+DTEND:20260920T030000Z
+DTSTART:20260920T000000Z
+SUMMARY:Floyd Mayweather versus Manny Pacquiao\, rematch
+UID:20260919-las-vegas-nevada-floyd-mayweather-versus-manny-pacquiao-rematch@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: May 2\, 2026\nLocation: Rotherham\, England\nBroadcast: Live on TBA | 7:00 PM UK  / 2:00 PM ET\nConner Kelsall versus Joel Santos\, 12 rds\, for vacant European flyweight title\nSource: Boxing247.com
+DTEND:20260503T020000Z
+DTSTART:20260502T230000Z
+SUMMARY:Conner Kelsall versus Joel Santos
+UID:20260502-rotherham-england-conner-kelsall-versus-joel-santos@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: May 23\, 2026\nLocation: TBA\, Spain\nBroadcast: Live on TBA | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nJose Luis Navarro versus Oliver Zaren\, 12 rds\, for vacant European super middleweight title\nSource: Boxing247.com
@@ -116,6 +102,13 @@ SUMMARY:Oleksandr Usyk versus Rico Verhoeven
 UID:20260523-giza-egypt-oleksandr-usyk-versus-rico-verhoeven@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: June 14\, 2026\nLocation: Verona\, New York\nBroadcast: Live on TBA | 7:00 PM Local / 7:00 PM ET  / 12:00 AM UK\nSource: Boxing247.com
+DTEND:20260615T020000Z
+DTSTART:20260614T230000Z
+SUMMARY:Boxing - Verona\, New York
+UID:20260614-verona-new-york-boxing-verona-new-york@boxing247-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: May 16\, 2026\nLocation: Kempton Park\, South Africa\nBroadcast: Live on TBA | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nMelvin Jerusalem versus Siyakholwa Kuse\, rematch\, 12 rds\, for Jerusalems WBC strawweight title\nSource: Boxing247.com
 DTEND:20260517T020000Z
 DTSTART:20260516T230000Z
@@ -128,40 +121,5 @@ DTEND:20260503T020000Z
 DTSTART:20260502T230000Z
 SUMMARY:Conah Walker versus Sam Eggington
 UID:20260502-wolverhampton-england-conah-walker-versus-sam-eggington@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: April 25\, 2026\nLocation: Reynosa\, Mexico\nBroadcast: Live on TBA | 7:00 PM Local / 9:00 PM ET  / 2:00 AM UK\nJulio Cesar Chavez Jr. versus Jhon Caicedo\, 10 rds\, cruiserweights\nSource: Boxing247.com
-DTEND:20260426T020000Z
-DTSTART:20260425T230000Z
-SUMMARY:Julio Cesar Chavez Jr. versus Jhon Caicedo
-UID:20260425-reynosa-mexico-julio-cesar-chavez-jr-versus-jhon-caicedo@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: May 2\, 2026\nLocation: Miami\, Florida\nBroadcast: Live on Nothing But Sportz | 7:00 PM ET  / 12:00 AM UK\nYuriorkis Gamboa versus TBA\, 6 rds\, junior welterweights\nGuillermo Rigondeaux versus TBA\, 8 rds\, bantamweights\nDominique Valera versus Colby Madison\, 8 rds\, heavyweights\nRaphael Akpejiori versus Stanley Wright\, 8 rds\, heavyweights\nChristen Biggs versus Marcello Williams\, 6 rds\, junior welterweights\nPierre Nance versus Marcus Smith\, 4 rds\, light heavyweights\nKenzell Williams versus TBA\, 6 rds\, junior featherweights\nLucas Dos Santos versus Javier Mayoral\, 6 rds\, welterweights\nNikita Ababiy versus TBA\, 6 rds\, super middleweights\nJayon Tinnin versus TBA\, 4 rds\, bantamweights\nAkeem Cheetham versus Alexandre Lima Moura\, 4 rds\, welterweights\nPeter Peraza versus TBA\, 4 rds\, welterweights\nEdith Ogoke versus TBA\, 4 rds\, female middleweights\nSource: Boxing247.com
-DTEND:20260503T020000Z
-DTSTART:20260502T230000Z
-SUMMARY:Yuriorkis Gamboa versus TBA
-UID:20260502-miami-florida-yuriorkis-gamboa-versus-tba@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: May 2\, 2026\nLocation: Tokyo\, Japan\nBroadcast: Live on DAZN | 7:00 PM Local / 5:00 AM ET  / 10:00 AM UK\nNaoya Inoue versus Junto Nakatani\, 12 rds\, for Inoues undisputed junior featherweight title\nTakuma Inoue versus Kazuto Ioka\, 12 rds\, for Inoues WBC bantamweight title\nYoshiki Takei versus DeKang Wang\, 8 rds\, junior featherweights\nSora Tanaka versus Jin Sasaki\, 10 rds\, welterweights\nDeok No Yun versus Yuito Moriwaki\, rematch\, 10 rds\, super middleweights\nToshiki Shimomachi versus Reiya Abe\, 10 rds\, featherweights\nKosuke Tomioka versus Shogo Tanaka\, 10 rds\, flyweights\nSource: Boxing247.com
-DTEND:20260503T020000Z
-DTSTART:20260502T230000Z
-SUMMARY:Naoya Inoue versus Junto Nakatani
-UID:20260502-tokyo-japan-naoya-inoue-versus-junto-nakatani@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: September 19\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Netflix | 8:00 PM ET  / 1:00 AM UK\nFloyd Mayweather versus Manny Pacquiao\, rematch\, 10 or 12 rds\, welterweights\nJarrell Miller vs. Lenier Pero: April 25\, Start Time\, Undercard\, How to Watch\nTony Yoka vs. Lawrence Okolie *** Cancelled ***\nDavid Benavidez vs. Gilberto Ramirez: May 2\, Start Time\, Undercard\, How to Watch\nFabio Wardley vs Daniel Dubois: May 9\, Start Time\, Undercard\, How to Watch\nOleksandr Usyk vs. Rico Verhoeven: May 23\, Start Time\, Undercard\, How to Watch\nSource: Boxing247.com
-DTEND:20260920T030000Z
-DTSTART:20260920T000000Z
-SUMMARY:Floyd Mayweather versus Manny Pacquiao\, rematch
-UID:20260919-las-vegas-nevada-floyd-mayweather-versus-manny-pacquiao-rematch@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: June 14\, 2026\nLocation: Verona\, New York\nBroadcast: Live on TBA | 7:00 PM Local / 7:00 PM ET  / 12:00 AM UK\nSource: Boxing247.com
-DTEND:20260615T020000Z
-DTSTART:20260614T230000Z
-SUMMARY:Boxing - Verona\, New York
-UID:20260614-verona-new-york-boxing-verona-new-york@boxing247-calendar
 END:VEVENT
 END:VCALENDAR
