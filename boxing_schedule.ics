@@ -4,7 +4,7 @@ COMMENT:Event data sourced from Boxing247.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Date: May 2\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on  Prime Video  PPV\,  DAZN PPV \, PPV.COM | 8:00 PM ET  / 1:00 AM UK\nGilberto Zurdo Ramirez versus David Benavidez\, 12 rds\, for Ramirezs WBO/WBA cruiserweight title\nArmando Resendiz versus Jaime Munguia\, 12 rds\, for Resendizs WBA super middleweight title\nOscar Duarte versus Angel Fierro\, 10 rds\, junior welterweights\nIsaac Lucero versus Alan Sandoval\, 10 rds\, junior middleweights\nSource: Boxing247.com
+DESCRIPTION:Date: May 2\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Prime Video PPV\, DAZN PPV\, PPV.COM | 8:00 PM ET  / 1:00 AM UK\nGilberto Zurdo Ramirez versus David Benavidez\, 12 rds\, for Ramirezs WBO/WBA cruiserweight title\nArmando Resendiz versus Jaime Munguia\, 12 rds\, for Resendizs WBA super middleweight title\nOscar Duarte versus Angel Fierro\, 10 rds\, junior welterweights\nIsaac Lucero versus Alan Sandoval\, 10 rds\, junior middleweights\nSource: Boxing247.com
 DTEND:20260503T030000Z
 DTSTART:20260503T000000Z
 SUMMARY:Gilberto Zurdo Ramirez versus David Benavidez
@@ -51,20 +51,6 @@ DTEND:20260531T020000Z
 DTSTART:20260530T230000Z
 SUMMARY:Roman Fress versus Tahir Kahrovic
 UID:20260530-magdeburg-germany-roman-fress-versus-tahir-kahrovic@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: April 29\, 2026\nLocation: Melbourne\, Australia\nBroadcast: Live on DAZN  | 7:00 PM Local / 5:00 AM ET  / 10:00 AM UK\nSkye Nicolson versus Mariah Turner\, 10 rds\, for Nicolsons WBC womens interim junior featherweight title\nJake Wyllie versus Miles Zalewski\, 10 rds\, junior welterweights\nTeremoana Teremoana versus Bowie Tupou\, 8 rds\, heavyweights\nAndrew Hunt versus Benjamin Hussain\, 10 rds\, junior middleweights\nSource: Boxing247.com
-DTEND:20260430T020000Z
-DTSTART:20260429T230000Z
-SUMMARY:Skye Nicolson versus Mariah Turner
-UID:20260429-melbourne-australia-skye-nicolson-versus-mariah-turner@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: May 2\, 2026\nLocation: Tokyo\, Japan\nBroadcast: Live on DAZN  | 7:00 PM Local / 5:00 AM ET  / 10:00 AM UK\nNaoya Inoue versus Junto Nakatani\, 12 rds\, for Inoues undisputed junior featherweight title\nTakuma Inoue versus Kazuto Ioka\, 12 rds\, for Inoues WBC bantamweight title\nYoshiki Takei versus DeKang Wang\, 8 rds\, junior featherweights\nSora Tanaka versus Jin Sasaki\, 10 rds\, welterweights\nDeok No Yun versus Yuito Moriwaki\, rematch\, 10 rds\, super middleweights\nToshiki Shimomachi versus Reiya Abe\, 10 rds\, featherweights\nKosuke Tomioka versus Shogo Tanaka\, 10 rds\, flyweights\nSource: Boxing247.com
-DTEND:20260503T020000Z
-DTSTART:20260502T230000Z
-SUMMARY:Naoya Inoue versus Junto Nakatani
-UID:20260502-tokyo-japan-naoya-inoue-versus-junto-nakatani@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: May 30\, 2026\nLocation: El Paso\, Texas\nBroadcast: Live on ESPN and ESPN+ | 8:00 PM ET  / 1:00 AM UK\nStephanie Han versus Holly Holm\, rematch\, 10 rds\, for Hans WBA womens lightweight title\nSource: Boxing247.com
