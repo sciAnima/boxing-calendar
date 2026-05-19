@@ -4,20 +4,6 @@ COMMENT:Event data sourced from Boxing247.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Date: June 27\, 2026\nLocation: Athens\, Greece\nBroadcast: Live on TBA | 7:00 PM Local / 12:00 PM ET  / 5:00 PM UK\nFloyd Mayweather versus Mike Zambidis\, exhibition\nSource: Boxing247.com
-DTEND:20260628T020000Z
-DTSTART:20260627T230000Z
-SUMMARY:Floyd Mayweather versus Mike Zambidis\, exhibition
-UID:20260627-athens-greece-floyd-mayweather-versus-mike-zambidis-exhibition@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: May 9\, 2026\nLocation: Manchester\, England\nBroadcast: Live on DAZN  PPV | 7:00 PM UK  / 2:00 PM ET\nFabio Wardley versus Daniel Dubois\, 12 rds\, for Wardleys WBO heavyweight title\nSource: Boxing247.com
-DTEND:20260510T020000Z
-DTSTART:20260509T230000Z
-SUMMARY:Fabio Wardley versus Daniel Dubois
-UID:20260509-manchester-england-fabio-wardley-versus-daniel-dubois@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: September 12\, 2026\nLocation: Riyadh\, Saudi Arabia\nBroadcast: Live on TBA | 7:00 PM Local / 12:00 PM ET  / 5:00 PM UK\nCanelo Alvarez versus TBA\, 12 rds\, super middleweights\nSource: Boxing247.com
 DTEND:20260913T020000Z
 DTSTART:20260912T230000Z
@@ -67,17 +53,10 @@ SUMMARY:Boxing - Verona\, New York
 UID:20260614-verona-new-york-boxing-verona-new-york@boxing247-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: May 16\, 2026\nLocation: Kempton Park\, South Africa\nBroadcast: Live on TBA | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nMelvin Jerusalem versus Siyakholwa Kuse\, rematch\, 12 rds\, for Jerusalems WBC strawweight title\nSource: Boxing247.com
-DTEND:20260517T020000Z
-DTSTART:20260516T230000Z
-SUMMARY:Melvin Jerusalem versus Siyakholwa Kuse\, rematch
-UID:20260516-kempton-park-south-africa-melvin-jerusalem-versus-siyakholwa-kuse-rematch@boxing247-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: May 10\, 2026\nLocation: TBA\nBroadcast: Live on Paramount+ | 8:00 PM ET  / 1:00 AM UK\nSource: Boxing247.com
-DTEND:20260511T030000Z
-DTSTART:20260511T000000Z
-SUMMARY:Boxing - TBA
-UID:20260510-tba-boxing-tba@boxing247-calendar
+DESCRIPTION:Date: June 27\, 2026\nLocation: Athens\, Greece\nBroadcast: Live on TBA | 7:00 PM Local / 12:00 PM ET  / 5:00 PM UK\nFloyd Mayweather versus Mike Zambidis\, exhibition\nSource: Boxing247.com
+DTEND:20260628T020000Z
+DTSTART:20260627T230000Z
+SUMMARY:Floyd Mayweather versus Mike Zambidis\, exhibition
+UID:20260627-athens-greece-floyd-mayweather-versus-mike-zambidis-exhibition@boxing247-calendar
 END:VEVENT
 END:VCALENDAR
