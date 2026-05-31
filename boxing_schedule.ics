@@ -1,62 +1,90 @@
 BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
-COMMENT:Event data sourced from Boxing247.com
+COMMENT:Event data sourced from FightNights.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Date: September 12\, 2026\nLocation: Riyadh\, Saudi Arabia\nBroadcast: Live on TBA | 7:00 PM Local / 12:00 PM ET  / 5:00 PM UK\nCanelo Alvarez versus TBA\, 12 rds\, super middleweights\nSource: Boxing247.com
-DTEND:20260913T020000Z
-DTSTART:20260912T230000Z
-SUMMARY:Canelo Alvarez versus TBA
-UID:20260912-riyadh-saudi-arabia-canelo-alvarez-versus-tba@boxing247-calendar
+DESCRIPTION:Date: July 25 2026\nVenue: Riyadh\, Saudi Arabia\nNetwork: TBA\nSource: FightNights.com
+DTEND:20260726T050000Z
+DTSTART:20260726T020000Z
+SUMMARY:Anthony Joshua  vs.  Kristian Prenga
+UID:20260725-anthony-joshua-vs-kristian-prenga@fightnights-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: May 30\, 2026\nLocation: Magdeburg\, Germany\nBroadcast: Live on TBA | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nRoman Fress versus Tahir Kahrovic\, 12 rds\, WBO cruiserweight eliminator\nSource: Boxing247.com
-DTEND:20260531T020000Z
-DTSTART:20260530T230000Z
-SUMMARY:Roman Fress versus Tahir Kahrovic
-UID:20260530-magdeburg-germany-roman-fress-versus-tahir-kahrovic@boxing247-calendar
+DESCRIPTION:Date: June 13 2026\nVenue: Desert Diamond Arena\, Glendale\, Arizona\, USA\nTime: 7pm ET\nNetwork: DAZN\nSource: FightNights.com
+DTEND:20260614T020000Z
+DTSTART:20260613T230000Z
+SUMMARY:Jesse Rodriguez  vs.  Antonio Vargas
+UID:20260613-jesse-rodriguez-vs-antonio-vargas@fightnights-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: May 30\, 2026\nLocation: El Paso\, Texas\nBroadcast: Live on ESPN and ESPN+ | 8:00 PM ET  / 1:00 AM UK\nStephanie Han versus Holly Holm\, rematch\, 10 rds\, for Hans WBA womens lightweight title\nSource: Boxing247.com
-DTEND:20260531T030000Z
-DTSTART:20260531T000000Z
-SUMMARY:Stephanie Han versus Holly Holm\, rematch
-UID:20260530-el-paso-texas-stephanie-han-versus-holly-holm-rematch@boxing247-calendar
+DESCRIPTION:Date: June 06 2026\nVenue: ournemouth International Centre\, Bournemouth\, Dorset\, United Kingdom\nNetwork: Sky Sports\nSource: FightNights.com
+DTEND:20260607T050000Z
+DTSTART:20260607T020000Z
+SUMMARY:Chris Billam-Smith  vs.  Ryan Rozicki
+UID:20260606-chris-billam-smith-vs-ryan-rozicki@fightnights-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: September 19\, 2026\nLocation: Las Vegas\, Nevada\nBroadcast: Live on Netflix | 8:00 PM ET  / 1:00 AM UK\nFloyd Mayweather versus Manny Pacquiao\, rematch\, 10 or 12 rds\, welterweights\nShane Mosley Jr vs Serhii Bohachuk: May 10\, Start Time\, Undercard\, How to Watch\nFabio Wardley vs Daniel Dubois: May 9\, Start Time\, Undercard\, How to Watch\nOleksandr Usyk vs. Rico Verhoeven: May 23\, Start Time\, Undercard\, How to Watch\nDavid Benavidez vs Gilberto Ramirez: May 2\, Start Time\, Undercard\, How to Watch\nNaoya Inoue vs Junto Nakatani: May 2\, Start Time\, Undercard\, How to Watch\nSource: Boxing247.com
-DTEND:20260920T030000Z
-DTSTART:20260920T000000Z
-SUMMARY:Floyd Mayweather versus Manny Pacquiao\, rematch
-UID:20260919-las-vegas-nevada-floyd-mayweather-versus-manny-pacquiao-rematch@boxing247-calendar
+DESCRIPTION:Date: June 06 2026\nVenue: Utilita\, Sheffield\, Yorkshire\, United Kingdom\nNetwork: DAZN\nSource: FightNights.com
+DTEND:20260607T050000Z
+DTSTART:20260607T020000Z
+SUMMARY:Ricardo Rafael Sandoval  vs.  Galal Yafai
+UID:20260606-ricardo-rafael-sandoval-vs-galal-yafai@fightnights-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: May 23\, 2026\nLocation: TBA\, Spain\nBroadcast: Live on TBA | 7:00 PM Local / 1:00 PM ET  / 6:00 PM UK\nJose Luis Navarro versus Oliver Zaren\, 12 rds\, for vacant European super middleweight title\nSource: Boxing247.com
-DTEND:20260524T020000Z
-DTSTART:20260523T230000Z
-SUMMARY:Jose Luis Navarro versus Oliver Zaren
-UID:20260523-tba-spain-jose-luis-navarro-versus-oliver-zaren@boxing247-calendar
+DESCRIPTION:Date: June 27 2026\nVenue: Barclays Center\, Brooklyn\, New York\, USA\nNetwork: DAZN PPV\nSource: FightNights.com
+DTEND:20260628T050000Z
+DTSTART:20260628T020000Z
+SUMMARY:Jaron Ennis  vs.  Xander Zayas
+UID:20260627-jaron-ennis-vs-xander-zayas@fightnights-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: May 23\, 2026\nLocation: Giza\, Egypt\nBroadcast: Live on DAZN PPV | 7:00 PM Local / 12:00 PM ET  / 5:00 PM UK\nOleksandr Usyk versus Rico Verhoeven\, 12 rds\, for lineal/WBC heavyweight title\nSource: Boxing247.com
-DTEND:20260524T020000Z
-DTSTART:20260523T230000Z
-SUMMARY:Oleksandr Usyk versus Rico Verhoeven
-UID:20260523-giza-egypt-oleksandr-usyk-versus-rico-verhoeven@boxing247-calendar
+DESCRIPTION:Date: June 04 2026\nVenue: Montreal Casino\, Montreal\, Quebec\, Canada\nTime: 7pm ET\nNetwork: DAZN\nSource: FightNights.com
+DTEND:20260605T020000Z
+DTSTART:20260604T230000Z
+SUMMARY:Lerrone Richards  vs.  Albert Ramirez
+UID:20260604-lerrone-richards-vs-albert-ramirez@fightnights-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: June 14\, 2026\nLocation: Verona\, New York\nBroadcast: Live on TBA | 7:00 PM Local / 7:00 PM ET  / 12:00 AM UK\nSource: Boxing247.com
-DTEND:20260615T020000Z
-DTSTART:20260614T230000Z
-SUMMARY:Boxing - Verona\, New York
-UID:20260614-verona-new-york-boxing-verona-new-york@boxing247-calendar
+DESCRIPTION:Date: July 25 2026\nVenue: Amazon Prime Video PPV\nNetwork: Australia\nSource: FightNights.com
+DTEND:20260726T050000Z
+DTSTART:20260726T020000Z
+SUMMARY:Errol Spence Jr.  vs.  Tim Tszyu
+UID:20260725-errol-spence-jr-vs-tim-tszyu@fightnights-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: June 27\, 2026\nLocation: Athens\, Greece\nBroadcast: Live on TBA | 7:00 PM Local / 12:00 PM ET  / 5:00 PM UK\nFloyd Mayweather versus Mike Zambidis\, exhibition\nSource: Boxing247.com
-DTEND:20260628T020000Z
-DTSTART:20260627T230000Z
-SUMMARY:Floyd Mayweather versus Mike Zambidis\, exhibition
-UID:20260627-athens-greece-floyd-mayweather-versus-mike-zambidis-exhibition@boxing247-calendar
+DESCRIPTION:Date: July 04 2026\nVenue: Wolstein Center\, Cleveland\, Ohio\, USA\nTime: 7pm ET\nNetwork: DAZN\nSource: FightNights.com
+DTEND:20260705T020000Z
+DTSTART:20260704T230000Z
+SUMMARY:Joe Cordina  vs.  Abdullah Mason
+UID:20260704-joe-cordina-vs-abdullah-mason@fightnights-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: June 06 2026\nVenue: Aichi Sky Expo\, Tokoname\, Aichi\, Japan\nNetwork: Check Local Listings\nSource: FightNights.com
+DTEND:20260607T050000Z
+DTSTART:20260607T020000Z
+SUMMARY:Andrew Moloney  vs.  Willibaldo Garcia Perez
+UID:20260606-andrew-moloney-vs-willibaldo-garcia-perez@fightnights-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: June 20 2026\nVenue: St Marys Stadium (Southampton FC)\, Southampton\, Hampshire\, United Kingdom\nNetwork: Dazn\nSource: FightNights.com
+DTEND:20260621T050000Z
+DTSTART:20260621T020000Z
+SUMMARY:Ryan Garner  vs.  Michael Magnesi
+UID:20260620-ryan-garner-vs-michael-magnesi@fightnights-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: September 19 2026\nVenue: The Sphere\, Las Vegas\, Nevada\, USA\nNetwork: NetFlix\nSource: FightNights.com
+DTEND:20260920T050000Z
+DTSTART:20260920T020000Z
+SUMMARY:Manny Pacquiao  vs.  Floyd Mayweather Jr
+UID:20260919-manny-pacquiao-vs-floyd-mayweather-jr@fightnights-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: June 11 2026\nVenue: Capitole de Quebec\, Quebec City\, Quebec\, Canada\nTime: 6pm ET\nNetwork: DAZN\nSource: FightNights.com
+DTEND:20260612T010000Z
+DTSTART:20260611T220000Z
+SUMMARY:Esquiva Falcao  vs.  Wilkens Mathieu
+UID:20260611-esquiva-falcao-vs-wilkens-mathieu@fightnights-calendar
 END:VEVENT
 END:VCALENDAR
