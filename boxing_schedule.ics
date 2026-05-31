@@ -1,90 +1,76 @@
 BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
-COMMENT:Event data sourced from FightNights.com
+COMMENT:Event data sourced from BoxingScene.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Date: July 25 2026\nVenue: Riyadh\, Saudi Arabia\nNetwork: TBA\nSource: FightNights.com
-DTEND:20260726T050000Z
-DTSTART:20260726T020000Z
-SUMMARY:Anthony Joshua  vs.  Kristian Prenga
-UID:20260725-anthony-joshua-vs-kristian-prenga@fightnights-calendar
+DESCRIPTION:Date/Time: Fri\, Jun 5\, 2026 - 5:30 PM EST\nMore info: https://www.boxingscene.com/events/edward-vazquez-vs-daniel-lugo\nSource: BoxingScene.com
+DTEND:20260606T003000Z
+DTSTART:20260605T213000Z
+SUMMARY:Edward Vazquez vs. Daniel Lugo
+UID:20260605-edward-vazquez-vs-daniel-lugo@boxingscene-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: June 13 2026\nVenue: Desert Diamond Arena\, Glendale\, Arizona\, USA\nTime: 7pm ET\nNetwork: DAZN\nSource: FightNights.com
-DTEND:20260614T020000Z
-DTSTART:20260613T230000Z
-SUMMARY:Jesse Rodriguez  vs.  Antonio Vargas
-UID:20260613-jesse-rodriguez-vs-antonio-vargas@fightnights-calendar
+DESCRIPTION:Date/Time: Sat\, Jun 6\, 2026 - 2:00 PM EST\nMore info: https://www.boxingscene.com/events/dalton-smith-vs-alberto-puello\nSource: BoxingScene.com
+DTEND:20260606T210000Z
+DTSTART:20260606T180000Z
+SUMMARY:Ricardo Sandoval vs. Galal Yafai
+UID:20260606-ricardo-sandoval-vs-galal-yafai@boxingscene-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: June 06 2026\nVenue: ournemouth International Centre\, Bournemouth\, Dorset\, United Kingdom\nNetwork: Sky Sports\nSource: FightNights.com
-DTEND:20260607T050000Z
-DTSTART:20260607T020000Z
-SUMMARY:Chris Billam-Smith  vs.  Ryan Rozicki
-UID:20260606-chris-billam-smith-vs-ryan-rozicki@fightnights-calendar
+DESCRIPTION:Date/Time: Sat\, Jun 6\, 2026 - 12:30 PM EST\nMore info: https://www.boxingscene.com/events/chris-billam-smith-vs-ryan-rozicki\nSource: BoxingScene.com
+DTEND:20260606T193000Z
+DTSTART:20260606T163000Z
+SUMMARY:Chris Billam-Smith vs. Ryan Rozicki
+UID:20260606-chris-billam-smith-vs-ryan-rozicki@boxingscene-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: June 06 2026\nVenue: Utilita\, Sheffield\, Yorkshire\, United Kingdom\nNetwork: DAZN\nSource: FightNights.com
-DTEND:20260607T050000Z
-DTSTART:20260607T020000Z
-SUMMARY:Ricardo Rafael Sandoval  vs.  Galal Yafai
-UID:20260606-ricardo-rafael-sandoval-vs-galal-yafai@fightnights-calendar
+DESCRIPTION:Date/Time: Sat\, Jun 6\, 2026 - 12:00 AM EST\nMore info: https://www.boxingscene.com/events/masamichi-yabuki-vs-rene-calixto-bibiano\nSource: BoxingScene.com
+DTEND:20260606T070000Z
+DTSTART:20260606T040000Z
+SUMMARY:Masamichi Yabuki vs. Rene Calixto Bibiano
+UID:20260605-masamichi-yabuki-vs-rene-calixto-bibiano@boxingscene-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: June 27 2026\nVenue: Barclays Center\, Brooklyn\, New York\, USA\nNetwork: DAZN PPV\nSource: FightNights.com
-DTEND:20260628T050000Z
-DTSTART:20260628T020000Z
-SUMMARY:Jaron Ennis  vs.  Xander Zayas
-UID:20260627-jaron-ennis-vs-xander-zayas@fightnights-calendar
+DESCRIPTION:Date/Time: Sat\, Jun 13\, 2026 - 2:00 PM EST\nNetwork: DAZN\nMore info: https://www.boxingscene.com/events/tommy-fury-vs-eddie-hall\nSource: BoxingScene.com
+DTEND:20260613T210000Z
+DTSTART:20260613T180000Z
+SUMMARY:Tommy Fury vs. Eddie Hall
+UID:20260613-tommy-fury-vs-eddie-hall@boxingscene-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: June 04 2026\nVenue: Montreal Casino\, Montreal\, Quebec\, Canada\nTime: 7pm ET\nNetwork: DAZN\nSource: FightNights.com
-DTEND:20260605T020000Z
-DTSTART:20260604T230000Z
-SUMMARY:Lerrone Richards  vs.  Albert Ramirez
-UID:20260604-lerrone-richards-vs-albert-ramirez@fightnights-calendar
+DESCRIPTION:Date/Time: Thu\, Jun 4\, 2026 - 12:00 AM EST\nVenue: Casino de Montreal\nNetwork: Punchinggrace.com\, DAZN\nMore info: https://www.boxingscene.com/events/albert-ramirez-vs-lerrone-richards-55017\nSource: BoxingScene.com
+DTEND:20260604T070000Z
+DTSTART:20260604T040000Z
+SUMMARY:Albert Ramirez vs. Lerrone Richards
+UID:20260603-albert-ramirez-vs-lerrone-richards@boxingscene-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: July 25 2026\nVenue: Amazon Prime Video PPV\nNetwork: Australia\nSource: FightNights.com
-DTEND:20260726T050000Z
-DTSTART:20260726T020000Z
-SUMMARY:Errol Spence Jr.  vs.  Tim Tszyu
-UID:20260725-errol-spence-jr-vs-tim-tszyu@fightnights-calendar
+DESCRIPTION:Date/Time: Sat\, Jun 20\, 2026 - 2:00 PM EST\nVenue: St Mary's Stadium\nMore info: https://www.boxingscene.com/events/ryan-garner-vs-michael-magnesi\nSource: BoxingScene.com
+DTEND:20260620T210000Z
+DTSTART:20260620T180000Z
+SUMMARY:Ryan Garner vs. Michael Magnesi
+UID:20260620-ryan-garner-vs-michael-magnesi@boxingscene-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: July 04 2026\nVenue: Wolstein Center\, Cleveland\, Ohio\, USA\nTime: 7pm ET\nNetwork: DAZN\nSource: FightNights.com
-DTEND:20260705T020000Z
-DTSTART:20260704T230000Z
-SUMMARY:Joe Cordina  vs.  Abdullah Mason
-UID:20260704-joe-cordina-vs-abdullah-mason@fightnights-calendar
+DESCRIPTION:Date/Time: Sat\, Jun 13\, 2026 - 12:00 AM EST\nMore info: https://www.boxingscene.com/events/oshae-jones-vs-elia-carranza\nSource: BoxingScene.com
+DTEND:20260613T070000Z
+DTSTART:20260613T040000Z
+SUMMARY:Oshae Jones vs. Elia Carranza
+UID:20260612-oshae-jones-vs-elia-carranza@boxingscene-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: June 06 2026\nVenue: Aichi Sky Expo\, Tokoname\, Aichi\, Japan\nNetwork: Check Local Listings\nSource: FightNights.com
-DTEND:20260607T050000Z
-DTSTART:20260607T020000Z
-SUMMARY:Andrew Moloney  vs.  Willibaldo Garcia Perez
-UID:20260606-andrew-moloney-vs-willibaldo-garcia-perez@fightnights-calendar
+DESCRIPTION:Date/Time: Sat\, Jun 13\, 2026 - 12:00 AM EST\nMore info: https://www.boxingscene.com/events/antonio-vargas-vs-jesse-rodriguez\nSource: BoxingScene.com
+DTEND:20260613T070000Z
+DTSTART:20260613T040000Z
+SUMMARY:Antonio Vargas vs. Jesse Rodriguez
+UID:20260612-antonio-vargas-vs-jesse-rodriguez@boxingscene-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: June 20 2026\nVenue: St Marys Stadium (Southampton FC)\, Southampton\, Hampshire\, United Kingdom\nNetwork: Dazn\nSource: FightNights.com
-DTEND:20260621T050000Z
-DTSTART:20260621T020000Z
-SUMMARY:Ryan Garner  vs.  Michael Magnesi
-UID:20260620-ryan-garner-vs-michael-magnesi@fightnights-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: September 19 2026\nVenue: The Sphere\, Las Vegas\, Nevada\, USA\nNetwork: NetFlix\nSource: FightNights.com
-DTEND:20260920T050000Z
-DTSTART:20260920T020000Z
-SUMMARY:Manny Pacquiao  vs.  Floyd Mayweather Jr
-UID:20260919-manny-pacquiao-vs-floyd-mayweather-jr@fightnights-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: June 11 2026\nVenue: Capitole de Quebec\, Quebec City\, Quebec\, Canada\nTime: 6pm ET\nNetwork: DAZN\nSource: FightNights.com
-DTEND:20260612T010000Z
-DTSTART:20260611T220000Z
-SUMMARY:Esquiva Falcao  vs.  Wilkens Mathieu
-UID:20260611-esquiva-falcao-vs-wilkens-mathieu@fightnights-calendar
+DESCRIPTION:Date/Time: Thu\, Jun 11\, 2026 - 12:00 AM EST\nVenue: Theatre Capitole\nMore info: https://www.boxingscene.com/events/wilkens-mathieu-vs-esquiva-falcao\nSource: BoxingScene.com
+DTEND:20260611T070000Z
+DTSTART:20260611T040000Z
+SUMMARY:Wilkens Mathieu vs. Esquiva Falcao
+UID:20260610-wilkens-mathieu-vs-esquiva-falcao@boxingscene-calendar
 END:VEVENT
 END:VCALENDAR
