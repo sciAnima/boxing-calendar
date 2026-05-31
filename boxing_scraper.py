@@ -10,35 +10,8 @@ from bs4 import BeautifulSoup
 from ics import Calendar, Event
 from ics.grammar.parse import ContentLine
 
-URL = "https://fightnights.com/upcoming-boxing-schedule"
-
-LOCATION_TIMEZONES = {
-    "USA": "America/New_York",
-    "United States": "America/New_York",
-    "England": "Europe/London",
-    "UK": "Europe/London",
-    "Scotland": "Europe/London",
-    "Wales": "Europe/London",
-    "Ireland": "Europe/Dublin",
-    "Northern Ireland": "Europe/London",
-    "Mexico": "America/Mexico_City",
-    "Australia": "Australia/Brisbane",
-    "Puerto Rico": "America/Puerto_Rico",
-    "Germany": "Europe/Berlin",
-    "Denmark": "Europe/Copenhagen",
-    "Japan": "Asia/Tokyo",
-    "United Arab Emirates": "Asia/Dubai",
-    "Saudi Arabia": "Asia/Riyadh",
-    "Canada": "America/Toronto",
-    "France": "Europe/Paris",
-    "Spain": "Europe/Madrid",
-    "Italy": "Europe/Rome",
-    "Greece": "Europe/Athens",
-    "Egypt": "Africa/Cairo",
-    "Argentina": "America/Argentina/Buenos_Aires",
-    "South Africa": "Africa/Johannesburg",
-    "Russia": "Europe/Moscow",
-}
+URL = "https://www.boxingscene.com/schedule"
+BASE = "https://www.boxingscene.com"
 
 CT_ZONE = ZoneInfo("America/Chicago")
 
@@ -50,16 +23,41 @@ USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0",
 ]
 
-# Abbreviated month -> full month name
-MONTH_ABBR = {
+# Matches: "Fri, Jun 5, 2026 - 5:30 PM EST"
+# Groups:   weekday  month  day  year   hour  min  ampm  tz
+DATETIME_RE = re.compile(
+    r"\w+,\s+(\w+)\s+(\d{1,2}),\s+(\d{4})\s+-\s+(\d{1,2}):(\d{2})\s+(AM|PM)\s+(\w+)",
+    re.I
+)
+
+TZ_MAP = {
+    "EST": "America/New_York",
+    "EDT": "America/New_York",
+    "ET":  "America/New_York",
+    "CST": "America/Chicago",
+    "CDT": "America/Chicago",
+    "CT":  "America/Chicago",
+    "MST": "America/Denver",
+    "MDT": "America/Denver",
+    "PST": "America/Los_Angeles",
+    "PDT": "America/Los_Angeles",
+    "GMT": "Europe/London",
+    "BST": "Europe/London",
+    "CET": "Europe/Berlin",
+    "JST": "Asia/Tokyo",
+}
+
+MONTH_MAP = {
     "Jan": "January", "Feb": "February", "Mar": "March",
     "Apr": "April",   "May": "May",      "Jun": "June",
     "Jul": "July",    "Aug": "August",   "Sep": "September",
     "Oct": "October", "Nov": "November", "Dec": "December",
+    # Full names pass through fine too
+    "January": "January", "February": "February", "March": "March",
+    "April": "April", "June": "June", "July": "July",
+    "August": "August", "September": "September", "October": "October",
+    "November": "November", "December": "December",
 }
-
-TIME_RE = re.compile(r"(\d{1,2}(?::\d{2})?)\s*(am|pm)\s*(ET|CT|PT|MT|UK|GMT|CET|Local)?", re.I)
-DATE_RE = re.compile(r"(\w{3}),\s+(\w{3})\s+(\d{1,2})\s+(\d{4})")
 
 
 def fetch_html() -> str:
@@ -81,54 +79,21 @@ def fetch_html() -> str:
     return resp.text
 
 
-def infer_tz(location: str) -> ZoneInfo | None:
-    if not location:
-        return None
-    for key, tz in LOCATION_TIMEZONES.items():
-        if key.lower() in location.lower():
-            return ZoneInfo(tz)
-    return None
-
-
-def expand_month(abbr: str) -> str:
-    """Convert abbreviated month (Jun) to full name (June)."""
-    return MONTH_ABBR.get(abbr.capitalize(), abbr)
-
-
-def parse_time(time_str: str, date_str: str, location: str) -> datetime | None:
-    """Parse a time string like '7pm ET' into a CT datetime."""
-    if not time_str or time_str.strip().upper() in ("TBA", "CHECK LOCAL LISTINGS", ""):
-        return None
-
-    m = TIME_RE.search(time_str)
+def parse_datetime(text: str) -> datetime | None:
+    """Parse 'Fri, Jun 5, 2026 - 5:30 PM EST' into a CT datetime."""
+    m = DATETIME_RE.search(text)
     if not m:
         return None
 
-    raw_time = m.group(1)
-    ampm     = m.group(2)
-    tz_hint  = m.group(3)
-
-    formatted = f"{raw_time}:00{ampm.upper()}" if ":" not in raw_time else f"{raw_time}{ampm.upper()}"
-
-    tz_map = {
-        "ET":  "America/New_York",
-        "CT":  "America/Chicago",
-        "MT":  "America/Denver",
-        "PT":  "America/Los_Angeles",
-        "UK":  "Europe/London",
-        "GMT": "Europe/London",
-        "CET": "Europe/Berlin",
-    }
-
-    tz_name = tz_map.get((tz_hint or "").upper())
-    if not tz_name:
-        tz_obj = infer_tz(location)
-        if not tz_obj:
-            return None
-        tz_name = str(tz_obj)
+    month_abbr, day, year, hour, minute, ampm, tz_abbr = m.groups()
+    month = MONTH_MAP.get(month_abbr.capitalize(), month_abbr)
+    tz_name = TZ_MAP.get(tz_abbr.upper(), "America/New_York")  # default ET
 
     try:
-        dt = datetime.strptime(f"{date_str} {formatted}", "%B %d %Y %I:%M%p")
+        dt = datetime.strptime(
+            f"{month} {day} {year} {hour}:{minute} {ampm.upper()}",
+            "%B %d %Y %I:%M %p"
+        )
         return dt.replace(tzinfo=ZoneInfo(tz_name)).astimezone(CT_ZONE)
     except ValueError:
         return None
@@ -137,104 +102,85 @@ def parse_time(time_str: str, date_str: str, location: str) -> datetime | None:
 def parse_schedule(html: str) -> list[Event]:
     soup = BeautifulSoup(html, "html.parser")
     events: list[Event] = []
+    seen_uids = set()
 
-    for li in soup.find_all("li"):
-        h2 = li.find("h2")
-        if not h2:
+    # Every event on BoxingScene's schedule page is an <a> tag linking to
+    # /events/fight-slug. The link text contains: fight name + date/time + venue + network
+    for a in soup.find_all("a", href=re.compile(r"/events/")):
+        text = a.get_text(separator=" | ").strip()
+
+        # Must contain a vs. fight pattern
+        if not re.search(r"\bvs\.?\b", text, re.I):
             continue
 
-        fight_name = h2.get_text(separator=" ").strip()
-        if not re.search(r"\bvs\.?\b", fight_name, re.I):
+        # Must contain a parseable date
+        if not DATETIME_RE.search(text):
             continue
 
-        full_text = li.get_text(separator="|").strip()
-        parts = [p.strip() for p in full_text.split("|") if p.strip()]
-
-        # --- Date: expand abbreviated month before parsing ---
-        date_str = None
-        for part in parts:
-            dm = DATE_RE.search(part)
-            if dm:
-                month_full = expand_month(dm.group(2))  # "Jun" -> "June"
-                day        = dm.group(3)
-                year       = dm.group(4)
-                date_str   = f"{month_full} {day} {year}"
-                break
-
-        if not date_str:
+        # Split out the parts by pipe
+        parts = [p.strip() for p in text.split("|") if p.strip()]
+        if not parts:
             continue
 
-        # --- Venue ---
+        # Fight name is always first
+        fight_name = parts[0].strip()
+
+        # Find the date/time part
+        datetime_str = ""
         venue = ""
-        for part in parts:
-            if (fight_name in part or
-                DATE_RE.search(part) or
-                "View Fight" in part or
-                TIME_RE.search(part)):
-                continue
-            if len(part) > len(venue):
-                venue = part
-        venue = venue.strip()
-
-        # --- Time ---
-        time_str = ""
-        for part in parts:
-            if TIME_RE.search(part):
-                time_str = part
-                break
-
-        # --- Network ---
         network = ""
-        for part in reversed(parts):
-            if (part and
-                part != venue and
-                fight_name not in part and
-                not DATE_RE.search(part) and
-                not TIME_RE.search(part) and
-                "View Fight" not in part and
-                len(part) < 60):
-                network = part
-                break
 
-        # --- Start time ---
-        start_ct = parse_time(time_str, date_str, venue)
+        for part in parts[1:]:
+            if DATETIME_RE.search(part) and not datetime_str:
+                datetime_str = part
+            elif any(kw in part for kw in ["DAZN","ESPN","Netflix","Prime","HBO","Showtime",
+                                            "Paramount","PPV","Sky","TNT","BBC","TrillerTV",
+                                            "ProBoxTV","YouTube","TBA"]):
+                network = part
+            elif part and not venue and len(part) > 5:
+                venue = part
+
+        # Parse datetime
+        start_ct = parse_datetime(datetime_str)
         if not start_ct:
-            base = datetime.strptime(date_str, "%B %d %Y")
-            start_ct = datetime(base.year, base.month, base.day, 21, 0, tzinfo=CT_ZONE)
+            continue
 
         end_ct    = start_ct + timedelta(hours=3)
         start_utc = start_ct.astimezone(timezone.utc)
         end_utc   = end_ct.astimezone(timezone.utc)
 
-        link      = li.find("a", href=re.compile(r"/event-"))
-        event_url = f"https://fightnights.com{link['href']}" if link else ""
+        event_url = BASE + a["href"] if a.get("href", "").startswith("/") else a.get("href", "")
+
+        # Deduplicate by fight name + date
+        slug     = re.sub(r"[^a-z0-9]+", "-", fight_name.lower()).strip("-")
+        uid_date = start_ct.strftime("%Y%m%d")
+        uid      = f"{uid_date}-{slug}@boxingscene-calendar"
+        if uid in seen_uids:
+            continue
+        seen_uids.add(uid)
 
         ev = Event()
         ev.name  = fight_name
         ev.begin = start_utc
         ev.end   = end_utc
         ev.description = "\n".join(filter(None, [
-            f"Date: {date_str}",
-            f"Venue: {venue}",
-            f"Time: {time_str}" if time_str else "",
+            f"Date/Time: {datetime_str.strip()}",
+            f"Venue: {venue}" if venue else "",
             f"Network: {network}" if network else "",
             f"More info: {event_url}" if event_url else "",
             "",
-            "Source: FightNights.com",
+            "Source: BoxingScene.com",
         ]))
-
-        slug     = re.sub(r"[^a-z0-9]+", "-", fight_name.lower()).strip("-")
-        uid_date = datetime.strptime(date_str, "%B %d %Y").strftime("%Y%m%d")
-        ev.uid   = f"{uid_date}-{slug}@fightnights-calendar"
+        ev.uid = uid
 
         events.append(ev)
-        print(f"  + {date_str} | {fight_name} | {venue} | {time_str}")
+        print(f"  + {uid_date} | {fight_name} | {datetime_str.strip()} | {network}")
 
     return events
 
 
 def main():
-    print("Fetching FightNights schedule...")
+    print("Fetching BoxingScene schedule...")
     html = fetch_html()
     print(f"[DEBUG] Fetched {len(html)} chars")
 
@@ -246,7 +192,7 @@ def main():
 
     cal = Calendar()
     cal.extra.append(ContentLine(name="CALSCALE", value="GREGORIAN"))
-    cal.extra.append(ContentLine(name="COMMENT", value="Event data sourced from FightNights.com"))
+    cal.extra.append(ContentLine(name="COMMENT", value="Event data sourced from BoxingScene.com"))
     for ev in events:
         cal.events.add(ev)
 
