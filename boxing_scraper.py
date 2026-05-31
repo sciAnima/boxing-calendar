@@ -216,6 +216,10 @@ def parse_schedule(html: str) -> list[Event]:
 def main():
     print("Fetching BoxingNews24 schedule...")
     html = fetch_html()
+    
+    with open("debug_raw.html", "w", encoding="utf-8") as f:
+    f.write(html)
+    
     print(f"[DEBUG] Fetched {len(html)} chars")
 
     print("Parsing events...")
