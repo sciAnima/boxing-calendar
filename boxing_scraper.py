@@ -145,7 +145,7 @@ def parse_schedule(html: str) -> list[Event]:
         if not start_ct:
             continue
 
-        end_ct    = start_ct + timedelta(hours=3)
+        end_ct    = start_ct + timedelta(hours=5)
         start_utc = start_ct.astimezone(timezone.utc)
         end_utc   = end_ct.astimezone(timezone.utc)
 
