@@ -1,62 +1,132 @@
 BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
-COMMENT:Event data sourced from BoxingNews24.com
+COMMENT:Data from BoxingNews24.com + BoxingScene.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, May 23\, 2026\nLocation: Giza\, Egypt\nNetwork: DAZN PPV\nStart: 10:00 AM CT\nMain Event: Oleksandr Usyk vs. Rico Verhoeven\, 12 rounds\, for lineal/WBC heavyweight title\nSource: BoxingNews24.com
-DTEND:20260523T200000Z
-DTSTART:20260523T150000Z
-SUMMARY:Oleksandr Usyk vs. Rico Verhoeven
-UID:20260523-oleksandr-usyk-vs-rico-verhoeven@boxingnews24-calendar
+DESCRIPTION:Date: Saturday\, June 13\, 2026\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20260613T090000Z
+DTSTART:20260613T040000Z
+SUMMARY:Antonio Vargas vs. Jesse Rodriguez
+UID:20260613-antonio-vargas-vs-jesse-rodriguez@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Las Vegas\nNetwork: Netflix\nStart: 08:00 PM CT\nMain Event: Floyd Mayweather vs. Manny Pacquiao\, rematch\, 10 or 12 rounds\, welterweights\nSource: BoxingNews24.com
-DTEND:20260920T060000Z
-DTSTART:20260920T010000Z
-SUMMARY:Floyd Mayweather vs. Manny Pacquiao\, rematch\, 10 or 12 rounds\, welterweights
-UID:20260919-floyd-mayweather-vs-manny-pacquiao-rematch-10-or-12-rounds-welterweights@boxingnews24-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: Riyadh\, Saudi Arabia\nStart: 09:00 AM CT\nMain Event: Canelo Alvarez vs. TBA\, 12 rounds\, super middleweights\nSource: BoxingNews24.com
-DTEND:20260912T190000Z
-DTSTART:20260912T140000Z
-SUMMARY:Canelo Alvarez vs. TBA
-UID:20260912-canelo-alvarez-vs-tba@boxingnews24-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, May 30\, 2026\nLocation: El Paso\, Texas\nNetwork: ESPN\, ESPN+\nStart: 06:00 PM CT\nMain Event: Stephanie Han vs. Holly Holm\, rematch\, 10 rounds\, for Hans WBA womens lightweight title\nSource: BoxingNews24.com
-DTEND:20260531T040000Z
-DTSTART:20260530T230000Z
-SUMMARY:Stephanie Han vs. Holly Holm\, rematch
-UID:20260530-stephanie-han-vs-holly-holm-rematch@boxingnews24-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, May 30\, 2026\nLocation: Magdeburg\, Germany\nStart: 11:00 AM CT\nMain Event: Roman Fress vs. Tahir Kahrovic\, 12 rounds\, WBO cruiserweight eliminator\nSource: BoxingNews24.com
-DTEND:20260530T210000Z
-DTSTART:20260530T160000Z
-SUMMARY:Roman Fress vs. Tahir Kahrovic
-UID:20260530-roman-fress-vs-tahir-kahrovic@boxingnews24-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, June 14\, 2026\nLocation: Verona\, N.Y.\nStart: 05:00 PM CT\nMain Event: International Boxing Hall of Fame inductions\nSource: BoxingNews24.com
-DTEND:20260615T030000Z
-DTSTART:20260614T220000Z
-SUMMARY:International Boxing Hall of Fame inductions
-UID:20260614-international-boxing-hall-of-fame-inductions@boxingnews24-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, May 23\, 2026\nLocation: Spain\nStart: 11:00 AM CT\nMain Event: Jose Luis Navarro vs. Oliver Zaren\, 12 rounds\, for vacant European super middleweight title\nSource: BoxingNews24.com
-DTEND:20260523T210000Z
-DTSTART:20260523T160000Z
-SUMMARY:Jose Luis Navarro vs. Oliver Zaren
-UID:20260523-jose-luis-navarro-vs-oliver-zaren@boxingnews24-calendar
+DESCRIPTION:Date: Thursday\, June 11\, 2026\nLocation: Theatre Capitole\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20260611T090000Z
+DTSTART:20260611T040000Z
+SUMMARY:Wilkens Mathieu vs. Esquiva Falcao
+UID:20260611-wilkens-mathieu-vs-esquiva-falcao@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 27\, 2026\nLocation: Athens\, Greece\nStart: 10:00 AM CT\nMain Event: Floyd Mayweather vs. Mike Zambidis\, exhibition\nSource: BoxingNews24.com
 DTEND:20260627T200000Z
 DTSTART:20260627T150000Z
 SUMMARY:Floyd Mayweather vs. Mike Zambidis\, exhibition
-UID:20260627-floyd-mayweather-vs-mike-zambidis-exhibition@boxingnews24-calendar
+UID:20260627-floyd-mayweather-vs-mike-zambidis-exhibition@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, June 06\, 2026\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20260606T090000Z
+DTSTART:20260606T040000Z
+SUMMARY:Masamichi Yabuki vs. Rene Calixto Bibiano
+UID:20260606-masamichi-yabuki-vs-rene-calixto-bibiano@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: Riyadh\, Saudi Arabia\nStart: 09:00 AM CT\nMain Event: Canelo Alvarez vs. TBA\, 12 rounds\, super middleweights\nSource: BoxingNews24.com
+DTEND:20260912T190000Z
+DTSTART:20260912T140000Z
+SUMMARY:Canelo Alvarez vs. TBA
+UID:20260912-canelo-alvarez-vs-tba@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, May 30\, 2026\nLocation: Magdeburg\, Germany\nStart: 11:00 AM CT\nMain Event: Roman Fress vs. Tahir Kahrovic\, 12 rounds\, WBO cruiserweight eliminator\nSource: BoxingNews24.com
+DTEND:20260530T210000Z
+DTSTART:20260530T160000Z
+SUMMARY:Roman Fress vs. Tahir Kahrovic
+UID:20260530-roman-fress-vs-tahir-kahrovic@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Thursday\, June 04\, 2026\nLocation: Casino de Montreal\nNetwork: Punchinggrace.com\, DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20260604T090000Z
+DTSTART:20260604T040000Z
+SUMMARY:Albert Ramirez vs. Lerrone Richards
+UID:20260604-albert-ramirez-vs-lerrone-richards@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, June 06\, 2026\nStart: 01:00 PM CT\nSource: BoxingScene.com
+DTEND:20260606T230000Z
+DTSTART:20260606T180000Z
+SUMMARY:Ricardo Sandoval vs. Galal Yafai
+UID:20260606-ricardo-sandoval-vs-galal-yafai@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, May 23\, 2026\nLocation: Spain\nStart: 11:00 AM CT\nMain Event: Jose Luis Navarro vs. Oliver Zaren\, 12 rounds\, for vacant European super middleweight title\nSource: BoxingNews24.com
+DTEND:20260523T210000Z
+DTSTART:20260523T160000Z
+SUMMARY:Jose Luis Navarro vs. Oliver Zaren
+UID:20260523-jose-luis-navarro-vs-oliver-zaren@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Sunday\, June 14\, 2026\nLocation: Verona\, N.Y.\nStart: 05:00 PM CT\nMain Event: International Boxing Hall of Fame inductions\nSource: BoxingNews24.com
+DTEND:20260615T030000Z
+DTSTART:20260614T220000Z
+SUMMARY:International Boxing Hall of Fame inductions
+UID:20260614-international-boxing-hall-of-fame-inductions@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, June 13\, 2026\nNetwork: DAZN\nStart: 01:00 PM CT\nSource: BoxingScene.com
+DTEND:20260613T230000Z
+DTSTART:20260613T180000Z
+SUMMARY:Tommy Fury vs. Eddie Hall
+UID:20260613-tommy-fury-vs-eddie-hall@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, June 05\, 2026\nStart: 04:30 PM CT\nSource: BoxingScene.com
+DTEND:20260606T023000Z
+DTSTART:20260605T213000Z
+SUMMARY:Edward Vazquez vs. Daniel Lugo
+UID:20260605-edward-vazquez-vs-daniel-lugo@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Las Vegas\nNetwork: Netflix\nStart: 08:00 PM CT\nMain Event: Floyd Mayweather vs. Manny Pacquiao\, rematch\, 10 or 12 rounds\, welterweights\nSource: BoxingNews24.com
+DTEND:20260920T060000Z
+DTSTART:20260920T010000Z
+SUMMARY:Floyd Mayweather vs. Manny Pacquiao\, rematch\, 10 or 12 rounds\, welterweights
+UID:20260919-floyd-mayweather-vs-manny-pacquiao-rematch-10-or-12-rounds-welterweights@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, May 30\, 2026\nLocation: El Paso\, Texas\nNetwork: ESPN\, ESPN+\nStart: 06:00 PM CT\nMain Event: Stephanie Han vs. Holly Holm\, rematch\, 10 rounds\, for Hans WBA womens lightweight title\nSource: BoxingNews24.com
+DTEND:20260531T040000Z
+DTSTART:20260530T230000Z
+SUMMARY:Stephanie Han vs. Holly Holm\, rematch
+UID:20260530-stephanie-han-vs-holly-holm-rematch@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, May 23\, 2026\nLocation: Giza\, Egypt\nNetwork: DAZN PPV\nStart: 10:00 AM CT\nMain Event: Oleksandr Usyk vs. Rico Verhoeven\, 12 rounds\, for lineal/WBC heavyweight title\nSource: BoxingNews24.com
+DTEND:20260523T200000Z
+DTSTART:20260523T150000Z
+SUMMARY:Oleksandr Usyk vs. Rico Verhoeven
+UID:20260523-oleksandr-usyk-vs-rico-verhoeven@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, June 06\, 2026\nStart: 11:30 AM CT\nSource: BoxingScene.com
+DTEND:20260606T213000Z
+DTSTART:20260606T163000Z
+SUMMARY:Chris Billam-Smith vs. Ryan Rozicki
+UID:20260606-chris-billam-smith-vs-ryan-rozicki@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, June 13\, 2026\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20260613T090000Z
+DTSTART:20260613T040000Z
+SUMMARY:Oshae Jones vs. Elia Carranza
+UID:20260613-oshae-jones-vs-elia-carranza@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, June 20\, 2026\nLocation: St Mary's Stadium\nStart: 01:00 PM CT\nSource: BoxingScene.com
+DTEND:20260620T230000Z
+DTSTART:20260620T180000Z
+SUMMARY:Ryan Garner vs. Michael Magnesi
+UID:20260620-ryan-garner-vs-michael-magnesi@boxing-calendar
 END:VEVENT
 END:VCALENDAR
