@@ -39,6 +39,13 @@ jobs:
           git add boxing_schedule.ics
           git commit -m "Auto-update boxing schedule" || echo "No changes to commit"
 
+          - name: Upload debug HTML
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-raw-html
+          path: debug_raw.html
+
       - name: Push changes
         run: |
           git push
