@@ -29,16 +29,8 @@ MONTHS = {
     "September": 9, "October": 10, "November": 11, "December": 12,
 }
 
-# Matches: "March 14: Dublin, Ireland | Local: 6:00 PM | USA ET: 2:00 PM | UK London: 6:00 PM | live on DAZN"
-HEADER_RE = re.compile(
-    r"^(\w+)\s+(\d{1,2}):\s*(.+?)(?:\|\s*Local[^|]*)?(?:\|\s*USA ET:\s*(\d{1,2}:\d{2}\s*(?:AM|PM)))?.*?(?:\|\s*live on\s*(.+))?$",
-    re.I
-)
-
-# Simpler ET time extractor
-ET_RE   = re.compile(r"USA ET:\s*(\d{1,2}:\d{2}\s*(?:AM|PM))", re.I)
-NET_RE  = re.compile(r"live on\s*(.+)", re.I)
-FIGHT_RE = re.compile(r"^📌\s*(.+)", re.I)
+ET_RE  = re.compile(r"USA ET:\s*(\d{1,2}:\d{2}\s*(?:AM|PM))", re.I)
+NET_RE = re.compile(r"live on\s*(.+)", re.I)
 
 
 def fetch_html() -> str:
@@ -61,8 +53,7 @@ def fetch_html() -> str:
 
 
 def parse_et_time(time_str: str, date_obj: datetime) -> datetime | None:
-    """Convert an ET time string like '2:00 PM' to a CT datetime."""
-    time_str = re.sub(r"\s+", "", time_str).upper()  # "2:00PM"
+    time_str = re.sub(r"\s+", "", time_str).upper()
     try:
         dt = datetime.strptime(
             f"{date_obj.month}/{date_obj.day}/{date_obj.year} {time_str}",
@@ -74,36 +65,33 @@ def parse_et_time(time_str: str, date_obj: datetime) -> datetime | None:
 
 
 def strip_emoji(s: str) -> str:
-    return re.sub(r"[^\x20-\x7EÀ-ÖØ-öø-ÿ''\-\.,/|:📌 ]", "", s).strip()
+    return re.sub(r"[^\x20-\x7EÀ-ÖØ-öø-ÿ''\-\.,/|: ]", "", s).strip()
 
 
 def parse_schedule(html: str) -> list[Event]:
     soup = BeautifulSoup(html, "html.parser")
 
-    # The schedule is inside the main post content
     content = soup.find("div", class_=re.compile(r"entry|post|content|article", re.I))
     if not content:
         print("WARNING: Could not isolate content div, using full page")
         content = soup
 
-    # Replace <a> tags with plain text
     for a in content.find_all("a"):
         a.replace_with(a.get_text())
 
     lines = content.get_text(separator="\n").split("\n")
     current_year = datetime.now(CT_ZONE).year
 
-    events  = []
-    seen    = set()
+    events = []
+    seen = set()
+    month_pattern = "|".join(MONTHS.keys())
 
     i = 0
     while i < len(lines):
         line = lines[i].strip()
 
-        # --- Detect a card header line ---
-        # Format: "March 14: Dublin, Ireland | ... | USA ET: 2:00 PM | ... | live on DAZN"
         month_match = re.match(
-            r"^(" + "|".join(MONTHS.keys()) + r")\s+(\d{1,2}):\s*(.+)",
+            rf"^({month_pattern})\s+(\d{{1,2}}):\s*(.+)",
             line, re.I
         )
 
@@ -111,42 +99,35 @@ def parse_schedule(html: str) -> list[Event]:
             month_name = month_match.group(1).capitalize()
             day        = int(month_match.group(2))
             rest       = month_match.group(3)
-
             month_num  = MONTHS.get(month_name)
+
             if not month_num:
                 i += 1
                 continue
 
             date_obj = datetime(current_year, month_num, day)
-
-            # Extract location (everything before first |)
             parts    = rest.split("|")
             location = strip_emoji(parts[0]).strip()
 
-            # Extract ET time
             et_time_str = None
             et_m = ET_RE.search(rest)
             if et_m:
                 et_time_str = et_m.group(1).strip()
 
-            # Extract network
             network = ""
             net_m = NET_RE.search(rest)
             if net_m:
                 network = strip_emoji(net_m.group(1)).strip()
 
-            # --- Collect fight lines that follow ---
+            # Collect fight bullet lines
             fight_lines = []
             i += 1
             while i < len(lines):
                 next_line = lines[i].strip()
-                # Next card header = stop
-                if re.match(r"^(" + "|".join(MONTHS.keys()) + r")\s+\d{1,2}:", next_line, re.I):
+                if re.match(rf"^({month_pattern})\s+\d{{1,2}}:", next_line, re.I):
                     break
-                # Fight bullet
                 if next_line.startswith("📌"):
-                    fight_text = next_line[1:].strip()  # remove 📌
-                    fight_text = strip_emoji(fight_text).strip()
+                    fight_text = strip_emoji(next_line[1:]).strip()
                     if fight_text:
                         fight_lines.append(fight_text)
                 i += 1
@@ -154,27 +135,17 @@ def parse_schedule(html: str) -> list[Event]:
             if not fight_lines:
                 continue
 
-            # Main event = first fight listed
             main_event = fight_lines[0]
-            # Clean up: remove round count suffix for event name
-            main_name = re.sub(r",\s*\d+\s*rounds.*$", "", main_event, flags=re.I).strip()
+            main_name  = re.sub(r",\s*\d+\s*rounds.*$", "", main_event, flags=re.I).strip()
 
-            # Build start time
-            start_ct = None
-            if et_time_str:
-                start_ct = parse_et_time(et_time_str, date_obj)
+            start_ct = parse_et_time(et_time_str, date_obj) if et_time_str else None
             if not start_ct:
-                start_ct = datetime(
-                    date_obj.year, date_obj.month, date_obj.day,
-                    21, 0, tzinfo=CT_ZONE
-                )
+                start_ct = datetime(date_obj.year, date_obj.month, date_obj.day, 21, 0, tzinfo=CT_ZONE)
 
-            # 5 hours covers prelims + main event
             end_ct    = start_ct + timedelta(hours=5)
             start_utc = start_ct.astimezone(timezone.utc)
             end_utc   = end_ct.astimezone(timezone.utc)
 
-            # Deduplicate
             slug     = re.sub(r"[^a-z0-9]+", "-", main_name.lower()).strip("-")
             uid_date = date_obj.strftime("%Y%m%d")
             uid      = f"{uid_date}-{slug}@boxingnews24-calendar"
@@ -182,7 +153,7 @@ def parse_schedule(html: str) -> list[Event]:
                 continue
             seen.add(uid)
 
-            undercard_str = "\n".join(f"  • {f}" for f in fight_lines[1:])
+            undercard_str = "\n".join(f"  * {f}" for f in fight_lines[1:])
 
             ev = Event()
             ev.name  = main_name
@@ -204,8 +175,7 @@ def parse_schedule(html: str) -> list[Event]:
             ev.uid = uid
 
             events.append(ev)
-            time_label = start_ct.strftime("%I:%M %p CT")
-            print(f"  + {uid_date} | {main_name} | {location} | {time_label} | {network or 'TBC'}")
+            print(f"  + {uid_date} | {main_name} | {location} | {start_ct.strftime('%I:%M %p CT')} | {network or 'TBC'}")
 
         else:
             i += 1
@@ -216,10 +186,10 @@ def parse_schedule(html: str) -> list[Event]:
 def main():
     print("Fetching BoxingNews24 schedule...")
     html = fetch_html()
-    
+
     with open("debug_raw.html", "w", encoding="utf-8") as f:
-    f.write(html)
-    
+        f.write(html)
+
     print(f"[DEBUG] Fetched {len(html)} chars")
 
     print("Parsing events...")
