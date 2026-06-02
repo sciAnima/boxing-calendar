@@ -46,18 +46,18 @@ SUMMARY:Roman Fress vs. Tahir Kahrovic
 UID:20260530-roman-fress-vs-tahir-kahrovic@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Thursday\, June 04\, 2026\nLocation: Casino de Montreal\nNetwork: Punchinggrace.com\, DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
-DTEND:20260604T090000Z
-DTSTART:20260604T040000Z
-SUMMARY:Albert Ramirez vs. Lerrone Richards
-UID:20260604-albert-ramirez-vs-lerrone-richards@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 06\, 2026\nStart: 01:00 PM CT\nSource: BoxingScene.com
 DTEND:20260606T230000Z
 DTSTART:20260606T180000Z
 SUMMARY:Ricardo Sandoval vs. Galal Yafai
 UID:20260606-ricardo-sandoval-vs-galal-yafai@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, June 20\, 2026\nStart: 02:00 AM CT\nSource: BoxingScene.com
+DTEND:20260620T120000Z
+DTSTART:20260620T070000Z
+SUMMARY:Ricardo Sandoval vs. Yoali Mosqueda
+UID:20260620-ricardo-sandoval-vs-yoali-mosqueda@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, May 23\, 2026\nLocation: Spain\nStart: 11:00 AM CT\nMain Event: Jose Luis Navarro vs. Oliver Zaren\, 12 rounds\, for vacant European super middleweight title\nSource: BoxingNews24.com
@@ -81,7 +81,7 @@ SUMMARY:Tommy Fury vs. Eddie Hall
 UID:20260613-tommy-fury-vs-eddie-hall@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, June 05\, 2026\nStart: 04:30 PM CT\nSource: BoxingScene.com
+DESCRIPTION:Date: Friday\, June 05\, 2026\nLocation: College Park Center\nStart: 04:30 PM CT\nSource: BoxingScene.com
 DTEND:20260606T023000Z
 DTSTART:20260605T213000Z
 SUMMARY:Edward Vazquez vs. Daniel Lugo
