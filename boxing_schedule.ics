@@ -186,6 +186,13 @@ SUMMARY:Natasha Spence vs. Marcela Cornejo\, rematch
 UID:20260612-natasha-spence-vs-marcela-cornejo-rematch@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, July 04\, 2026\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20260705T050000Z
+DTSTART:20260705T000000Z
+SUMMARY:Abdullah Mason vs. Joe Cordina
+UID:20260704-abdullah-mason-vs-joe-cordina@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 06\, 2026\nLocation: Newark\, New Jersey\nStart: 05:00 PM CT\nMain Event: Michael Anderson vs. Nimal Farmer\, 8 rounds\, welterweights\nUndercard:\n  * Juan Rivera V vs. Chuckie Driver\, 10 rounds\, junior welterweights\n  * Anthony Johns vs. Angel Meza Morales\, 10 rounds\, junior bantamweights\n  * Famous Wilson vs. Bernard Gardner\, 4 rounds\, middleweights\n  * Muadh Abdus-Salaam vs. Michael Ruiz\, 4 rounds\, junior welterweights\n  * Vladimir Dalton vs. Ibrahima Fofana\, 4 rounds\, cruiserweights\n  * Zahir Abdus-Salaam vs. Caleb Dodson\, 4 rounds\, junior middleweights\n  * Yoell Cooper vs. Ricardo Elizalde\, 4 rounds\, junior middleweights\n  * Tayvon Fish vs. Rahmel McKinley\, 4 rounds\, welterweights\n  * Daniel Ivanovski vs. Najm Khan\, 4 rounds\, cruiserweights\nSource: BoxingNews24.com
 DTEND:20260607T030000Z
 DTSTART:20260606T220000Z
@@ -317,13 +324,6 @@ DTEND:20260614T030000Z
 DTSTART:20260613T220000Z
 SUMMARY:Bruce Seldon Jr. vs. Josh Popper
 UID:20260613-bruce-seldon-jr-vs-josh-popper@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, June 05\, 2026\nLocation: College Park Center\nStart: 06:30 PM CT\nSource: BoxingScene.com
-DTEND:20260606T043000Z
-DTSTART:20260605T233000Z
-SUMMARY:Edward Vazquez vs. Daniel Lugo
-UID:20260605-edward-vazquez-vs-daniel-lugo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 20\, 2026\nLocation: Oceanside\, California\nNetwork: DAZN\nStart: 08:00 PM CT\nMain Event: Oscar Collazo vs. Joey Canoy\, 12 rounds\, for Collazos WBO/WBA strawweight title\nSource: BoxingNews24.com
