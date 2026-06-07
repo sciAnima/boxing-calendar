@@ -11,6 +11,13 @@ SUMMARY:Ricardo Sandoval vs. Kenshiro Teraji
 UID:20260621-ricardo-sandoval-vs-kenshiro-teraji@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, July 11\, 2026\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20260711T090000Z
+DTSTART:20260711T040000Z
+SUMMARY:Murat Gassiev vs. Tony Yoka
+UID:20260711-murat-gassiev-vs-tony-yoka@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 06\, 2026\nLocation: Tijuana\, Mexico\nStart: 08:00 PM CT\nMain Event: Alan David Picasso vs. TBA\, 10 rounds\, featherweights\nUndercard:\n  * Marco Verde vs. David Camacho\, 8 rounds\, super middleweights\nSource: BoxingNews24.com
 DTEND:20260607T060000Z
 DTSTART:20260607T010000Z
@@ -58,6 +65,13 @@ DTEND:20260621T050000Z
 DTSTART:20260621T000000Z
 SUMMARY:Ricardo Sandoval vs. Yoali Mosqueda
 UID:20260620-ricardo-sandoval-vs-yoali-mosqueda@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, July 11\, 2026\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20260711T090000Z
+DTSTART:20260711T040000Z
+SUMMARY:Anthony Olascuaga vs. Andy Dominguez
+UID:20260711-anthony-olascuaga-vs-andy-dominguez@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 12\, 2026\nLocation: New York\nNetwork: DAZN PPV\nStart: 05:00 PM CT\nMain Event: Edgar Berlanga vs. Hamzah Sheeraz\, 12 rounds\, WBC super middleweight title eliminator\nUndercard:\n  * Shakur Stevenson vs. William Zepeda\, 12 rounds\, for Stevensons WBC lightweight title\n  * Alberto Puello vs. Subriel Matias\, 12 rounds\, for Puellos WBC junior welterweight title\nSource: BoxingNews24.com
@@ -289,13 +303,6 @@ DTEND:20260614T050000Z
 DTSTART:20260614T000000Z
 SUMMARY:Antonio Vargas vs. Jesse Rodriguez
 UID:20260613-antonio-vargas-vs-jesse-rodriguez@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 06\, 2026\nStart: 11:00 PM CT\nSource: BoxingScene.com
-DTEND:20260606T090000Z
-DTSTART:20260606T040000Z
-SUMMARY:Masamichi Yabuki vs. Rene Calixto Bibiano
-UID:20260606-masamichi-yabuki-vs-rene-calixto-bibiano@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: Riyadh\, Saudi Arabia\nStart: 10:00 AM CT\nMain Event: Canelo Alvarez vs. TBA\, 12 rounds\, super middleweights\nSource: BoxingNews24.com
