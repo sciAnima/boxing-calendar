@@ -60,13 +60,6 @@ SUMMARY:Ricardo Sandoval vs. Yoali Mosqueda
 UID:20260620-ricardo-sandoval-vs-yoali-mosqueda@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 11\, 2026\nStart: 11:00 PM CT\nSource: BoxingScene.com
-DTEND:20260711T090000Z
-DTSTART:20260711T040000Z
-SUMMARY:Anthony Olascuaga vs. Andy Dominguez
-UID:20260711-anthony-olascuaga-vs-andy-dominguez@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 12\, 2026\nLocation: New York\nNetwork: DAZN PPV\nStart: 05:00 PM CT\nMain Event: Edgar Berlanga vs. Hamzah Sheeraz\, 12 rounds\, WBC super middleweight title eliminator\nUndercard:\n  * Shakur Stevenson vs. William Zepeda\, 12 rounds\, for Stevensons WBC lightweight title\n  * Alberto Puello vs. Subriel Matias\, 12 rounds\, for Puellos WBC junior welterweight title\nSource: BoxingNews24.com
 DTEND:20260713T030000Z
 DTSTART:20260712T220000Z
@@ -93,6 +86,13 @@ DTEND:20260809T030000Z
 DTSTART:20260808T220000Z
 SUMMARY:Cherneka Johnson vs. Dina Thorslund
 UID:20260808-cherneka-johnson-vs-dina-thorslund@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, July 18\, 2026\nStart: 06:00 PM CT\nSource: BoxingScene.com
+DTEND:20260719T040000Z
+DTSTART:20260718T230000Z
+SUMMARY:Bryan Flores vs. Jonathan Navarro
+UID:20260718-bryan-flores-vs-jonathan-navarro@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 01\, 2026\nLocation: Las Vegas\nNetwork: DAZN\, TNT\nStart: 05:00 PM CT\nMain Event: William Zepeda vs. Lamont Roach Jr.\, 12 rounds\, for vacant WBC lightweight title\nUndercard:\n  * Raymond Muratalla vs. Robson Conceicao\, 12 rounds\, for Muratallas IBF lightweight title\nSource: BoxingNews24.com
