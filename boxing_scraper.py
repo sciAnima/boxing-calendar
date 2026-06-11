@@ -10,8 +10,8 @@ from bs4 import BeautifulSoup
 from ics import Calendar, Event
 from ics.grammar.parse import ContentLine
 
-BN24_URL  = "https://www.boxingnews24.com/boxing-schedule/"
-BS_URL    = "https://www.boxingscene.com/schedule"
+BN24_URL = "https://www.boxingnews24.com/boxing-schedule/"
+BS_URL   = "https://www.boxingscene.com/schedule"
 
 CT_ZONE = ZoneInfo("America/Chicago")
 ET_ZONE = ZoneInfo("America/New_York")
@@ -40,7 +40,6 @@ MONTH_ABBR = {
 ET_RE  = re.compile(r"USA ET:\s*(\d{1,2}:\d{2}\s*(?:AM|PM))", re.I)
 NET_RE = re.compile(r"live on\s*(.+)", re.I)
 
-# BoxingScene datetime: "Fri, Jun 5, 2026 - 5:30 PM EST"
 BS_DT_RE = re.compile(
     r"\w+,\s+(\w+)\s+(\d{1,2}),\s+(\d{4})\s+-\s+(\d{1,2}):(\d{2})\s+(AM|PM)\s+(\w+)",
     re.I
@@ -54,7 +53,8 @@ TZ_MAP = {
 }
 
 
-def fetch(url: str) -> str:
+def fetch(url: str) -> str | None:
+    """Fetch a URL and return HTML. Returns None on any error instead of crashing."""
     headers = {
         "User-Agent": USER_AGENTS[datetime.now().day % len(USER_AGENTS)],
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
@@ -65,12 +65,25 @@ def fetch(url: str) -> str:
         "Upgrade-Insecure-Requests": "1",
         "Referer": "https://www.google.com/",
     }
-    session = requests.Session()
-    session.headers.update(headers)
-    resp = session.get(url, timeout=30)
-    print(f"  HTTP {resp.status_code} — {url}")
-    resp.raise_for_status()
-    return resp.text
+    try:
+        session = requests.Session()
+        session.headers.update(headers)
+        resp = session.get(url, timeout=30)
+        print(f"  HTTP {resp.status_code} — {url}")
+        resp.raise_for_status()
+        return resp.text
+    except requests.exceptions.HTTPError as e:
+        print(f"  WARNING: HTTP error fetching {url}: {e}")
+        return None
+    except requests.exceptions.ConnectionError as e:
+        print(f"  WARNING: Connection error fetching {url}: {e}")
+        return None
+    except requests.exceptions.Timeout:
+        print(f"  WARNING: Timeout fetching {url}")
+        return None
+    except Exception as e:
+        print(f"  WARNING: Unexpected error fetching {url}: {e}")
+        return None
 
 
 def strip_emoji(s: str) -> str:
@@ -78,8 +91,6 @@ def strip_emoji(s: str) -> str:
 
 
 def make_slug(name: str) -> str:
-    """Normalize a fight/event name to a dedup key."""
-    # Keep only letters and numbers, lowercase
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
@@ -98,10 +109,6 @@ def parse_et_time(time_str: str, date_obj: datetime) -> datetime | None:
 # ── Source 1: BoxingNews24 ────────────────────────────────────────────────────
 
 def parse_bn24(html: str) -> dict[str, dict]:
-    """
-    Returns dict keyed by slug with full event details including exact ET time,
-    network, location, and full undercard.
-    """
     soup = BeautifulSoup(html, "html.parser")
     content = soup.find("div", class_=re.compile(r"entry|post|content|article", re.I))
     if not content:
@@ -167,13 +174,13 @@ def parse_bn24(html: str) -> dict[str, dict]:
                 start_ct = datetime(date_obj.year, date_obj.month, date_obj.day, 21, 0, tzinfo=CT_ZONE)
 
             events[slug] = {
-                "name":      main_name,
-                "date_obj":  date_obj,
-                "location":  location,
-                "network":   network,
-                "start_ct":  start_ct,
-                "fights":    fight_lines,
-                "source":    "BoxingNews24.com",
+                "name":     main_name,
+                "date_obj": date_obj,
+                "location": location,
+                "network":  network,
+                "start_ct": start_ct,
+                "fights":   fight_lines,
+                "source":   "BoxingNews24.com",
             }
         else:
             i += 1
@@ -185,10 +192,6 @@ def parse_bn24(html: str) -> dict[str, dict]:
 # ── Source 2: BoxingScene ─────────────────────────────────────────────────────
 
 def parse_bs(html: str) -> dict[str, dict]:
-    """
-    Returns dict keyed by slug with event name, date, time, venue, network.
-    Used to fill in future events not yet on BoxingNews24.
-    """
     soup = BeautifulSoup(html, "html.parser")
     events = {}
 
@@ -205,7 +208,6 @@ def parse_bs(html: str) -> dict[str, dict]:
 
         fight_name = parts[0].strip()
 
-        # Find date/time part
         datetime_str = ""
         venue = ""
         network = ""
@@ -220,7 +222,6 @@ def parse_bs(html: str) -> dict[str, dict]:
             elif part and not venue and len(part) > 5:
                 venue = part
 
-        # Parse datetime
         dm = BS_DT_RE.search(datetime_str)
         if not dm:
             continue
@@ -237,10 +238,9 @@ def parse_bs(html: str) -> dict[str, dict]:
         tz_name = TZ_MAP.get(tz_abbr.upper(), "America/New_York")
 
         try:
-            dt = datetime(year, month_num, day, h, mn)
-            dt_str = f"{dt.strftime('%B')} {day} {year} {h}:{mn:02d} {ampm.upper()}"
+            dt_str   = f"{month_full} {day} {year} {h}:{mn:02d} {ampm.upper()}"
             dt_parsed = datetime.strptime(dt_str, "%B %d %Y %I:%M %p")
-            start_ct = dt_parsed.replace(tzinfo=ZoneInfo(tz_name)).astimezone(CT_ZONE)
+            start_ct  = dt_parsed.replace(tzinfo=ZoneInfo(tz_name)).astimezone(CT_ZONE)
         except ValueError:
             continue
 
@@ -264,21 +264,14 @@ def parse_bs(html: str) -> dict[str, dict]:
 # ── Merge + build calendar ────────────────────────────────────────────────────
 
 def build_calendar(bn24: dict, bs: dict) -> list[Event]:
-    """
-    Merge both sources. BoxingNews24 takes priority (more detail + exact times).
-    BoxingScene fills in future events not yet on BoxingNews24.
-    """
     merged = {}
 
-    # Add all BoxingScene events first (lower priority)
     for slug, ev in bs.items():
         merged[slug] = ev
 
-    # Overlay BoxingNews24 events (higher priority — overwrites BS where they overlap)
     for slug, ev in bn24.items():
         merged[slug] = ev
 
-    # Sort by date then build Event objects
     events = []
     seen_uids = set()
 
@@ -330,22 +323,24 @@ def main():
     print("Fetching BoxingScene...")
     bs_html = fetch(BS_URL)
 
-    with open("debug_bn24.html", "w", encoding="utf-8") as f:
-        f.write(bn24_html)
-    with open("debug_bs.html", "w", encoding="utf-8") as f:
-        f.write(bs_html)
+    # Parse whatever we got — gracefully skip failed sources
+    bn24 = parse_bn24(bn24_html) if bn24_html else {}
+    bs   = parse_bs(bs_html)     if bs_html   else {}
 
-    print("Parsing BoxingNews24...")
-    bn24 = parse_bn24(bn24_html)
+    if not bn24 and not bs:
+        print("ERROR: Both sources failed — no events to write")
+        sys.exit(1)
 
-    print("Parsing BoxingScene...")
-    bs = parse_bs(bs_html)
+    if not bn24:
+        print("WARNING: BoxingNews24 failed — using BoxingScene only")
+    if not bs:
+        print("WARNING: BoxingScene failed — using BoxingNews24 only")
 
     print("Merging and building calendar...")
     events = build_calendar(bn24, bs)
 
     if not events:
-        print("\n[DEBUG] No events built")
+        print("WARNING: No events parsed from either source")
 
     cal = Calendar()
     cal.extra.append(ContentLine(name="CALSCALE", value="GREGORIAN"))
