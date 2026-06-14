@@ -18,13 +18,6 @@ SUMMARY:Murat Gassiev vs. Tony Yoka
 UID:20260711-murat-gassiev-vs-tony-yoka@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Thursday\, June 11\, 2026\nLocation: Quebec City\, Canada\nNetwork: DAZN\nStart: 05:00 PM CT\nMain Event: Wilkens Mathieu vs. Esquiva Falcao\, 10 rounds\, super middleweights\nUndercard:\n  * Leila Beaudoin vs. Paulina Angel\, 10 rounds\, for vacant WBA womens interim junior lightweight title\n  * Mehmet Unal vs. Yoann Kongolo\, 10 rounds\, light heavyweights\n  * Moreno Fendero vs. Jonathan Gonzalez-Ortiz\, 10 rounds\, super middleweights\n  * Thomas Chabot vs. Jose Antonio Sampedro\, 10 rounds\, featherweights\n  * Daylen Pepin vs. Jordan Dzaba\, 4 rounds\, lightweights\n  * Erik Israyelyan vs. Johan Guzman\, 6 rounds\, junior lightweights\nSource: BoxingNews24.com
-DTEND:20260612T030000Z
-DTSTART:20260611T220000Z
-SUMMARY:Wilkens Mathieu vs. Esquiva Falcao
-UID:20260611-wilkens-mathieu-vs-esquiva-falcao@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 21\, 2026\nLocation: Las Vegas\nNetwork: DAZN PPV\nStart: 05:00 PM CT\nMain Event: Jesse Bam Rodriguez vs. Fernando Martinez\, 12 rounds\, WBC/WBA junior bantamweight unification\nUndercard:\n  * Diego Pacheco vs. Trevor McCumby\, 12 rounds\, super middleweights\n  * Andy Cruz vs. Hironori Mishiro\, 12 rounds\, IBF lightweight eliminator\n  * Ernesto Mercado vs. Jonathan Montrel\, 10 rounds\, junior welterweights\n  * Omari Jones vs. Alfredo Rodolfo Blanco\, 8 rounds\, junior middleweights\nSource: BoxingNews24.com
 DTEND:20260622T030000Z
 DTSTART:20260621T220000Z
@@ -37,13 +30,6 @@ DTEND:20260621T030000Z
 DTSTART:20260620T220000Z
 SUMMARY:Mickey Bey vs. Alexander Espinoza
 UID:20260620-mickey-bey-vs-alexander-espinoza@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Wednesday\, June 10\, 2026\nLocation: Abidjan\, Côte dIvoire\nStart: 01:00 PM CT\nMain Event: Michel Soro vs. Hassan Mwakinyo\, 12 rounds\, middleweights\nUndercard:\n  * Kevin Lele Sadjo vs. Richard Mtangi\, 10 rounds\, super middleweights\n  * Milan Prat vs. Amiri Rashidi Matumla\, 10 rounds\, junior middleweights\n  * Azoumana Diarra vs. Jean Chris Otando\, 6 rounds\, junior welterweights\n  * Kassi Komenan vs. Oluwatobi Fabiyi\, 6 rounds\, junior middleweights\n  * Gazo Iris Gbahui vs. Wilfred Mangom\, 6 rounds\, welterweights\nSource: BoxingNews24.com
-DTEND:20260610T230000Z
-DTSTART:20260610T180000Z
-SUMMARY:Michel Soro vs. Hassan Mwakinyo
-UID:20260610-michel-soro-vs-hassan-mwakinyo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 13\, 2026\nLocation: Orlando\, Florida\nNetwork: ESPN+\nStart: 05:00 PM CT\nMain Event: Oshae Jones vs. Elia Carranza\, rematch\, 10 rounds\, for Jones IBF womens junior middleweight title\nUndercard:\n  * Tiara Brown vs. Hannah Rapp\, 10 rounds\, for Browns WBC womens featherweight title\n  * Jasmine Artiga vs. Nataly Delgado\, 10 rounds\, for Artigas WBA womens junior bantamweight title\n  * Evelin Bermudez vs. Estafany Alegria\, 10 rounds\, for Bermudezs WBO/IBF/WBA womens junior flyweight title\n  * Jully Poca vs. Monica Medina\, 4 rounds\, female junior welterweights\n  * LeAnna Cruz vs. Rubi Gutierrez\, 8 rounds\, female junior bantamweights\nSource: BoxingNews24.com
@@ -102,6 +88,13 @@ SUMMARY:Cherneka Johnson vs. Dina Thorslund
 UID:20260808-cherneka-johnson-vs-dina-thorslund@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Sunday\, July 12\, 2026\nLocation: Brentwood\, England\nNetwork: DAZN\nStart: 12:00 PM CT\nMain Event: Megan Redstall vs. Maisey Rose Courtney\, 10 rounds\, female flyweights\nUndercard:\n  * Tiago Osorio Muxanga vs. Tunde Segun Adeyemi\, 10 rounds\, junior middleweights\n  * George Crotty vs. TBA\, 10 rounds\, super middleweights\n  * Taiwo Mosuro vs. Germaine Brown\, 8 rounds\, super middleweights\n  * Dylan Oke vs. Angelo Antonio\, 8 rounds\, junior middleweights\n  * Babatunde Duyile vs. Josh Kaighin\, 6 rounds\, cruiserweights\n  * Shona Whitwell vs. Victoria Lomax\, 6 rounds\, female junior lightweights\n  * Jawad Ilyas vs. Efren Besalduch\, 6 rounds\, junior lightweights\n  * Levente Gemes vs. TBA\, 6 rounds\, middleweights\nSource: BoxingNews24.com
+DTEND:20260712T220000Z
+DTSTART:20260712T170000Z
+SUMMARY:Megan Redstall vs. Maisey Rose Courtney
+UID:20260712-megan-redstall-vs-maisey-rose-courtney@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 01\, 2026\nLocation: Las Vegas\nNetwork: DAZN\, TNT\nStart: 05:00 PM CT\nMain Event: William Zepeda vs. Lamont Roach Jr.\, 12 rounds\, for vacant WBC lightweight title\nUndercard:\n  * Raymond Muratalla vs. Robson Conceicao\, 12 rounds\, for Muratallas IBF lightweight title\nSource: BoxingNews24.com
 DTEND:20260802T030000Z
 DTSTART:20260801T220000Z
@@ -158,25 +151,11 @@ SUMMARY:Galal Yafai vs. Francisco Rodriguez Jr.
 UID:20260621-galal-yafai-vs-francisco-rodriguez-jr@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 13\, 2026\nLocation: Glendale\, Arizona\nNetwork: DAZN\nStart: 08:00 PM CT\nMain Event: Antonio Vargas vs. Jesse Bam Rodriguez\, 12 rounds\, for Vargas WBA bantamweight title\nUndercard:\n  * Arturo Cardenas vs. Jordan Martinez\, 10 rounds\, junior featherweights\n  * Adrian Rodriguez vs. Elias Montoya Terraza\, 10 rounds\, lightweights\n  * Ronny Alvarez vs. Filip Stankovic\, 8 rounds\, super middleweights\n  * Trini Ochoa vs. Cristian Perez Hernandez\, 8 rounds\, junior welterweights\n  * Hector Beltran vs. Shaquile Felicia\, 6 rounds\, junior middleweights\n  * Xechal Xavier Esquivel vs. Rayshawn Taylor\, 6 rounds\, featherweights\nSource: BoxingNews24.com
-DTEND:20260614T060000Z
-DTSTART:20260614T010000Z
-SUMMARY:Antonio Vargas vs. Jesse Bam Rodriguez
-UID:20260613-antonio-vargas-vs-jesse-bam-rodriguez@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 20\, 2026\nLocation: Southampton\, England\nNetwork: DAZN\nStart: 12:00 PM CT\nMain Event: Ryan Garner vs. Michael Magnesi\, 12 rounds\, for vacant WBC interim junior lightweight title\nUndercard:\n  * Lyndon Arthur vs. Lewis Edmondson\, 12 rounds\, for Arthurs European and vacant Commonwealth light heavyweight titles\n  * Brad Pauls vs. Bradley Goldsmith\, 10 rounds\, middleweights\nSource: BoxingNews24.com
 DTEND:20260620T220000Z
 DTSTART:20260620T170000Z
 SUMMARY:Ryan Garner vs. Michael Magnesi
 UID:20260620-ryan-garner-vs-michael-magnesi@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, June 12\, 2026\nLocation: Toppenish\, Washington\nNetwork: 1EZLife.com PPV\nStart: 08:00 PM CT\nMain Event: Natasha Spence vs. Marcela Cornejo\, rematch\, 10 rounds\, female middleweights\nUndercard:\n  * Darnell Thompson vs. Ryan Bailey\, 6 rounds\, heavyweights\n  * Andres Reyes vs. Brandon Watley\, 6 rounds\, junior welterweights\n  * Carlos Villanueva vs. Theo Doukas\, 4 rounds\, heavyweights\n  * Isaac Russell vs. Derick Funkhouser\, 4 rounds\, featherweights\n  * Gerald Wood vs. Jesus Velasquez\, 4 rounds\, super middleweights\n  * Johnathan Magana vs. TBA\, 4 rounds\, junior welterweights\nSource: BoxingNews24.com
-DTEND:20260613T060000Z
-DTSTART:20260613T010000Z
-SUMMARY:Natasha Spence vs. Marcela Cornejo\, rematch
-UID:20260612-natasha-spence-vs-marcela-cornejo-rematch@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 04\, 2026\nStart: 07:00 PM CT\nSource: BoxingScene.com
@@ -200,13 +179,6 @@ SUMMARY:Jaron Ennis vs. Xander Zayas
 UID:20260627-jaron-ennis-vs-xander-zayas@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, June 12\, 2026\nLocation: Verona\, New York\nStart: 05:00 PM CT\nMain Event: Vic Pasillas vs. Ryan Lee Allen\, 10 rounds\, featherweights\nUndercard:\n  * Kenmon Evans vs. Zach Randolph\, 10 rounds\, cruiserweights\n  * Katrina Scalzo vs. Michelle Cook\, rematch\, 4 rounds\, female junior welterweights\n  * Devin Parrish vs. Edwine Humaine Junior\, 6 rounds\, junior middleweights\n  * Maxime Vaz vs. Aleem Whitfield\, 6 rounds\, heavyweights\n  * Carlos Johnson vs. Victoriano Antonio Santillan\, 8 rounds\, welterweights\n  * De Von Williams vs. TBA\, 6 rounds\, junior welterweights\n  * Shamar Lutchman vs. TBA\, 4 rounds\, lightweights\nSource: BoxingNews24.com
-DTEND:20260613T030000Z
-DTSTART:20260612T220000Z
-SUMMARY:Vic Pasillas vs. Ryan Lee Allen
-UID:20260612-vic-pasillas-vs-ryan-lee-allen@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 28\, 2026\nLocation: Newark\, New Jersey\nNetwork: DAZN\nStart: 05:00 PM CT\nMain Event: Vito Mielnicki Jr. vs. Kamil Gardzielik\, 10 rounds\, middleweights\nSource: BoxingNews24.com
 DTEND:20260629T030000Z
 DTSTART:20260628T220000Z
@@ -228,7 +200,7 @@ SUMMARY:Jesse Rodriguez vs. Fernando Martinez
 UID:20260719-jesse-rodriguez-vs-fernando-martinez@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, June 14\, 2026\nLocation: Grand Rapids\, Michigan\nNetwork: DAZN\nStart: 05:00 PM CT\nMain Event: Jonathan Bomba Gonzalez vs. Abraham Perez\, 12 rounds\, for Gonzalezs WBA interim flyweight title\nUndercard:\n  * Joshua Pagan vs. Rodolfo Bustamante\, 10 rounds\, lightweights\n  * Brandon Moore vs. Donald Haynesworth\, 10 rounds\, heavyweights\n  * Troy Isley vs. Leonardo Di Stefano\, 10 rounds\, middleweights\n  * Bryant Jennings vs. Robert Simms\, 8 rounds\, heavyweights\n  * Sardius Simmons vs. Walter Burns\, 6 rounds\, heavyweights\n  * Lance Smith vs. Jovanis Rodriguez\, 4 rounds\, junior welterweights\n  * Jacquan McElroy vs. Damian Munoz\, 6 rounds\, junior middleweights\nSource: BoxingNews24.com
+DESCRIPTION:Date: Sunday\, June 14\, 2026\nLocation: Grand Rapids\, Michigan\nStart: 05:00 PM CT\nMain Event: Jonathan Bomba Gonzalez vs. Abraham Perez\, 12 rounds\, for Gonzalezs WBA interim flyweight title\nUndercard:\n  * Joshua Pagan vs. Rodolfo Bustamante\, 10 rounds\, lightweights\n  * Brandon Moore vs. Donald Haynesworth\, 10 rounds\, heavyweights\n  * Troy Isley vs. Leonardo Di Stefano\, 10 rounds\, middleweights\n  * Bryant Jennings vs. Robert Simms\, 8 rounds\, heavyweights\n  * Sardius Simmons vs. Walter Burns\, 6 rounds\, heavyweights\n  * Lance Smith vs. Jovanis Rodriguez\, 4 rounds\, junior welterweights\n  * Jacquan McElroy vs. Damian Munoz\, 6 rounds\, junior middleweights\nSource: BoxingNews24.com
 DTEND:20260615T030000Z
 DTSTART:20260614T220000Z
 SUMMARY:Jonathan Bomba Gonzalez vs. Abraham Perez
@@ -249,11 +221,11 @@ SUMMARY:Ashton Sylve vs. Joseph Diaz Jr.
 UID:20260619-ashton-sylve-vs-joseph-diaz-jr@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 13\, 2026\nLocation: Desert Diamond Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20260614T050000Z
-DTSTART:20260614T000000Z
-SUMMARY:Antonio Vargas vs. Jesse Rodriguez
-UID:20260613-antonio-vargas-vs-jesse-rodriguez@boxing-calendar
+DESCRIPTION:Date: Sunday\, July 26\, 2026\nStart: 08:00 PM CT\nSource: BoxingScene.com
+DTEND:20260727T060000Z
+DTSTART:20260727T010000Z
+SUMMARY:Edgar Berlanga vs. Steven Butler
+UID:20260726-edgar-berlanga-vs-steven-butler@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: Riyadh\, Saudi Arabia\nStart: 10:00 AM CT\nMain Event: Canelo Alvarez vs. TBA\, 12 rounds\, super middleweights\nSource: BoxingNews24.com
@@ -291,11 +263,11 @@ SUMMARY:Oscar Collazo vs. Joey Canoy
 UID:20260620-oscar-collazo-vs-joey-canoy@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 13\, 2026\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20260614T050000Z
-DTSTART:20260614T000000Z
-SUMMARY:Oshae Jones vs. Elia Carranza
-UID:20260613-oshae-jones-vs-elia-carranza@boxing-calendar
+DESCRIPTION:Date: Saturday\, July 25\, 2026\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20260725T090000Z
+DTSTART:20260725T040000Z
+SUMMARY:Errol Spence vs. Tim Tszyu
+UID:20260725-errol-spence-vs-tim-tszyu@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 11\, 2026\nLocation: Kempton Park\, South Africa\nStart: 11:00 AM CT\nMain Event: Ricardo Malajika vs. Yahir Frank\, 12 rounds\, WBC junior bantamweight eliminator\nSource: BoxingNews24.com
@@ -305,10 +277,10 @@ SUMMARY:Ricardo Malajika vs. Yahir Frank
 UID:20260711-ricardo-malajika-vs-yahir-frank@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, July 12\, 2026\nLocation: Brentwood\, England\nNetwork: DAZN\nStart: 12:00 PM CT\nMain Event: Megan Redstall vs. Maisey Rose Courtney\, 10 rounds\, female flyweights\nUndercard:\n  * Tiago Osorio Muxanga vs. Tunde Segun Adeyemi\, 10 rounds\, junior middleweights\n  * George Crotty vs. TBA\, 10 rounds\, super middleweights\n  * Taiwo Mosuro vs. Germaine Brown\, 8 rounds\, super middleweights\n  * Dylan Oke vs. Angelo Antonio\, 8 rounds\, junior middleweights\n  * Babatunde Duyile vs. Josh Kaighin\, 6 rounds\, cruiserweights\n  * Shona Whitwell vs. Victoria Lomax\, 6 rounds\, female junior lightweights\n  * Jawad Ilyas vs. Efren Besalduch\, 6 rounds\, junior lightweights\n  * Levente Gemes vs. TBA\, 6 rounds\, middleweights\nSource: BoxingNews24.com
-DTEND:20260712T220000Z
-DTSTART:20260712T170000Z
-SUMMARY:Megan Redstall vs. Maisey Rose Courtney
-UID:20260712-megan-redstall-vs-maisey-rose-courtney@boxing-calendar
+DESCRIPTION:Date: Saturday\, June 13\, 2026\nLocation: Glendale\, Arizona\nStart: 08:00 PM CT\nMain Event: Antonio Vargas vs. Bam Rodriguez\, 12 rounds\, for Vargas WBA bantamweight title\nUndercard:\n  * Arturo Cardenas vs. Jordan Martinez\, 10 rounds\, junior featherweights\n  * Adrian Rodriguez vs. Elias Montoya Terraza\, 10 rounds\, lightweights\n  * Ronny Alvarez vs. Filip Stankovic\, 8 rounds\, super middleweights\n  * Trini Ochoa vs. Cristian Perez Hernandez\, 8 rounds\, junior welterweights\n  * Hector Beltran vs. Shaquile Felicia\, 6 rounds\, junior middleweights\n  * Xechal Xavier Esquivel vs. Rayshawn Taylor\, 6 rounds\, featherweights\nSource: BoxingNews24.com
+DTEND:20260614T060000Z
+DTSTART:20260614T010000Z
+SUMMARY:Antonio Vargas vs. Bam Rodriguez
+UID:20260613-antonio-vargas-vs-bam-rodriguez@boxing-calendar
 END:VEVENT
 END:VCALENDAR
