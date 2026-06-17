@@ -144,6 +144,13 @@ SUMMARY:Jose Luis Navarro vs. Oliver Zaren
 UID:20260619-jose-luis-navarro-vs-oliver-zaren@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Wednesday\, June 24\, 2026\nStart: 04:00 AM CT\nSource: BoxingScene.com
+DTEND:20260624T140000Z
+DTSTART:20260624T090000Z
+SUMMARY:Crocker vs. Paro
+UID:20260624-crocker-vs-paro@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 21\, 2026\nLocation: Birmingham\, England\nNetwork: DAZN\nStart: 12:00 PM CT\nMain Event: Galal Yafai vs. Francisco Rodriguez Jr.\, 12 rounds\, for Yafais WBC interim flyweight title\nUndercard:\n  * Peter McGrail vs. Ionut Baluta\, 10 rounds\, junior featherweights\n  * Pat Brown vs. Lewis Oakford\, 10 rounds\, cruiserweights\n  * Conah Walker vs. Liam Taylor\, 12 rounds\, for Walkers British welterweight title\nSource: BoxingNews24.com
 DTEND:20260621T220000Z
 DTSTART:20260621T170000Z
@@ -219,13 +226,6 @@ DTEND:20260620T060000Z
 DTSTART:20260620T010000Z
 SUMMARY:Ashton Sylve vs. Joseph Diaz Jr.
 UID:20260619-ashton-sylve-vs-joseph-diaz-jr@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, July 26\, 2026\nStart: 08:00 PM CT\nSource: BoxingScene.com
-DTEND:20260727T060000Z
-DTSTART:20260727T010000Z
-SUMMARY:Edgar Berlanga vs. Steven Butler
-UID:20260726-edgar-berlanga-vs-steven-butler@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: Riyadh\, Saudi Arabia\nStart: 10:00 AM CT\nMain Event: Canelo Alvarez vs. TBA\, 12 rounds\, super middleweights\nSource: BoxingNews24.com
