@@ -39,11 +39,11 @@ SUMMARY:Oshae Jones vs. Elia Carranza\, rematch
 UID:20260613-oshae-jones-vs-elia-carranza-rematch@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 20\, 2026\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20260621T050000Z
-DTSTART:20260621T000000Z
-SUMMARY:Ricardo Sandoval vs. Yoali Mosqueda
-UID:20260620-ricardo-sandoval-vs-yoali-mosqueda@boxing-calendar
+DESCRIPTION:Date: Sunday\, June 28\, 2026\nStart: 08:00 PM CT\nSource: BoxingScene.com
+DTEND:20260629T060000Z
+DTSTART:20260629T010000Z
+SUMMARY:Edwin De Los Santos vs. Jose Valenzuela II
+UID:20260628-edwin-de-los-santos-vs-jose-valenzuela-ii@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 12\, 2026\nLocation: New York\nNetwork: DAZN PPV\nStart: 05:00 PM CT\nMain Event: Edgar Berlanga vs. Hamzah Sheeraz\, 12 rounds\, WBC super middleweight title eliminator\nUndercard:\n  * Shakur Stevenson vs. William Zepeda\, 12 rounds\, for Stevensons WBC lightweight title\n  * Alberto Puello vs. Subriel Matias\, 12 rounds\, for Puellos WBC junior welterweight title\nSource: BoxingNews24.com
@@ -193,6 +193,13 @@ SUMMARY:Vito Mielnicki Jr. vs. Kamil Gardzielik
 UID:20260628-vito-mielnicki-jr-vs-kamil-gardzielik@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, June 20\, 2026\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20260621T050000Z
+DTSTART:20260621T000000Z
+SUMMARY:Oscar Collazo vs. Neider Valdez
+UID:20260620-oscar-collazo-vs-neider-valdez@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 26\, 2026\nLocation: New York\nNetwork: DAZN PPV\nStart: 05:00 PM CT\nMain Event: David Benavidez vs. Anthony Yarde\, 12 rounds\, for Benavidezs WBC light heavyweight title\nUndercard:\n  * Brian Norman Jr. vs. Devin Haney\, 12 rounds\, for Normans WBO welterweight title\n  * Abdullah Mason vs. Sam Noakes\, 12 rounds\, for vacant WBO lightweight title\n  * Jesse Bam Rodriguez vs. Fernando Martinez\, 12 rounds\, WBC/WBA/WBO junior bantamweight unification\nSource: BoxingNews24.com
 DTEND:20260727T030000Z
 DTSTART:20260726T220000Z
@@ -261,13 +268,6 @@ DTEND:20260621T060000Z
 DTSTART:20260621T010000Z
 SUMMARY:Oscar Collazo vs. Joey Canoy
 UID:20260620-oscar-collazo-vs-joey-canoy@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 25\, 2026\nStart: 11:00 PM CT\nSource: BoxingScene.com
-DTEND:20260725T090000Z
-DTSTART:20260725T040000Z
-SUMMARY:Errol Spence vs. Tim Tszyu
-UID:20260725-errol-spence-vs-tim-tszyu@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 11\, 2026\nLocation: Kempton Park\, South Africa\nStart: 11:00 AM CT\nMain Event: Ricardo Malajika vs. Yahir Frank\, 12 rounds\, WBC junior bantamweight eliminator\nSource: BoxingNews24.com
