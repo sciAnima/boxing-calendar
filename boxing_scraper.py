@@ -9,6 +9,7 @@ from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 from ics import Calendar, Event
 from ics.grammar.parse import ContentLine
+from playwright.sync_api import sync_playwright
 
 BN24_URL = "https://www.boxingnews24.com/boxing-schedule/"
 BS_URL   = "https://www.boxingscene.com/schedule"
@@ -69,7 +70,7 @@ def fetch(url: str) -> str | None:
         session = requests.Session()
         session.headers.update(headers)
         resp = session.get(url, timeout=30)
-        print(f"  HTTP {resp.status_code} — {url}")
+        print(f"  HTTP {resp.status_code} - {url}")
         resp.raise_for_status()
         return resp.text
     except requests.exceptions.HTTPError as e:
@@ -83,6 +84,50 @@ def fetch(url: str) -> str | None:
         return None
     except Exception as e:
         print(f"  WARNING: Unexpected error fetching {url}: {e}")
+        return None
+
+
+def fetch_bs_rendered(url: str, max_clicks: int = 25) -> str | None:
+    """
+    BoxingScene only server-renders the first page of the schedule; later
+    events (including ones further out, e.g. late August) only appear after
+    repeatedly clicking "Load more events", which fires a React Server
+    Action with no plain-HTTP equivalent. Drive a real headless browser and
+    click through until no further events load.
+    """
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page(
+                user_agent=USER_AGENTS[datetime.now().day % len(USER_AGENTS)]
+            )
+            page.goto(url, timeout=30000, wait_until="domcontentloaded")
+
+            load_more = page.get_by_role("button", name=re.compile("load more", re.I))
+
+            prev_count = -1
+            for _ in range(max_clicks):
+                links = page.eval_on_selector_all(
+                    "a[href*='/events/']", "els => els.length"
+                )
+                if links == prev_count:
+                    break
+                prev_count = links
+
+                if load_more.count() == 0 or not load_more.first.is_visible():
+                    break
+                try:
+                    load_more.first.click(timeout=5000)
+                    page.wait_for_timeout(1200)
+                except Exception:
+                    break
+
+            html = page.content()
+            browser.close()
+            print(f"  HTTP 200 (rendered) - {url}")
+            return html
+    except Exception as e:
+        print(f"  WARNING: Error rendering {url} with Playwright: {e}")
         return None
 
 
@@ -106,7 +151,7 @@ def parse_et_time(time_str: str, date_obj: datetime) -> datetime | None:
         return None
 
 
-# ── Source 1: BoxingNews24 ────────────────────────────────────────────────────
+# == Source 1: BoxingNews24 ====================================================
 
 def parse_bn24(html: str) -> dict[str, dict]:
     soup = BeautifulSoup(html, "html.parser")
@@ -156,7 +201,7 @@ def parse_bn24(html: str) -> dict[str, dict]:
                 nl = lines[i]
                 if re.match(rf"^({month_pattern})\s+\d{{1,2}}:", nl, re.I):
                     break
-                if nl.startswith("📌"):
+                if nl.startswith("\U0001F4CC"):
                     ft = strip_emoji(nl[1:]).strip()
                     if ft:
                         fight_lines.append(ft)
@@ -189,7 +234,7 @@ def parse_bn24(html: str) -> dict[str, dict]:
     return events
 
 
-# ── Source 2: BoxingScene ─────────────────────────────────────────────────────
+# == Source 2: BoxingScene ======================================================
 
 def parse_bs(html: str) -> dict[str, dict]:
     soup = BeautifulSoup(html, "html.parser")
@@ -261,7 +306,7 @@ def parse_bs(html: str) -> dict[str, dict]:
     return events
 
 
-# ── Merge + build calendar ────────────────────────────────────────────────────
+# == Merge + build calendar =====================================================
 
 def build_calendar(bn24: dict, bs: dict) -> list[Event]:
     merged = {}
@@ -314,27 +359,27 @@ def build_calendar(bn24: dict, bs: dict) -> list[Event]:
     return events
 
 
-# ── Entry point ───────────────────────────────────────────────────────────────
+# == Entry point =================================================================
 
 def main():
     print("Fetching BoxingNews24...")
     bn24_html = fetch(BN24_URL)
 
-    print("Fetching BoxingScene...")
-    bs_html = fetch(BS_URL)
+    print("Fetching BoxingScene (rendered, with Load More)...")
+    bs_html = fetch_bs_rendered(BS_URL)
 
-    # Parse whatever we got — gracefully skip failed sources
+    # Parse whatever we got - gracefully skip failed sources
     bn24 = parse_bn24(bn24_html) if bn24_html else {}
     bs   = parse_bs(bs_html)     if bs_html   else {}
 
     if not bn24 and not bs:
-        print("ERROR: Both sources failed — no events to write")
+        print("ERROR: Both sources failed - no events to write")
         sys.exit(1)
 
     if not bn24:
-        print("WARNING: BoxingNews24 failed — using BoxingScene only")
+        print("WARNING: BoxingNews24 failed - using BoxingScene only")
     if not bs:
-        print("WARNING: BoxingScene failed — using BoxingNews24 only")
+        print("WARNING: BoxingScene failed - using BoxingNews24 only")
 
     print("Merging and building calendar...")
     events = build_calendar(bn24, bs)
@@ -352,7 +397,7 @@ def main():
     with open(output, "w", encoding="utf-8") as f:
         f.writelines(cal)
 
-    print(f"\nDone — {len(events)} events written to {output}")
+    print(f"\nDone - {len(events)} events written to {output}")
 
 
 if __name__ == "__main__":
