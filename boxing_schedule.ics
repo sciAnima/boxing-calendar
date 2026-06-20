@@ -60,13 +60,6 @@ SUMMARY:Floyd Mayweather vs. Mike Zambidis
 UID:20260628-floyd-mayweather-vs-mike-zambidis@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 25\, 2026\nStart: 11:00 AM CT\nSource: BoxingScene.com
-DTEND:20260725T210000Z
-DTSTART:20260725T160000Z
-SUMMARY:Anthony Joshua vs. Kristian Prenga
-UID:20260725-anthony-joshua-vs-kristian-prenga@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 01\, 2026\nLocation: Dublin\, Ireland\nNetwork: DAZN\nStart: 12:00 PM CT\nMain Event: Pierce OLeary vs. Mark Chamberlain\, 12 rounds\, junior welterweights\nSource: BoxingNews24.com
 DTEND:20260801T220000Z
 DTSTART:20260801T170000Z
@@ -74,18 +67,18 @@ SUMMARY:Pierce OLeary vs. Mark Chamberlain
 UID:20260801-pierce-oleary-vs-mark-chamberlain@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 18\, 2026\nStart: 06:00 PM CT\nSource: BoxingScene.com
-DTEND:20260719T040000Z
-DTSTART:20260718T230000Z
-SUMMARY:Bryan Flores vs. Jonathan Navarro
-UID:20260718-bryan-flores-vs-jonathan-navarro@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 08\, 2026\nLocation: Orlando\, Florida\nNetwork: ESPN\, ESPN+\nStart: 05:00 PM CT\nMain Event: Cherneka Johnson vs. Dina Thorslund\, 10 rounds\, for Johnsons undisputed womens bantamweight title\nSource: BoxingNews24.com
 DTEND:20260809T030000Z
 DTSTART:20260808T220000Z
 SUMMARY:Cherneka Johnson vs. Dina Thorslund
 UID:20260808-cherneka-johnson-vs-dina-thorslund@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, July 18\, 2026\nStart: 06:00 PM CT\nSource: BoxingScene.com
+DTEND:20260719T040000Z
+DTSTART:20260718T230000Z
+SUMMARY:Bryan Flores vs. Jonathan Navarro
+UID:20260718-bryan-flores-vs-jonathan-navarro@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 12\, 2026\nLocation: Brentwood\, England\nNetwork: DAZN\nStart: 12:00 PM CT\nMain Event: Megan Redstall vs. Maisey Rose Courtney\, 10 rounds\, female flyweights\nUndercard:\n  * Tiago Osorio Muxanga vs. Tunde Segun Adeyemi\, 10 rounds\, junior middleweights\n  * George Crotty vs. TBA\, 10 rounds\, super middleweights\n  * Taiwo Mosuro vs. Germaine Brown\, 8 rounds\, super middleweights\n  * Dylan Oke vs. Angelo Antonio\, 8 rounds\, junior middleweights\n  * Babatunde Duyile vs. Josh Kaighin\, 6 rounds\, cruiserweights\n  * Shona Whitwell vs. Victoria Lomax\, 6 rounds\, female junior lightweights\n  * Jawad Ilyas vs. Efren Besalduch\, 6 rounds\, junior lightweights\n  * Levente Gemes vs. TBA\, 6 rounds\, middleweights\nSource: BoxingNews24.com
