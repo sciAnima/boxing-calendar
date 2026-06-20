@@ -102,7 +102,14 @@ def fetch_bs_rendered(url: str, max_clicks: int = 30) -> str | None:
                 user_agent=USER_AGENTS[datetime.now().day % len(USER_AGENTS)],
                 viewport={"width": 1366, "height": 2000},
             )
-            page.goto(url, timeout=45000, wait_until="networkidle")
+            # BoxingScene has persistent background network activity
+            # (analytics/polling) that never goes idle, so waiting for
+            # networkidle just times out. Wait for real content instead.
+            page.goto(url, timeout=45000, wait_until="domcontentloaded")
+            page.wait_for_function(
+                "document.querySelectorAll(\"a[href*='/events/']\").length > 0",
+                timeout=20000,
+            )
 
             def link_count() -> int:
                 return page.eval_on_selector_all(
