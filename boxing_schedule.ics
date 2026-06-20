@@ -165,6 +165,13 @@ SUMMARY:Galal Yafai vs. Francisco Rodriguez Jr.
 UID:20260621-galal-yafai-vs-francisco-rodriguez-jr@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: The O2 Arena\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20260829T090000Z
+DTSTART:20260829T040000Z
+SUMMARY:Moses Itauma vs. Filip Hrgovic
+UID:20260829-moses-itauma-vs-filip-hrgovic@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 20\, 2026\nLocation: Southampton\, England\nNetwork: DAZN\nStart: 12:00 PM CT\nMain Event: Ryan Garner vs. Michael Magnesi\, 12 rounds\, for vacant WBC interim junior lightweight title\nUndercard:\n  * Lyndon Arthur vs. Lewis Edmondson\, 12 rounds\, for Arthurs European and vacant Commonwealth light heavyweight titles\n  * Brad Pauls vs. Bradley Goldsmith\, 10 rounds\, middleweights\nSource: BoxingNews24.com
 DTEND:20260620T220000Z
 DTSTART:20260620T170000Z
@@ -198,6 +205,13 @@ DTEND:20260628T030000Z
 DTSTART:20260627T220000Z
 SUMMARY:Jaron Ennis vs. Xander Zayas
 UID:20260627-jaron-ennis-vs-xander-zayas@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Monday\, July 20\, 2026\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20260720T090000Z
+DTSTART:20260720T040000Z
+SUMMARY:Shokichi Iwata vs. Erik Badillo
+UID:20260720-shokichi-iwata-vs-erik-badillo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 28\, 2026\nLocation: Newark\, New Jersey\nNetwork: DAZN\nStart: 05:00 PM CT\nMain Event: Vito Mielnicki Jr. vs. Kamil Gardzielik\, 10 rounds\, middleweights\nSource: BoxingNews24.com
