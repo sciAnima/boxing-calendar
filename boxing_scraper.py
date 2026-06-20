@@ -87,7 +87,7 @@ def fetch(url: str) -> str | None:
         return None
 
 
-def fetch_bs_rendered(url: str, max_clicks: int = 25) -> str | None:
+def fetch_bs_rendered(url: str, max_clicks: int = 30) -> str | None:
     """
     BoxingScene only server-renders the first page of the schedule; later
     events (including ones further out, e.g. late August) only appear after
@@ -99,32 +99,52 @@ def fetch_bs_rendered(url: str, max_clicks: int = 25) -> str | None:
         with sync_playwright() as p:
             browser = p.chromium.launch()
             page = browser.new_page(
-                user_agent=USER_AGENTS[datetime.now().day % len(USER_AGENTS)]
+                user_agent=USER_AGENTS[datetime.now().day % len(USER_AGENTS)],
+                viewport={"width": 1366, "height": 2000},
             )
-            page.goto(url, timeout=30000, wait_until="domcontentloaded")
+            page.goto(url, timeout=45000, wait_until="networkidle")
 
-            load_more = page.get_by_role("button", name=re.compile("load more", re.I))
-
-            prev_count = -1
-            for _ in range(max_clicks):
-                links = page.eval_on_selector_all(
+            def link_count() -> int:
+                return page.eval_on_selector_all(
                     "a[href*='/events/']", "els => els.length"
                 )
-                if links == prev_count:
-                    break
-                prev_count = links
 
-                if load_more.count() == 0 or not load_more.first.is_visible():
+            prev_count = link_count()
+            print(f"  BoxingScene: {prev_count} events visible before Load More")
+
+            for click_num in range(1, max_clicks + 1):
+                load_more = page.get_by_role("button", name=re.compile("load more", re.I))
+                try:
+                    load_more.first.wait_for(state="visible", timeout=4000)
+                except Exception:
+                    print(f"  BoxingScene: Load More button gone after {click_num - 1} click(s)")
                     break
+
+                load_more.first.scroll_into_view_if_needed(timeout=4000)
                 try:
                     load_more.first.click(timeout=5000)
-                    page.wait_for_timeout(1200)
-                except Exception:
+                except Exception as e:
+                    print(f"  BoxingScene: click {click_num} failed ({e}); stopping")
                     break
+
+                try:
+                    page.wait_for_function(
+                        f"document.querySelectorAll(\"a[href*='/events/']\").length > {prev_count}",
+                        timeout=8000,
+                    )
+                except Exception:
+                    print(f"  BoxingScene: no new events after click {click_num}; stopping")
+                    break
+
+                new_count = link_count()
+                print(f"  BoxingScene: click {click_num} -> {new_count} events visible")
+                if new_count <= prev_count:
+                    break
+                prev_count = new_count
 
             html = page.content()
             browser.close()
-            print(f"  HTTP 200 (rendered) - {url}")
+            print(f"  HTTP 200 (rendered, {prev_count} events) - {url}")
             return html
     except Exception as e:
         print(f"  WARNING: Error rendering {url} with Playwright: {e}")
