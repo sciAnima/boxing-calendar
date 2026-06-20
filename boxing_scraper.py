@@ -116,6 +116,16 @@ def fetch_bs_rendered(url: str, max_clicks: int = 30) -> str | None:
                     "a[href*='/events/']", "els => els.length"
                 )
 
+            def strip_consent_overlay() -> None:
+                # A Ketch cookie-consent backdrop periodically re-renders on
+                # top of the page and intercepts pointer events, blocking
+                # clicks on Load More. Remove it outright.
+                page.evaluate(
+                    "document.querySelectorAll('[data-ketch-backdrop], #lanyard_root')"
+                    ".forEach(el => el.remove())"
+                )
+
+            strip_consent_overlay()
             prev_count = link_count()
             print(f"  BoxingScene: {prev_count} events visible before Load More")
 
@@ -127,9 +137,13 @@ def fetch_bs_rendered(url: str, max_clicks: int = 30) -> str | None:
                     print(f"  BoxingScene: Load More button gone after {click_num - 1} click(s)")
                     break
 
+                strip_consent_overlay()
                 load_more.first.scroll_into_view_if_needed(timeout=4000)
                 try:
-                    load_more.first.click(timeout=5000)
+                    # Dispatch via JS rather than a simulated pointer click:
+                    # still fires React's onClick handler, but isn't blocked
+                    # by an overlay intercepting the hit-test.
+                    load_more.first.evaluate("el => el.click()")
                 except Exception as e:
                     print(f"  BoxingScene: click {click_num} failed ({e}); stopping")
                     break
@@ -149,6 +163,7 @@ def fetch_bs_rendered(url: str, max_clicks: int = 30) -> str | None:
                     break
                 prev_count = new_count
 
+            strip_consent_overlay()
             html = page.content()
             browser.close()
             print(f"  HTTP 200 (rendered, {prev_count} events) - {url}")
