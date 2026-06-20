@@ -11,7 +11,7 @@ SUMMARY:Ricardo Sandoval vs. Kenshiro Teraji
 UID:20260621-ricardo-sandoval-vs-kenshiro-teraji@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 11\, 2026\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, July 11\, 2026\nLocation: VTB Arena\nStart: 11:00 PM CT\nSource: BoxingScene.com
 DTEND:20260711T090000Z
 DTSTART:20260711T040000Z
 SUMMARY:Murat Gassiev vs. Tony Yoka
@@ -39,7 +39,7 @@ SUMMARY:Oshae Jones vs. Elia Carranza\, rematch
 UID:20260613-oshae-jones-vs-elia-carranza-rematch@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, June 28\, 2026\nStart: 08:00 PM CT\nSource: BoxingScene.com
+DESCRIPTION:Date: Sunday\, June 28\, 2026\nLocation: The Chelsea\nNetwork: Paramount+\nStart: 08:00 PM CT\nSource: BoxingScene.com
 DTEND:20260629T060000Z
 DTSTART:20260629T010000Z
 SUMMARY:Edwin De Los Santos vs. Jose Valenzuela II
@@ -74,7 +74,7 @@ SUMMARY:Cherneka Johnson vs. Dina Thorslund
 UID:20260808-cherneka-johnson-vs-dina-thorslund@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 18\, 2026\nStart: 06:00 PM CT\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, July 18\, 2026\nLocation: National Orange Show Event Center\nStart: 06:00 PM CT\nSource: BoxingScene.com
 DTEND:20260719T040000Z
 DTSTART:20260718T230000Z
 SUMMARY:Bryan Flores vs. Jonathan Navarro
@@ -95,7 +95,7 @@ SUMMARY:William Zepeda vs. Lamont Roach Jr.
 UID:20260801-william-zepeda-vs-lamont-roach-jr@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 27\, 2026\nStart: 05:00 PM CT\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, June 27\, 2026\nLocation: Barclays Center\nNetwork: DAZN\nStart: 05:00 PM CT\nSource: BoxingScene.com
 DTEND:20260628T030000Z
 DTSTART:20260627T220000Z
 SUMMARY:Xander Zayas vs. Jaron Ennis
@@ -137,7 +137,7 @@ SUMMARY:Jose Luis Navarro vs. Oliver Zaren
 UID:20260619-jose-luis-navarro-vs-oliver-zaren@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Wednesday\, June 24\, 2026\nStart: 04:00 AM CT\nSource: BoxingScene.com
+DESCRIPTION:Date: Wednesday\, June 24\, 2026\nNetwork: Amazon Prime\nStart: 04:00 AM CT\nSource: BoxingScene.com
 DTEND:20260624T140000Z
 DTSTART:20260624T090000Z
 SUMMARY:Crocker vs. Paro
@@ -158,7 +158,7 @@ SUMMARY:Ryan Garner vs. Michael Magnesi
 UID:20260620-ryan-garner-vs-michael-magnesi@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 04\, 2026\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, July 04\, 2026\nLocation: Wolstein Center\nNetwork: TNT Sports\, DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
 DTEND:20260705T050000Z
 DTSTART:20260705T000000Z
 SUMMARY:Abdullah Mason vs. Joe Cordina
@@ -186,7 +186,7 @@ SUMMARY:Vito Mielnicki Jr. vs. Kamil Gardzielik
 UID:20260628-vito-mielnicki-jr-vs-kamil-gardzielik@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 20\, 2026\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, June 20\, 2026\nLocation: Frontwave Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
 DTEND:20260621T050000Z
 DTSTART:20260621T000000Z
 SUMMARY:Oscar Collazo vs. Neider Valdez
