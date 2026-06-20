@@ -41,8 +41,10 @@ MONTH_ABBR = {
 ET_RE  = re.compile(r"USA ET:\s*(\d{1,2}:\d{2}\s*(?:AM|PM))", re.I)
 NET_RE = re.compile(r"live on\s*(.+)", re.I)
 
+# Timezone abbreviation is optional -- some BoxingScene listings omit it
+# entirely (e.g. "Sat, Aug 29, 2026 - 12:00 AM" with no "EST"/"ET" suffix).
 BS_DT_RE = re.compile(
-    r"\w+,\s+(\w+)\s+(\d{1,2}),\s+(\d{4})\s+-\s+(\d{1,2}):(\d{2})\s+(AM|PM)\s+(\w+)",
+    r"\w+,\s+(\w+)\s+(\d{1,2}),\s+(\d{4})\s+-\s+(\d{1,2}):(\d{2})\s+(AM|PM)(?:\s+(\w+))?",
     re.I
 )
 
@@ -321,7 +323,8 @@ def parse_bs(html: str) -> dict[str, dict]:
 
         day  = int(dm.group(2))
         year = int(dm.group(3))
-        h, mn, ampm, tz_abbr = int(dm.group(4)), int(dm.group(5)), dm.group(6), dm.group(7)
+        h, mn, ampm = int(dm.group(4)), int(dm.group(5)), dm.group(6)
+        tz_abbr = dm.group(7) or "ET"
         tz_name = TZ_MAP.get(tz_abbr.upper(), "America/New_York")
 
         try:
