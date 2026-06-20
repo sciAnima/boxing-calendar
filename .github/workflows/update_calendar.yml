@@ -28,6 +28,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt || true
 
+      - name: Install Playwright browser
+        run: |
+          python -m playwright install --with-deps chromium
+
       - name: Run scraper
         run: |
           python boxing_scraper.py
