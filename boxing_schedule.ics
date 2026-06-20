@@ -11,6 +11,13 @@ SUMMARY:Ricardo Sandoval vs. Kenshiro Teraji
 UID:20260621-ricardo-sandoval-vs-kenshiro-teraji@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, July 11\, 2026\nLocation: VTB Arena\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20260711T090000Z
+DTSTART:20260711T040000Z
+SUMMARY:Murat Gassiev vs. Tony Yoka
+UID:20260711-murat-gassiev-vs-tony-yoka@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 21\, 2026\nLocation: Las Vegas\nNetwork: DAZN PPV\nStart: 05:00 PM CT\nMain Event: Jesse Bam Rodriguez vs. Fernando Martinez\, 12 rounds\, WBC/WBA junior bantamweight unification\nUndercard:\n  * Diego Pacheco vs. Trevor McCumby\, 12 rounds\, super middleweights\n  * Andy Cruz vs. Hironori Mishiro\, 12 rounds\, IBF lightweight eliminator\n  * Ernesto Mercado vs. Jonathan Montrel\, 10 rounds\, junior welterweights\n  * Omari Jones vs. Alfredo Rodolfo Blanco\, 8 rounds\, junior middleweights\nSource: BoxingNews24.com
 DTEND:20260622T030000Z
 DTSTART:20260621T220000Z
@@ -32,6 +39,13 @@ SUMMARY:Oshae Jones vs. Elia Carranza\, rematch
 UID:20260613-oshae-jones-vs-elia-carranza-rematch@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Sunday\, June 28\, 2026\nLocation: The Chelsea\nNetwork: Paramount+\nStart: 08:00 PM CT\nSource: BoxingScene.com
+DTEND:20260629T060000Z
+DTSTART:20260629T010000Z
+SUMMARY:Edwin De Los Santos vs. Jose Valenzuela II
+UID:20260628-edwin-de-los-santos-vs-jose-valenzuela-ii@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 12\, 2026\nLocation: New York\nNetwork: DAZN PPV\nStart: 05:00 PM CT\nMain Event: Edgar Berlanga vs. Hamzah Sheeraz\, 12 rounds\, WBC super middleweight title eliminator\nUndercard:\n  * Shakur Stevenson vs. William Zepeda\, 12 rounds\, for Stevensons WBC lightweight title\n  * Alberto Puello vs. Subriel Matias\, 12 rounds\, for Puellos WBC junior welterweight title\nSource: BoxingNews24.com
 DTEND:20260713T030000Z
 DTSTART:20260712T220000Z
@@ -39,11 +53,32 @@ SUMMARY:Edgar Berlanga vs. Hamzah Sheeraz
 UID:20260712-edgar-berlanga-vs-hamzah-sheeraz@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Sunday\, June 28\, 2026\nLocation: Pay-Per-View\nStart: 12:00 AM CT\nSource: BoxingScene.com
+DTEND:20260628T100000Z
+DTSTART:20260628T050000Z
+SUMMARY:Floyd Mayweather vs. Mike Zambidis
+UID:20260628-floyd-mayweather-vs-mike-zambidis@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, July 25\, 2026\nNetwork: DAZN\nStart: 11:00 AM CT\nSource: BoxingScene.com
+DTEND:20260725T210000Z
+DTSTART:20260725T160000Z
+SUMMARY:Anthony Joshua vs. Kristian Prenga
+UID:20260725-anthony-joshua-vs-kristian-prenga@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 01\, 2026\nLocation: Dublin\, Ireland\nNetwork: DAZN\nStart: 12:00 PM CT\nMain Event: Pierce OLeary vs. Mark Chamberlain\, 12 rounds\, junior welterweights\nSource: BoxingNews24.com
 DTEND:20260801T220000Z
 DTSTART:20260801T170000Z
 SUMMARY:Pierce OLeary vs. Mark Chamberlain
 UID:20260801-pierce-oleary-vs-mark-chamberlain@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, July 18\, 2026\nLocation: National Orange Show Event Center\nStart: 06:00 PM CT\nSource: BoxingScene.com
+DTEND:20260719T040000Z
+DTSTART:20260718T230000Z
+SUMMARY:Bryan Flores vs. Jonathan Navarro
+UID:20260718-bryan-flores-vs-jonathan-navarro@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 08\, 2026\nLocation: Orlando\, Florida\nNetwork: ESPN\, ESPN+\nStart: 05:00 PM CT\nMain Event: Cherneka Johnson vs. Dina Thorslund\, 10 rounds\, for Johnsons undisputed womens bantamweight title\nSource: BoxingNews24.com
@@ -65,6 +100,20 @@ DTEND:20260802T030000Z
 DTSTART:20260801T220000Z
 SUMMARY:William Zepeda vs. Lamont Roach Jr.
 UID:20260801-william-zepeda-vs-lamont-roach-jr@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, June 27\, 2026\nLocation: Barclays Center\nNetwork: DAZN\nStart: 05:00 PM CT\nSource: BoxingScene.com
+DTEND:20260628T030000Z
+DTSTART:20260627T220000Z
+SUMMARY:Xander Zayas vs. Jaron Ennis
+UID:20260627-xander-zayas-vs-jaron-ennis@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, August 01\, 2026\nLocation: 3Arena\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20260801T090000Z
+DTSTART:20260801T040000Z
+SUMMARY:Pierce O'Leary vs. Mark Chamberlain
+UID:20260801-pierce-o-leary-vs-mark-chamberlain@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 21\, 2026\nLocation: Miami\nNetwork: DAZN\nStart: 05:00 PM CT\nMain Event: Claudio Marrero vs. Luis Coria\, 10 rounds\, featherweights\nUndercard:\n  * Aaron Aponte vs. TBA\, 8 rounds\, welterweights\n  * Andrey Bonilla vs. TBA\, 8 rounds\, bantamweights\n  * Ari Bonilla vs. TBA\, 8 rounds\, junior bantamweights\nSource: BoxingNews24.com
@@ -102,6 +151,13 @@ SUMMARY:Jose Luis Navarro vs. Oliver Zaren
 UID:20260619-jose-luis-navarro-vs-oliver-zaren@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Wednesday\, June 24\, 2026\nNetwork: Amazon Prime\nStart: 04:00 AM CT\nSource: BoxingScene.com
+DTEND:20260624T140000Z
+DTSTART:20260624T090000Z
+SUMMARY:Crocker vs. Paro
+UID:20260624-crocker-vs-paro@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 21\, 2026\nLocation: Birmingham\, England\nNetwork: DAZN\nStart: 12:00 PM CT\nMain Event: Galal Yafai vs. Francisco Rodriguez Jr.\, 12 rounds\, for Yafais WBC interim flyweight title\nUndercard:\n  * Peter McGrail vs. Ionut Baluta\, 10 rounds\, junior featherweights\n  * Pat Brown vs. Lewis Oakford\, 10 rounds\, cruiserweights\n  * Conah Walker vs. Liam Taylor\, 12 rounds\, for Walkers British welterweight title\nSource: BoxingNews24.com
 DTEND:20260621T220000Z
 DTSTART:20260621T170000Z
@@ -116,11 +172,25 @@ SUMMARY:Ryan Garner vs. Michael Magnesi
 UID:20260620-ryan-garner-vs-michael-magnesi@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, July 04\, 2026\nLocation: Wolstein Center\nNetwork: TNT Sports\, DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20260705T050000Z
+DTSTART:20260705T000000Z
+SUMMARY:Abdullah Mason vs. Joe Cordina
+UID:20260704-abdullah-mason-vs-joe-cordina@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 08\, 2026\nLocation: London\nNetwork: DAZN\nStart: 12:00 PM CT\nMain Event: Moses Itauma vs. TBA\, 10 rounds\, heavyweights\nSource: BoxingNews24.com
 DTEND:20260808T220000Z
 DTSTART:20260808T170000Z
 SUMMARY:Moses Itauma vs. TBA
 UID:20260808-moses-itauma-vs-tba@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, August 29\, 2026\nNetwork: ESPN+\, Sky Sports\nStart: 04:00 PM CT\nSource: BoxingScene.com
+DTEND:20260830T020000Z
+DTSTART:20260829T210000Z
+SUMMARY:Mikaela Mayer vs Chantelle Cameron
+UID:20260829-mikaela-mayer-vs-chantelle-cameron@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 27\, 2026\nLocation: New York\nNetwork: DAZN PPV\nStart: 05:00 PM CT\nMain Event: Jaron Ennis vs. Xander Zayas\, 12 rounds\, WBA/WBC/WBO junior middleweight unification\nUndercard:\n  * Shakur Stevenson vs. William Zepeda\, 12 rounds\, for Stevensons WBC lightweight title\n  * Subriel Matias vs. Alberto Puello\, 12 rounds\, for Puellos WBC junior welterweight title\n  * David Morrell vs. Imam Khataev\, 10 rounds\, light heavyweights\n  * Omari Jones vs. TBA\, 8 rounds\, junior middleweights\nSource: BoxingNews24.com
@@ -135,6 +205,20 @@ DTEND:20260629T030000Z
 DTSTART:20260628T220000Z
 SUMMARY:Vito Mielnicki Jr. vs. Kamil Gardzielik
 UID:20260628-vito-mielnicki-jr-vs-kamil-gardzielik@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, June 20\, 2026\nLocation: Frontwave Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20260621T050000Z
+DTSTART:20260621T000000Z
+SUMMARY:Oscar Collazo vs. Neider Valdez
+UID:20260620-oscar-collazo-vs-neider-valdez@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, September 25\, 2026\nLocation: T-Mobile Arena\nNetwork: Netflix\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20260925T090000Z
+DTSTART:20260925T040000Z
+SUMMARY:Floyd Mayweather vs. Manny Pacquiao II
+UID:20260925-floyd-mayweather-vs-manny-pacquiao-ii@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 26\, 2026\nLocation: New York\nNetwork: DAZN PPV\nStart: 05:00 PM CT\nMain Event: David Benavidez vs. Anthony Yarde\, 12 rounds\, for Benavidezs WBC light heavyweight title\nUndercard:\n  * Brian Norman Jr. vs. Devin Haney\, 12 rounds\, for Normans WBO welterweight title\n  * Abdullah Mason vs. Sam Noakes\, 12 rounds\, for vacant WBO lightweight title\n  * Jesse Bam Rodriguez vs. Fernando Martinez\, 12 rounds\, WBC/WBA/WBO junior bantamweight unification\nSource: BoxingNews24.com
@@ -172,6 +256,13 @@ SUMMARY:Ashton Sylve vs. Joseph Diaz Jr.
 UID:20260619-ashton-sylve-vs-joseph-diaz-jr@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Sunday\, July 26\, 2026\nLocation: Madison Square Garden\nNetwork: Paramount+\nStart: 08:00 PM CT\nSource: BoxingScene.com
+DTEND:20260727T060000Z
+DTSTART:20260727T010000Z
+SUMMARY:Edgar Berlanga vs. Steven Butler
+UID:20260726-edgar-berlanga-vs-steven-butler@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: Riyadh\, Saudi Arabia\nStart: 10:00 AM CT\nMain Event: Canelo Alvarez vs. TBA\, 12 rounds\, super middleweights\nSource: BoxingNews24.com
 DTEND:20260912T200000Z
 DTSTART:20260912T150000Z
@@ -205,6 +296,20 @@ DTEND:20260621T060000Z
 DTSTART:20260621T010000Z
 SUMMARY:Oscar Collazo vs. Joey Canoy
 UID:20260620-oscar-collazo-vs-joey-canoy@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, July 25\, 2026\nNetwork: Pay-Per-View\, Amazon Prime\, PPV.com\nStart: 10:00 PM CT\nSource: BoxingScene.com
+DTEND:20260726T080000Z
+DTSTART:20260726T030000Z
+SUMMARY:Errol Spence vs. Tim Tszyu
+UID:20260725-errol-spence-vs-tim-tszyu@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, August 01\, 2026\nNetwork: DAZN\nStart: 11:00 AM CT\nSource: BoxingScene.com
+DTEND:20260801T210000Z
+DTSTART:20260801T160000Z
+SUMMARY:Lamont Roach vs. William Zepeda
+UID:20260801-lamont-roach-vs-william-zepeda@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 11\, 2026\nLocation: Kempton Park\, South Africa\nStart: 11:00 AM CT\nMain Event: Ricardo Malajika vs. Yahir Frank\, 12 rounds\, WBC junior bantamweight eliminator\nSource: BoxingNews24.com
