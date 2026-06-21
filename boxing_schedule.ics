@@ -221,13 +221,6 @@ SUMMARY:Vito Mielnicki Jr. vs. Kamil Gardzielik
 UID:20260628-vito-mielnicki-jr-vs-kamil-gardzielik@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 20\, 2026\nLocation: Frontwave Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20260621T050000Z
-DTSTART:20260621T000000Z
-SUMMARY:Oscar Collazo vs. Neider Valdez
-UID:20260620-oscar-collazo-vs-neider-valdez@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, September 25\, 2026\nLocation: T-Mobile Arena\nNetwork: Netflix\nStart: 11:00 PM CT\nSource: BoxingScene.com
 DTEND:20260925T090000Z
 DTSTART:20260925T040000Z
