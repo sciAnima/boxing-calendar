@@ -25,13 +25,6 @@ SUMMARY:Edgar Berlanga vs. Hamzah Sheeraz
 UID:20260712-edgar-berlanga-vs-hamzah-sheeraz@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, June 28\, 2026\nLocation: Pay-Per-View\nStart: 12:00 AM CT\nSource: BoxingScene.com
-DTEND:20260628T100000Z
-DTSTART:20260628T050000Z
-SUMMARY:Floyd Mayweather vs. Mike Zambidis
-UID:20260628-floyd-mayweather-vs-mike-zambidis@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 25\, 2026\nNetwork: DAZN\nStart: 11:00 AM CT\nSource: BoxingScene.com
 DTEND:20260725T210000Z
 DTSTART:20260725T160000Z
@@ -46,18 +39,18 @@ SUMMARY:Pierce OLeary vs. Mark Chamberlain
 UID:20260801-pierce-oleary-vs-mark-chamberlain@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 18\, 2026\nLocation: National Orange Show Event Center\nStart: 06:00 PM CT\nSource: BoxingScene.com
-DTEND:20260719T040000Z
-DTSTART:20260718T230000Z
-SUMMARY:Bryan Flores vs. Jonathan Navarro
-UID:20260718-bryan-flores-vs-jonathan-navarro@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 08\, 2026\nLocation: Orlando\, Florida\nNetwork: ESPN\, ESPN+\nStart: 05:00 PM CT\nMain Event: Cherneka Johnson vs. Dina Thorslund\, 10 rounds\, for Johnsons undisputed womens bantamweight title\nSource: BoxingNews24.com
 DTEND:20260809T030000Z
 DTSTART:20260808T220000Z
 SUMMARY:Cherneka Johnson vs. Dina Thorslund
 UID:20260808-cherneka-johnson-vs-dina-thorslund@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, July 18\, 2026\nLocation: National Orange Show Event Center\nStart: 06:00 PM CT\nSource: BoxingScene.com
+DTEND:20260719T040000Z
+DTSTART:20260718T230000Z
+SUMMARY:Bryan Flores vs. Jonathan Navarro
+UID:20260718-bryan-flores-vs-jonathan-navarro@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 01\, 2026\nLocation: Las Vegas\nNetwork: DAZN\, TNT\nStart: 05:00 PM CT\nMain Event: William Zepeda vs. Lamont Roach Jr.\, 12 rounds\, for vacant WBC lightweight title\nUndercard:\n  * Raymond Muratalla vs. Robson Conceicao\, 12 rounds\, for Muratallas IBF lightweight title\nSource: BoxingNews24.com
@@ -156,13 +149,6 @@ DTEND:20260629T030000Z
 DTSTART:20260628T220000Z
 SUMMARY:Vito Mielnicki Jr. vs. Kamil Gardzielik
 UID:20260628-vito-mielnicki-jr-vs-kamil-gardzielik@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, September 25\, 2026\nLocation: T-Mobile Arena\nNetwork: Netflix\nStart: 11:00 PM CT\nSource: BoxingScene.com
-DTEND:20260925T090000Z
-DTSTART:20260925T040000Z
-SUMMARY:Floyd Mayweather vs. Manny Pacquiao II
-UID:20260925-floyd-mayweather-vs-manny-pacquiao-ii@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 26\, 2026\nLocation: New York\nNetwork: DAZN PPV\nStart: 05:00 PM CT\nMain Event: David Benavidez vs. Anthony Yarde\, 12 rounds\, for Benavidezs WBC light heavyweight title\nUndercard:\n  * Brian Norman Jr. vs. Devin Haney\, 12 rounds\, for Normans WBO welterweight title\n  * Abdullah Mason vs. Sam Noakes\, 12 rounds\, for vacant WBO lightweight title\n  * Jesse Bam Rodriguez vs. Fernando Martinez\, 12 rounds\, WBC/WBA/WBO junior bantamweight unification\nSource: BoxingNews24.com
