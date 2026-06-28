@@ -60,13 +60,6 @@ SUMMARY:William Zepeda vs. Lamont Roach Jr.
 UID:20260801-william-zepeda-vs-lamont-roach-jr@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 27\, 2026\nLocation: Barclays Center\nNetwork: DAZN\nStart: 05:00 PM CT\nSource: BoxingScene.com
-DTEND:20260628T030000Z
-DTSTART:20260627T220000Z
-SUMMARY:Xander Zayas vs. Jaron Ennis
-UID:20260627-xander-zayas-vs-jaron-ennis@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 01\, 2026\nLocation: 3Arena\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
 DTEND:20260801T090000Z
 DTSTART:20260801T040000Z
