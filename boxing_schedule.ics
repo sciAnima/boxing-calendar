@@ -11,13 +11,6 @@ SUMMARY:Murat Gassiev vs. Tony Yoka
 UID:20260711-murat-gassiev-vs-tony-yoka@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, June 28\, 2026\nLocation: The Chelsea\nNetwork: Paramount+\nStart: 08:00 PM CT\nSource: BoxingScene.com
-DTEND:20260629T060000Z
-DTSTART:20260629T010000Z
-SUMMARY:Edwin De Los Santos vs. Jose Valenzuela II
-UID:20260628-edwin-de-los-santos-vs-jose-valenzuela-ii@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 12\, 2026\nLocation: New York\nNetwork: DAZN PPV\nStart: 05:00 PM CT\nMain Event: Edgar Berlanga vs. Hamzah Sheeraz\, 12 rounds\, WBC super middleweight title eliminator\nUndercard:\n  * Shakur Stevenson vs. William Zepeda\, 12 rounds\, for Stevensons WBC lightweight title\n  * Alberto Puello vs. Subriel Matias\, 12 rounds\, for Puellos WBC junior welterweight title\nSource: BoxingNews24.com
 DTEND:20260713T030000Z
 DTSTART:20260712T220000Z
@@ -67,18 +60,18 @@ SUMMARY:Pierce O'Leary vs. Mark Chamberlain
 UID:20260801-pierce-o-leary-vs-mark-chamberlain@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 27\, 2026\nLocation: Athens\, Greece\nStart: 10:00 AM CT\nMain Event: Floyd Mayweather vs. Mike Zambidis\, exhibition\nSource: BoxingNews24.com
-DTEND:20260627T200000Z
-DTSTART:20260627T150000Z
-SUMMARY:Floyd Mayweather vs. Mike Zambidis\, exhibition
-UID:20260627-floyd-mayweather-vs-mike-zambidis-exhibition@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 05\, 2026\nLocation: Manchester\, England\nNetwork: DAZN\nStart: 12:00 PM CT\nMain Event: Jack Catterall vs. Harlem Eubank\, 12 rounds\, welterweights\nUndercard:\n  * Joe Cordina vs. Jaret Gonzalez Quiroz\, 10 rounds\, lightweights\nSource: BoxingNews24.com
 DTEND:20260705T220000Z
 DTSTART:20260705T170000Z
 SUMMARY:Jack Catterall vs. Harlem Eubank
 UID:20260705-jack-catterall-vs-harlem-eubank@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, June 27\, 2026\nLocation: Athens\, Greece\nStart: 10:00 AM CT\nMain Event: Floyd Mayweather vs. Mike Zambidis\, exhibition\nSource: BoxingNews24.com
+DTEND:20260627T200000Z
+DTSTART:20260627T150000Z
+SUMMARY:Floyd Mayweather vs. Mike Zambidis\, exhibition
+UID:20260627-floyd-mayweather-vs-mike-zambidis-exhibition@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 19\, 2026\nLocation: Las Vegas\nNetwork: Netflix\nStart: 05:00 PM CT\nMain Event: Manny Pacquiao vs. Mario Barrios\, 12 rounds\, for Barrios WBC welterweight title\nSource: BoxingNews24.com
