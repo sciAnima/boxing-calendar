@@ -4,25 +4,11 @@ COMMENT:Data from BoxingNews24.com + BoxingScene.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 11\, 2026\nLocation: VTB Arena\nStart: 11:00 PM CT\nSource: BoxingScene.com
-DTEND:20260711T090000Z
-DTSTART:20260711T040000Z
-SUMMARY:Murat Gassiev vs. Peter Kadiru
-UID:20260711-murat-gassiev-vs-peter-kadiru@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 11\, 2026\nLocation: Moscow\nStart: 10:00 AM CT\nMain Event: Murat Gassiev vs. Tony Yoka\, 12 rounds\, for Gassievs WBA regular heavyweight title\nUndercard:\n  * Joe Joyce vs. Artem Suslenkov\, 10 rounds\, heavyweights\n  * Murad Khalidov vs. Arslan Yallyev\, 10 rounds\, heavyweights\nSource: BoxingNews24.com
 DTEND:20260711T200000Z
 DTSTART:20260711T150000Z
 SUMMARY:Murat Gassiev vs. Tony Yoka
 UID:20260711-murat-gassiev-vs-tony-yoka@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 11\, 2026\nLocation: Wynn Records Network\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20260712T050000Z
-DTSTART:20260712T000000Z
-SUMMARY:Taylor vs. Gutierrez
-UID:20260711-taylor-vs-gutierrez@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 25\, 2026\nLocation: Jeddah\, Saudi Arabia\nNetwork: DAZN PPV\nStart: 10:00 AM CT\nMain Event: Anthony Joshua vs. Kristian Prenga\, 12 rounds\, heavyweights\nSource: BoxingNews24.com
