@@ -25,7 +25,21 @@ SUMMARY:Mikaela Mayer vs Chantelle Cameron
 UID:20260829-mikaela-mayer-vs-chantelle-cameron@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 25\, 2026\nLocation: Sydney\, Australia\nStart: 03:00 AM CT\nMain Event: Tim Tszyu vs. Errol Spence Jr.\, 12 rounds\, middleweights\nUndercard:\n  * Jermall Charlo vs. Koen Mazoudier\, 10 rounds\, super middleweights\n  * Stephen Fulton vs. Liam Wilson\, 12 rounds\, junior lightweights\n  * Callum Peters vs. Ivan Actis\, 10 rounds\, middleweights\n  * Paul Fleming vs. Ahmad Reda\, 10 rounds\, lightweights\n  * Paulo Aokuso vs. Luis Tejeda\, 10 rounds\, light heavyweights\nSource: BoxingNews24.com
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Utilita Arena Sheffield\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20261024T090000Z
+DTSTART:20261024T040000Z
+SUMMARY:Smith vs. Puello
+UID:20261024-smith-vs-puello@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, July 24\, 2026\nLocation: Uncasville\, Connecticut\nStart: 05:00 PM CT\nMain Event: Demetrius Andrade vs. Douglas Ataide\, 10 rounds\, super middleweights\nUndercard:\n  * Kevin Walsh vs. Dannis Aguero Arias\, 10 rounds\, featherweights\n  * Douglas Marroquin vs. Daine Smikle\, 6 rounds\, middleweights\n  * Slawomir Bohdziewicz vs. Russ Kimber\, 6 rounds\, light heavyweights\nSource: BoxingNews24.com
+DTEND:20260725T030000Z
+DTSTART:20260724T220000Z
+SUMMARY:Demetrius Andrade vs. Douglas Ataide
+UID:20260724-demetrius-andrade-vs-douglas-ataide@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, July 25\, 2026\nLocation: Sydney\, Australia\nStart: 03:00 AM CT\nMain Event: Tim Tszyu vs. Errol Spence Jr.\, 12 rounds\, middleweights\nUndercard:\n  * Stephen Fulton vs. Liam Wilson\, 12 rounds\, junior lightweights\n  * Callum Peters vs. Ivan Actis\, 10 rounds\, middleweights\n  * Paul Fleming vs. Ahmad Reda\, 10 rounds\, lightweights\n  * Paulo Aokuso vs. Luis Tejeda\, 10 rounds\, light heavyweights\nSource: BoxingNews24.com
 DTEND:20260725T130000Z
 DTSTART:20260725T080000Z
 SUMMARY:Tim Tszyu vs. Errol Spence Jr.
@@ -53,13 +67,6 @@ SUMMARY:Anthony Joshua vs. Kristian Prenga
 UID:20260725-anthony-joshua-vs-kristian-prenga@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, July 24\, 2026\nLocation: Uncasville\, Connecticut\nStart: 05:00 PM CT\nMain Event: Demetrius Andrade vs. TBA\, 10 rounds\, super middleweights\nUndercard:\n  * Kevin Walsh vs. TBA\, 10 rounds\, featherweights\n  * Douglas Marroquin vs. Daine Smikle\, 6 rounds\, middleweights\n  * Slawomir Bohdziewicz vs. Russ Kimber\, 6 rounds\, light heavyweights\n  * Joseph Chisholm vs. TBA\, 6 rounds\, junior featherweights\nSource: BoxingNews24.com
-DTEND:20260725T030000Z
-DTSTART:20260724T220000Z
-SUMMARY:Demetrius Andrade vs. TBA
-UID:20260724-demetrius-andrade-vs-tba@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, July 31\, 2026\nLocation: Calangianus\, Italy\nStart: 11:00 AM CT\nMain Event: Francesco De Rosa vs. Thomas Masson\, 12 rounds\, for vacant European junior featherweight title\nSource: BoxingNews24.com
 DTEND:20260731T210000Z
 DTSTART:20260731T160000Z
@@ -81,6 +88,13 @@ SUMMARY:Claressa Shields vs. Kaye Scott
 UID:20260815-claressa-shields-vs-kaye-scott@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20260913T050000Z
+DTSTART:20260913T000000Z
+SUMMARY:Ryan Garcia vs. Conor Benn
+UID:20260912-ryan-garcia-vs-conor-benn@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 25\, 2026\nNetwork: Pay-Per-View\, Amazon Prime\, PPV.com\nStart: 10:00 PM CT\nSource: BoxingScene.com
 DTEND:20260726T080000Z
 DTSTART:20260726T030000Z
@@ -88,11 +102,11 @@ SUMMARY:Errol Spence vs. Tim Tszyu
 UID:20260725-errol-spence-vs-tim-tszyu@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20260913T050000Z
-DTSTART:20260913T000000Z
-SUMMARY:Ryan Garcia vs. Conor Benn
-UID:20260912-ryan-garcia-vs-conor-benn@boxing-calendar
+DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: ANB Arena\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20261031T090000Z
+DTSTART:20261031T040000Z
+SUMMARY:Alvarez vs. Mbilli
+UID:20261031-alvarez-vs-mbilli@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 01\, 2026\nNetwork: DAZN\nStart: 08:00 PM CT\nSource: BoxingScene.com
