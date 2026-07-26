@@ -95,13 +95,6 @@ SUMMARY:Ryan Garcia vs. Conor Benn
 UID:20260912-ryan-garcia-vs-conor-benn@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 25\, 2026\nNetwork: Pay-Per-View\, Amazon Prime\, PPV.com\nStart: 08:00 PM CT\nSource: BoxingScene.com
-DTEND:20260726T060000Z
-DTSTART:20260726T010000Z
-SUMMARY:Errol Spence vs. Tim Tszyu
-UID:20260725-errol-spence-vs-tim-tszyu@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: ANB Arena\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
 DTEND:20261031T090000Z
 DTSTART:20261031T040000Z
