@@ -32,46 +32,11 @@ SUMMARY:Smith vs. Puello
 UID:20261024-smith-vs-puello@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, July 24\, 2026\nLocation: Uncasville\, Connecticut\nStart: 05:00 PM CT\nMain Event: Demetrius Andrade vs. Douglas Ataide\, 10 rounds\, super middleweights\nUndercard:\n  * Kevin Walsh vs. Dannis Aguero Arias\, 10 rounds\, featherweights\n  * Douglas Marroquin vs. Daine Smikle\, 6 rounds\, middleweights\n  * Slawomir Bohdziewicz vs. Russ Kimber\, 6 rounds\, light heavyweights\nSource: BoxingNews24.com
-DTEND:20260725T030000Z
-DTSTART:20260724T220000Z
-SUMMARY:Demetrius Andrade vs. Douglas Ataide
-UID:20260724-demetrius-andrade-vs-douglas-ataide@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 25\, 2026\nLocation: Sydney\, Australia\nStart: 03:00 AM CT\nMain Event: Tim Tszyu vs. Errol Spence Jr.\, 12 rounds\, middleweights\nUndercard:\n  * Stephen Fulton vs. Liam Wilson\, 12 rounds\, junior lightweights\n  * Callum Peters vs. Ivan Actis\, 10 rounds\, middleweights\n  * Paul Fleming vs. Ahmad Reda\, 10 rounds\, lightweights\n  * Paulo Aokuso vs. Luis Tejeda\, 10 rounds\, light heavyweights\nSource: BoxingNews24.com
-DTEND:20260725T130000Z
-DTSTART:20260725T080000Z
-SUMMARY:Tim Tszyu vs. Errol Spence Jr.
-UID:20260725-tim-tszyu-vs-errol-spence-jr@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: The O2 Arena\nNetwork: DAZN\nStart: 11:00 AM CT\nSource: BoxingScene.com
 DTEND:20260829T210000Z
 DTSTART:20260829T160000Z
 SUMMARY:Moses Itauma vs. Filip Hrgovic
 UID:20260829-moses-itauma-vs-filip-hrgovic@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, July 24\, 2026\nLocation: Pattaya\, Thailand\nStart: 06:00 AM CT\nMain Event: Tyson Fury vs. Mariusz Wach\, 10 or 12 rounds\, heavyweights\nSource: BoxingNews24.com
-DTEND:20260724T160000Z
-DTSTART:20260724T110000Z
-SUMMARY:Tyson Fury vs. Mariusz Wach\, 10 or 12 rounds\, heavyweights
-UID:20260724-tyson-fury-vs-mariusz-wach-10-or-12-rounds-heavyweights@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 25\, 2026\nLocation: Jeddah\, Saudi Arabia\nStart: 10:00 AM CT\nMain Event: Anthony Joshua vs. Kristian Prenga\, 12 rounds\, heavyweights\nSource: BoxingNews24.com
-DTEND:20260725T200000Z
-DTSTART:20260725T150000Z
-SUMMARY:Anthony Joshua vs. Kristian Prenga
-UID:20260725-anthony-joshua-vs-kristian-prenga@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, July 31\, 2026\nLocation: Calangianus\, Italy\nStart: 11:00 AM CT\nMain Event: Francesco De Rosa vs. Thomas Masson\, 12 rounds\, for vacant European junior featherweight title\nSource: BoxingNews24.com
-DTEND:20260731T210000Z
-DTSTART:20260731T160000Z
-SUMMARY:Francesco De Rosa vs. Thomas Masson
-UID:20260731-francesco-de-rosa-vs-thomas-masson@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 08\, 2026\nNetwork: ESPN+\, ESPN\nStart: 11:00 PM CT\nSource: BoxingScene.com
@@ -86,6 +51,13 @@ DTEND:20260816T060000Z
 DTSTART:20260816T010000Z
 SUMMARY:Claressa Shields vs. Kaye Scott
 UID:20260815-claressa-shields-vs-kaye-scott@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, July 31\, 2026\nLocation: Calangianus\, Italy\nStart: 11:00 AM CT\nMain Event: Francesco De Rosa vs. Thomas Masson\, 12 rounds\, for vacant European junior featherweight title\nSource: BoxingNews24.com
+DTEND:20260731T210000Z
+DTSTART:20260731T160000Z
+SUMMARY:Francesco De Rosa vs. Thomas Masson
+UID:20260731-francesco-de-rosa-vs-thomas-masson@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
