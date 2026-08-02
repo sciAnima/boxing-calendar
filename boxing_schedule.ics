@@ -32,13 +32,6 @@ SUMMARY:Smith vs. Puello
 UID:20261024-smith-vs-puello@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: The O2 Arena\nNetwork: DAZN\nStart: 11:00 AM CT\nSource: BoxingScene.com
-DTEND:20260829T210000Z
-DTSTART:20260829T160000Z
-SUMMARY:Moses Itauma vs. Filip Hrgovic
-UID:20260829-moses-itauma-vs-filip-hrgovic@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 08\, 2026\nNetwork: ESPN+\, ESPN\nStart: 11:00 PM CT\nSource: BoxingScene.com
 DTEND:20260808T090000Z
 DTSTART:20260808T040000Z
@@ -74,17 +67,10 @@ SUMMARY:Alvarez vs. Mbilli
 UID:20261031-alvarez-vs-mbilli@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 01\, 2026\nNetwork: DAZN\nStart: 08:00 PM CT\nSource: BoxingScene.com
-DTEND:20260802T060000Z
-DTSTART:20260802T010000Z
-SUMMARY:Lamont Roach vs. William Zepeda
-UID:20260801-lamont-roach-vs-william-zepeda@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 01\, 2026\nLocation: 3Arena\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
-DTEND:20260801T090000Z
-DTSTART:20260801T040000Z
-SUMMARY:Pierce O'Leary vs. Mark Chamberlain
-UID:20260801-pierce-o-leary-vs-mark-chamberlain@boxing-calendar
+DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: The O2 Arena\nNetwork: DAZN\nStart: 11:00 AM CT\nSource: BoxingScene.com
+DTEND:20260829T210000Z
+DTSTART:20260829T160000Z
+SUMMARY:Moses Itauma vs. Filip Hrgovic
+UID:20260829-moses-itauma-vs-filip-hrgovic@boxing-calendar
 END:VEVENT
 END:VCALENDAR
