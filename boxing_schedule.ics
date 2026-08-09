@@ -32,13 +32,6 @@ SUMMARY:Smith vs. Puello
 UID:20261024-smith-vs-puello@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 08\, 2026\nNetwork: ESPN+\, ESPN\nStart: 11:00 PM CT\nSource: BoxingScene.com
-DTEND:20260808T090000Z
-DTSTART:20260808T040000Z
-SUMMARY:Cherneka Johnson vs. Dina Thorslund
-UID:20260808-cherneka-johnson-vs-dina-thorslund@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 15\, 2026\nLocation: State Farm Arena\nNetwork: DAZN\nStart: 08:00 PM CT\nSource: BoxingScene.com
 DTEND:20260816T060000Z
 DTSTART:20260816T010000Z
