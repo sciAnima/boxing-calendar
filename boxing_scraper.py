@@ -13,6 +13,7 @@ from playwright.sync_api import sync_playwright
 
 BN24_URL = "https://www.boxingnews24.com/boxing-schedule/"
 BS_URL   = "https://www.boxingscene.com/schedule"
+TBL_URL  = "https://www.teamboxingleague.com/pages/events"
 
 CT_ZONE = ZoneInfo("America/Chicago")
 ET_ZONE = ZoneInfo("America/New_York")
@@ -353,10 +354,85 @@ def parse_bs(html: str) -> dict[str, dict]:
     return events
 
 
+# == Source 3: Team Boxing League ==============================================
+
+def parse_tbl(html: str) -> dict[str, dict]:
+    soup = BeautifulSoup(html, "html.parser")
+    events = {}
+
+    for row in soup.find_all("div", class_=re.compile(r"\bevent-row\b")):
+        # Skip navigation/header rows that aren't actual event cards
+        if not row.find(class_="event-row__date"):
+            continue
+
+        # Date: "FRIDAY, AUGUST 21, 2026"
+        date_el = row.find(class_="event-row__date")
+        if not date_el:
+            continue
+        date_str = date_el.get_text(strip=True)
+        try:
+            date_obj = datetime.strptime(date_str, "%A, %B %d, %Y")
+        except ValueError:
+            try:
+                # Some entries use single-digit day without zero-pad
+                date_obj = datetime.strptime(date_str, "%A, %B %d, %Y")
+            except ValueError:
+                continue
+
+        # Time: "7:00PM LOCAL" -- listed as venue local time, use CT as fallback
+        time_el = row.find(class_="event-row__time")
+        time_raw = time_el.get_text(strip=True) if time_el else "7:00PM"
+        time_str = re.sub(r"\s*LOCAL\s*", "", time_raw, flags=re.I).strip()
+        try:
+            t = datetime.strptime(time_str, "%I:%M%p")
+            start_ct = datetime(
+                date_obj.year, date_obj.month, date_obj.day,
+                t.hour, t.minute, tzinfo=CT_ZONE
+            )
+        except ValueError:
+            start_ct = datetime(
+                date_obj.year, date_obj.month, date_obj.day, 19, 0, tzinfo=CT_ZONE
+            )
+
+        # Team names
+        team_names = [
+            el.get_text(strip=True)
+            for el in row.find_all(class_="event-row__team-name")
+        ]
+        if len(team_names) < 2:
+            continue
+        name = f"{team_names[0]} vs. {team_names[1]}"
+
+        # Venue + address
+        venue_el   = row.find(class_="event-row__venue")
+        venue      = venue_el.get_text(strip=True) if venue_el else ""
+        addr_parts = [el.get_text(strip=True) for el in row.find_all(class_="event-row__address")]
+        location   = ", ".join(filter(None, [venue] + addr_parts))
+
+        slug = make_slug(name) + f"-{date_obj.strftime('%Y%m%d')}"
+
+        events[slug] = {
+            "name":     name,
+            "date_obj": date_obj,
+            "location": location,
+            "network":  "TBL",
+            "start_ct": start_ct,
+            "fights":   [],
+            "source":   "TeamBoxingLeague.com",
+        }
+
+    print(f"  Team Boxing League: {len(events)} events parsed")
+    return events
+
+
 # == Merge + build calendar =====================================================
 
-def build_calendar(bn24: dict, bs: dict) -> list[Event]:
+def build_calendar(bn24: dict, bs: dict, tbl: dict) -> list[Event]:
     merged = {}
+
+    # Priority (lowest to highest): TBL < BS < BN24
+    for slug, ev in tbl.items():
+        merged[slug] = ev
 
     for slug, ev in bs.items():
         merged[slug] = ev
@@ -415,28 +491,34 @@ def main():
     print("Fetching BoxingScene (rendered, with Load More)...")
     bs_html = fetch_bs_rendered(BS_URL)
 
+    print("Fetching Team Boxing League...")
+    tbl_html = fetch(TBL_URL)
+
     # Parse whatever we got - gracefully skip failed sources
     bn24 = parse_bn24(bn24_html) if bn24_html else {}
     bs   = parse_bs(bs_html)     if bs_html   else {}
+    tbl  = parse_tbl(tbl_html)   if tbl_html  else {}
 
-    if not bn24 and not bs:
-        print("ERROR: Both sources failed - no events to write")
+    if not bn24 and not bs and not tbl:
+        print("ERROR: All sources failed - no events to write")
         sys.exit(1)
 
     if not bn24:
-        print("WARNING: BoxingNews24 failed - using BoxingScene only")
+        print("WARNING: BoxingNews24 failed - skipping")
     if not bs:
-        print("WARNING: BoxingScene failed - using BoxingNews24 only")
+        print("WARNING: BoxingScene failed - skipping")
+    if not tbl:
+        print("WARNING: Team Boxing League failed - skipping")
 
     print("Merging and building calendar...")
-    events = build_calendar(bn24, bs)
+    events = build_calendar(bn24, bs, tbl)
 
     if not events:
-        print("WARNING: No events parsed from either source")
+        print("WARNING: No events parsed from any source")
 
     cal = Calendar()
     cal.extra.append(ContentLine(name="CALSCALE", value="GREGORIAN"))
-    cal.extra.append(ContentLine(name="COMMENT", value="Data from BoxingNews24.com + BoxingScene.com"))
+    cal.extra.append(ContentLine(name="COMMENT", value="Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com"))
     for ev in events:
         cal.events.add(ev)
 
