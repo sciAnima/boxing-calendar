@@ -11,9 +11,10 @@ from ics import Calendar, Event
 from ics.grammar.parse import ContentLine
 from playwright.sync_api import sync_playwright
 
-BN24_URL = "https://www.boxingnews24.com/boxing-schedule/"
-BS_URL   = "https://www.boxingscene.com/schedule"
-TBL_URL  = "https://www.teamboxingleague.com/pages/events"
+BN24_URL   = "https://www.boxingnews24.com/boxing-schedule/"
+BS_URL     = "https://www.boxingscene.com/schedule"
+TBL_URL    = "https://www.teamboxingleague.com/pages/events"
+PROBOX_URL = "https://proboxtv.com/tickets/"
 
 CT_ZONE = ZoneInfo("America/Chicago")
 ET_ZONE = ZoneInfo("America/New_York")
@@ -42,8 +43,6 @@ MONTH_ABBR = {
 ET_RE  = re.compile(r"USA ET:\s*(\d{1,2}:\d{2}\s*(?:AM|PM))", re.I)
 NET_RE = re.compile(r"live on\s*(.+)", re.I)
 
-# Timezone abbreviation is optional -- some BoxingScene listings omit it
-# entirely (e.g. "Sat, Aug 29, 2026 - 12:00 AM" with no "EST"/"ET" suffix).
 BS_DT_RE = re.compile(
     r"\w+,\s+(\w+)\s+(\d{1,2}),\s+(\d{4})\s+-\s+(\d{1,2}):(\d{2})\s+(AM|PM)(?:\s+(\w+))?",
     re.I
@@ -58,7 +57,6 @@ TZ_MAP = {
 
 
 def fetch(url: str) -> str | None:
-    """Fetch a URL and return HTML. Returns None on any error instead of crashing."""
     headers = {
         "User-Agent": USER_AGENTS[datetime.now().day % len(USER_AGENTS)],
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
@@ -91,13 +89,6 @@ def fetch(url: str) -> str | None:
 
 
 def fetch_bs_rendered(url: str, max_clicks: int = 30) -> str | None:
-    """
-    BoxingScene only server-renders the first page of the schedule; later
-    events (including ones further out, e.g. late August) only appear after
-    repeatedly clicking "Load more events", which fires a React Server
-    Action with no plain-HTTP equivalent. Drive a real headless browser and
-    click through until no further events load.
-    """
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch()
@@ -105,9 +96,6 @@ def fetch_bs_rendered(url: str, max_clicks: int = 30) -> str | None:
                 user_agent=USER_AGENTS[datetime.now().day % len(USER_AGENTS)],
                 viewport={"width": 1366, "height": 2000},
             )
-            # BoxingScene has persistent background network activity
-            # (analytics/polling) that never goes idle, so waiting for
-            # networkidle just times out. Wait for real content instead.
             page.goto(url, timeout=45000, wait_until="domcontentloaded")
             page.wait_for_function(
                 "document.querySelectorAll(\"a[href*='/events/']\").length > 0",
@@ -120,9 +108,6 @@ def fetch_bs_rendered(url: str, max_clicks: int = 30) -> str | None:
                 )
 
             def strip_consent_overlay() -> None:
-                # A Ketch cookie-consent backdrop periodically re-renders on
-                # top of the page and intercepts pointer events, blocking
-                # clicks on Load More. Remove it outright.
                 page.evaluate(
                     "document.querySelectorAll('[data-ketch-backdrop], #lanyard_root')"
                     ".forEach(el => el.remove())"
@@ -143,9 +128,6 @@ def fetch_bs_rendered(url: str, max_clicks: int = 30) -> str | None:
                 strip_consent_overlay()
                 load_more.first.scroll_into_view_if_needed(timeout=4000)
                 try:
-                    # Dispatch via JS rather than a simulated pointer click:
-                    # still fires React's onClick handler, but isn't blocked
-                    # by an overlay intercepting the hit-test.
                     load_more.first.evaluate("el => el.click()")
                 except Exception as e:
                     print(f"  BoxingScene: click {click_num} failed ({e}); stopping")
@@ -287,8 +269,6 @@ def parse_bs(html: str) -> dict[str, dict]:
 
     for a in soup.find_all("a", href=re.compile(r"/events/")):
         text = a.get_text(separator=" | ").strip()
-        # Only require a valid date -- dropping the "vs" check so hyphenated
-        # fight names (e.g. Zuffa Boxing: "Romero-Lopez") aren't silently skipped.
         if not BS_DT_RE.search(text):
             continue
 
@@ -361,26 +341,17 @@ def parse_tbl(html: str) -> dict[str, dict]:
     events = {}
 
     for row in soup.find_all("div", class_=re.compile(r"\bevent-row\b")):
-        # Skip navigation/header rows that aren't actual event cards
         if not row.find(class_="event-row__date"):
             continue
 
-        # Date: "FRIDAY, AUGUST 21, 2026"
         date_el = row.find(class_="event-row__date")
-        if not date_el:
-            continue
         date_str = date_el.get_text(strip=True)
         try:
             date_obj = datetime.strptime(date_str, "%A, %B %d, %Y")
         except ValueError:
-            try:
-                # Some entries use single-digit day without zero-pad
-                date_obj = datetime.strptime(date_str, "%A, %B %d, %Y")
-            except ValueError:
-                continue
+            continue
 
-        # Time: "7:00PM LOCAL" -- listed as venue local time, use CT as fallback
-        time_el = row.find(class_="event-row__time")
+        time_el  = row.find(class_="event-row__time")
         time_raw = time_el.get_text(strip=True) if time_el else "7:00PM"
         time_str = re.sub(r"\s*LOCAL\s*", "", time_raw, flags=re.I).strip()
         try:
@@ -394,7 +365,6 @@ def parse_tbl(html: str) -> dict[str, dict]:
                 date_obj.year, date_obj.month, date_obj.day, 19, 0, tzinfo=CT_ZONE
             )
 
-        # Team names
         team_names = [
             el.get_text(strip=True)
             for el in row.find_all(class_="event-row__team-name")
@@ -403,7 +373,6 @@ def parse_tbl(html: str) -> dict[str, dict]:
             continue
         name = f"{team_names[0]} vs. {team_names[1]}"
 
-        # Venue + address
         venue_el   = row.find(class_="event-row__venue")
         venue      = venue_el.get_text(strip=True) if venue_el else ""
         addr_parts = [el.get_text(strip=True) for el in row.find_all(class_="event-row__address")]
@@ -415,7 +384,7 @@ def parse_tbl(html: str) -> dict[str, dict]:
             "name":     name,
             "date_obj": date_obj,
             "location": location,
-            "network":  "TBL",
+            "network":  "YouTube",
             "start_ct": start_ct,
             "fights":   [],
             "source":   "TeamBoxingLeague.com",
@@ -425,13 +394,62 @@ def parse_tbl(html: str) -> dict[str, dict]:
     return events
 
 
+# == Source 4: ProBox TV =======================================================
+
+def parse_probox(html: str) -> dict[str, dict]:
+    soup = BeautifulSoup(html, "html.parser")
+    events = {}
+
+    for card in soup.find_all("div", class_=re.compile(r"\bmatch-preview\b")):
+        # Fight name
+        title_el = card.find(class_="match-preview__title")
+        if not title_el:
+            continue
+        name = title_el.get_text(strip=True)
+        if not name:
+            continue
+
+        # Date/time from machine-readable datetime attribute: "2026-08-29 20:00"
+        time_el = card.find("time")
+        if not time_el or not time_el.get("datetime"):
+            continue
+        try:
+            dt_parsed = datetime.strptime(time_el["datetime"], "%Y-%m-%d %H:%M")
+            start_ct  = dt_parsed.replace(tzinfo=ET_ZONE).astimezone(CT_ZONE)
+            date_obj  = datetime(dt_parsed.year, dt_parsed.month, dt_parsed.day)
+        except ValueError:
+            continue
+
+        # Location
+        place_el = card.find(class_="match-preview__match-place")
+        location = place_el.get_text(strip=True) if place_el else ""
+
+        slug = make_slug(name) + f"-{date_obj.strftime('%Y%m%d')}"
+
+        events[slug] = {
+            "name":     name,
+            "date_obj": date_obj,
+            "location": location,
+            "network":  "YouTube",
+            "start_ct": start_ct,
+            "fights":   [],
+            "source":   "ProBoxTV.com",
+        }
+
+    print(f"  ProBox TV: {len(events)} events parsed")
+    return events
+
+
 # == Merge + build calendar =====================================================
 
-def build_calendar(bn24: dict, bs: dict, tbl: dict) -> list[Event]:
+def build_calendar(bn24: dict, bs: dict, tbl: dict, probox: dict) -> list[Event]:
     merged = {}
 
-    # Priority (lowest to highest): TBL < BS < BN24
+    # Priority (lowest to highest): TBL = ProBox < BS < BN24
     for slug, ev in tbl.items():
+        merged[slug] = ev
+
+    for slug, ev in probox.items():
         merged[slug] = ev
 
     for slug, ev in bs.items():
@@ -494,31 +512,32 @@ def main():
     print("Fetching Team Boxing League...")
     tbl_html = fetch(TBL_URL)
 
-    # Parse whatever we got - gracefully skip failed sources
-    bn24 = parse_bn24(bn24_html) if bn24_html else {}
-    bs   = parse_bs(bs_html)     if bs_html   else {}
-    tbl  = parse_tbl(tbl_html)   if tbl_html  else {}
+    print("Fetching ProBox TV...")
+    probox_html = fetch(PROBOX_URL)
 
-    if not bn24 and not bs and not tbl:
+    bn24   = parse_bn24(bn24_html)     if bn24_html   else {}
+    bs     = parse_bs(bs_html)         if bs_html     else {}
+    tbl    = parse_tbl(tbl_html)       if tbl_html    else {}
+    probox = parse_probox(probox_html) if probox_html else {}
+
+    if not bn24 and not bs and not tbl and not probox:
         print("ERROR: All sources failed - no events to write")
         sys.exit(1)
 
-    if not bn24:
-        print("WARNING: BoxingNews24 failed - skipping")
-    if not bs:
-        print("WARNING: BoxingScene failed - skipping")
-    if not tbl:
-        print("WARNING: Team Boxing League failed - skipping")
+    if not bn24:   print("WARNING: BoxingNews24 failed - skipping")
+    if not bs:     print("WARNING: BoxingScene failed - skipping")
+    if not tbl:    print("WARNING: Team Boxing League failed - skipping")
+    if not probox: print("WARNING: ProBox TV failed - skipping")
 
     print("Merging and building calendar...")
-    events = build_calendar(bn24, bs, tbl)
+    events = build_calendar(bn24, bs, tbl, probox)
 
     if not events:
         print("WARNING: No events parsed from any source")
 
     cal = Calendar()
     cal.extra.append(ContentLine(name="CALSCALE", value="GREGORIAN"))
-    cal.extra.append(ContentLine(name="COMMENT", value="Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com"))
+    cal.extra.append(ContentLine(name="COMMENT", value="Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com + ProBoxTV.com"))
     for ev in events:
         cal.events.add(ev)
 
