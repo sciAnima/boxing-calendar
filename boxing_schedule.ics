@@ -4,11 +4,11 @@ COMMENT:Data from BoxingNews24.com + BoxingScene.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 03\, 2026\nLocation: Utilita Arena Birmingham\nNetwork: DAZN\nStart: 01:00 PM CT\nSource: BoxingScene.com
-DTEND:20261003T230000Z
-DTSTART:20261003T180000Z
-SUMMARY:Ben Whittaker vs. Conor Wallace
-UID:20261003-ben-whittaker-vs-conor-wallace@boxing-calendar
+DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20260912T050000Z
+DTSTART:20260912T000000Z
+SUMMARY:Giovani Santillan-Abass Baraou
+UID:20260911-giovani-santillan-abass-baraou@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 26\, 2026\nLocation: New York\nNetwork: Paramount+\nStart: 05:00 PM CT\nMain Event: Edgar Berlanga vs. Steven Butler\, 10 rounds\, super middleweights\nUndercard:\n  * Richardson Hitchins vs. Ricardo Salas\, 12 rounds\, welterweights\n  * Sergiy Derevyanchenko vs. Jalil Hackett\, 10 rounds\, middleweights\nSource: BoxingNews24.com
@@ -18,6 +18,13 @@ SUMMARY:Edgar Berlanga vs. Steven Butler
 UID:20260726-edgar-berlanga-vs-steven-butler@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 03\, 2026\nLocation: Utilita Arena Birmingham\nNetwork: DAZN\nStart: 01:00 PM CT\nSource: BoxingScene.com
+DTEND:20261003T230000Z
+DTSTART:20261003T180000Z
+SUMMARY:Ben Whittaker vs. Conor Wallace
+UID:20261003-ben-whittaker-vs-conor-wallace@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 29\, 2026\nNetwork: ESPN+\, Sky Sports\nStart: 04:00 PM CT\nSource: BoxingScene.com
 DTEND:20260830T020000Z
 DTSTART:20260829T210000Z
@@ -25,11 +32,46 @@ SUMMARY:Mikaela Mayer vs Chantelle Cameron
 UID:20260829-mikaela-mayer-vs-chantelle-cameron@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: USC Galen Center\nStart: 06:00 PM CT\nSource: BoxingScene.com
+DTEND:20260830T040000Z
+DTSTART:20260829T230000Z
+SUMMARY:Lester Martinez-Luka Plantic
+UID:20260829-lester-martinez-luka-plantic@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Utilita Arena Sheffield\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
 DTEND:20261024T090000Z
 DTSTART:20261024T040000Z
 SUMMARY:Smith vs. Puello
 UID:20261024-smith-vs-puello@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Pechanga Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20260920T050000Z
+DTSTART:20260920T000000Z
+SUMMARY:Isaac Cruz-Nestor Bravo
+UID:20260919-isaac-cruz-nestor-bravo@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: ANB Arena\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20261031T090000Z
+DTSTART:20261031T040000Z
+SUMMARY:Alvarez vs. Mbilli
+UID:20261031-alvarez-vs-mbilli@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, August 21\, 2026\nLocation: Pechanga Resort Casino\nStart: 08:00 PM CT\nSource: BoxingScene.com
+DTEND:20260822T060000Z
+DTSTART:20260822T010000Z
+SUMMARY:Amanda Serrano-Lucrecia Manzur
+UID:20260821-amanda-serrano-lucrecia-manzur@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, August 22\, 2026\nLocation: T-Mobile Arena\nNetwork: Amazon Prime\, DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20260823T050000Z
+DTSTART:20260823T000000Z
+SUMMARY:Rolando Romero-Teofimo Lopez
+UID:20260822-rolando-romero-teofimo-lopez@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 15\, 2026\nLocation: State Farm Arena\nNetwork: DAZN\nStart: 08:00 PM CT\nSource: BoxingScene.com
@@ -53,11 +95,11 @@ SUMMARY:Ryan Garcia vs. Conor Benn
 UID:20260912-ryan-garcia-vs-conor-benn@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: ANB Arena\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
-DTEND:20261031T090000Z
-DTSTART:20261031T040000Z
-SUMMARY:Alvarez vs. Mbilli
-UID:20261031-alvarez-vs-mbilli@boxing-calendar
+DESCRIPTION:Date: Saturday\, September 05\, 2026\nNetwork: DAZN\nStart: 10:00 AM CT\nSource: BoxingScene.com
+DTEND:20260905T200000Z
+DTSTART:20260905T150000Z
+SUMMARY:Katie Taylor-Flora Pili
+UID:20260905-katie-taylor-flora-pili@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: The O2 Arena\nNetwork: DAZN\nStart: 11:00 AM CT\nSource: BoxingScene.com
