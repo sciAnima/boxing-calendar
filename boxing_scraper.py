@@ -286,8 +286,8 @@ def parse_bs(html: str) -> dict[str, dict]:
 
     for a in soup.find_all("a", href=re.compile(r"/events/")):
         text = a.get_text(separator=" | ").strip()
-        if not re.search(r"\bvs\.?\b", text, re.I):
-            continue
+        # Only require a valid date -- dropping the "vs" check so hyphenated
+        # fight names (e.g. Zuffa Boxing: "Romero-Lopez") aren't silently skipped.
         if not BS_DT_RE.search(text):
             continue
 
@@ -296,6 +296,8 @@ def parse_bs(html: str) -> dict[str, dict]:
             continue
 
         fight_name = parts[0].strip()
+        if not fight_name:
+            continue
 
         datetime_str = ""
         venue = ""
