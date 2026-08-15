@@ -60,6 +60,13 @@ SUMMARY:Rolando Romero-Teofimo Lopez
 UID:20260822-rolando-romero-teofimo-lopez@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: Galen Center in Los Angeles\, California\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: ProBoxTV.com
+DTEND:20260830T050000Z
+DTSTART:20260830T000000Z
+SUMMARY:WBC Super Middleweight Interim TitleLester Martinez vs Luka Plantic
+UID:20260829-wbc-super-middleweight-interim-titlelester-martinez-vs-luka-plantic-20260829@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, May 29\, 2026\nLocation: Utah Tech University - Burns Arena\, 225 S Univ Ave\, St. George\, UT 84770\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260530T050000Z
 DTSTART:20260530T000000Z
@@ -415,6 +422,13 @@ DTEND:20260614T050000Z
 DTSTART:20260614T000000Z
 SUMMARY:Boston Butchers vs. Philadelphia Smoke
 UID:20260613-boston-butchers-vs-philadelphia-smoke-20260613@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Thursday\, October 08\, 2026\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20261009T050000Z
+DTSTART:20261009T000000Z
+SUMMARY:Osleys Iglesias-Oliver Zaren
+UID:20261008-osleys-iglesias-oliver-zaren@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 11\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
