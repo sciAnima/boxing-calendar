@@ -4,6 +4,13 @@ COMMENT:Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com + Pr
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Frost Bank Center\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20261025T050000Z
+DTSTART:20261025T000000Z
+SUMMARY:Emanuel Navarrete-O'Shaquie Foster
+UID:20261024-emanuel-navarrete-o-shaquie-foster@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena\nStart: 07:00 PM CT\nSource: BoxingScene.com
 DTEND:20260912T050000Z
 DTSTART:20260912T000000Z
@@ -16,6 +23,13 @@ DTEND:20260727T050000Z
 DTSTART:20260727T000000Z
 SUMMARY:Philadelphia Smoke vs. NYC Attitude
 UID:20260726-philadelphia-smoke-vs-nyc-attitude-20260726@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\nNetwork: Paramount+\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20260927T050000Z
+DTSTART:20260927T000000Z
+SUMMARY:Johnny Fisher-Michael Pirotton
+UID:20260926-johnny-fisher-michael-pirotton@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, May 16\, 2026\nLocation: The Met Philadelphia\, 858 N Broad St\, Philadelphia\, PA 19130\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -137,11 +151,11 @@ SUMMARY:Philadelphia Smoke vs. NYC Attitude
 UID:20260320-philadelphia-smoke-vs-nyc-attitude-20260320@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: USC Galen Center\nStart: 06:00 PM CT\nSource: BoxingScene.com
-DTEND:20260830T040000Z
-DTSTART:20260829T230000Z
-SUMMARY:Lester Martinez-Luka Plantic
-UID:20260829-lester-martinez-luka-plantic@boxing-calendar
+DESCRIPTION:Date: Wednesday\, August 26\, 2026\nLocation: Gold Coast Convention Centre\nStart: 02:00 AM CT\nSource: BoxingScene.com
+DTEND:20260826T120000Z
+DTSTART:20260826T070000Z
+SUMMARY:Nikita Tszyu-Ben Mahoney
+UID:20260826-nikita-tszyu-ben-mahoney@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, April 17\, 2026\nLocation: Nashville Municipal Auditorium\, 417 4th Ave N\, Nashville\, TN 37201\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -149,6 +163,13 @@ DTEND:20260418T050000Z
 DTSTART:20260418T000000Z
 SUMMARY:Nashville Smash vs. Phoenix Fury
 UID:20260417-nashville-smash-vs-phoenix-fury-20260417@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: USC Galen Center\nStart: 04:30 PM CT\nSource: BoxingScene.com
+DTEND:20260830T023000Z
+DTSTART:20260829T213000Z
+SUMMARY:Lester Martinez-Luka Plantic
+UID:20260829-lester-martinez-luka-plantic@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, August 30\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
