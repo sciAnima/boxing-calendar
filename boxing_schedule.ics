@@ -81,6 +81,13 @@ SUMMARY:WBC Super Middleweight Interim TitleLester Martinez vs Luka Plantic
 UID:20260829-wbc-super-middleweight-interim-titlelester-martinez-vs-luka-plantic-20260829@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena in Oceanside\, California\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: ProBoxTV.com
+DTEND:20260912T050000Z
+DTSTART:20260912T000000Z
+SUMMARY:Giovani Santillan vs Abass Baraou
+UID:20260911-giovani-santillan-vs-abass-baraou-20260911@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, May 29\, 2026\nLocation: Utah Tech University - Burns Arena\, 225 S Univ Ave\, St. George\, UT 84770\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260530T050000Z
 DTSTART:20260530T000000Z
@@ -212,13 +219,6 @@ DTEND:20260516T050000Z
 DTSTART:20260516T000000Z
 SUMMARY:Dallas Enforcers vs. San Antonio Snipers
 UID:20260515-dallas-enforcers-vs-san-antonio-snipers-20260515@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, July 31\, 2026\nLocation: Calangianus\, Italy\nStart: 11:00 AM CT\nMain Event: Francesco De Rosa vs. Thomas Masson\, 12 rounds\, for vacant European junior featherweight title\nSource: BoxingNews24.com
-DTEND:20260731T210000Z
-DTSTART:20260731T160000Z
-SUMMARY:Francesco De Rosa vs. Thomas Masson
-UID:20260731-francesco-de-rosa-vs-thomas-masson@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, September 05\, 2026\nNetwork: DAZN\nStart: 10:00 AM CT\nSource: BoxingScene.com
@@ -368,13 +368,6 @@ SUMMARY:Boston Butchers vs. NYC Attitude
 UID:20260424-boston-butchers-vs-nyc-attitude-20260424@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, August 21\, 2026\nLocation: Pechanga Resort Casino\nStart: 08:00 PM CT\nSource: BoxingScene.com
-DTEND:20260822T060000Z
-DTSTART:20260822T010000Z
-SUMMARY:Amanda Serrano-Lucrecia Manzur
-UID:20260821-amanda-serrano-lucrecia-manzur@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Pechanga Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
 DTEND:20260920T050000Z
 DTSTART:20260920T000000Z
@@ -394,13 +387,6 @@ DTEND:20260720T050000Z
 DTSTART:20260720T000000Z
 SUMMARY:Dallas Enforcers vs. Boston Butchers
 UID:20260719-dallas-enforcers-vs-boston-butchers-20260719@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, July 26\, 2026\nLocation: New York\nNetwork: Paramount+\nStart: 05:00 PM CT\nMain Event: Edgar Berlanga vs. Steven Butler\, 10 rounds\, super middleweights\nUndercard:\n  * Richardson Hitchins vs. Ricardo Salas\, 12 rounds\, welterweights\n  * Sergiy Derevyanchenko vs. Jalil Hackett\, 10 rounds\, middleweights\nSource: BoxingNews24.com
-DTEND:20260727T030000Z
-DTSTART:20260726T220000Z
-SUMMARY:Edgar Berlanga vs. Steven Butler
-UID:20260726-edgar-berlanga-vs-steven-butler@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 21\, 2026\nLocation: Cowboys Dance Hall\, 3030 NE Interstate 410 Loop\, San Antonio\, TX 78218\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
