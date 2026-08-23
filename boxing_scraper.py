@@ -11,10 +11,11 @@ from ics import Calendar, Event
 from ics.grammar.parse import ContentLine
 from playwright.sync_api import sync_playwright
 
-BN24_URL   = "https://www.boxingnews24.com/boxing-schedule/"
-BS_URL     = "https://www.boxingscene.com/schedule"
-TBL_URL    = "https://www.teamboxingleague.com/pages/events"
-PROBOX_URL = "https://proboxtv.com/tickets/"
+BN24_URL    = "https://www.boxingnews24.com/boxing-schedule/"
+BS_URL      = "https://www.boxingscene.com/schedule"
+BS_EXT_URL  = "https://www.boxingscene.com/schedule/extended"
+TBL_URL     = "https://www.teamboxingleague.com/pages/events"
+PROBOX_URL  = "https://proboxtv.com/tickets/"
 
 CT_ZONE = ZoneInfo("America/Chicago")
 ET_ZONE = ZoneInfo("America/New_York")
@@ -115,7 +116,7 @@ def fetch_bs_rendered(url: str, max_clicks: int = 30) -> str | None:
 
             strip_consent_overlay()
             prev_count = link_count()
-            print(f"  BoxingScene: {prev_count} events visible before Load More")
+            print(f"  BoxingScene: {prev_count} events visible before Load More ({url})")
 
             for click_num in range(1, max_clicks + 1):
                 load_more = page.get_by_role("button", name=re.compile("load more", re.I))
@@ -263,7 +264,7 @@ def parse_bn24(html: str) -> dict[str, dict]:
 
 # == Source 2: BoxingScene ======================================================
 
-def parse_bs(html: str) -> dict[str, dict]:
+def parse_bs(html: str, label: str = "BoxingScene") -> dict[str, dict]:
     soup = BeautifulSoup(html, "html.parser")
     events = {}
 
@@ -330,7 +331,7 @@ def parse_bs(html: str) -> dict[str, dict]:
             "source":   "BoxingScene.com",
         }
 
-    print(f"  BoxingScene: {len(events)} events parsed")
+    print(f"  {label}: {len(events)} events parsed")
     return events
 
 
@@ -401,7 +402,6 @@ def parse_probox(html: str) -> dict[str, dict]:
     events = {}
 
     for card in soup.find_all("div", class_=re.compile(r"\bmatch-preview\b")):
-        # Fight name
         title_el = card.find(class_="match-preview__title")
         if not title_el:
             continue
@@ -409,7 +409,6 @@ def parse_probox(html: str) -> dict[str, dict]:
         if not name:
             continue
 
-        # Date/time from machine-readable datetime attribute: "2026-08-29 20:00"
         time_el = card.find("time")
         if not time_el or not time_el.get("datetime"):
             continue
@@ -420,7 +419,6 @@ def parse_probox(html: str) -> dict[str, dict]:
         except ValueError:
             continue
 
-        # Location
         place_el = card.find(class_="match-preview__match-place")
         location = place_el.get_text(strip=True) if place_el else ""
 
@@ -506,8 +504,11 @@ def main():
     print("Fetching BoxingNews24...")
     bn24_html = fetch(BN24_URL)
 
-    print("Fetching BoxingScene (rendered, with Load More)...")
+    print("Fetching BoxingScene main schedule (rendered, with Load More)...")
     bs_html = fetch_bs_rendered(BS_URL)
+
+    print("Fetching BoxingScene extended schedule (Other networks)...")
+    bs_ext_html = fetch_bs_rendered(BS_EXT_URL)
 
     print("Fetching Team Boxing League...")
     tbl_html = fetch(TBL_URL)
@@ -515,10 +516,12 @@ def main():
     print("Fetching ProBox TV...")
     probox_html = fetch(PROBOX_URL)
 
-    bn24   = parse_bn24(bn24_html)     if bn24_html   else {}
-    bs     = parse_bs(bs_html)         if bs_html     else {}
-    tbl    = parse_tbl(tbl_html)       if tbl_html    else {}
-    probox = parse_probox(probox_html) if probox_html else {}
+    bn24   = parse_bn24(bn24_html)                   if bn24_html    else {}
+    bs     = parse_bs(bs_html, "BoxingScene main")   if bs_html      else {}
+    bs_ext = parse_bs(bs_ext_html, "BoxingScene ext") if bs_ext_html else {}
+    bs.update(bs_ext)  # merge extended into main (same priority)
+    tbl    = parse_tbl(tbl_html)                     if tbl_html     else {}
+    probox = parse_probox(probox_html)               if probox_html  else {}
 
     if not bn24 and not bs and not tbl and not probox:
         print("ERROR: All sources failed - no events to write")
