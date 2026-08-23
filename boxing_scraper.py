@@ -2,6 +2,7 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8")
 
+import json
 import re
 import requests
 from datetime import datetime, timedelta, timezone
@@ -184,11 +185,70 @@ def parse_event_page_results(html: str) -> list[dict]:
     return fights
 
 
-def fetch_bs_event_results(results_url: str, max_events: int = 15) -> dict[str, list[dict]]:
-    """Scrape BoxingScene results page and individual event pages.
-    Returns {bs_event_slug: [fight_result_dicts]}.
+def parse_event_page_full(html: str, bs_slug: str) -> dict | None:
+    """Parse a BoxingScene event page into a complete event dict with results."""
+    soup = BeautifulSoup(html, "html.parser")
+
+    # Extract event metadata from schema.org JSON-LD
+    name = ""
+    date_obj: datetime | None = None
+    location = ""
+    for script in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(script.string or "")
+            if data.get("@type") == "SportsEvent":
+                name = data.get("name", "")
+                raw_date = data.get("startDate", "")
+                if raw_date:
+                    date_obj = datetime.strptime(raw_date[:10], "%Y-%m-%d")
+                loc = data.get("location", {})
+                venue = loc.get("name", "")
+                region = loc.get("address", {}).get("addressRegion", "")
+                location = ", ".join(filter(None, [venue, region]))
+                break
+        except Exception:
+            pass
+
+    if not name or not date_obj:
+        return None
+
+    # Extract start time from page text via BS_DT_RE
+    page_text = soup.get_text(" ", strip=True)
+    start_ct: datetime | None = None
+    dm = BS_DT_RE.search(page_text)
+    if dm:
+        h, mn, ampm = int(dm.group(4)), int(dm.group(5)), dm.group(6)
+        tz_abbr = dm.group(7) or "ET"
+        tz_name = TZ_MAP.get(tz_abbr.upper(), "America/New_York")
+        try:
+            dt_str = f"{date_obj.strftime('%B')} {date_obj.day} {date_obj.year} {h}:{mn:02d} {ampm.upper()}"
+            dt_parsed = datetime.strptime(dt_str, "%B %d %Y %I:%M %p")
+            start_ct = dt_parsed.replace(tzinfo=ZoneInfo(tz_name)).astimezone(CT_ZONE)
+        except ValueError:
+            pass
+    if not start_ct:
+        start_ct = datetime(date_obj.year, date_obj.month, date_obj.day, 21, 0, tzinfo=CT_ZONE)
+
+    fights = parse_event_page_results(html)
+
+    return {
+        "name":     name,
+        "date_obj": date_obj,
+        "location": location,
+        "network":  "",
+        "start_ct": start_ct,
+        "fights":   [],
+        "source":   "BoxingScene.com",
+        "bs_slug":  bs_slug,
+        "results":  fights,
+    }
+
+
+def fetch_bs_past_events(results_url: str, max_events: int = 15) -> dict[str, dict]:
+    """Scrape the BoxingScene /results listing and individual event pages.
+    Returns {slug: event_dict_with_results} for past events.
     """
-    all_results: dict[str, list[dict]] = {}
+    past: dict[str, dict] = {}
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch()
@@ -206,13 +266,13 @@ def fetch_bs_event_results(results_url: str, max_events: int = 15) -> dict[str, 
             except Exception:
                 print("  WARNING: BoxingScene results page loaded no event links")
                 browser.close()
-                return all_results
+                return past
 
             event_urls: list[str] = page.eval_on_selector_all(
                 "a[href*='/events/']",
                 "els => [...new Set(els.map(e => e.href))]"
             )
-            print(f"  BoxingScene results page: {len(event_urls)} recent events found")
+            print(f"  BoxingScene /results: {len(event_urls)} recent events found")
 
             for event_url in event_urls[:max_events]:
                 bs_slug = event_url.rstrip("/").split("/")[-1]
@@ -220,20 +280,22 @@ def fetch_bs_event_results(results_url: str, max_events: int = 15) -> dict[str, 
                     page.goto(event_url, timeout=30000, wait_until="domcontentloaded")
                     page.wait_for_timeout(1500)
                     html = page.content()
-                    fights = parse_event_page_results(html)
-                    if fights:
-                        all_results[bs_slug] = fights
-                        main_r = fights[0]
-                        print(f"  Results [{bs_slug}]: {main_r['winner']} DEF. {main_r['loser']} ({main_r['method']}) + {len(fights)-1} more")
-                    else:
-                        print(f"  Results [{bs_slug}]: no fight results found")
+                    ev = parse_event_page_full(html, bs_slug)
+                    if ev:
+                        slug = make_slug(ev["name"])
+                        past[slug] = ev
+                        r = ev["results"]
+                        if r:
+                            print(f"  Past event: {ev['name']} -> {r[0]['winner']} DEF. {r[0]['loser']} ({r[0]['method']})")
+                        else:
+                            print(f"  Past event: {ev['name']} (no results yet)")
                 except Exception as e:
-                    print(f"  WARNING: Results fetch failed for {bs_slug}: {e}")
+                    print(f"  WARNING: Failed to fetch past event {bs_slug}: {e}")
 
             browser.close()
     except Exception as e:
-        print(f"  WARNING: Error fetching BoxingScene results: {e}")
-    return all_results
+        print(f"  WARNING: Error fetching BoxingScene past events: {e}")
+    return past
 
 
 def strip_emoji(s: str) -> str:
@@ -332,6 +394,7 @@ def parse_bn24(html: str) -> dict[str, dict]:
                 "fights":   fight_lines,
                 "source":   "BoxingNews24.com",
                 "bs_slug":  "",
+                "results":  [],
             }
         else:
             i += 1
@@ -409,6 +472,7 @@ def parse_bs(html: str, label: str = "BoxingScene") -> dict[str, dict]:
             "fights":   [],
             "source":   "BoxingScene.com",
             "bs_slug":  bs_slug,
+            "results":  [],
         }
 
     print(f"  {label}: {len(events)} events parsed")
@@ -470,6 +534,7 @@ def parse_tbl(html: str) -> dict[str, dict]:
             "fights":   [],
             "source":   "TeamBoxingLeague.com",
             "bs_slug":  "",
+            "results":  [],
         }
 
     print(f"  Team Boxing League: {len(events)} events parsed")
@@ -514,6 +579,7 @@ def parse_probox(html: str) -> dict[str, dict]:
             "fights":   [],
             "source":   "ProBoxTV.com",
             "bs_slug":  "",
+            "results":  [],
         }
 
     print(f"  ProBox TV: {len(events)} events parsed")
@@ -527,9 +593,14 @@ def build_calendar(
     bs: dict,
     tbl: dict,
     probox: dict,
-    bs_results: dict | None = None,
+    past: dict | None = None,
 ) -> list[Event]:
     merged: dict[str, dict] = {}
+
+    # Past events go in first (lowest priority — any live source overrides)
+    if past:
+        for slug, ev in past.items():
+            merged[slug] = ev
 
     # Priority (lowest to highest): TBL = ProBox < BS < BN24
     for slug, ev in tbl.items():
@@ -539,14 +610,19 @@ def build_calendar(
         merged[slug] = ev
 
     for slug, ev in bs.items():
-        merged[slug] = ev
+        # Preserve results if past dict had them for this slug
+        existing_results = merged.get(slug, {}).get("results", [])
+        merged[slug] = {**ev, "results": existing_results or ev.get("results", [])}
 
-    # BN24 overrides BS but preserve bs_slug for results lookup
+    # BN24 overrides BS but preserve bs_slug and results
     for slug, ev in bn24.items():
-        prev_bs_slug = merged.get(slug, {}).get("bs_slug", "")
-        merged[slug] = {**ev, "bs_slug": prev_bs_slug or ev.get("bs_slug", "")}
+        prev = merged.get(slug, {})
+        merged[slug] = {
+            **ev,
+            "bs_slug": prev.get("bs_slug", "") or ev.get("bs_slug", ""),
+            "results": prev.get("results", []) or ev.get("results", []),
+        }
 
-    today = datetime.now(CT_ZONE).date()
     events = []
     seen_uids: set[str] = set()
 
@@ -562,14 +638,7 @@ def build_calendar(
             continue
         seen_uids.add(uid)
 
-        # Look up results for past events
-        fight_results: list[dict] | None = None
-        if bs_results and ev["date_obj"].date() < today:
-            bs_slug = ev.get("bs_slug", "")
-            if bs_slug:
-                fight_results = bs_results.get(bs_slug)
-            if not fight_results:
-                fight_results = bs_results.get(slug)
+        fight_results: list[dict] = ev.get("results") or []
 
         cal_ev = Event()
         cal_ev.begin = start_utc
@@ -636,8 +705,8 @@ def main():
     print("Fetching ProBox TV...")
     probox_html = fetch(PROBOX_URL)
 
-    print("Fetching BoxingScene results (past events)...")
-    bs_results = fetch_bs_event_results(BS_RESULTS_URL)
+    print("Fetching BoxingScene past event results...")
+    past = fetch_bs_past_events(BS_RESULTS_URL)
 
     bn24   = parse_bn24(bn24_html)                    if bn24_html    else {}
     bs     = parse_bs(bs_html, "BoxingScene main")    if bs_html      else {}
@@ -646,7 +715,7 @@ def main():
     tbl    = parse_tbl(tbl_html)                      if tbl_html     else {}
     probox = parse_probox(probox_html)                if probox_html  else {}
 
-    if not bn24 and not bs and not tbl and not probox:
+    if not bn24 and not bs and not tbl and not probox and not past:
         print("ERROR: All sources failed - no events to write")
         sys.exit(1)
 
@@ -656,7 +725,7 @@ def main():
     if not probox: print("WARNING: ProBox TV failed - skipping")
 
     print("Merging and building calendar...")
-    events = build_calendar(bn24, bs, tbl, probox, bs_results)
+    events = build_calendar(bn24, bs, tbl, probox, past)
 
     if not events:
         print("WARNING: No events parsed from any source")
