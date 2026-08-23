@@ -67,13 +67,6 @@ SUMMARY:LA Elite vs. Nashville Smash
 UID:20260426-la-elite-vs-nashville-smash-20260426@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 22\, 2026\nLocation: T-Mobile Arena\nNetwork: Amazon Prime\, DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20260823T050000Z
-DTSTART:20260823T000000Z
-SUMMARY:Rolando Romero-Teofimo Lopez
-UID:20260822-rolando-romero-teofimo-lopez@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: Galen Center in Los Angeles\, California\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: ProBoxTV.com
 DTEND:20260830T050000Z
 DTSTART:20260830T000000Z
@@ -177,13 +170,6 @@ DTEND:20260830T023000Z
 DTSTART:20260829T213000Z
 SUMMARY:Lester Martinez-Luka Plantic
 UID:20260829-lester-martinez-luka-plantic@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, August 30\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260831T050000Z
-DTSTART:20260831T000000Z
-SUMMARY:TBD vs. TBD
-UID:20260830-tbd-vs-tbd-20260830@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, June 12\, 2026\nLocation: Nashville Municipal Auditorium\, 417 4th Ave N\, Nashville\, TN 37201\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -373,6 +359,13 @@ DTEND:20260920T050000Z
 DTSTART:20260920T000000Z
 SUMMARY:Isaac Cruz-Nestor Bravo
 UID:20260919-isaac-cruz-nestor-bravo@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Sunday\, August 30\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
+DTEND:20260831T050000Z
+DTSTART:20260831T000000Z
+SUMMARY:Philadelphia Smoke vs. Miami Assassins
+UID:20260830-philadelphia-smoke-vs-miami-assassins-20260830@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, June 05\, 2026\nLocation: Harrah's Philadelphia Casino\, 777 Harrah's Blvd\, Chester\, PA 19013\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
