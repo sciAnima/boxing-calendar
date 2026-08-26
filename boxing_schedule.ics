@@ -67,6 +67,13 @@ SUMMARY:LA Elite vs. Nashville Smash
 UID:20260426-la-elite-vs-nashville-smash-20260426@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, August 22\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Teofimo Lopez DEF. Rolando Romero - Unanimous Decision\n  Yoenli Hernandez DEF. Francisco Veron - Majority Decision\n  Gary Antonio Russell DEF. Victor Santillan - Unanimous Decision\n  Carlos Utria DEF. Israel Mercado - Split Decision\nSource: BoxingScene.com
+DTEND:20260823T050000Z
+DTSTART:20260823T000000Z
+SUMMARY:Teofimo Lopez DEF. Rolando Romero
+UID:20260822-rolando-romero-teofimo-lopez@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: Galen Center in Los Angeles\, California\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: ProBoxTV.com
 DTEND:20260830T050000Z
 DTSTART:20260830T000000Z
@@ -86,13 +93,6 @@ DTEND:20260530T050000Z
 DTSTART:20260530T000000Z
 SUMMARY:Las Vegas Hustle vs. Atlanta Attack
 UID:20260529-las-vegas-hustle-vs-atlanta-attack-20260529@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 08\, 2026\nLocation: Caribe Royale Orlando\, Orlando\, Florida\nStart: 05:30 PM CT\nResults:\n  Tamm Thibeault DEF. Desley Robinson - Unanimous Decision\n  Dainier Pero DEF. Aleem Whitfield - TKO In Round 3\nSource: BoxingScene.com
-DTEND:20260809T033000Z
-DTSTART:20260808T223000Z
-SUMMARY:Tamm Thibeault DEF. Desley Robinson
-UID:20260808-cherneka-johnson-vs-dina-thorslund@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
@@ -375,11 +375,11 @@ SUMMARY:Callum Simpson DEF. Troy Williamson
 UID:20260808-troy-williamson-callum-simpson-2@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 08\, 2026\nLocation: 3Arena\, Dublin\, Ireland\nStart: 01:00 PM CT\nResults:\n  Aaron McKenna DEF. Etinosa Oliha - Unanimous Decision\n  Callum Walsh DEF. Tyler Denny - Unanimous Decision\n  Joseph Ward DEF. Artjom Kasparian - Unanimous Decision\n  Connor Coyle DEF. Mark Beuke - Unanimous Decision\nSource: BoxingScene.com
-DTEND:20260808T230000Z
-DTSTART:20260808T180000Z
-SUMMARY:Aaron McKenna DEF. Etinosa Oliha
-UID:20260808-aaron-mckenna-etinosa-oliha@boxing-calendar
+DESCRIPTION:Date: Friday\, August 21\, 2026\nLocation: Pechanga Resort Casino\, Temecula\, California\nStart: 08:00 PM CT\nResults:\n  Amanda Serrano DEF. Lucrecia Manzur - Majority Decision\nSource: BoxingScene.com
+DTEND:20260822T060000Z
+DTSTART:20260822T010000Z
+SUMMARY:Amanda Serrano DEF. Lucrecia Manzur
+UID:20260821-amanda-serrano-lucrecia-manzur@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Pechanga Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
