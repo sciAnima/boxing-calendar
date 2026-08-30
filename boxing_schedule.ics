@@ -158,10 +158,10 @@ SUMMARY:Philadelphia Smoke vs. NYC Attitude
 UID:20260320-philadelphia-smoke-vs-nyc-attitude-20260320@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: USC Galen Center\nStart: 04:30 PM CT\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: USC Galen Center\nStart: 04:30 PM CT\nResults:\n  Lester Martinez DEF. Luka Plantic - TKO\nSource: BoxingScene.com
 DTEND:20260830T023000Z
 DTSTART:20260829T213000Z
-SUMMARY:Lester Martinez-Luka Plantic
+SUMMARY:Lester Martinez DEF. Luka Plantic
 UID:20260829-lester-martinez-luka-plantic@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
@@ -249,13 +249,6 @@ SUMMARY:Phoenix Fury vs. LA Elite
 UID:20260718-phoenix-fury-vs-la-elite-20260718@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: The O2 Arena\nNetwork: DAZN\nStart: 11:00 AM CT\nSource: BoxingScene.com
-DTEND:20260829T210000Z
-DTSTART:20260829T160000Z
-SUMMARY:Moses Itauma vs. Filip Hrgovic
-UID:20260829-moses-itauma-vs-filip-hrgovic@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, May 09\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260510T050000Z
 DTSTART:20260510T000000Z
@@ -282,13 +275,6 @@ DTEND:20260607T050000Z
 DTSTART:20260607T000000Z
 SUMMARY:Dallas Enforcers vs. LA Elite
 UID:20260606-dallas-enforcers-vs-la-elite-20260606@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 29\, 2026\nNetwork: ESPN+\, Sky Sports\nStart: 04:00 PM CT\nSource: BoxingScene.com
-DTEND:20260830T020000Z
-DTSTART:20260829T210000Z
-SUMMARY:Mikaela Mayer vs Chantelle Cameron
-UID:20260829-mikaela-mayer-vs-chantelle-cameron@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, May 17\, 2026\nLocation: Harrah's Philadelphia Casino\, 777 Harrah's Blvd\, Chester\, PA 19013\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -359,13 +345,6 @@ DTEND:20260425T050000Z
 DTSTART:20260425T000000Z
 SUMMARY:Boston Butchers vs. NYC Attitude
 UID:20260424-boston-butchers-vs-nyc-attitude-20260424@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 08\, 2026\nStart: 01:00 PM CT\nResults:\n  Callum Simpson DEF. Troy Williamson - Unanimous Decision\n  Gradus Kraus DEF. Sean Hemphill - TKO In Round 1\nSource: BoxingScene.com
-DTEND:20260808T230000Z
-DTSTART:20260808T180000Z
-SUMMARY:Callum Simpson DEF. Troy Williamson
-UID:20260808-troy-williamson-callum-simpson-2@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, August 21\, 2026\nLocation: Pechanga Resort Casino\, Temecula\, California\nStart: 08:00 PM CT\nResults:\n  Amanda Serrano DEF. Lucrecia Manzur - Majority Decision\nSource: BoxingScene.com
