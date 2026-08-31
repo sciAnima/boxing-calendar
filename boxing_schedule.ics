@@ -67,18 +67,11 @@ SUMMARY:LA Elite vs. Nashville Smash
 UID:20260426-la-elite-vs-nashville-smash-20260426@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 22\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Teofimo Lopez DEF. Rolando Romero - Unanimous Decision\n  Yoenli Hernandez DEF. Francisco Veron - Majority Decision\n  Gary Antonio Russell DEF. Victor Santillan - Unanimous Decision\n  Carlos Utria DEF. Israel Mercado - Split Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, August 22\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Teofimo Lopez DEF. Rolando Romero - Unanimous Decision\n  Yoenli Hernandez DEF. Francisco Veron - Majority Decision\n  Gary Antonio Russell DEF. Victor Santillan - Unanimous Decision\n  Carlos Utria DEF. Israel Mercado - Split Decision\n  Teofimo Lopez DEF. Rolando Romero - Unanimous Decision\n  Yoenli Hernandez DEF. Francisco Veron - Majority Decision\n  Gary Antonio Russell DEF. Victor Santillan - Unanimous Decision\n  Carlos Utria DEF. Israel Mercado - Split Decision\nSource: BoxingScene.com
 DTEND:20260823T050000Z
 DTSTART:20260823T000000Z
 SUMMARY:Teofimo Lopez DEF. Rolando Romero
 UID:20260822-rolando-romero-teofimo-lopez@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: Galen Center in Los Angeles\, California\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: ProBoxTV.com
-DTEND:20260830T050000Z
-DTSTART:20260830T000000Z
-SUMMARY:WBC Super Middleweight Interim TitleLester Martinez vs Luka Plantic
-UID:20260829-wbc-super-middleweight-interim-titlelester-martinez-vs-luka-plantic-20260829@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena in Oceanside\, California\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: ProBoxTV.com
@@ -158,7 +151,7 @@ SUMMARY:Philadelphia Smoke vs. NYC Attitude
 UID:20260320-philadelphia-smoke-vs-nyc-attitude-20260320@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: USC Galen Center\nStart: 04:30 PM CT\nResults:\n  Lester Martinez DEF. Luka Plantic - TKO\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: USC Galen Center\nStart: 04:30 PM CT\nResults:\n  Lester Martinez DEF. Luka Plantic - TKO\n  Lester Martinez DEF. Luka Plantic - TKO\nSource: BoxingScene.com
 DTEND:20260830T023000Z
 DTSTART:20260829T213000Z
 SUMMARY:Lester Martinez DEF. Luka Plantic
@@ -207,7 +200,7 @@ SUMMARY:Dallas Enforcers vs. San Antonio Snipers
 UID:20260515-dallas-enforcers-vs-san-antonio-snipers-20260515@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 15\, 2026\nLocation: State Farm Arena\, Atlanta\, Georgia\nStart: 08:00 PM CT\nResults:\n  Claressa Shields DEF. Kaye Scott - TKO In Round 6\n  Troy Isley DEF. Joseph Hicks Jr. - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, August 15\, 2026\nLocation: State Farm Arena\, Atlanta\, Georgia\nStart: 08:00 PM CT\nResults:\n  Claressa Shields DEF. Kaye Scott - TKO In Round 6\n  Troy Isley DEF. Joseph Hicks Jr. - Unanimous Decision\n  Claressa Shields DEF. Kaye Scott - TKO In Round 6\n  Troy Isley DEF. Joseph Hicks Jr. - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260816T060000Z
 DTSTART:20260816T010000Z
 SUMMARY:Claressa Shields DEF. Kaye Scott
@@ -347,7 +340,7 @@ SUMMARY:Boston Butchers vs. NYC Attitude
 UID:20260424-boston-butchers-vs-nyc-attitude-20260424@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, August 21\, 2026\nLocation: Pechanga Resort Casino\, Temecula\, California\nStart: 08:00 PM CT\nResults:\n  Amanda Serrano DEF. Lucrecia Manzur - Majority Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Friday\, August 21\, 2026\nLocation: Pechanga Resort Casino\, Temecula\, California\nStart: 08:00 PM CT\nResults:\n  Amanda Serrano DEF. Lucrecia Manzur - Majority Decision\n  Amanda Serrano DEF. Lucrecia Manzur - Majority Decision\nSource: BoxingScene.com
 DTEND:20260822T060000Z
 DTSTART:20260822T010000Z
 SUMMARY:Amanda Serrano DEF. Lucrecia Manzur
