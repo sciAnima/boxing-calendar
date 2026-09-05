@@ -235,7 +235,7 @@ SUMMARY:Phoenix Fury vs. LA Elite
 UID:20260718-phoenix-fury-vs-la-elite-20260718@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: The O2 Arena\, London\, United Kingdom\nStart: 11:00 AM CT\nResults:\n  Filip Hrgovic DEF. Moses Itauma - TKO In Round 9\n  Sam Noakes DEF. Denys Berinchyk - Unanimous Decision\n  Filip Hrgovic DEF. Moses Itauma - TKO In Round 9\n  Sam Noakes DEF. Denys Berinchyk - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: The O2 Arena\, London\, United Kingdom\nStart: 11:00 AM CT\nResults:\n  Filip Hrgovic DEF. Moses Itauma - TKO In Round 9\n  Sam Noakes DEF. Denys Berinchyk - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260829T210000Z
 DTSTART:20260829T160000Z
 SUMMARY:Filip Hrgovic DEF. Moses Itauma
@@ -359,13 +359,6 @@ DTEND:20261011T050000Z
 DTSTART:20261011T000000Z
 SUMMARY:Floyd Schofield-Lucas Bahdi
 UID:20261010-floyd-schofield-lucas-bahdi@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, September 04\, 2026\nLocation: Prudential Center\nNetwork: TNT Sports\, DAZN\nStart: 05:00 PM CT\nSource: BoxingScene.com
-DTEND:20260905T030000Z
-DTSTART:20260904T220000Z
-SUMMARY:Andy Ruiz-Damian Knyba
-UID:20260904-andy-ruiz-damian-knyba@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, August 30\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
