@@ -88,13 +88,6 @@ SUMMARY:Las Vegas Hustle vs. Atlanta Attack
 UID:20260529-las-vegas-hustle-vs-atlanta-attack-20260529@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20260913T050000Z
-DTSTART:20260913T000000Z
-SUMMARY:Ryan Garcia vs. Conor Benn
-UID:20260912-ryan-garcia-vs-conor-benn@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, April 25\, 2026\nLocation: Hyatt Regency San Antonio Riverwalk\, 123 Losoya St\, San Antonio\, TX 78205\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260426T050000Z
 DTSTART:20260426T000000Z
@@ -144,7 +137,7 @@ SUMMARY:Philadelphia Smoke vs. NYC Attitude
 UID:20260320-philadelphia-smoke-vs-nyc-attitude-20260320@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: USC Galen Center\, Los Angeles\, California\nStart: 04:30 PM CT\nResults:\n  Lester Martinez DEF. Luka Plantic - TKO In Round 10\n  Najee Lopez DEF. Juan Carrillo - KO In Round 9\n  Ramon Cardenas DEF. Leonardo Carrillo - Split Decision\n  Jordan White DEF. Luis Torres - KO In Round 9\n  Carlos Ocampo DEF. Weljon Mindoro - KO In Round 9\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: USC Galen Center\, Los Angeles\, California\nStart: 04:30 PM CT\nResults:\n  Lester Martinez DEF. Luka Plantic - TKO In Round 10\n  Najee Lopez DEF. Juan Carrillo - KO In Round 9\n  Ramon Cardenas DEF. Leonardo Carrillo - Split Decision\n  Jordan White DEF. Luis Torres - KO In Round 9\n  Carlos Ocampo DEF. Weljon Mindoro - KO In Round 9\n  Lester Martinez DEF. Luka Plantic - TKO In Round 10\n  Najee Lopez DEF. Juan Carrillo - KO In Round 9\n  Ramon Cardenas DEF. Leonardo Carrillo - Split Decision\n  Jordan White DEF. Luis Torres - KO In Round 9\n  Carlos Ocampo DEF. Weljon Mindoro - KO In Round 9\nSource: BoxingScene.com
 DTEND:20260830T023000Z
 DTSTART:20260829T213000Z
 SUMMARY:Lester Martinez DEF. Luka Plantic
@@ -193,7 +186,7 @@ SUMMARY:Dallas Enforcers vs. San Antonio Snipers
 UID:20260515-dallas-enforcers-vs-san-antonio-snipers-20260515@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 05\, 2026\nStart: 10:00 AM CT\nResults:\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 05\, 2026\nStart: 10:00 AM CT\nResults:\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\nSource: BoxingScene.com
 DTEND:20260905T200000Z
 DTSTART:20260905T150000Z
 SUMMARY:Katie Taylor DEF. Flora Pili
@@ -242,7 +235,7 @@ SUMMARY:Phoenix Fury vs. LA Elite
 UID:20260718-phoenix-fury-vs-la-elite-20260718@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: The O2 Arena\, London\, United Kingdom\nStart: 11:00 AM CT\nResults:\n  Filip Hrgovic DEF. Moses Itauma - TKO In Round 9\n  Sam Noakes DEF. Denys Berinchyk - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: The O2 Arena\, London\, United Kingdom\nStart: 11:00 AM CT\nResults:\n  Filip Hrgovic DEF. Moses Itauma - TKO In Round 9\n  Sam Noakes DEF. Denys Berinchyk - Unanimous Decision\n  Filip Hrgovic DEF. Moses Itauma - TKO In Round 9\n  Sam Noakes DEF. Denys Berinchyk - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260829T210000Z
 DTSTART:20260829T160000Z
 SUMMARY:Filip Hrgovic DEF. Moses Itauma
