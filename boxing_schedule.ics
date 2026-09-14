@@ -11,13 +11,6 @@ SUMMARY:Emanuel Navarrete-O'Shaquie Foster
 UID:20261024-emanuel-navarrete-o-shaquie-foster@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20260912T050000Z
-DTSTART:20260912T000000Z
-SUMMARY:Giovani Santillan-Abass Baraou
-UID:20260911-giovani-santillan-abass-baraou@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 26\, 2026\nLocation: The 2300 Arena\, 2300 S Swanson St\, Philadelphia\, PA  19148\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260727T050000Z
 DTSTART:20260727T000000Z
@@ -137,7 +130,7 @@ SUMMARY:Philadelphia Smoke vs. NYC Attitude
 UID:20260320-philadelphia-smoke-vs-nyc-attitude-20260320@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: USC Galen Center\, Los Angeles\, California\nStart: 04:30 PM CT\nResults:\n  Lester Martinez DEF. Luka Plantic - TKO In Round 10\n  Najee Lopez DEF. Juan Carrillo - KO In Round 9\n  Ramon Cardenas DEF. Leonardo Carrillo - Split Decision\n  Jordan White DEF. Luis Torres - KO In Round 9\n  Carlos Ocampo DEF. Weljon Mindoro - KO In Round 9\n  Lester Martinez DEF. Luka Plantic - TKO In Round 10\n  Najee Lopez DEF. Juan Carrillo - KO In Round 9\n  Ramon Cardenas DEF. Leonardo Carrillo - Split Decision\n  Jordan White DEF. Luis Torres - KO In Round 9\n  Carlos Ocampo DEF. Weljon Mindoro - KO In Round 9\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: USC Galen Center\, Los Angeles\, California\nStart: 04:30 PM CT\nResults:\n  Lester Martinez DEF. Luka Plantic - TKO In Round 10\n  Najee Lopez DEF. Juan Carrillo - KO In Round 9\n  Ramon Cardenas DEF. Leonardo Carrillo - Split Decision\n  Jordan White DEF. Luis Torres - KO In Round 9\n  Carlos Ocampo DEF. Weljon Mindoro - KO In Round 9\nSource: BoxingScene.com
 DTEND:20260830T023000Z
 DTSTART:20260829T213000Z
 SUMMARY:Lester Martinez DEF. Luka Plantic
@@ -354,7 +347,7 @@ SUMMARY:Floyd Schofield-Lucas Bahdi
 UID:20261010-floyd-schofield-lucas-bahdi@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, September 04\, 2026\nLocation: Prudential Center\, Newark\, New Jersey\nStart: 05:00 PM CT\nResults:\n  Damian Knyba DEF. Andy Ruiz - Unanimous Decision\n  Vito Mielnicki Jr. DEF. Austin Williams - Unanimous Decision\n  Damian Knyba DEF. Andy Ruiz - Unanimous Decision\n  Vito Mielnicki Jr. DEF. Austin Williams - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Friday\, September 04\, 2026\nLocation: Prudential Center\, Newark\, New Jersey\nStart: 05:00 PM CT\nResults:\n  Damian Knyba DEF. Andy Ruiz - Unanimous Decision\n  Vito Mielnicki Jr. DEF. Austin Williams - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260905T030000Z
 DTSTART:20260904T220000Z
 SUMMARY:Damian Knyba DEF. Andy Ruiz
