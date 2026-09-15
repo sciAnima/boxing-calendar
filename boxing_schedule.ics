@@ -11,6 +11,13 @@ SUMMARY:Emanuel Navarrete-O'Shaquie Foster
 UID:20261024-emanuel-navarrete-o-shaquie-foster@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena\, Oceanside\, California\nStart: 07:00 PM CT\nResults:\n  Abass Baraou DEF. Giovani Santillan - Majority Decision\n  Luis Alberto Lopez DEF. Daniel Lugo - KO In Round 3\n  Dominic Valle DEF. Francois Scarboro - Unanimous Decision\n  Abass Baraou DEF. Giovani Santillan - Majority Decision\n  Luis Alberto Lopez DEF. Daniel Lugo - KO In Round 3\n  Dominic Valle DEF. Francois Scarboro - Unanimous Decision\nSource: BoxingScene.com
+DTEND:20260912T050000Z
+DTSTART:20260912T000000Z
+SUMMARY:Abass Baraou DEF. Giovani Santillan
+UID:20260911-giovani-santillan-abass-baraou@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 26\, 2026\nLocation: The 2300 Arena\, 2300 S Swanson St\, Philadelphia\, PA  19148\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260727T050000Z
 DTSTART:20260727T000000Z
@@ -60,13 +67,6 @@ SUMMARY:LA Elite vs. Nashville Smash
 UID:20260426-la-elite-vs-nashville-smash-20260426@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena in Oceanside\, California\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: ProBoxTV.com
-DTEND:20260912T050000Z
-DTSTART:20260912T000000Z
-SUMMARY:Giovani Santillan vs Abass Baraou
-UID:20260911-giovani-santillan-vs-abass-baraou-20260911@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, November 08\, 2026\nLocation: College Park Center\nNetwork: ESPN+\nStart: 07:00 PM CT\nSource: BoxingScene.com
 DTEND:20261109T060000Z
 DTSTART:20261109T010000Z
@@ -79,6 +79,13 @@ DTEND:20260530T050000Z
 DTSTART:20260530T000000Z
 SUMMARY:Las Vegas Hustle vs. Atlanta Attack
 UID:20260529-las-vegas-hustle-vs-atlanta-attack-20260529@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
+DTEND:20260913T050000Z
+DTSTART:20260913T000000Z
+SUMMARY:Ryan Garcia DEF. Conor Benn
+UID:20260912-ryan-garcia-vs-conor-benn@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, April 25\, 2026\nLocation: Hyatt Regency San Antonio Riverwalk\, 123 Losoya St\, San Antonio\, TX 78205\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -128,13 +135,6 @@ DTEND:20260321T050000Z
 DTSTART:20260321T000000Z
 SUMMARY:Philadelphia Smoke vs. NYC Attitude
 UID:20260320-philadelphia-smoke-vs-nyc-attitude-20260320@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: USC Galen Center\, Los Angeles\, California\nStart: 04:30 PM CT\nResults:\n  Lester Martinez DEF. Luka Plantic - TKO In Round 10\n  Najee Lopez DEF. Juan Carrillo - KO In Round 9\n  Ramon Cardenas DEF. Leonardo Carrillo - Split Decision\n  Jordan White DEF. Luis Torres - KO In Round 9\n  Carlos Ocampo DEF. Weljon Mindoro - KO In Round 9\nSource: BoxingScene.com
-DTEND:20260830T023000Z
-DTSTART:20260829T213000Z
-SUMMARY:Lester Martinez DEF. Luka Plantic
-UID:20260829-lester-martinez-luka-plantic@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, April 17\, 2026\nLocation: Nashville Municipal Auditorium\, 417 4th Ave N\, Nashville\, TN 37201\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -226,13 +226,6 @@ DTEND:20260719T050000Z
 DTSTART:20260719T000000Z
 SUMMARY:Phoenix Fury vs. LA Elite
 UID:20260718-phoenix-fury-vs-la-elite-20260718@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: The O2 Arena\, London\, United Kingdom\nStart: 11:00 AM CT\nResults:\n  Filip Hrgovic DEF. Moses Itauma - TKO In Round 9\n  Sam Noakes DEF. Denys Berinchyk - Unanimous Decision\n  Filip Hrgovic DEF. Moses Itauma - TKO In Round 9\n  Sam Noakes DEF. Denys Berinchyk - Unanimous Decision\nSource: BoxingScene.com
-DTEND:20260829T210000Z
-DTSTART:20260829T160000Z
-SUMMARY:Filip Hrgovic DEF. Moses Itauma
-UID:20260829-moses-itauma-vs-filip-hrgovic@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, May 09\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -347,7 +340,7 @@ SUMMARY:Floyd Schofield-Lucas Bahdi
 UID:20261010-floyd-schofield-lucas-bahdi@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, September 04\, 2026\nLocation: Prudential Center\, Newark\, New Jersey\nStart: 05:00 PM CT\nResults:\n  Damian Knyba DEF. Andy Ruiz - Unanimous Decision\n  Vito Mielnicki Jr. DEF. Austin Williams - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Friday\, September 04\, 2026\nLocation: Prudential Center\, Newark\, New Jersey\nStart: 05:00 PM CT\nResults:\n  Damian Knyba DEF. Andy Ruiz - Unanimous Decision\n  Vito Mielnicki Jr. DEF. Austin Williams - Unanimous Decision\n  Damian Knyba DEF. Andy Ruiz - Unanimous Decision\n  Vito Mielnicki Jr. DEF. Austin Williams - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260905T030000Z
 DTSTART:20260904T220000Z
 SUMMARY:Damian Knyba DEF. Andy Ruiz
@@ -415,6 +408,13 @@ DTEND:20260614T050000Z
 DTSTART:20260614T000000Z
 SUMMARY:Boston Butchers vs. Philadelphia Smoke
 UID:20260613-boston-butchers-vs-philadelphia-smoke-20260613@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center\nStart: 06:30 PM CT\nSource: BoxingScene.com
+DTEND:20261017T043000Z
+DTSTART:20261016T233000Z
+SUMMARY:Kevin Anton-Yan Marcos
+UID:20261016-kevin-anton-yan-marcos@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Thursday\, October 08\, 2026\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
