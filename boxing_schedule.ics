@@ -81,7 +81,7 @@ SUMMARY:Las Vegas Hustle vs. Atlanta Attack
 UID:20260529-las-vegas-hustle-vs-atlanta-attack-20260529@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260913T050000Z
 DTSTART:20260913T000000Z
 SUMMARY:Ryan Garcia DEF. Conor Benn
@@ -247,6 +247,13 @@ DTEND:20260502T050000Z
 DTSTART:20260502T000000Z
 SUMMARY:Miami Assassins vs. Atlanta Attack
 UID:20260501-miami-assassins-vs-atlanta-attack-20260501@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Wynn Records Network\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20260927T050000Z
+DTSTART:20260927T000000Z
+SUMMARY:Lebron-Hernandez-Geraldo
+UID:20260926-lebron-hernandez-geraldo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 06\, 2026\nLocation: Gilley's Dallas\, 1135 Botham Jean Blvd\, Dallas\, TX 75215\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
