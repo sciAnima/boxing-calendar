@@ -11,7 +11,7 @@ SUMMARY:Emanuel Navarrete-O'Shaquie Foster
 UID:20261024-emanuel-navarrete-o-shaquie-foster@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena\, Oceanside\, California\nStart: 07:00 PM CT\nResults:\n  Abass Baraou DEF. Giovani Santillan - Majority Decision\n  Luis Alberto Lopez DEF. Daniel Lugo - KO In Round 3\n  Dominic Valle DEF. Francois Scarboro - Unanimous Decision\n  Abass Baraou DEF. Giovani Santillan - Majority Decision\n  Luis Alberto Lopez DEF. Daniel Lugo - KO In Round 3\n  Dominic Valle DEF. Francois Scarboro - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena\, Oceanside\, California\nStart: 07:00 PM CT\nResults:\n  Abass Baraou DEF. Giovani Santillan - Majority Decision\n  Luis Alberto Lopez DEF. Daniel Lugo - KO In Round 3\n  Dominic Valle DEF. Francois Scarboro - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260912T050000Z
 DTSTART:20260912T000000Z
 SUMMARY:Abass Baraou DEF. Giovani Santillan
@@ -81,7 +81,7 @@ SUMMARY:Las Vegas Hustle vs. Atlanta Attack
 UID:20260529-las-vegas-hustle-vs-atlanta-attack-20260529@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260913T050000Z
 DTSTART:20260913T000000Z
 SUMMARY:Ryan Garcia DEF. Conor Benn
@@ -184,13 +184,6 @@ DTEND:20260905T200000Z
 DTSTART:20260905T150000Z
 SUMMARY:Katie Taylor DEF. Flora Pili
 UID:20260905-katie-taylor-flora-pili@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center in Chandler\, Arizona\nNetwork: YouTube\nStart: 04:00 PM CT\nSource: ProBoxTV.com
-DTEND:20261017T020000Z
-DTSTART:20261016T210000Z
-SUMMARY:WBC Continental Americas Junior-Middleweight TitleKevin Anton vs Yan Marcos
-UID:20261016-wbc-continental-americas-junior-middleweight-titlekevin-anton-vs-yan-marcos-20261016@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The O2 Arena\nNetwork: DAZN\nStart: 01:00 PM CT\nSource: BoxingScene.com
@@ -331,13 +324,6 @@ DTEND:20260425T050000Z
 DTSTART:20260425T000000Z
 SUMMARY:Boston Butchers vs. NYC Attitude
 UID:20260424-boston-butchers-vs-nyc-attitude-20260424@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Pechanga Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20260920T050000Z
-DTSTART:20260920T000000Z
-SUMMARY:Isaac Cruz-Nestor Bravo
-UID:20260919-isaac-cruz-nestor-bravo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 10\, 2026\nLocation: Wintrust Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
