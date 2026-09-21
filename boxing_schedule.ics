@@ -11,7 +11,7 @@ SUMMARY:Emanuel Navarrete-O'Shaquie Foster
 UID:20261024-emanuel-navarrete-o-shaquie-foster@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena\, Oceanside\, California\nStart: 07:00 PM CT\nResults:\n  Abass Baraou DEF. Giovani Santillan - Majority Decision\n  Luis Alberto Lopez DEF. Daniel Lugo - KO In Round 3\n  Dominic Valle DEF. Francois Scarboro - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena\, Oceanside\, California\nStart: 07:00 PM CT\nResults:\n  Abass Baraou DEF. Giovani Santillan - Majority Decision\n  Luis Alberto Lopez DEF. Daniel Lugo - KO In Round 3\n  Dominic Valle DEF. Francois Scarboro - Unanimous Decision\n  Abass Baraou DEF. Giovani Santillan - Majority Decision\n  Luis Alberto Lopez DEF. Daniel Lugo - KO In Round 3\n  Dominic Valle DEF. Francois Scarboro - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260912T050000Z
 DTSTART:20260912T000000Z
 SUMMARY:Abass Baraou DEF. Giovani Santillan
@@ -179,11 +179,18 @@ SUMMARY:Dallas Enforcers vs. San Antonio Snipers
 UID:20260515-dallas-enforcers-vs-san-antonio-snipers-20260515@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 05\, 2026\nStart: 10:00 AM CT\nResults:\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 05\, 2026\nStart: 10:00 AM CT\nResults:\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\nSource: BoxingScene.com
 DTEND:20260905T200000Z
 DTSTART:20260905T150000Z
 SUMMARY:Katie Taylor DEF. Flora Pili
 UID:20260905-katie-taylor-flora-pili@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center in Chandler\, Arizona\nNetwork: YouTube\nStart: 04:00 PM CT\nSource: ProBoxTV.com
+DTEND:20261017T020000Z
+DTSTART:20261016T210000Z
+SUMMARY:WBC Continental Americas Junior-Middleweight TitleKevin Anton vs Yan Marcos
+UID:20261016-wbc-continental-americas-junior-middleweight-titlekevin-anton-vs-yan-marcos-20261016@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The O2 Arena\nNetwork: DAZN\nStart: 01:00 PM CT\nSource: BoxingScene.com
