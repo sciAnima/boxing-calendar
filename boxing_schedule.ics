@@ -11,7 +11,7 @@ SUMMARY:Emanuel Navarrete-O'Shaquie Foster
 UID:20261024-emanuel-navarrete-o-shaquie-foster@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena\, Oceanside\, California\nStart: 07:00 PM CT\nResults:\n  Abass Baraou DEF. Giovani Santillan - Majority Decision\n  Luis Alberto Lopez DEF. Daniel Lugo - KO In Round 3\n  Dominic Valle DEF. Francois Scarboro - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena\, Oceanside\, California\nStart: 07:00 PM CT\nResults:\n  Abass Baraou DEF. Giovani Santillan - Majority Decision\n  Luis Alberto Lopez DEF. Daniel Lugo - KO In Round 3\n  Dominic Valle DEF. Francois Scarboro - Unanimous Decision\n  Abass Baraou DEF. Giovani Santillan - Majority Decision\n  Luis Alberto Lopez DEF. Daniel Lugo - KO In Round 3\n  Dominic Valle DEF. Francois Scarboro - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260912T050000Z
 DTSTART:20260912T000000Z
 SUMMARY:Abass Baraou DEF. Giovani Santillan
@@ -81,7 +81,7 @@ SUMMARY:Las Vegas Hustle vs. Atlanta Attack
 UID:20260529-las-vegas-hustle-vs-atlanta-attack-20260529@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260913T050000Z
 DTSTART:20260913T000000Z
 SUMMARY:Ryan Garcia DEF. Conor Benn
@@ -179,7 +179,7 @@ SUMMARY:Dallas Enforcers vs. San Antonio Snipers
 UID:20260515-dallas-enforcers-vs-san-antonio-snipers-20260515@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 05\, 2026\nStart: 10:00 AM CT\nResults:\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 05\, 2026\nStart: 10:00 AM CT\nResults:\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\nSource: BoxingScene.com
 DTEND:20260905T200000Z
 DTSTART:20260905T150000Z
 SUMMARY:Katie Taylor DEF. Flora Pili
@@ -361,6 +361,13 @@ SUMMARY:Dmitry Bivol-Callum Smith
 UID:20261212-dmitry-bivol-callum-smith@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center\nStart: 06:30 PM CT\nSource: BoxingScene.com
+DTEND:20261017T043000Z
+DTSTART:20261016T233000Z
+SUMMARY:Kevin Anton-Freudis Rojas
+UID:20261016-kevin-anton-freudis-rojas@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, June 05\, 2026\nLocation: Harrah's Philadelphia Casino\, 777 Harrah's Blvd\, Chester\, PA 19013\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260606T050000Z
 DTSTART:20260606T000000Z
@@ -408,13 +415,6 @@ DTEND:20260614T050000Z
 DTSTART:20260614T000000Z
 SUMMARY:Boston Butchers vs. Philadelphia Smoke
 UID:20260613-boston-butchers-vs-philadelphia-smoke-20260613@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center\nStart: 06:30 PM CT\nSource: BoxingScene.com
-DTEND:20261017T043000Z
-DTSTART:20261016T233000Z
-SUMMARY:Kevin Anton-Yan Marcos
-UID:20261016-kevin-anton-yan-marcos@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Thursday\, October 08\, 2026\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
