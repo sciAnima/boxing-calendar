@@ -18,27 +18,6 @@ SUMMARY:Abass Baraou DEF. Giovani Santillan
 UID:20260911-giovani-santillan-abass-baraou@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, July 26\, 2026\nLocation: The 2300 Arena\, 2300 S Swanson St\, Philadelphia\, PA  19148\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260727T050000Z
-DTSTART:20260727T000000Z
-SUMMARY:Philadelphia Smoke vs. NYC Attitude
-UID:20260726-philadelphia-smoke-vs-nyc-attitude-20260726@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\nNetwork: Paramount+\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20260927T050000Z
-DTSTART:20260927T000000Z
-SUMMARY:Johnny Fisher-Michael Pirotton
-UID:20260926-johnny-fisher-michael-pirotton@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, May 16\, 2026\nLocation: The Met Philadelphia\, 858 N Broad St\, Philadelphia\, PA 19130\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260517T050000Z
-DTSTART:20260517T000000Z
-SUMMARY:NYC Attitude vs. Las Vegas Hustle
-UID:20260516-nyc-attitude-vs-las-vegas-hustle-20260516@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Utilita Arena Sheffield\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
 DTEND:20261024T090000Z
 DTSTART:20261024T040000Z
@@ -46,18 +25,18 @@ SUMMARY:Smith vs. Puello
 UID:20261024-smith-vs-puello@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 20\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260621T050000Z
-DTSTART:20260621T000000Z
-SUMMARY:Phoenix Fury vs. Atlanta Attack
-UID:20260620-phoenix-fury-vs-atlanta-attack-20260620@boxing-calendar
+DESCRIPTION:Date: Saturday\, March 28\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
+DTEND:20260329T050000Z
+DTSTART:20260329T000000Z
+SUMMARY:Miami Assassins vs. Dallas Enforcers
+UID:20260328-miami-assassins-vs-dallas-enforcers-20260328@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, July 31\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260801T050000Z
-DTSTART:20260801T000000Z
-SUMMARY:Miami Assassins vs. Atlanta Attack
-UID:20260731-miami-assassins-vs-atlanta-attack-20260731@boxing-calendar
+DESCRIPTION:Date: Sunday\, March 22\, 2026\nLocation: Pontchartrain Center\, 4545 Williams Blvd\, Kenner\, LA 70065\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
+DTEND:20260323T050000Z
+DTSTART:20260323T000000Z
+SUMMARY:Houston Hitmen vs. San Antonio Snipers
+UID:20260322-houston-hitmen-vs-san-antonio-snipers-20260322@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, April 26\, 2026\nLocation: Thunder Studios\, 20434 S Santa Fe Ave\, Long Beach\, CA 90810\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -67,6 +46,13 @@ SUMMARY:LA Elite vs. Nashville Smash
 UID:20260426-la-elite-vs-nashville-smash-20260426@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Sunday\, April 12\, 2026\nLocation: Cowboys Dance Hall\, 3030 NE Interstate 410 Loop\, San Antonio\, TX 78218\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
+DTEND:20260413T050000Z
+DTSTART:20260413T000000Z
+SUMMARY:San Antonio Snipers vs. LA Elite
+UID:20260412-san-antonio-snipers-vs-la-elite-20260412@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, November 08\, 2026\nLocation: College Park Center\nNetwork: ESPN+\nStart: 07:00 PM CT\nSource: BoxingScene.com
 DTEND:20261109T060000Z
 DTSTART:20261109T010000Z
@@ -74,14 +60,7 @@ SUMMARY:Elif Nur Turhan-Alycia Baumgardner
 UID:20261108-elif-nur-turhan-alycia-baumgardner@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, May 29\, 2026\nLocation: Utah Tech University - Burns Arena\, 225 S Univ Ave\, St. George\, UT 84770\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260530T050000Z
-DTSTART:20260530T000000Z
-SUMMARY:Las Vegas Hustle vs. Atlanta Attack
-UID:20260529-las-vegas-hustle-vs-atlanta-attack-20260529@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260913T050000Z
 DTSTART:20260913T000000Z
 SUMMARY:Ryan Garcia DEF. Conor Benn
@@ -93,27 +72,6 @@ DTEND:20260426T050000Z
 DTSTART:20260426T000000Z
 SUMMARY:San Antonio Snipers vs. Las Vegas Hustle
 UID:20260425-san-antonio-snipers-vs-las-vegas-hustle-20260425@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, August 02\, 2026\nLocation: Thunder Studios\, 20434 S Santa Fe Ave\, Long Beach\, CA 90810\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260803T050000Z
-DTSTART:20260803T000000Z
-SUMMARY:Las Vegas Hustle vs. LA Elite
-UID:20260802-las-vegas-hustle-vs-la-elite-20260802@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, May 10\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260511T050000Z
-DTSTART:20260511T000000Z
-SUMMARY:Atlanta Attack vs. Philadelphia Smoke
-UID:20260510-atlanta-attack-vs-philadelphia-smoke-20260510@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 01\, 2026\nLocation: Harrah's Philadelphia Casino\, 777 Harrah's Blvd\, Chester\, PA 19013\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260802T050000Z
-DTSTART:20260802T000000Z
-SUMMARY:San Antonio Snipers vs. Phoenix Fury
-UID:20260801-san-antonio-snipers-vs-phoenix-fury-20260801@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, April 11\, 2026\nLocation: Harrah's Philadelphia Casino\, 777 Harrah's Blvd\, Chester\, PA 19013\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -130,6 +88,13 @@ SUMMARY:Ben Whittaker vs. Conor Wallace
 UID:20261003-ben-whittaker-vs-conor-wallace@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, April 10\, 2026\nLocation: GSH Event Center\, 9550 W Bellfort Ave\, Houston\, TX 77031\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
+DTEND:20260411T050000Z
+DTSTART:20260411T000000Z
+SUMMARY:Houston Hitmen vs. NYC Attitude
+UID:20260410-houston-hitmen-vs-nyc-attitude-20260410@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, March 20\, 2026\nLocation: Fillmore\, 29 E Allen St\, Philadelphia\, PA 19123\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260321T050000Z
 DTSTART:20260321T000000Z
@@ -142,13 +107,6 @@ DTEND:20260418T050000Z
 DTSTART:20260418T000000Z
 SUMMARY:Nashville Smash vs. Phoenix Fury
 UID:20260417-nashville-smash-vs-phoenix-fury-20260417@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, June 12\, 2026\nLocation: Nashville Municipal Auditorium\, 417 4th Ave N\, Nashville\, TN 37201\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260613T050000Z
-DTSTART:20260613T000000Z
-SUMMARY:Nashville Smash vs. Atlanta Attack
-UID:20260612-nashville-smash-vs-atlanta-attack-20260612@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, April 18\, 2026\nLocation: Curtis Culwell Center\, 4999 Naaman Forest Blvd\, Garland\, TX 75040\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -170,20 +128,6 @@ DTEND:20260328T050000Z
 DTSTART:20260328T000000Z
 SUMMARY:Atlanta Attack vs. Nashville Smash
 UID:20260327-atlanta-attack-vs-nashville-smash-20260327@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, May 15\, 2026\nLocation: Gilley's Dallas\, 1135 Botham Jean Blvd\, Dallas\, TX 75215\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260516T050000Z
-DTSTART:20260516T000000Z
-SUMMARY:Dallas Enforcers vs. San Antonio Snipers
-UID:20260515-dallas-enforcers-vs-san-antonio-snipers-20260515@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 05\, 2026\nStart: 10:00 AM CT\nResults:\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\nSource: BoxingScene.com
-DTEND:20260905T200000Z
-DTSTART:20260905T150000Z
-SUMMARY:Katie Taylor DEF. Flora Pili
-UID:20260905-katie-taylor-flora-pili@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center in Chandler\, Arizona\nNetwork: YouTube\nStart: 04:00 PM CT\nSource: ProBoxTV.com
@@ -214,32 +158,11 @@ SUMMARY:Atlanta Attack vs. Miami Assassins
 UID:20260419-atlanta-attack-vs-miami-assassins-20260419@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, May 31\, 2026\nLocation: Nashville Municipal Auditorium\, 417 4th Ave N\, Nashville\, TN 37201\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260601T050000Z
-DTSTART:20260601T000000Z
-SUMMARY:Nashville Smash vs. Miami Assassins
-UID:20260531-nashville-smash-vs-miami-assassins-20260531@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 18\, 2026\nLocation: We-Ko-Pa Casino Resort\, 10438 Wekopa Way\, Fort McDowell\, AZ 85264\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260719T050000Z
-DTSTART:20260719T000000Z
-SUMMARY:Phoenix Fury vs. LA Elite
-UID:20260718-phoenix-fury-vs-la-elite-20260718@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, May 09\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260510T050000Z
 DTSTART:20260510T000000Z
 SUMMARY:Boston Butchers vs. Miami Assassins
 UID:20260509-boston-butchers-vs-miami-assassins-20260509@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, June 14\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260615T050000Z
-DTSTART:20260615T000000Z
-SUMMARY:Miami Assassins vs. NYC Attitude
-UID:20260614-miami-assassins-vs-nyc-attitude-20260614@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, May 01\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -256,81 +179,11 @@ SUMMARY:Lebron-Hernandez-Geraldo
 UID:20260926-lebron-hernandez-geraldo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 06\, 2026\nLocation: Gilley's Dallas\, 1135 Botham Jean Blvd\, Dallas\, TX 75215\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260607T050000Z
-DTSTART:20260607T000000Z
-SUMMARY:Dallas Enforcers vs. LA Elite
-UID:20260606-dallas-enforcers-vs-la-elite-20260606@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, May 17\, 2026\nLocation: Harrah's Philadelphia Casino\, 777 Harrah's Blvd\, Chester\, PA 19013\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260518T050000Z
-DTSTART:20260518T000000Z
-SUMMARY:Philadelphia Smoke vs. Miami Assassins
-UID:20260517-philadelphia-smoke-vs-miami-assassins-20260517@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, May 23\, 2026\nLocation: Nashville Municipal Auditorium\, 417 4th Ave N\, Nashville\, TN 37201\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260524T050000Z
-DTSTART:20260524T000000Z
-SUMMARY:Nashville Smash vs. Boston Butchers
-UID:20260523-nashville-smash-vs-boston-butchers-20260523@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, May 08\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260509T050000Z
 DTSTART:20260509T000000Z
 SUMMARY:Phoenix Fury vs. Las Vegas Hustle
 UID:20260508-phoenix-fury-vs-las-vegas-hustle-20260508@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, June 07\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260608T050000Z
-DTSTART:20260608T000000Z
-SUMMARY:Phoenix Fury vs. Houston Hitmen
-UID:20260607-phoenix-fury-vs-houston-hitmen-20260607@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, June 28\, 2026\nLocation: Thunder Studios\, 20434 S Santa Fe Ave\, Long Beach\, CA 90810\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260629T050000Z
-DTSTART:20260629T000000Z
-SUMMARY:Las Vegas Hustle vs. Phoenix Fury
-UID:20260628-las-vegas-hustle-vs-phoenix-fury-20260628@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, June 19\, 2026\nLocation: Utah Tech University - Burns Arena\, 225 S Univ Ave\, St. George\, UT 84770\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260620T050000Z
-DTSTART:20260620T000000Z
-SUMMARY:Las Vegas Hustle vs. LA Elite
-UID:20260619-las-vegas-hustle-vs-la-elite-20260619@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 27\, 2026\nLocation: Thunder Studios\, 20434 S Santa Fe Ave\, Long Beach\, CA 90810\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260628T050000Z
-DTSTART:20260628T000000Z
-SUMMARY:LA Elite vs. Houston Hitmen
-UID:20260627-la-elite-vs-houston-hitmen-20260627@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, July 12\, 2026\nLocation: Harrah's Philadelphia Casino\, 777 Harrah's Blvd\, Chester\, PA 19013\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260713T050000Z
-DTSTART:20260713T000000Z
-SUMMARY:Philadelphia Smoke vs. San Antonio Snipers
-UID:20260712-philadelphia-smoke-vs-san-antonio-snipers-20260712@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, July 17\, 2026\nLocation: We-Ko-Pa Casino Resort\, 10438 Wekopa Way\, Fort McDowell\, AZ 85264\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260718T050000Z
-DTSTART:20260718T000000Z
-SUMMARY:Houston Hitmen vs. Nashville Smash
-UID:20260717-houston-hitmen-vs-nashville-smash-20260717@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, April 24\, 2026\nLocation: Roadrunner Boston\, 89 Guest St\, Boston\, MA 02135\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260425T050000Z
-DTSTART:20260425T000000Z
-SUMMARY:Boston Butchers vs. NYC Attitude
-UID:20260424-boston-butchers-vs-nyc-attitude-20260424@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Pechanga Arena\, San Diego\, California\nStart: 07:00 PM CT\nResults:\n  Isaac Cruz DEF. Nestor Bravo - KO In Round 6\n  Isaac Cruz DEF. Nestor Bravo - KO In Round 6\nSource: BoxingScene.com
@@ -347,18 +200,18 @@ SUMMARY:Tyson Fury-Anthony Joshua
 UID:20261211-tyson-fury-anthony-joshua@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, April 24\, 2026\nLocation: Roadrunner Boston\, 89 Guest St\, Boston\, MA 02135\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
+DTEND:20260425T050000Z
+DTSTART:20260425T000000Z
+SUMMARY:Boston Butchers vs. NYC Attitude
+UID:20260424-boston-butchers-vs-nyc-attitude-20260424@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 10\, 2026\nLocation: Wintrust Arena\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
 DTEND:20261011T050000Z
 DTSTART:20261011T000000Z
 SUMMARY:Floyd Schofield-Lucas Bahdi
 UID:20261010-floyd-schofield-lucas-bahdi@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, August 30\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260831T050000Z
-DTSTART:20260831T000000Z
-SUMMARY:Philadelphia Smoke vs. Miami Assassins
-UID:20260830-philadelphia-smoke-vs-miami-assassins-20260830@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 12\, 2026\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
@@ -368,6 +221,13 @@ SUMMARY:Dmitry Bivol-Callum Smith
 UID:20261212-dmitry-bivol-callum-smith@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Sunday\, March 29\, 2026\nLocation: Roadrunner Boston\, 89 Guest St\, Boston\, MA 02135\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
+DTEND:20260330T050000Z
+DTSTART:20260330T000000Z
+SUMMARY:Boston Butchers vs. Phoenix Fury
+UID:20260329-boston-butchers-vs-phoenix-fury-20260329@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center\nStart: 06:30 PM CT\nSource: BoxingScene.com
 DTEND:20261017T043000Z
 DTSTART:20261016T233000Z
@@ -375,53 +235,11 @@ SUMMARY:Kevin Anton-Freudis Rojas
 UID:20261016-kevin-anton-freudis-rojas@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, June 05\, 2026\nLocation: Harrah's Philadelphia Casino\, 777 Harrah's Blvd\, Chester\, PA 19013\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260606T050000Z
-DTSTART:20260606T000000Z
-SUMMARY:NYC Attitude vs. San Antonio Snipers
-UID:20260605-nyc-attitude-vs-san-antonio-snipers-20260605@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, July 19\, 2026\nLocation: We-Ko-Pa Casino Resort\, 10438 Wekopa Way\, Fort McDowell\, AZ 85264\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260720T050000Z
-DTSTART:20260720T000000Z
-SUMMARY:Dallas Enforcers vs. Boston Butchers
-UID:20260719-dallas-enforcers-vs-boston-butchers-20260719@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, June 21\, 2026\nLocation: Cowboys Dance Hall\, 3030 NE Interstate 410 Loop\, San Antonio\, TX 78218\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260622T050000Z
-DTSTART:20260622T000000Z
-SUMMARY:San Antonio Snipers vs. Dallas Enforcers
-UID:20260621-san-antonio-snipers-vs-dallas-enforcers-20260621@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, August 22\, 2026\nLocation: We-Ko-Pa Casino Resort\, 10438 Wekopa Way\, Fort McDowell\, AZ 85264\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260823T050000Z
-DTSTART:20260823T000000Z
-SUMMARY:Miami Assassins vs. Las Vegas Hustle
-UID:20260822-miami-assassins-vs-las-vegas-hustle-20260822@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, August 21\, 2026\nLocation: We-Ko-Pa Casino Resort\, 10438 Wekopa Way\, Fort McDowell\, AZ 85264\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260822T050000Z
-DTSTART:20260822T000000Z
-SUMMARY:Philadelphia Smoke vs. San Antonio Snipers
-UID:20260821-philadelphia-smoke-vs-san-antonio-snipers-20260821@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, May 30\, 2026\nLocation: Harrah's Philadelphia Casino\, 777 Harrah's Blvd\, Chester\, PA 19013\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260531T050000Z
-DTSTART:20260531T000000Z
-SUMMARY:Philadelphia Smoke vs. Boston Butchers
-UID:20260530-philadelphia-smoke-vs-boston-butchers-20260530@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, June 13\, 2026\nLocation: Roadrunner Boston\, 89 Guest St\, Boston\, MA 02135\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260614T050000Z
-DTSTART:20260614T000000Z
-SUMMARY:Boston Butchers vs. Philadelphia Smoke
-UID:20260613-boston-butchers-vs-philadelphia-smoke-20260613@boxing-calendar
+DESCRIPTION:Date: Saturday\, March 21\, 2026\nLocation: Thunder Studios\, 20434 S Santa Fe Ave\, Long Beach\, CA 90810\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
+DTEND:20260322T050000Z
+DTSTART:20260322T000000Z
+SUMMARY:LA Elite vs. Las Vegas Hustle
+UID:20260321-la-elite-vs-las-vegas-hustle-20260321@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Thursday\, October 08\, 2026\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
@@ -438,32 +256,18 @@ SUMMARY:Sebastian Fundora-Ermal Hadribeaj
 UID:20261017-sebastian-fundora-ermal-hadribeaj@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, July 11\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260712T050000Z
-DTSTART:20260712T000000Z
-SUMMARY:Atlanta Attack vs. Dallas Enforcers
-UID:20260711-atlanta-attack-vs-dallas-enforcers-20260711@boxing-calendar
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\nNetwork: Paramount+\nStart: 11:15 AM CT\nSource: BoxingScene.com
+DTEND:20260926T211500Z
+DTSTART:20260926T161500Z
+SUMMARY:Johnny Fisher-Michael Pirotton
+UID:20260926-johnny-fisher-michael-pirotton@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, June 26\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260627T050000Z
-DTSTART:20260627T000000Z
-SUMMARY:Miami Assassins vs. Nashville Smash
-UID:20260626-miami-assassins-vs-nashville-smash-20260626@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, May 22\, 2026\nLocation: Bayou Music Center\, 520 Texas Ave\,\, Houston \, TX 77002\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260523T050000Z
-DTSTART:20260523T000000Z
-SUMMARY:Houston Hitmen vs. San Antonio Snipers
-UID:20260522-houston-hitmen-vs-san-antonio-snipers-20260522@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, July 10\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260711T050000Z
-DTSTART:20260711T000000Z
-SUMMARY:NYC Attitude vs. Boston Butchers
-UID:20260710-nyc-attitude-vs-boston-butchers-20260710@boxing-calendar
+DESCRIPTION:Date: Saturday\, September 05\, 2026\nStart: 10:00 AM CT\nResults:\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\nSource: BoxingScene.com
+DTEND:20260905T200000Z
+DTSTART:20260905T150000Z
+SUMMARY:Katie Taylor DEF. Flora Pili
+UID:20260905-katie-taylor-flora-pili@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, May 03\, 2026\nLocation: Hilton Houston North - Raphael Ballroom\, 12400 Greenspoint Dr\, Houston\, TX 77060\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -471,12 +275,5 @@ DTEND:20260504T050000Z
 DTSTART:20260504T000000Z
 SUMMARY:Houston Hitmen vs. Dallas Enforcers
 UID:20260503-houston-hitmen-vs-dallas-enforcers-20260503@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, May 24\, 2026\nLocation: Thunder Studios\, 20434 S Santa Fe Ave\, Long Beach\, CA 90810\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
-DTEND:20260525T050000Z
-DTSTART:20260525T000000Z
-SUMMARY:LA Elite vs. Phoenix Fury
-UID:20260524-la-elite-vs-phoenix-fury-20260524@boxing-calendar
 END:VEVENT
 END:VCALENDAR
