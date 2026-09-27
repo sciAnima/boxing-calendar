@@ -60,7 +60,7 @@ SUMMARY:Elif Nur Turhan-Alycia Baumgardner
 UID:20261108-elif-nur-turhan-alycia-baumgardner@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260913T050000Z
 DTSTART:20260913T000000Z
 SUMMARY:Ryan Garcia DEF. Conor Benn
@@ -172,13 +172,6 @@ SUMMARY:Miami Assassins vs. Atlanta Attack
 UID:20260501-miami-assassins-vs-atlanta-attack-20260501@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Wynn Records Network\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20260927T050000Z
-DTSTART:20260927T000000Z
-SUMMARY:Lebron-Hernandez-Geraldo
-UID:20260926-lebron-hernandez-geraldo@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, May 08\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260509T050000Z
 DTSTART:20260509T000000Z
@@ -254,13 +247,6 @@ DTEND:20261018T050000Z
 DTSTART:20261018T000000Z
 SUMMARY:Sebastian Fundora-Ermal Hadribeaj
 UID:20261017-sebastian-fundora-ermal-hadribeaj@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\nNetwork: Paramount+\nStart: 11:15 AM CT\nSource: BoxingScene.com
-DTEND:20260926T211500Z
-DTSTART:20260926T161500Z
-SUMMARY:Johnny Fisher-Michael Pirotton
-UID:20260926-johnny-fisher-michael-pirotton@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, September 05\, 2026\nStart: 10:00 AM CT\nResults:\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\nSource: BoxingScene.com
