@@ -11,13 +11,6 @@ SUMMARY:Emanuel Navarrete-O'Shaquie Foster
 UID:20261024-emanuel-navarrete-o-shaquie-foster@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, September 11\, 2026\nLocation: Frontwave Arena\, Oceanside\, California\nStart: 07:00 PM CT\nResults:\n  Abass Baraou DEF. Giovani Santillan - Majority Decision\n  Luis Alberto Lopez DEF. Daniel Lugo - KO In Round 3\n  Dominic Valle DEF. Francois Scarboro - Unanimous Decision\n  Abass Baraou DEF. Giovani Santillan - Majority Decision\n  Luis Alberto Lopez DEF. Daniel Lugo - KO In Round 3\n  Dominic Valle DEF. Francois Scarboro - Unanimous Decision\nSource: BoxingScene.com
-DTEND:20260912T050000Z
-DTSTART:20260912T000000Z
-SUMMARY:Abass Baraou DEF. Giovani Santillan
-UID:20260911-giovani-santillan-abass-baraou@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Utilita Arena Sheffield\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
 DTEND:20261024T090000Z
 DTSTART:20261024T040000Z
@@ -109,6 +102,13 @@ SUMMARY:Nashville Smash vs. Phoenix Fury
 UID:20260417-nashville-smash-vs-phoenix-fury-20260417@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Merkur Spiel-Arena\nNetwork: DAZN\nStart: 11:00 AM CT\nSource: BoxingScene.com
+DTEND:20261128T220000Z
+DTSTART:20261128T170000Z
+SUMMARY:Agit Kabayel-Nelson Hysa
+UID:20261128-agit-kabayel-nelson-hysa@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, April 18\, 2026\nLocation: Curtis Culwell Center\, 4999 Naaman Forest Blvd\, Garland\, TX 75040\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260419T050000Z
 DTSTART:20260419T000000Z
@@ -128,13 +128,6 @@ DTEND:20260328T050000Z
 DTSTART:20260328T000000Z
 SUMMARY:Atlanta Attack vs. Nashville Smash
 UID:20260327-atlanta-attack-vs-nashville-smash-20260327@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center in Chandler\, Arizona\nNetwork: YouTube\nStart: 04:00 PM CT\nSource: ProBoxTV.com
-DTEND:20261017T020000Z
-DTSTART:20261016T210000Z
-SUMMARY:WBC Continental Americas Junior-Middleweight TitleKevin Anton vs Yan Marcos
-UID:20261016-wbc-continental-americas-junior-middleweight-titlekevin-anton-vs-yan-marcos-20261016@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The O2 Arena\nNetwork: DAZN\nStart: 01:00 PM CT\nSource: BoxingScene.com
@@ -170,6 +163,13 @@ DTEND:20260502T050000Z
 DTSTART:20260502T000000Z
 SUMMARY:Miami Assassins vs. Atlanta Attack
 UID:20260501-miami-assassins-vs-atlanta-attack-20260501@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20260927T050000Z
+DTSTART:20260927T000000Z
+SUMMARY:Lebron-Hernandez-Geraldo
+UID:20260926-lebron-hernandez-geraldo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, May 08\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -249,11 +249,11 @@ SUMMARY:Sebastian Fundora-Ermal Hadribeaj
 UID:20261017-sebastian-fundora-ermal-hadribeaj@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 05\, 2026\nStart: 10:00 AM CT\nResults:\n  Katie Taylor DEF. Flora Pili - Unanimous Decision\n  Paddy Donovan DEF. Tyrone McKenna - TKO In Round 4\n  Joe McGrail DEF. Matthew Boreland - KO In Round 5\nSource: BoxingScene.com
-DTEND:20260905T200000Z
-DTSTART:20260905T150000Z
-SUMMARY:Katie Taylor DEF. Flora Pili
-UID:20260905-katie-taylor-flora-pili@boxing-calendar
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
+DTEND:20260926T211500Z
+DTSTART:20260926T161500Z
+SUMMARY:Johnny Fisher DEF. Michael Pirotton
+UID:20260926-johnny-fisher-michael-pirotton@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, May 03\, 2026\nLocation: Hilton Houston North - Raphael Ballroom\, 12400 Greenspoint Dr\, Houston\, TX 77060\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
