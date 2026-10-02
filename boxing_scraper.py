@@ -18,6 +18,7 @@ BS_EXT_URL     = "https://www.boxingscene.com/schedule/extended"
 BS_RESULTS_URL = "https://www.boxingscene.com/results"
 TBL_URL        = "https://www.teamboxingleague.com/pages/events"
 PROBOX_URL     = "https://proboxtv.com/tickets/"
+DAZN_URL       = "https://www.dazn.com/en-US/schedule"
 
 CT_ZONE = ZoneInfo("America/Chicago")
 ET_ZONE = ZoneInfo("America/New_York")
@@ -49,6 +50,12 @@ NET_RE = re.compile(r"live on\s*(.+)", re.I)
 BS_DT_RE = re.compile(
     r"\w+,\s+(\w+)\s+(\d{1,2}),\s+(\d{4})\s+-\s+(\d{1,2}):(\d{2})\s+(AM|PM)(?:\s+(\w+))?",
     re.I
+)
+
+# DAZN lists every sport; keep boxing competitions and drop non-fight content
+DAZN_BOXING_RE = re.compile(r"boxing", re.I)
+DAZN_SKIP_RE   = re.compile(
+    r"weigh-?in|press conference|prelims?|face-?off|countdown|workout|embedded", re.I
 )
 
 TZ_MAP = {
@@ -586,6 +593,113 @@ def parse_probox(html: str) -> dict[str, dict]:
     return events
 
 
+# == Source 5: DAZN ============================================================
+
+def dazn_day_fallback(day_text: str) -> datetime | None:
+    """Day header text ("October 03 Saturday") -> 9:00 PM CT that day, as UTC.
+    Year is inferred (the schedule spans ~10 days, so a past month means next year)."""
+    month_pattern = "|".join(MONTHS.keys())
+    m = re.search(rf"({month_pattern})\s+(\d{{1,2}})", day_text, re.I)
+    if not m:
+        return None
+    now = datetime.now(CT_ZONE)
+    month, day = MONTHS[m.group(1).capitalize()], int(m.group(2))
+    year = now.year + 1 if month < now.month - 1 else now.year
+    try:
+        return datetime(year, month, day, 21, 0, tzinfo=CT_ZONE).astimezone(timezone.utc)
+    except ValueError:
+        return None
+
+
+def fetch_dazn(url: str) -> list[dict]:
+    """Render the DAZN schedule (client-side app) and read each boxing event
+    page's JSON-LD for its exact UTC start time.
+    Returns [{"name", "competition", "start_utc"}].
+    """
+    found: list[dict] = []
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            # No user_agent override: DAZN serves an empty schedule to spoofed UAs
+            page = browser.new_page(viewport={"width": 1366, "height": 2000})
+            page.goto(url, timeout=45000, wait_until="domcontentloaded")
+            page.wait_for_selector("[data-testid='standard-rail__tile__link']", state="attached", timeout=30000)
+            page.wait_for_timeout(3000)
+
+            tiles = page.eval_on_selector_all(
+                "[data-testid='standard-rail__tile__link']",
+                """els => els.map(a => {
+                    const rail = a.closest('.standard-rail');
+                    const day = rail && rail.previousElementSibling;
+                    return [a.href, day ? day.innerText : '',
+                            ...[...a.querySelectorAll('span')].map(s => s.innerText)];
+                })""",
+            )
+            seen: set[str] = set()
+            candidates = []
+            for href, day_text, *spans in tiles:
+                if len(spans) < 2 or href in seen:
+                    continue
+                name, competition = spans[0].strip(), spans[1].strip()
+                if not DAZN_BOXING_RE.search(competition) or DAZN_SKIP_RE.search(name):
+                    continue
+                seen.add(href)
+                candidates.append((href, name, competition, day_text))
+            print(f"  DAZN: {len(tiles)} tiles, {len(candidates)} boxing events")
+
+            for href, name, competition, day_text in candidates:
+                start = None
+                try:
+                    page.goto(href, timeout=30000, wait_until="domcontentloaded")
+                    page.wait_for_selector("script[type='application/ld+json']", state="attached", timeout=15000)
+                    blobs = page.eval_on_selector_all(
+                        "script[type='application/ld+json']", "els => els.map(e => e.textContent)"
+                    )
+                    for blob in blobs:
+                        data = json.loads(blob)
+                        if data.get("@type") == "SportsEvent" and data.get("startDate"):
+                            start = datetime.fromisoformat(data["startDate"].replace("Z", "+00:00"))
+                            break
+                except Exception as e:
+                    print(f"  WARNING: DAZN event page unavailable for {name}: {e}")
+
+                if start is None:
+                    # Detail page not published yet (404) - use the schedule's day header
+                    start = dazn_day_fallback(day_text)
+                    if start is None:
+                        print(f"  WARNING: no date for DAZN event {name}; skipping")
+                        continue
+                    print(f"  DAZN: {name} has no start time - defaulting to 9:00 PM CT")
+                found.append({"name": name, "competition": competition, "start_utc": start})
+
+            browser.close()
+    except Exception as e:
+        print(f"  WARNING: Error rendering DAZN schedule: {e}")
+    return found
+
+
+def parse_dazn(raw: list[dict]) -> dict[str, dict]:
+    events = {}
+    for item in raw:
+        start_ct = item["start_utc"].astimezone(CT_ZONE)
+        date_obj = datetime(start_ct.year, start_ct.month, start_ct.day)
+        slug = make_slug(item["name"])
+        events[slug] = {
+            "name":     item["name"],
+            "date_obj": date_obj,
+            "location": "",
+            "network":  "DAZN",
+            "start_ct": start_ct,
+            "fights":   [],
+            "source":   "DAZN.com",
+            "bs_slug":  "",
+            "results":  [],
+        }
+
+    print(f"  DAZN: {len(events)} events parsed")
+    return events
+
+
 # == Merge + build calendar =====================================================
 
 def build_calendar(
@@ -593,6 +707,7 @@ def build_calendar(
     bs: dict,
     tbl: dict,
     probox: dict,
+    dazn: dict | None = None,
     past: dict | None = None,
 ) -> list[Event]:
     merged: dict[str, dict] = {}
@@ -602,7 +717,11 @@ def build_calendar(
         for slug, ev in past.items():
             merged[slug] = ev
 
-    # Priority (lowest to highest): TBL = ProBox < BS < BN24
+    # Priority (lowest to highest): DAZN < TBL = ProBox < BS < BN24
+    # (DAZN has exact start times but no venue, so richer sources override it)
+    for slug, ev in (dazn or {}).items():
+        merged[slug] = ev
+
     for slug, ev in tbl.items():
         merged[slug] = ev
 
@@ -705,6 +824,9 @@ def main():
     print("Fetching ProBox TV...")
     probox_html = fetch(PROBOX_URL)
 
+    print("Fetching DAZN schedule...")
+    dazn_raw = fetch_dazn(DAZN_URL)
+
     print("Fetching BoxingScene past event results...")
     past = fetch_bs_past_events(BS_RESULTS_URL)
 
@@ -714,8 +836,9 @@ def main():
     bs.update(bs_ext)
     tbl    = parse_tbl(tbl_html)                      if tbl_html     else {}
     probox = parse_probox(probox_html)                if probox_html  else {}
+    dazn   = parse_dazn(dazn_raw)                     if dazn_raw     else {}
 
-    if not bn24 and not bs and not tbl and not probox and not past:
+    if not bn24 and not bs and not tbl and not probox and not dazn and not past:
         print("ERROR: All sources failed - no events to write")
         sys.exit(1)
 
@@ -723,16 +846,17 @@ def main():
     if not bs:     print("WARNING: BoxingScene failed - skipping")
     if not tbl:    print("WARNING: Team Boxing League failed - skipping")
     if not probox: print("WARNING: ProBox TV failed - skipping")
+    if not dazn:   print("WARNING: DAZN failed - skipping")
 
     print("Merging and building calendar...")
-    events = build_calendar(bn24, bs, tbl, probox, past)
+    events = build_calendar(bn24, bs, tbl, probox, dazn, past)
 
     if not events:
         print("WARNING: No events parsed from any source")
 
     cal = Calendar()
     cal.extra.append(ContentLine(name="CALSCALE", value="GREGORIAN"))
-    cal.extra.append(ContentLine(name="COMMENT", value="Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com + ProBoxTV.com"))
+    cal.extra.append(ContentLine(name="COMMENT", value="Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com + ProBoxTV.com + DAZN.com"))
     for ev in events:
         cal.events.add(ev)
 
