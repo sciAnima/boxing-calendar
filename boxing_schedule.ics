@@ -130,13 +130,6 @@ SUMMARY:Atlanta Attack vs. Nashville Smash
 UID:20260327-atlanta-attack-vs-nashville-smash-20260327@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center in Chandler\, Arizona\nNetwork: YouTube\nStart: 04:00 PM CT\nSource: ProBoxTV.com
-DTEND:20261017T020000Z
-DTSTART:20261016T210000Z
-SUMMARY:WBC Continental Americas Junior-Middleweight TitleKevin Anton vs Yan Marcos
-UID:20261016-wbc-continental-americas-junior-middleweight-titlekevin-anton-vs-yan-marcos-20261016@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The O2 Arena\nNetwork: DAZN\nStart: 01:00 PM CT\nSource: BoxingScene.com
 DTEND:20261017T230000Z
 DTSTART:20261017T180000Z
@@ -163,6 +156,13 @@ DTEND:20260510T050000Z
 DTSTART:20260510T000000Z
 SUMMARY:Boston Butchers vs. Miami Assassins
 UID:20260509-boston-butchers-vs-miami-assassins-20260509@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Event Center in Phoenix\, Arizona\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: ProBoxTV.com
+DTEND:20261017T050000Z
+DTSTART:20261017T000000Z
+SUMMARY:ProBox TV Championship SeriesKevin Anton vs Freudis Rojas
+UID:20261016-probox-tv-championship-serieskevin-anton-vs-freudis-rojas-20261016@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, May 01\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -256,7 +256,7 @@ SUMMARY:Sebastian Fundora-Ermal Hadribeaj
 UID:20261017-sebastian-fundora-ermal-hadribeaj@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260926T211500Z
 DTSTART:20260926T161500Z
 SUMMARY:Johnny Fisher DEF. Michael Pirotton
