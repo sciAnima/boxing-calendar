@@ -137,6 +137,13 @@ SUMMARY:Atlanta Attack vs. Nashville Smash
 UID:20260327-atlanta-attack-vs-nashville-smash-20260327@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, November 13\, 2026\nLocation: County Coliseum in El Paso\, Texas\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: ProBoxTV.com
+DTEND:20261114T060000Z
+DTSTART:20261114T010000Z
+SUMMARY:ProBox TV Championship SeriesBryan Flores vs Jose Nunez
+UID:20261113-probox-tv-championship-seriesbryan-flores-vs-jose-nunez-20261113@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The O2 Arena\nNetwork: DAZN\nStart: 01:00 PM CT\nSource: BoxingScene.com
 DTEND:20261017T230000Z
 DTSTART:20261017T180000Z
@@ -200,7 +207,7 @@ SUMMARY:Phoenix Fury vs. Las Vegas Hustle
 UID:20260508-phoenix-fury-vs-las-vegas-hustle-20260508@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Pechanga Arena\, San Diego\, California\nStart: 07:00 PM CT\nResults:\n  Isaac Cruz DEF. Nestor Bravo - KO In Round 6\n  Isaac Cruz DEF. Nestor Bravo - KO In Round 6\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Pechanga Arena\, San Diego\, California\nStart: 07:00 PM CT\nResults:\n  Isaac Cruz DEF. Nestor Bravo - KO In Round 6\nSource: BoxingScene.com
 DTEND:20260920T050000Z
 DTSTART:20260920T000000Z
 SUMMARY:Isaac Cruz DEF. Nestor Bravo
@@ -284,7 +291,7 @@ SUMMARY:Sebastian Fundora-Ermal Hadribeaj
 UID:20261017-sebastian-fundora-ermal-hadribeaj@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260926T211500Z
 DTSTART:20260926T161500Z
 SUMMARY:Johnny Fisher DEF. Michael Pirotton
