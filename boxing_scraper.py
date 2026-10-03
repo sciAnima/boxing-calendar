@@ -623,7 +623,15 @@ def fetch_dazn(url: str) -> list[dict]:
             # No user_agent override: DAZN serves an empty schedule to spoofed UAs
             page = browser.new_page(viewport={"width": 1366, "height": 2000})
             page.goto(url, timeout=45000, wait_until="domcontentloaded")
-            page.wait_for_selector("[data-testid='standard-rail__tile__link']", state="attached", timeout=30000)
+            try:
+                page.wait_for_selector("[data-testid='standard-rail__tile__link']", state="attached", timeout=30000)
+            except Exception:
+                # Dump what the browser actually got (uploaded by the workflow as debug_raw.html)
+                print(f"  DAZN: schedule did not render - url={page.url!r} title={page.title()!r}")
+                with open("debug_raw.html", "w", encoding="utf-8") as f:
+                    f.write(f"<!-- url: {page.url} | title: {page.title()} -->\n{page.content()}")
+                browser.close()
+                raise
             page.wait_for_timeout(3000)
 
             tiles = page.eval_on_selector_all(
@@ -678,7 +686,7 @@ def fetch_dazn(url: str) -> list[dict]:
     return found
 
 
-def parse_dazn(raw: list[dict]) -> dict[str, dict]:
+def parse_dazn(raw: list[dict], quiet: bool = False) -> dict[str, dict]:
     events = {}
     for item in raw:
         start_ct = item["start_utc"].astimezone(CT_ZONE)
@@ -696,11 +704,87 @@ def parse_dazn(raw: list[dict]) -> dict[str, dict]:
             "results":  [],
         }
 
-    print(f"  DAZN: {len(events)} events parsed")
+    if not quiet:
+        print(f"  DAZN: {len(events)} events parsed")
     return events
 
 
+def load_previous_dazn(path: str) -> dict[str, dict]:
+    """Read DAZN-sourced events back out of the last generated calendar."""
+    events: dict[str, dict] = {}
+    try:
+        with open(path, encoding="utf-8") as f:
+            text = f.read()
+    except OSError:
+        return events
+
+    text = re.sub(r"\r?\n[ \t]", "", text)  # unfold wrapped lines
+    for block in re.findall(r"BEGIN:VEVENT(.*?)END:VEVENT", text, re.S):
+        fields = {}
+        for line in block.strip().splitlines():
+            key, _, value = line.partition(":")
+            fields[key.split(";")[0]] = value
+        if "Source: DAZN.com" not in fields.get("DESCRIPTION", ""):
+            continue
+        try:
+            start_utc = datetime.strptime(fields["DTSTART"], "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
+        except (KeyError, ValueError):
+            continue
+        name = (fields.get("SUMMARY", "")
+                .replace("\\,", ",").replace("\\;", ";").replace("\\\\", "\\"))
+        if name:
+            events[make_slug(name)] = {"name": name, "start_utc": start_utc}
+    return events
+
+
+def carry_forward_dazn(fresh: dict[str, dict], path: str = "boxing_schedule.ics") -> dict[str, dict]:
+    """DAZN only lists ~10 days and can fail to load from CI, so keep events the
+    last run already found rather than letting them vanish from the calendar.
+
+    - Scrape failed (nothing fresh): keep everything from the last 3 days onward.
+    - Scrape worked: keep only events that have already started (they just fell
+      off DAZN's window); a missing future event was cancelled or moved.
+    """
+    now = datetime.now(timezone.utc)
+    scrape_ok = bool(fresh)  # decided up front: carrying events forward mutates `fresh`
+    kept = 0
+    for slug, prev in load_previous_dazn(path).items():
+        if slug in fresh:
+            continue
+        recent = prev["start_utc"] >= now - timedelta(days=3)
+        keep = recent and (prev["start_utc"] <= now if scrape_ok else True)
+        if keep:
+            fresh.update(parse_dazn([prev], quiet=True))
+            kept += 1
+    if kept:
+        print(f"  DAZN: kept {kept} event(s) from the previous calendar")
+    return fresh
+
+
 # == Merge + build calendar =====================================================
+
+def drop_dazn_duplicates(merged: dict[str, dict]) -> None:
+    """DAZN names fights by surname ("Whittaker vs. Wallace") while other sources
+    use full names, so their slugs differ. Drop a DAZN event when another source
+    already lists the same two surnames within a day - its time is the better one."""
+    others = [
+        (ev["date_obj"], set(make_slug(ev["name"]).split("-")))
+        for ev in merged.values() if ev["source"] != "DAZN.com"
+    ]
+    for slug, ev in list(merged.items()):
+        if ev["source"] != "DAZN.com":
+            continue
+        sides = re.split(r"\s+vs\.?\s+", ev["name"], flags=re.I)
+        if len(sides) != 2:
+            continue
+        surnames = {make_slug(side).split("-")[-1] for side in sides if make_slug(side)}
+        if len(surnames) != 2:
+            continue
+        for date_obj, tokens in others:
+            if abs((date_obj - ev["date_obj"]).days) <= 1 and surnames <= tokens:
+                del merged[slug]
+                break
+
 
 def build_calendar(
     bn24: dict,
@@ -741,6 +825,8 @@ def build_calendar(
             "bs_slug": prev.get("bs_slug", "") or ev.get("bs_slug", ""),
             "results": prev.get("results", []) or ev.get("results", []),
         }
+
+    drop_dazn_duplicates(merged)
 
     events = []
     seen_uids: set[str] = set()
@@ -836,7 +922,7 @@ def main():
     bs.update(bs_ext)
     tbl    = parse_tbl(tbl_html)                      if tbl_html     else {}
     probox = parse_probox(probox_html)                if probox_html  else {}
-    dazn   = parse_dazn(dazn_raw)                     if dazn_raw     else {}
+    dazn   = carry_forward_dazn(parse_dazn(dazn_raw) if dazn_raw else {})
 
     if not bn24 and not bs and not tbl and not probox and not dazn and not past:
         print("ERROR: All sources failed - no events to write")

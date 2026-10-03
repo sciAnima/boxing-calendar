@@ -11,6 +11,13 @@ SUMMARY:Emanuel Navarrete-O'Shaquie Foster
 UID:20261024-emanuel-navarrete-o-shaquie-foster@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 02\, 2026\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: DAZN.com
+DTEND:20261003T050000Z
+DTSTART:20261003T000000Z
+SUMMARY:Jones vs. Sanchez
+UID:20261002-jones-vs-sanchez@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Utilita Arena Sheffield\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
 DTEND:20261024T090000Z
 DTSTART:20261024T040000Z
@@ -158,6 +165,13 @@ SUMMARY:Boston Butchers vs. Miami Assassins
 UID:20260509-boston-butchers-vs-miami-assassins-20260509@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 02\, 2026\nNetwork: DAZN\nStart: 09:00 PM CT\nSource: DAZN.com
+DTEND:20261003T070000Z
+DTSTART:20261003T020000Z
+SUMMARY:Brown vs. Padilla
+UID:20261002-brown-vs-padilla@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Event Center in Phoenix\, Arizona\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: ProBoxTV.com
 DTEND:20261017T050000Z
 DTSTART:20261017T000000Z
@@ -214,6 +228,13 @@ SUMMARY:Floyd Schofield-Lucas Bahdi
 UID:20261010-floyd-schofield-lucas-bahdi@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 02\, 2026\nNetwork: DAZN\nStart: 12:00 PM CT\nSource: DAZN.com
+DTEND:20261002T220000Z
+DTSTART:20261002T170000Z
+SUMMARY:Faour vs. Sachbazjan
+UID:20261002-faour-vs-sachbazjan@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 12\, 2026\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
 DTEND:20261212T100000Z
 DTSTART:20261212T050000Z
@@ -240,6 +261,13 @@ DTEND:20260322T050000Z
 DTSTART:20260322T000000Z
 SUMMARY:LA Elite vs. Las Vegas Hustle
 UID:20260321-la-elite-vs-las-vegas-hustle-20260321@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 10\, 2026\nNetwork: DAZN\nStart: 09:00 PM CT\nSource: DAZN.com
+DTEND:20261011T070000Z
+DTSTART:20261011T020000Z
+SUMMARY:Joey Essex vs. Dapper Laughs
+UID:20261010-joey-essex-vs-dapper-laughs@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Thursday\, October 08\, 2026\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
