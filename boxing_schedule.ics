@@ -60,7 +60,7 @@ SUMMARY:Elif Nur Turhan-Alycia Baumgardner
 UID:20261108-elif-nur-turhan-alycia-baumgardner@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260913T050000Z
 DTSTART:20260913T000000Z
 SUMMARY:Ryan Garcia DEF. Conor Benn
@@ -79,13 +79,6 @@ DTEND:20260412T050000Z
 DTSTART:20260412T000000Z
 SUMMARY:Las Vegas Hustle vs. Philadelphia Smoke
 UID:20260411-las-vegas-hustle-vs-philadelphia-smoke-20260411@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 03\, 2026\nLocation: Utilita Arena Birmingham\nNetwork: DAZN\nStart: 01:00 PM CT\nSource: BoxingScene.com
-DTEND:20261003T230000Z
-DTSTART:20261003T180000Z
-SUMMARY:Ben Whittaker vs. Conor Wallace
-UID:20261003-ben-whittaker-vs-conor-wallace@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, April 10\, 2026\nLocation: GSH Event Center\, 9550 W Bellfort Ave\, Houston\, TX 77031\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -107,6 +100,13 @@ DTEND:20260418T050000Z
 DTSTART:20260418T000000Z
 SUMMARY:Nashville Smash vs. Phoenix Fury
 UID:20260417-nashville-smash-vs-phoenix-fury-20260417@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, December 05\, 2026\nLocation: Coliseo Ruben Rodriguez\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20261206T060000Z
+DTSTART:20261206T010000Z
+SUMMARY:Litzy Vazquez- Stephanie Pineiro
+UID:20261205-litzy-vazquez-stephanie-pineiro@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Merkur Spiel-Arena\nNetwork: DAZN\nStart: 11:00 AM CT\nSource: BoxingScene.com
@@ -200,6 +200,13 @@ SUMMARY:Lebron-Hernandez-Geraldo
 UID:20260926-lebron-hernandez-geraldo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Copper Box Arena\nNetwork: Sky Sports\, Paramount+\nStart: 01:00 PM CT\nSource: BoxingScene.com
+DTEND:20261108T000000Z
+DTSTART:20261107T190000Z
+SUMMARY:Denzel Bentley-Shane Mosley Jnr
+UID:20261107-denzel-bentley-shane-mosley-jnr@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, May 08\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260509T050000Z
 DTSTART:20260509T000000Z
@@ -270,6 +277,13 @@ SUMMARY:LA Elite vs. Las Vegas Hustle
 UID:20260321-la-elite-vs-las-vegas-hustle-20260321@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: Dignity Health Sports Park\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20261115T060000Z
+DTSTART:20261115T010000Z
+SUMMARY:Diego Pacheco-Darius Fulghum
+UID:20261114-diego-pacheco-darius-fulghum@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 10\, 2026\nNetwork: DAZN\nStart: 09:00 PM CT\nSource: DAZN.com
 DTEND:20261011T070000Z
 DTSTART:20261011T020000Z
@@ -291,7 +305,7 @@ SUMMARY:Sebastian Fundora-Ermal Hadribeaj
 UID:20261017-sebastian-fundora-ermal-hadribeaj@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260926T211500Z
 DTSTART:20260926T161500Z
 SUMMARY:Johnny Fisher DEF. Michael Pirotton
