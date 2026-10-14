@@ -44,8 +44,18 @@ MONTH_ABBR = {
     "Oct": "October", "Nov": "November", "Dec": "December",
 }
 
-ET_RE  = re.compile(r"USA ET:\s*(\d{1,2}:\d{2}\s*(?:AM|PM))", re.I)
-NET_RE = re.compile(r"live on\s*(.+)", re.I)
+# BoxingNews24 layout: a dated heading, then labelled sections per event
+BN24_DATE_RE       = re.compile(r"^\w+,\s+(\w+)\s+(\d{1,2}),\s+(\d{4})$")
+BN24_TIME_RE       = re.compile(r"^(\d{1,2}:\d{2})\s*([ap]m)\s+([A-Z]{2,4})$", re.I)
+BN24_SHORT_DATE_RE = re.compile(r"^\w{3},\s+(\w{3})\s+(\d{1,2})\b")
+BN24_BOUT_RE       = re.compile(r"\bbout\b", re.I)
+BN24_SECTIONS = {
+    "Main event":            "main",
+    "Broadcaster":           "broadcaster",
+    "Estimated event start": "start",
+    "Estimated ring walks":  "ring",
+    "Undercard":             "undercard",
+}
 
 BS_DT_RE = re.compile(
     r"\w+,\s+(\w+)\s+(\d{1,2}),\s+(\d{4})\s+-\s+(\d{1,2}):(\d{2})\s+(AM|PM)(?:\s+(\w+))?",
@@ -59,9 +69,9 @@ DAZN_SKIP_RE   = re.compile(
 )
 
 TZ_MAP = {
-    "EST": "America/New_York", "EDT": "America/New_York",
-    "CST": "America/Chicago",  "CDT": "America/Chicago",
-    "PST": "America/Los_Angeles", "PDT": "America/Los_Angeles",
+    "ET": "America/New_York", "EST": "America/New_York", "EDT": "America/New_York",
+    "CT": "America/Chicago",  "CST": "America/Chicago",  "CDT": "America/Chicago",
+    "PT": "America/Los_Angeles", "PST": "America/Los_Angeles", "PDT": "America/Los_Angeles",
     "GMT": "Europe/London",    "BST": "Europe/London",
 }
 
@@ -313,100 +323,123 @@ def make_slug(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
-def parse_et_time(time_str: str, date_obj: datetime) -> datetime | None:
-    time_str = re.sub(r"\s+", "", time_str).upper()
+def bn24_start_ct(date_obj: datetime, time_line: str, date_line: str = "") -> datetime | None:
+    """'7:00 pm ET' (+ optional 'Sat, Oct 17' line) -> start time in Central."""
+    tm = BN24_TIME_RE.match(time_line)
+    if not tm:
+        return None
+    day = date_obj
+    dm = BN24_SHORT_DATE_RE.match(date_line)
+    if dm and MONTH_ABBR.get(dm.group(1).capitalize()):
+        month = MONTHS[MONTH_ABBR[dm.group(1).capitalize()]]
+        year = date_obj.year + 1 if date_obj.month - month > 6 else date_obj.year
+        try:
+            day = datetime(year, month, int(dm.group(2)))
+        except ValueError:
+            day = date_obj
+    tz = ZoneInfo(TZ_MAP.get(tm.group(3).upper(), "America/New_York"))
     try:
         dt = datetime.strptime(
-            f"{date_obj.month}/{date_obj.day}/{date_obj.year} {time_str}",
-            "%m/%d/%Y %I:%M%p"
+            f"{day:%Y-%m-%d} {tm.group(1)} {tm.group(2).upper()}", "%Y-%m-%d %I:%M %p"
         )
-        return dt.replace(tzinfo=ET_ZONE).astimezone(CT_ZONE)
     except ValueError:
         return None
+    return dt.replace(tzinfo=tz).astimezone(CT_ZONE)
 
 
 # == Source 1: BoxingNews24 ====================================================
 
+def parse_bn24_event(date_obj: datetime, lines: list[str]) -> dict | None:
+    """Parse one event block (the lines after its dated heading)."""
+    section = None
+    main = location = detail = ""
+    network_parts: list[str] = []
+    ppv = False
+    start_ct = None
+    undercard: list[list[str]] = []  # [fight, detail]
+
+    for i, line in enumerate(lines):
+        if line in BN24_SECTIONS:
+            section = BN24_SECTIONS[line]
+        elif section == "main":
+            if not main:
+                main = line
+            elif BN24_BOUT_RE.search(line):
+                detail = detail or line
+            elif not location:
+                location = line
+        elif section == "broadcaster":
+            if re.match(r"live on\b", line, re.I):
+                network = re.sub(r"\s*-\s*click here.*$", "", line[len("live on"):], flags=re.I)
+                network_parts.append(network.strip())
+            elif line.startswith(","):
+                network_parts.append(line.lstrip(", ").strip())  # "+ TNT, truTV" style add-ons
+            elif line.upper() == "PPV":
+                ppv = True
+        elif section == "start":
+            if start_ct is None and BN24_TIME_RE.match(line):
+                nxt = lines[i + 1] if i + 1 < len(lines) else ""
+                start_ct = bn24_start_ct(date_obj, line, nxt)
+        elif section == "undercard":
+            if re.match(r"^\d+ bouts?$", line, re.I):
+                continue
+            if BN24_BOUT_RE.search(line) and undercard:
+                undercard[-1][1] = line
+            else:
+                undercard.append([line, ""])
+
+    if not main:
+        return None
+
+    network = ", ".join(filter(None, network_parts))
+    if ppv:
+        network = f"{network} (PPV)" if network else "PPV"
+
+    def with_detail(fight: str, info: str) -> str:
+        return f"{fight} ({info})" if info else fight
+
+    return {
+        "name":        main,
+        "date_obj":    date_obj,
+        "location":    location,
+        "network":     network,
+        "start_ct":    start_ct or datetime(date_obj.year, date_obj.month, date_obj.day, 21, 0, tzinfo=CT_ZONE),
+        "start_known": start_ct is not None,
+        "fights":      [with_detail(main, detail)] + [with_detail(f, d) for f, d in undercard],
+        "source":      "BoxingNews24.com",
+        "bs_slug":     "",
+        "results":     [],
+    }
+
+
 def parse_bn24(html: str) -> dict[str, dict]:
     soup = BeautifulSoup(html, "html.parser")
-    content = soup.find("div", class_=re.compile(r"entry|post|content|article", re.I))
-    if not content:
-        content = soup
+    content = soup.find("div", class_=re.compile(r"entry|post|content|article", re.I)) or soup
+    lines = [l.strip() for l in content.get_text(separator="\n").split("\n") if l.strip()]
 
-    for a in content.find_all("a"):
-        a.replace_with(a.get_text())
+    # One block per event: a dated heading ("Saturday, October 17, 2026") and what follows it
+    blocks: list[tuple[datetime, list[str]]] = []
+    current: list[str] | None = None
+    for line in lines:
+        m = BN24_DATE_RE.match(line)
+        if m and m.group(1).capitalize() in MONTHS:
+            current = []
+            blocks.append((datetime(int(m.group(3)), MONTHS[m.group(1).capitalize()], int(m.group(2))), current))
+        elif line.startswith("Share this article"):
+            current = None
+        elif current is not None:
+            current.append(line)
 
-    lines = content.get_text(separator="\n").split("\n")
-    lines = [l.strip() for l in lines if l.strip()]
-
-    current_year = datetime.now(CT_ZONE).year
-    month_pattern = "|".join(MONTHS.keys())
     events = {}
-
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-        m = re.match(rf"^({month_pattern})\s+(\d{{1,2}}):\s*(.+)", line, re.I)
-        if m:
-            month_name = m.group(1).capitalize()
-            day        = int(m.group(2))
-            rest       = m.group(3)
-            month_num  = MONTHS.get(month_name)
-            if not month_num:
-                i += 1
-                continue
-
-            date_obj = datetime(current_year, month_num, day)
-            location = strip_emoji(rest.split("|")[0]).strip()
-
-            et_time_str = None
-            et_m = ET_RE.search(rest)
-            if et_m:
-                et_time_str = et_m.group(1).strip()
-
-            network = ""
-            net_m = NET_RE.search(rest)
-            if net_m:
-                network = strip_emoji(net_m.group(1)).strip()
-
-            fight_lines = []
-            i += 1
-            while i < len(lines):
-                nl = lines[i]
-                if re.match(rf"^({month_pattern})\s+\d{{1,2}}:", nl, re.I):
-                    break
-                if nl.startswith("\U0001F4CC"):
-                    ft = strip_emoji(nl[1:]).strip()
-                    if ft:
-                        fight_lines.append(ft)
-                i += 1
-
-            if not fight_lines:
-                continue
-
-            main_event = fight_lines[0]
-            main_name  = re.sub(r",\s*\d+\s*rounds.*$", "", main_event, flags=re.I).strip()
-            slug       = make_slug(main_name)
-
-            start_ct = parse_et_time(et_time_str, date_obj) if et_time_str else None
-            if not start_ct:
-                start_ct = datetime(date_obj.year, date_obj.month, date_obj.day, 21, 0, tzinfo=CT_ZONE)
-
-            events[slug] = {
-                "name":     main_name,
-                "date_obj": date_obj,
-                "location": location,
-                "network":  network,
-                "start_ct": start_ct,
-                "fights":   fight_lines,
-                "source":   "BoxingNews24.com",
-                "bs_slug":  "",
-                "results":  [],
-            }
-        else:
-            i += 1
+    for date_obj, block_lines in blocks:
+        ev = parse_bn24_event(date_obj, block_lines)
+        if ev:
+            # Drop "vs" so the slug matches BoxingScene's "Fighter A-Fighter B" naming
+            events[make_slug(re.sub(r"\s+vs\.?\s+", " ", ev["name"], flags=re.I))] = ev
 
     print(f"  BoxingNews24: {len(events)} events parsed")
+    if not events:
+        print("  WARNING: BoxingNews24 page was fetched but no events parsed - its layout may have changed")
     return events
 
 
@@ -763,25 +796,38 @@ def carry_forward_dazn(fresh: dict[str, dict], path: str = "boxing_schedule.ics"
 
 # == Merge + build calendar =====================================================
 
-def drop_dazn_duplicates(merged: dict[str, dict]) -> None:
-    """DAZN names fights by surname ("Whittaker vs. Wallace") while other sources
-    use full names, so their slugs differ. Drop a DAZN event when another source
-    already lists the same two surnames within a day - its time is the better one."""
-    others = [
-        (ev["date_obj"], set(make_slug(ev["name"]).split("-")))
-        for ev in merged.values() if ev["source"] != "DAZN.com"
+SOURCE_RANK = {
+    "DAZN.com": 1,
+    "TeamBoxingLeague.com": 2, "ProBoxTV.com": 2,
+    "BoxingScene.com": 3,
+    "BoxingNews24.com": 4,
+}
+
+
+def drop_duplicate_events(merged: dict[str, dict]) -> None:
+    """Sources name the same fight differently ("Whittaker vs. Wallace" vs
+    "Ben Whittaker vs. Conor Wallace"), so their slugs don't match. Drop an
+    "A vs. B" event when a higher-priority source lists both surnames within a
+    day, keeping any fuller venue/network the dropped one had."""
+    entries = [
+        (slug, ev["date_obj"], SOURCE_RANK.get(ev["source"], 0), set(make_slug(ev["name"]).split("-")))
+        for slug, ev in merged.items()
     ]
     for slug, ev in list(merged.items()):
-        if ev["source"] != "DAZN.com":
-            continue
         sides = re.split(r"\s+vs\.?\s+", ev["name"], flags=re.I)
         if len(sides) != 2:
             continue
         surnames = {make_slug(side).split("-")[-1] for side in sides if make_slug(side)}
         if len(surnames) != 2:
             continue
-        for date_obj, tokens in others:
-            if abs((date_obj - ev["date_obj"]).days) <= 1 and surnames <= tokens:
+        rank = SOURCE_RANK.get(ev["source"], 0)
+        for other_slug, date_obj, other_rank, tokens in entries:
+            if other_rank > rank and abs((date_obj - ev["date_obj"]).days) <= 1 and surnames <= tokens:
+                keep = merged[other_slug]
+                if ev["location"] and (not keep["location"] or keep["location"] in ev["location"]):
+                    keep["location"] = ev["location"]  # "Utilita Arena Sheffield" over "Sheffield"
+                if ev["network"] and not keep["network"]:
+                    keep["network"] = ev["network"]
                 del merged[slug]
                 break
 
@@ -817,7 +863,8 @@ def build_calendar(
         existing_results = merged.get(slug, {}).get("results", [])
         merged[slug] = {**ev, "results": existing_results or ev.get("results", [])}
 
-    # BN24 overrides BS but preserve bs_slug and results
+    # BN24 overrides BS but preserve bs_slug and results, and don't let a bare
+    # "Broadcast unconfirmed" entry erase a time/network/venue another source has
     for slug, ev in bn24.items():
         prev = merged.get(slug, {})
         merged[slug] = {
@@ -825,8 +872,14 @@ def build_calendar(
             "bs_slug": prev.get("bs_slug", "") or ev.get("bs_slug", ""),
             "results": prev.get("results", []) or ev.get("results", []),
         }
+        if prev and not ev.get("start_known", True):
+            merged[slug]["start_ct"] = prev["start_ct"]
+        if prev.get("network") and not ev["network"]:
+            merged[slug]["network"] = prev["network"]
+        if prev.get("location") and (not ev["location"] or ev["location"] in prev["location"]):
+            merged[slug]["location"] = prev["location"]  # e.g. "Utilita Arena Sheffield" over "Sheffield"
 
-    drop_dazn_duplicates(merged)
+    drop_duplicate_events(merged)
 
     events = []
     seen_uids: set[str] = set()
