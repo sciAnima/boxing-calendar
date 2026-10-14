@@ -53,13 +53,6 @@ SUMMARY:Dallas Enforcers vs. San Antonio Snipers
 UID:20260515-dallas-enforcers-vs-san-antonio-snipers-20260515@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, November 13\, 2026\nLocation: County Coliseum in El Paso\, Texas\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: ProBoxTV.com
-DTEND:20261114T060000Z
-DTSTART:20261114T010000Z
-SUMMARY:ProBox TV Championship SeriesBryan Flores vs Jose Nunez
-UID:20261113-probox-tv-championship-seriesbryan-flores-vs-jose-nunez-20261113@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 18\, 2026\nLocation: We-Ko-Pa Casino Resort\, 10438 Wekopa Way\, Fort McDowell\, AZ 85264\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260719T050000Z
 DTSTART:20260719T000000Z
@@ -116,13 +109,6 @@ SUMMARY:Boston Butchers vs. Philadelphia Smoke
 UID:20260613-boston-butchers-vs-philadelphia-smoke-20260613@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 10\, 2026\nNetwork: DAZN\nStart: 09:00 PM CT\nSource: DAZN.com
-DTEND:20261011T070000Z
-DTSTART:20261011T020000Z
-SUMMARY:Joey Essex vs. Dapper Laughs
-UID:20261010-joey-essex-vs-dapper-laughs@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 11\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260712T050000Z
 DTSTART:20260712T000000Z
@@ -137,10 +123,10 @@ SUMMARY:LA Elite vs. Phoenix Fury
 UID:20260524-la-elite-vs-phoenix-fury-20260524@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Frost Bank Center\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20261025T050000Z
-DTSTART:20261025T000000Z
-SUMMARY:Emanuel Navarrete-O'Shaquie Foster
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: San Antonio\nNetwork: DAZN\nStart: 06:00 PM CT\nMain Event: Emanuel Navarrete vs. O’Shaquie Foster (12-round bout\, WBO/IBF/WBC junior lightweight unification)\nUndercard:\n  * Albert “Chop Chop” Gonzalez vs. Edward Vazquez (10-round bout\, featherweights)\n  * Frank Martin vs. Tarik Zaina (10-round bout\, junior welterweights)\n  * Steven Navarro vs. Emanuel Moreno (10-round bout\, vacant NABO bantamweights)\n  * Deric “Scooter” Davis vs. Joaquin Silva Faccio (8-round bout\, lightweights)\n  * Sammy Contreras vs. Oscar Pedroza Padilla (6-round bout\, lightweights)\n  * Daniel Cortez III vs. Joshua Montoya (6-round bout\, junior featherweights)\n  * Joseph Almajdi vs. Miqal Dolphus (6-round bout\, junior middleweights)\nSource: BoxingNews24.com
+DTEND:20261025T040000Z
+DTSTART:20261024T230000Z
+SUMMARY:Emanuel Navarrete vs. O’Shaquie Foster
 UID:20261024-emanuel-navarrete-o-shaquie-foster@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
@@ -151,11 +137,32 @@ SUMMARY:NYC Attitude vs. Las Vegas Hustle
 UID:20260516-nyc-attitude-vs-las-vegas-hustle-20260516@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Sunday\, October 18\, 2026\nLocation: Hollywood\, Fla.\nStart: 06:00 PM CT\nMain Event: Gustavo Trujillo vs. Donald Haynesworth (10-round bout\, heavyweights)\nSource: BoxingNews24.com
+DTEND:20261019T040000Z
+DTSTART:20261018T230000Z
+SUMMARY:Gustavo Trujillo vs. Donald Haynesworth
+UID:20261018-gustavo-trujillo-donald-haynesworth@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 20\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260621T050000Z
 DTSTART:20260621T000000Z
 SUMMARY:Phoenix Fury vs. Atlanta Attack
 UID:20260620-phoenix-fury-vs-atlanta-attack-20260620@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: Tirana\, Albania\nStart: 09:00 PM CT\nMain Event: Juergen Uldedaj vs. Blake Caparello (12-round bout\, cruiserweights)\nSource: BoxingNews24.com
+DTEND:20261024T070000Z
+DTSTART:20261024T020000Z
+SUMMARY:Juergen Uldedaj vs. Blake Caparello
+UID:20261023-juergen-uldedaj-blake-caparello@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Utilita Arena Sheffield\nNetwork: DAZN\nStart: 01:00 PM CT\nMain Event: Dalton Smith vs. Alberto Puello (12-round bout\, WBC junior welterweight championship held by Smith)\nUndercard:\n  * Giorgio Visioli vs. Maxi Hughes (10-round bout\, lightweights)\n  * Shannon Ryan vs. Emma Dolan (10-round bout\, female junior bantamweights)\n  * Edward Hardy vs. Ibrahim Nadim (10-round bout\, junior lightweights)\n  * Aqib Fiaz vs. Jordan Flynn (10-round bout\, junior lightweights)\n  * Joe Hayden vs. Will Harrison (8-round bout\, welterweights)\n  * Leo Atang vs. TBA (6-round bout\, heavyweights)\n  * Connor Mitchell vs. TBA (6-round bout\, junior lightweights)\n  * Chris Mulunda vs. Harley Collison (4 or 6-round bout\, middleweights)\nSource: BoxingNews24.com
+DTEND:20261024T230000Z
+DTSTART:20261024T180000Z
+SUMMARY:Dalton Smith vs. Alberto Puello
+UID:20261024-dalton-smith-alberto-puello@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, April 17\, 2026\nLocation: Nashville Municipal Auditorium\, 417 4th Ave N\, Nashville\, TN 37201\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -193,11 +200,25 @@ SUMMARY:Isaac Cruz DEF. Nestor Bravo
 UID:20260919-isaac-cruz-nestor-bravo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The Cosmopolitan of Las Vegas\nNetwork: TNT Sports\, DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20261018T050000Z
-DTSTART:20261018T000000Z
-SUMMARY:Sebastian Fundora-Ermal Hadribeaj
+DESCRIPTION:Date: Saturday\, October 17\, 2026\nNetwork: DAZN\nStart: 09:00 PM CT\nSource: DAZN.com
+DTEND:20261018T070000Z
+DTSTART:20261018T020000Z
+SUMMARY:Volkovs vs. McIntyre
+UID:20261017-volkovs-vs-mcintyre@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The Cosmopolitan of Las Vegas\nNetwork: DAZN\, TNT\, truTV\nStart: 06:00 PM CT\nMain Event: Sebastian Fundora vs. Ermal Hadribeaj (12-round bout\, WBC junior middleweight championship held by Fundora)\nUndercard:\n  * Brandon Figueroa vs. Tomoki Kameda (12-round bout\, WBA featherweight championship held by Figueroa)\n  * Jermall Charlo vs. Koen Mazoudier (10-round bout\, super middleweights)\nSource: BoxingNews24.com
+DTEND:20261018T040000Z
+DTSTART:20261017T230000Z
+SUMMARY:Sebastian Fundora vs. Ermal Hadribeaj
 UID:20261017-sebastian-fundora-ermal-hadribeaj@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Los Angeles\nStart: 06:00 PM CT\nMain Event: Lawrence King vs. Jesse Hart (10-round bout\, light heavyweights)\nUndercard:\n  * Ruben Cazales vs. TBA (8-round bout\, super middleweights)\n  * Bernardo Marquez vs. TBA (6-round bout\, heavyweights)\n  * Nicolas Robledo vs. TBA (6-round bout\, junior lightweights)\n  * Peter Martinez vs. TBA (4-round bout\, featherweights)\n  * Jonathan Vasquez vs. TBA (4-round bout\, junior lightweights)\n  * Alejandro Alvarado vs. TBA (4-round bout\, junior lightweights)\nSource: BoxingNews24.com
+DTEND:20261025T040000Z
+DTSTART:20261024T230000Z
+SUMMARY:Lawrence King vs. Jesse Hart
+UID:20261024-lawrence-king-jesse-hart@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, June 26\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -235,25 +256,11 @@ SUMMARY:Philadelphia Smoke vs. NYC Attitude
 UID:20260726-philadelphia-smoke-vs-nyc-attitude-20260726@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Utilita Arena Sheffield\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
-DTEND:20261024T090000Z
-DTSTART:20261024T040000Z
-SUMMARY:Smith vs. Puello
-UID:20261024-smith-vs-puello@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, March 22\, 2026\nLocation: Pontchartrain Center\, 4545 Williams Blvd\, Kenner\, LA 70065\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260323T050000Z
 DTSTART:20260323T000000Z
 SUMMARY:Houston Hitmen vs. San Antonio Snipers
 UID:20260322-houston-hitmen-vs-san-antonio-snipers-20260322@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 12\, 2026\nLocation: T-Mobile Arena\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\n  Ryan Garcia DEF. Conor Benn - TKO In Round 2\n  Jai Opetaia DEF. Noel Mikaelyan - TKO In Round 9\n  Andres Cortes DEF. Mark Magsayo - Unanimous Decision\nSource: BoxingScene.com
-DTEND:20260913T050000Z
-DTSTART:20260913T000000Z
-SUMMARY:Ryan Garcia DEF. Conor Benn
-UID:20260912-ryan-garcia-vs-conor-benn@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, May 10\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -277,18 +284,18 @@ SUMMARY:Las Vegas Hustle vs. Philadelphia Smoke
 UID:20260411-las-vegas-hustle-vs-philadelphia-smoke-20260411@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Thursday\, October 15\, 2026\nLocation: Val-d’Osie\, France\nStart: 09:00 PM CT\nMain Event: Milan Prat vs. Brandon Thysse (12-round bout\, junior middleweights)\nSource: BoxingNews24.com
+DTEND:20261016T070000Z
+DTSTART:20261016T020000Z
+SUMMARY:Milan Prat vs. Brandon Thysse
+UID:20261015-milan-prat-brandon-thysse@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: ANB Arena\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
 DTEND:20261031T090000Z
 DTSTART:20261031T040000Z
 SUMMARY:Alvarez vs. Mbilli
 UID:20261031-alvarez-vs-mbilli@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Event Center in Phoenix\, Arizona\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: ProBoxTV.com
-DTEND:20261017T050000Z
-DTSTART:20261017T000000Z
-SUMMARY:ProBox TV Championship SeriesKevin Anton vs Freudis Rojas
-UID:20261016-probox-tv-championship-serieskevin-anton-vs-freudis-rojas-20261016@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, May 01\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -319,7 +326,7 @@ SUMMARY:Tyson Fury-Anthony Joshua
 UID:20261211-tyson-fury-anthony-joshua@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, November 13\, 2026\nLocation: El Paso County Coliseum\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DESCRIPTION:Date: Friday\, November 13\, 2026\nLocation: El Paso County Coliseum\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: BoxingScene.com
 DTEND:20261114T060000Z
 DTSTART:20261114T010000Z
 SUMMARY:Bryan Flores-Jose Nunez
@@ -424,10 +431,10 @@ SUMMARY:Nashville Smash vs. Atlanta Attack
 UID:20260612-nashville-smash-vs-atlanta-attack-20260612@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The O2 Arena\nNetwork: DAZN\nStart: 01:00 PM CT\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: London\nNetwork: DAZN (PPV)\nStart: 01:00 PM CT\nMain Event: Daniel Dubois vs. Fabio Wardley (rematch\, 12-round bout\, Dubois’ WBO heavyweight championship at stake)\nUndercard:\n  * Bakhodir Jalolov vs. Solomon Dacres (10-round bout\, heavyweights)\n  * Louie O’Doherty vs. Michael Gomez Jr. (12-round bout\, British and Commonwealth lightweight championship held by O’Doherty)\n  * Tony Curtis vs. Kerim Agius (8-round bout\, junior bantamweights)\n  * Manny Safari vs. TBA (4-round bout\, junior featherweights)\nSource: BoxingNews24.com
 DTEND:20261017T230000Z
 DTSTART:20261017T180000Z
-SUMMARY:Daniel Dubois-Fabio Wardley
+SUMMARY:Daniel Dubois vs. Fabio Wardley
 UID:20261017-daniel-dubois-fabio-wardley@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
@@ -450,6 +457,13 @@ DTEND:20260927T050000Z
 DTSTART:20260927T000000Z
 SUMMARY:Henry Lebron DEF. Derlyn Hernandez-Gerarldo
 UID:20260926-lebron-hernandez-geraldo@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Hallandale Beach\, Fla.\nStart: 06:00 PM CT\nMain Event: Maureen Shea vs. TBA (8-round bout\, female bantamweights)\nUndercard:\n  * Abdulazeez Khaled Alamoodi vs. TBA (8-round bout\, bantamweights)\n  * D’Vonte Smith vs. Jeff Souffrant (6-round bout\, welterweights)\n  * Chris Biggs vs. Marcello Williams (6-round bout\, junior welterweights)\n  * Giezwa Pierre Monarch Jr. vs. Rensley Washington III (6-round bout\, junior lightweights)\n  * Kenzell Williams vs. TBA (6-round bout\, junior featherweights)\n  * Luis Hernandez vs. TBA (6-round bout\, featherweights)\n  * Eric Tudor vs. Jorge Rodrigo Sosa (6-round bout\, junior middleweights)\n  * Aniel Viamontes vs. Jesus Segundo Martinez (6-round bout\, bantamweights)\n  * Akeem Cheatham vs. TBA (4-round bout\, welterweights)\n  * Daishaun Bundrage vs. TBA (4-round bout\, junior middleweights)\n  * Kevin Brown vs. TBA (4-round bout\, welterweights)\nSource: BoxingNews24.com
+DTEND:20261025T040000Z
+DTSTART:20261024T230000Z
+SUMMARY:Maureen Shea vs. TBA
+UID:20261024-maureen-shea-tba@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, May 23\, 2026\nLocation: Nashville Municipal Auditorium\, 417 4th Ave N\, Nashville\, TN 37201\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -487,6 +501,13 @@ SUMMARY:Las Vegas Hustle vs. LA Elite
 UID:20260619-las-vegas-hustle-vs-la-elite-20260619@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 10\, 2026\nLocation: Wintrust Arena\, Chicago\, Illinois\nStart: 07:00 PM CT\nResults:\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\nSource: BoxingScene.com
+DTEND:20261011T050000Z
+DTSTART:20261011T000000Z
+SUMMARY:Floyd Schofield DEF. Lucas Bahdi
+UID:20261010-floyd-schofield-lucas-bahdi@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, August 30\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260831T050000Z
 DTSTART:20260831T000000Z
@@ -494,10 +515,10 @@ SUMMARY:Philadelphia Smoke vs. Miami Assassins
 UID:20260830-philadelphia-smoke-vs-miami-assassins-20260830@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center\nStart: 06:30 PM CT\nSource: BoxingScene.com
-DTEND:20261017T043000Z
-DTSTART:20261016T233000Z
-SUMMARY:Kevin Anton-Freudis Rojas
+DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Chandler\, Ariz.\nNetwork: ProBoxTV\nStart: 06:00 PM CT\nMain Event: Kevin Anton vs. Freudis Rojas (10-round bout\, junior middleweights)\nUndercard:\n  * Justin Pauldo vs. Rene Tellez Giron (10-round bout\, lightweights)\n  * Bryan Acosta vs. Carlos Andres Arteaga Orona (10-round bout\, featherweights)\n  * Charles Harris Jr. vs. Misael Cabrera Urias (10-round bout\, junior welterweights)\nSource: BoxingNews24.com
+DTEND:20261017T040000Z
+DTSTART:20261016T230000Z
+SUMMARY:Kevin Anton vs. Freudis Rojas
 UID:20261016-kevin-anton-freudis-rojas@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
