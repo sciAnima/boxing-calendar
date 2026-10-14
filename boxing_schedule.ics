@@ -1,8 +1,14 @@
 BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
-COMMENT:Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com + ProBoxTV.com + DAZN.com
+COMMENT:Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com + ProBoxTV.com + DAZN.com + FightNews.com
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261107
+DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: France\nStart: time TBC\nMain Event: Yoni Valverde vs. Aaron Garibay (Junior Lightweight\, IBF International\, Vacant)\nSource: FightNews.com
+SUMMARY:Yoni Valverde vs Aaron Garibay
+UID:20261107-yoni-valverde-aaron-garibay@boxing-calendar
+END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, November 08\, 2026\nLocation: College Park Center\nNetwork: ESPN+\nStart: 07:00 PM CT\nSource: BoxingScene.com
 DTEND:20261109T060000Z
@@ -18,11 +24,30 @@ SUMMARY:Las Vegas Hustle vs. Atlanta Attack
 UID:20260529-las-vegas-hustle-vs-atlanta-attack-20260529@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261112
+DESCRIPTION:Date: Thursday\, November 12\, 2026\nLocation: Cabaret du Casino de Montréal\, Montreal\, Quebec\, Canada\nNetwork: DAZN\nStart: time TBC\nMain Event: Jhon Orobio vs. Hendri Cedeno (Super Lightweight)\nUndercard:\n  * Lenar Perez vs. TBA (Cruiserweight)\n  * Steven Butler vs. Erik Bazinyan (Super Middleweight)\n  * Avery Martin Duval vs. TBA (Lightweight)\n  * Wyatt Sanford vs. TBA (Lightweight)\n  * Keven Beausejour vs. TBA (Super Middleweight)\n  * Nickenson Denis vs. TBA (Super Middleweight)\nSource: FightNews.com
+SUMMARY:Eye of the Tiger: Jhon Orobio vs Hendri Cedeno
+UID:20261112-jhon-orobio-hendri-cedeno@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Auditorio Municipal Cortijo de Torres\, Málaga\, Andalusia\, Spain\nStart: 10:00 AM CT\nMain Event: Samuel Molina vs. Mohamed Sahnoun (Welterweight\, 12 rounds\, WBC Silver Interim Welterweight\, WBC International Silver Welterweight)\nSource: FightNews.com
+DTEND:20261024T200000Z
+DTSTART:20261024T150000Z
+SUMMARY:Samuel Molina vs Mohamed Sahnoun
+UID:20261024-samuel-molina-mohamed-sahnoun@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, April 10\, 2026\nLocation: GSH Event Center\, 9550 W Bellfort Ave\, Houston\, TX 77031\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260411T050000Z
 DTSTART:20260411T000000Z
 SUMMARY:Houston Hitmen vs. NYC Attitude
 UID:20260410-houston-hitmen-vs-nyc-attitude-20260410@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261024
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Arena Tecate\, Tijuana\, Baja California\, Mexico\nStart: time TBC\nMain Event: Jose Guillermo Alvarado Rivera vs. Leobardo Quintana Sanchez (Super Featherweight\, WBA FEDELATIN Mexico Super Featherweight)\nSource: FightNews.com
+SUMMARY:Jose Guillermo Alvarado Rivera vs Leobardo Quintana Sanchez
+UID:20261024-jose-guillermo-alvarado-rivera-leobardo-quintana-sanchez@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 05\, 2026\nLocation: Coliseo Ruben Rodriguez\nStart: 07:00 PM CT\nSource: BoxingScene.com
@@ -67,6 +92,13 @@ SUMMARY:Nashville Smash vs. Miami Assassins
 UID:20260531-nashville-smash-vs-miami-assassins-20260531@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Thursday\, November 05\, 2026\nLocation: Trui Teatre\, Palma de Mallorca\, Balearic Islands\, Spain\nStart: 01:00 PM CT\nMain Event: Paul Wall vs. Tomi Silvennoinen (Super Welterweight\, IBF European Super Welterweight)\nUndercard:\n  * Hamsat Shadalov vs. Pedro Manuel Gomes (Super Featherweight\, Vacant IBF Inter-Continental Super Featherweight)\nSource: FightNews.com
+DTEND:20261106T000000Z
+DTSTART:20261105T190000Z
+SUMMARY:Mallorca Fight Night II: Paul Wall vs Tomi Silvennoinen
+UID:20261105-paul-wall-tomi-silvennoinen@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, May 17\, 2026\nLocation: Harrah's Philadelphia Casino\, 777 Harrah's Blvd\, Chester\, PA 19013\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260518T050000Z
 DTSTART:20260518T000000Z
@@ -93,6 +125,31 @@ DTEND:20260628T050000Z
 DTSTART:20260628T000000Z
 SUMMARY:LA Elite vs. Houston Hitmen
 UID:20260627-la-elite-vs-houston-hitmen-20260627@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261024
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Namyangju City\, Gyeonggi\, South Korea\nStart: time TBC\nMain Event: Siro Choi vs. Keisham Luckysun Singh (Lightweight\, WBA Asia Lightweight)\nSource: FightNews.com
+SUMMARY:Siro Choi vs Keisham Luckysun Singh
+UID:20261024-siro-choi-keisham-luckysun-singh@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261107
+DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Kiva Auditorium\, Albuquerque\, New Mexico\, United States\nNetwork: DAZN\nStart: time TBC\nMain Event: Abraham Perez vs. Yankiel Rivera (Flyweight\, 12 rounds\, WBA Interim Flyweight)\nSource: FightNews.com
+SUMMARY:Abraham Perez vs Yankiel Rivera
+UID:20261107-abraham-perez-yankiel-rivera@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261025
+DESCRIPTION:Date: Sunday\, October 25\, 2026\nLocation: Harrow Leisure Centre\, Harrow\, Greater London\, United Kingdom\nStart: time TBC\nMain Event: Shauna Browne vs. Jade Burden (Women'S Lightweight\, WBA Gold Lightweight\, IBF International Lightweight)\nSource: FightNews.com
+SUMMARY:Shauna Browne vs Jade Burden
+UID:20261025-shauna-browne-jade-burden@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Wednesday\, October 21\, 2026\nLocation: Cabaret du Casino de Montréal\, Montreal\, Quebec\, Canada\nStart: 06:00 PM CT\nMain Event: Mazlum Akdeniz vs. TBA (Welterweight\, 10 rounds)\nUndercard:\n  * Alexis Barriere vs. Stan Surmacz (Heavyweight\, 12 rounds\, IBF North American Heavyweight\, WBO NABO Heavyweight)\n  * Derek Pomerleau vs. John Michael Bianco (Super Middleweight\, 10 rounds\, Canadian Super Middleweight)\n  * Marie Pier Houle vs. Maria Del Sol Moreno (Women'S Welterweight\, 10 rounds)\n  * Kirill Bazhenov vs. TBA (Junior Lightweight\, 6 rounds)\n  * Cedrick Belony Duliepre vs. TBA (Super Middleweight\, 4 rounds)\n  * Alessia Mansueto vs. TBA (Women'S Junior Lightweight\, 4 rounds)\nSource: FightNews.com
+DTEND:20261022T040000Z
+DTSTART:20261021T230000Z
+SUMMARY:Fight Fest / PAYMENT SPAYCE: Akdeniz + Barriere vs Surmacz
+UID:20261021-mazlum-akdeniz-tba@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 19\, 2026\nLocation: We-Ko-Pa Casino Resort\, 10438 Wekopa Way\, Fort McDowell\, AZ 85264\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -151,14 +208,14 @@ SUMMARY:Phoenix Fury vs. Atlanta Attack
 UID:20260620-phoenix-fury-vs-atlanta-attack-20260620@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: Tirana\, Albania\nStart: 09:00 PM CT\nMain Event: Juergen Uldedaj vs. Blake Caparello (12-round bout\, cruiserweights)\nSource: BoxingNews24.com
+DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: Tirana\, Albania\nStart: time TBC\nMain Event: Juergen Uldedaj vs. Blake Caparello (12-round bout\, cruiserweights)\nSource: BoxingNews24.com
 DTEND:20261024T070000Z
 DTSTART:20261024T020000Z
 SUMMARY:Juergen Uldedaj vs. Blake Caparello
 UID:20261023-juergen-uldedaj-blake-caparello@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Utilita Arena Sheffield\nNetwork: DAZN\nStart: 01:00 PM CT\nMain Event: Dalton Smith vs. Alberto Puello (12-round bout\, WBC junior welterweight championship held by Smith)\nUndercard:\n  * Giorgio Visioli vs. Maxi Hughes (10-round bout\, lightweights)\n  * Shannon Ryan vs. Emma Dolan (10-round bout\, female junior bantamweights)\n  * Edward Hardy vs. Ibrahim Nadim (10-round bout\, junior lightweights)\n  * Aqib Fiaz vs. Jordan Flynn (10-round bout\, junior lightweights)\n  * Joe Hayden vs. Will Harrison (8-round bout\, welterweights)\n  * Leo Atang vs. TBA (6-round bout\, heavyweights)\n  * Connor Mitchell vs. TBA (6-round bout\, junior lightweights)\n  * Chris Mulunda vs. Harley Collison (4 or 6-round bout\, middleweights)\nSource: BoxingNews24.com
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Utilita Arena Sheffield\, Sheffield\, England\, United Kingdom\nNetwork: DAZN\nStart: 01:00 PM CT\nMain Event: Dalton Smith vs. Alberto Puello (12-round bout\, WBC junior welterweight championship held by Smith)\nUndercard:\n  * Giorgio Visioli vs. Maxi Hughes (10-round bout\, lightweights)\n  * Shannon Ryan vs. Emma Dolan (10-round bout\, female junior bantamweights)\n  * Edward Hardy vs. Ibrahim Nadim (10-round bout\, junior lightweights)\n  * Aqib Fiaz vs. Jordan Flynn (10-round bout\, junior lightweights)\n  * Joe Hayden vs. Will Harrison (8-round bout\, welterweights)\n  * Leo Atang vs. TBA (6-round bout\, heavyweights)\n  * Connor Mitchell vs. TBA (6-round bout\, junior lightweights)\n  * Chris Mulunda vs. Harley Collison (4 or 6-round bout\, middleweights)\nSource: BoxingNews24.com
 DTEND:20261024T230000Z
 DTSTART:20261024T180000Z
 SUMMARY:Dalton Smith vs. Alberto Puello
@@ -170,6 +227,13 @@ DTEND:20260418T050000Z
 DTSTART:20260418T000000Z
 SUMMARY:Nashville Smash vs. Phoenix Fury
 UID:20260417-nashville-smash-vs-phoenix-fury-20260417@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 30\, 2026\nLocation: Hard Rock Hotel & Casino Atlantic City\, Atlantic City\, New Jersey\, United States\nStart: 06:00 PM CT\nMain Event: Chris Thomas vs. Russell Harris (Cruiserweight\, Vacant USBA Regional Cruiserweight)\nSource: FightNews.com
+DTEND:20261031T040000Z
+DTSTART:20261030T230000Z
+SUMMARY:Chris Thomas vs Russell Harris
+UID:20261030-chris-thomas-russell-harris@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, May 02\, 2026\nLocation: Sheraton Philadelphia Downtown - Liberty Ballroom\, 201 N 17th St\, Philadelphia\, PA 19103\, Philadelphia\, PA 19103\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -200,6 +264,12 @@ SUMMARY:Isaac Cruz DEF. Nestor Bravo
 UID:20260919-isaac-cruz-nestor-bravo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261024
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Yongin\, Gyeonggi\, South Korea\nStart: time TBC\nMain Event: Bo-Mi-Re Shin vs. Mandeep Kaur (Women'S Lightweight\, WBA Asia Female Lightweight)\nSource: FightNews.com
+SUMMARY:Bo-Mi-Re Shin vs Mandeep Kaur
+UID:20261024-bo-mi-re-shin-mandeep-kaur@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nNetwork: DAZN\nStart: 09:00 PM CT\nSource: DAZN.com
 DTEND:20261018T070000Z
 DTSTART:20261018T020000Z
@@ -214,7 +284,7 @@ SUMMARY:Sebastian Fundora vs. Ermal Hadribeaj
 UID:20261017-sebastian-fundora-ermal-hadribeaj@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Los Angeles\nStart: 06:00 PM CT\nMain Event: Lawrence King vs. Jesse Hart (10-round bout\, light heavyweights)\nUndercard:\n  * Ruben Cazales vs. TBA (8-round bout\, super middleweights)\n  * Bernardo Marquez vs. TBA (6-round bout\, heavyweights)\n  * Nicolas Robledo vs. TBA (6-round bout\, junior lightweights)\n  * Peter Martinez vs. TBA (4-round bout\, featherweights)\n  * Jonathan Vasquez vs. TBA (4-round bout\, junior lightweights)\n  * Alejandro Alvarado vs. TBA (4-round bout\, junior lightweights)\nSource: BoxingNews24.com
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Ace Mission Studios\, Los Angeles\, California\, United States\nStart: 06:00 PM CT\nMain Event: Lawrence King vs. Jesse Hart (10-round bout\, light heavyweights)\nUndercard:\n  * Ruben Cazales vs. TBA (8-round bout\, super middleweights)\n  * Bernardo Marquez vs. TBA (6-round bout\, heavyweights)\n  * Nicolas Robledo vs. TBA (6-round bout\, junior lightweights)\n  * Peter Martinez vs. TBA (4-round bout\, featherweights)\n  * Jonathan Vasquez vs. TBA (4-round bout\, junior lightweights)\n  * Alejandro Alvarado vs. TBA (4-round bout\, junior lightweights)\nSource: BoxingNews24.com
 DTEND:20261025T040000Z
 DTSTART:20261024T230000Z
 SUMMARY:Lawrence King vs. Jesse Hart
@@ -284,14 +354,20 @@ SUMMARY:Las Vegas Hustle vs. Philadelphia Smoke
 UID:20260411-las-vegas-hustle-vs-philadelphia-smoke-20260411@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Thursday\, October 15\, 2026\nLocation: Val-d’Osie\, France\nStart: 09:00 PM CT\nMain Event: Milan Prat vs. Brandon Thysse (12-round bout\, junior middleweights)\nSource: BoxingNews24.com
+DTSTART;VALUE=DATE:20261101
+DESCRIPTION:Date: Sunday\, November 01\, 2026\nStart: time TBC\nMain Event: Vergil Ortiz Jr. vs. TBA (Middleweight\, WBC interim junior-middleweight)\nSource: FightNews.com
+SUMMARY:Vergil Ortiz Jr. vs TBA
+UID:20261101-vergil-ortiz-jr-tba@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Thursday\, October 15\, 2026\nLocation: Val-d’Osie\, France\nStart: time TBC\nMain Event: Milan Prat vs. Brandon Thysse (12-round bout\, junior middleweights)\nSource: BoxingNews24.com
 DTEND:20261016T070000Z
 DTSTART:20261016T020000Z
 SUMMARY:Milan Prat vs. Brandon Thysse
 UID:20261015-milan-prat-brandon-thysse@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: ANB Arena\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: ANB Arena\, Riyadh\, Riyadh Province\, Saudi Arabia\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
 DTEND:20261031T090000Z
 DTSTART:20261031T040000Z
 SUMMARY:Alvarez vs. Mbilli
@@ -310,6 +386,12 @@ DTEND:20260607T050000Z
 DTSTART:20260607T000000Z
 SUMMARY:Dallas Enforcers vs. LA Elite
 UID:20260606-dallas-enforcers-vs-la-elite-20260606@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261024
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Yongin\, Gyeonggi\, South Korea\nStart: time TBC\nMain Event: Isroilzhon Sultonov vs. Hu Xiong (Super Lightweight\, WBA Asia East Super Lightweight)\nSource: FightNews.com
+SUMMARY:Isroilzhon Sultonov vs Hu Xiong
+UID:20261024-isroilzhon-sultonov-hu-xiong@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 28\, 2026\nLocation: Thunder Studios\, 20434 S Santa Fe Ave\, Long Beach\, CA 90810\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -338,6 +420,13 @@ DTEND:20260425T050000Z
 DTSTART:20260425T000000Z
 SUMMARY:Boston Butchers vs. NYC Attitude
 UID:20260424-boston-butchers-vs-nyc-attitude-20260424@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: BiYu Arena\, Houston\, Texas\, United States\nStart: 08:00 PM CT\nSource: FightNews.com
+DTEND:20261024T060000Z
+DTSTART:20261024T010000Z
+SUMMARY:BiYu Promotions: Ascension III
+UID:20261023-biyu-promotions-ascension-iii@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 12\, 2026\nNetwork: DAZN\nStart: 11:00 PM CT\nSource: BoxingScene.com
@@ -403,6 +492,18 @@ SUMMARY:San Antonio Snipers vs. LA Elite
 UID:20260412-san-antonio-snipers-vs-la-elite-20260412@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261025
+DESCRIPTION:Date: Sunday\, October 25\, 2026\nLocation: São Paulo\, São Paulo\, Brazil\nStart: time TBC\nMain Event: Lucas Pontes Da Silva vs. Abraham Tebes (Cruiserweight\, WBA Fedelatin USA Cruiserweight)\nSource: FightNews.com
+SUMMARY:Lucas Pontes Da Silva vs Abraham Tebes
+UID:20261025-lucas-pontes-da-silva-abraham-tebes@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261024
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Istanbul\, Istanbul\, Turkey\nStart: time TBC\nMain Event: Killian Fenu vs. Mohd Azahar (Super Featherweight\, WBA Asia East Super Featherweight)\nSource: FightNews.com
+SUMMARY:Killian Fenu vs Mohd Azahar
+UID:20261024-killian-fenu-mohd-azahar@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, April 25\, 2026\nLocation: Hyatt Regency San Antonio Riverwalk\, 123 Losoya St\, San Antonio\, TX 78205\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260426T050000Z
 DTSTART:20260426T000000Z
@@ -452,7 +553,7 @@ SUMMARY:Boston Butchers vs. Miami Assassins
 UID:20260509-boston-butchers-vs-miami-assassins-20260509@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nStart: 07:00 PM CT\nResults:\n  Henry Lebron DEF. Derlyn Hernandez-Gerarldo - KO In Round 8\n  Henry Lebron DEF. Derlyn Hernandez-Gerarldo - KO In Round 8\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nStart: 07:00 PM CT\nResults:\n  Henry Lebron DEF. Derlyn Hernandez-Gerarldo - KO In Round 8\nSource: BoxingScene.com
 DTEND:20260927T050000Z
 DTSTART:20260927T000000Z
 SUMMARY:Henry Lebron DEF. Derlyn Hernandez-Gerarldo
@@ -550,7 +651,13 @@ SUMMARY:Philadelphia Smoke vs. Boston Butchers
 UID:20260530-philadelphia-smoke-vs-boston-butchers-20260530@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
+DTSTART;VALUE=DATE:20261107
+DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Copper Box Arena\, London\, England\, United Kingdom\nNetwork: Paramount+\, Sky Sports (GB)\nStart: time TBC\nMain Event: Chris Billam-Smith vs. Cheavon Clarke (Cruiserweight\, 10 rounds)\nUndercard:\n  * Zach Parker vs. Umar Dzambekov (Light Heavyweight\, 10 rounds)\n  * Lucas Roehrig vs. Connal McDonald (Cruiserweight\, 8 rounds)\n  * Da'Mazion Vanhouter vs. Ivan Balaz (Heavyweight\, 8 rounds)\n  * Sam Hickey vs. Troy Coleman (Middleweight\, 8 rounds)\n  * Denzel Bentley vs. Shane Mosley Jr. (Middleweight)\nSource: FightNews.com
+SUMMARY:Chris Billam-Smith vs Cheavon Clarke
+UID:20261107-chris-billam-smith-cheavon-clarke@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260926T211500Z
 DTSTART:20260926T161500Z
 SUMMARY:Johnny Fisher DEF. Michael Pirotton
