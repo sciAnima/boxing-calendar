@@ -19,6 +19,7 @@ BS_RESULTS_URL = "https://www.boxingscene.com/results"
 TBL_URL        = "https://www.teamboxingleague.com/pages/events"
 PROBOX_URL     = "https://proboxtv.com/tickets/"
 DAZN_URL       = "https://www.dazn.com/en-US/schedule"
+FIGHTNEWS_URL  = "https://schedule.fightnews.com/fight-cards.ics"
 
 CT_ZONE = ZoneInfo("America/Chicago")
 ET_ZONE = ZoneInfo("America/New_York")
@@ -794,14 +795,134 @@ def carry_forward_dazn(fresh: dict[str, dict], path: str = "boxing_schedule.ics"
     return fresh
 
 
+# == Source 6: FightNews (iCalendar feed) ======================================
+
+def ics_unescape(value: str) -> str:
+    return re.sub(r"\\(.)", lambda m: "\n" if m.group(1) in "nN" else m.group(1), value)
+
+
+def fetch_fightnews(url: str) -> str | None:
+    """Plain, honestly-identified request: it is a calendar feed meant to be fetched.
+    The host sits behind Cloudflare, which may challenge datacenter IPs - then we skip it."""
+    try:
+        resp = requests.get(
+            url,
+            headers={
+                "User-Agent": "boxing-calendar/1.0 (+https://github.com/sciAnima/boxing-calendar)",
+                "Accept": "text/calendar, */*;q=0.5",
+            },
+            timeout=30,
+        )
+        print(f"  HTTP {resp.status_code} - {url}")
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        print(f"  WARNING: Could not fetch {url}: {e}")
+        return None
+    if "BEGIN:VCALENDAR" not in resp.text:
+        print(f"  WARNING: {url} did not return a calendar (bot check?)")
+        return None
+    return resp.text
+
+
+def parse_fightnews(ics_text: str) -> dict[str, dict]:
+    events = {}
+    text = re.sub(r"\r?\n[ \t]", "", ics_text)  # unfold wrapped lines
+    for block in re.findall(r"BEGIN:VEVENT(.*?)END:VEVENT", text, re.S):
+        fields: dict[str, str] = {}
+        for line in block.strip().splitlines():
+            key, _, value = line.partition(":")
+            fields[key.split(";")[0].upper()] = value
+            if key.upper().startswith("DTSTART") and "VALUE=DATE" in key.upper():
+                fields["ALLDAY"] = "1"
+
+        # Dates come from DTSTART only: the UID's embedded date is sometimes stale
+        raw_start = fields.get("DTSTART", "")
+        all_day = bool(fields.get("ALLDAY")) and len(raw_start) == 8
+        try:
+            if all_day:
+                date_obj = datetime.strptime(raw_start, "%Y%m%d")
+                start_ct = datetime(date_obj.year, date_obj.month, date_obj.day, 21, 0, tzinfo=CT_ZONE)
+            else:
+                start_utc = datetime.strptime(raw_start, "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
+                start_ct = start_utc.astimezone(CT_ZONE)
+                date_obj = datetime(start_ct.year, start_ct.month, start_ct.day)
+        except ValueError:
+            continue
+
+        summary = ics_unescape(fields.get("SUMMARY", "")).strip()
+        if not summary:
+            continue
+
+        # DESCRIPTION is "BOUTS / PROMOTER / SANCTIONING / HOW TO WATCH" sections of "- " bullets
+        bouts: list[tuple[str, str]] = []
+        watch: list[tuple[str, str]] = []
+        section = None
+        for line in ics_unescape(fields.get("DESCRIPTION", "")).splitlines():
+            line = line.strip()
+            if line in ("BOUTS", "PROMOTER", "SANCTIONING", "HOW TO WATCH"):
+                section = line
+            elif line.startswith("YOU CAN'T LOSE"):
+                section = None
+            elif line.startswith("\u2022") and section == "BOUTS":
+                fight, _, info = line.lstrip("\u2022 ").partition(" \u2014 ")
+                bouts.append((fight.strip(), info.replace(" \u00b7 ", ", ").strip()))
+            elif line.startswith("\u2022") and section == "HOW TO WATCH":
+                parts = [p.strip() for p in line.lstrip("\u2022 ").split(" \u2014 ")]
+                if len(parts) >= 2:
+                    watch.append((parts[0], parts[1]))
+
+        # US/Global broadcasters first and plain; other regions are labelled
+        services: list[str] = []
+        for region, service in sorted(watch, key=lambda w: w[0] not in ("US", "Global")):
+            label = service if region in ("US", "Global") else f"{service} ({region})"
+            if label not in services:
+                services.append(label)
+
+        main = bouts[0][0] if bouts else summary
+        slug = make_slug(re.sub(r"\s+vs\.?\s+", " ", main, flags=re.I))
+
+        events[slug] = {
+            "name":        summary,
+            "match_name":  main,
+            "date_obj":    date_obj,
+            "location":    ics_unescape(fields.get("LOCATION", "")).strip(),
+            "network":     ", ".join(services),
+            "start_ct":    start_ct,
+            "start_known": not all_day,
+            "all_day":     all_day,
+            "fights":      [f"{f} ({i})" if i else f for f, i in bouts],
+            "source":      "FightNews.com",
+            "bs_slug":     "",
+            "results":     [],
+        }
+
+    print(f"  FightNews: {len(events)} events parsed")
+    return events
+
+
 # == Merge + build calendar =====================================================
 
 SOURCE_RANK = {
-    "DAZN.com": 1,
-    "TeamBoxingLeague.com": 2, "ProBoxTV.com": 2,
-    "BoxingScene.com": 3,
-    "BoxingNews24.com": 4,
+    "FightNews.com": 1,
+    "DAZN.com": 2,
+    "TeamBoxingLeague.com": 3, "ProBoxTV.com": 3,
+    "BoxingScene.com": 4,
+    "BoxingNews24.com": 5,
 }
+NAME_SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "2", "3", "tba", "tbd"}
+
+
+def match_surnames(name: str) -> set[str] | None:
+    """Surnames of an "A vs. B" name, ignoring Jr./II/TBA/round-number suffixes."""
+    sides = re.split(r"\s+vs\.?\s+", name, flags=re.I)
+    if len(sides) != 2:
+        return None
+    surnames = set()
+    for side in sides:
+        tokens = [t for t in make_slug(side).split("-") if t and t not in NAME_SUFFIXES]
+        if tokens:
+            surnames.add(tokens[-1])
+    return surnames if len(surnames) == 2 else None
 
 
 def drop_duplicate_events(merged: dict[str, dict]) -> None:
@@ -810,15 +931,13 @@ def drop_duplicate_events(merged: dict[str, dict]) -> None:
     "A vs. B" event when a higher-priority source lists both surnames within a
     day, keeping any fuller venue/network the dropped one had."""
     entries = [
-        (slug, ev["date_obj"], SOURCE_RANK.get(ev["source"], 0), set(make_slug(ev["name"]).split("-")))
+        (slug, ev["date_obj"], SOURCE_RANK.get(ev["source"], 0),
+         set(make_slug(ev.get("match_name") or ev["name"]).split("-")))
         for slug, ev in merged.items()
     ]
     for slug, ev in list(merged.items()):
-        sides = re.split(r"\s+vs\.?\s+", ev["name"], flags=re.I)
-        if len(sides) != 2:
-            continue
-        surnames = {make_slug(side).split("-")[-1] for side in sides if make_slug(side)}
-        if len(surnames) != 2:
+        surnames = match_surnames(ev.get("match_name") or ev["name"])
+        if not surnames:
             continue
         rank = SOURCE_RANK.get(ev["source"], 0)
         for other_slug, date_obj, other_rank, tokens in entries:
@@ -839,6 +958,7 @@ def build_calendar(
     probox: dict,
     dazn: dict | None = None,
     past: dict | None = None,
+    fightnews: dict | None = None,
 ) -> list[Event]:
     merged: dict[str, dict] = {}
 
@@ -847,7 +967,11 @@ def build_calendar(
         for slug, ev in past.items():
             merged[slug] = ev
 
-    # Priority (lowest to highest): DAZN < TBL = ProBox < BS < BN24
+    # Priority (lowest to highest): FightNews < DAZN < TBL = ProBox < BS < BN24
+    for slug, ev in (fightnews or {}).items():
+        existing_results = merged.get(slug, {}).get("results", [])
+        merged[slug] = {**ev, "results": existing_results or ev.get("results", [])}
+
     # (DAZN has exact start times but no venue, so richer sources override it)
     for slug, ev in (dazn or {}).items():
         merged[slug] = ev
@@ -874,6 +998,8 @@ def build_calendar(
         }
         if prev and not ev.get("start_known", True):
             merged[slug]["start_ct"] = prev["start_ct"]
+            merged[slug]["start_known"] = prev.get("start_known", True)
+            merged[slug]["all_day"] = prev.get("all_day", False)
         if prev.get("network") and not ev["network"]:
             merged[slug]["network"] = prev["network"]
         if prev.get("location") and (not ev["location"] or ev["location"] in prev["location"]):
@@ -898,10 +1024,18 @@ def build_calendar(
 
         fight_results: list[dict] = ev.get("results") or []
 
+        start_known = ev.get("start_known", True)
+        start_text  = f"Start: {start_ct.strftime('%I:%M %p CT')}" if start_known else "Start: time TBC"
+
         cal_ev = Event()
-        cal_ev.begin = start_utc
-        cal_ev.end   = end_utc
-        cal_ev.uid   = uid
+        cal_ev.uid = uid
+        if ev.get("all_day") and not fight_results:
+            # Date-only listing (e.g. FightNews): show it all day rather than invent a start time
+            cal_ev.begin = datetime(ev["date_obj"].year, ev["date_obj"].month, ev["date_obj"].day, tzinfo=timezone.utc)
+            cal_ev.make_all_day()
+        else:
+            cal_ev.begin = start_utc
+            cal_ev.end   = end_utc
 
         if fight_results:
             main_r = fight_results[0]
@@ -914,7 +1048,7 @@ def build_calendar(
                 f"Date: {ev['date_obj'].strftime('%A, %B %d, %Y')}",
                 f"Location: {ev['location']}" if ev["location"] else "",
                 f"Network: {ev['network']}" if ev["network"] else "",
-                f"Start: {start_ct.strftime('%I:%M %p CT')}",
+                start_text,
                 "",
                 "Results:",
                 results_lines,
@@ -929,7 +1063,7 @@ def build_calendar(
                 f"Date: {ev['date_obj'].strftime('%A, %B %d, %Y')}",
                 f"Location: {ev['location']}" if ev["location"] else "",
                 f"Network: {ev['network']}" if ev["network"] else "",
-                f"Start: {start_ct.strftime('%I:%M %p CT')}",
+                start_text,
                 "",
                 f"Main Event: {ev['fights'][0]}" if ev["fights"] else "",
                 "",
@@ -938,7 +1072,8 @@ def build_calendar(
                 "",
                 f"Source: {ev['source']}",
             ]))
-            print(f"  + {uid_date} | {ev['name'][:45]} | {start_ct.strftime('%I:%M %p CT')} | {ev['network'] or 'TBC'} [{ev['source'][:3]}]")
+            when = start_ct.strftime('%I:%M %p CT') if start_known else ("all day" if ev.get("all_day") else "time TBC")
+            print(f"  + {uid_date} | {ev['name'][:45]} | {when} | {ev['network'] or 'TBC'} [{ev['source'][:3]}]")
 
         events.append(cal_ev)
 
@@ -966,6 +1101,9 @@ def main():
     print("Fetching DAZN schedule...")
     dazn_raw = fetch_dazn(DAZN_URL)
 
+    print("Fetching FightNews calendar feed...")
+    fightnews_ics = fetch_fightnews(FIGHTNEWS_URL)
+
     print("Fetching BoxingScene past event results...")
     past = fetch_bs_past_events(BS_RESULTS_URL)
 
@@ -976,8 +1114,9 @@ def main():
     tbl    = parse_tbl(tbl_html)                      if tbl_html     else {}
     probox = parse_probox(probox_html)                if probox_html  else {}
     dazn   = carry_forward_dazn(parse_dazn(dazn_raw) if dazn_raw else {})
+    fightnews = parse_fightnews(fightnews_ics)        if fightnews_ics else {}
 
-    if not bn24 and not bs and not tbl and not probox and not dazn and not past:
+    if not bn24 and not bs and not tbl and not probox and not dazn and not fightnews and not past:
         print("ERROR: All sources failed - no events to write")
         sys.exit(1)
 
@@ -986,16 +1125,17 @@ def main():
     if not tbl:    print("WARNING: Team Boxing League failed - skipping")
     if not probox: print("WARNING: ProBox TV failed - skipping")
     if not dazn:   print("WARNING: DAZN failed - skipping")
+    if not fightnews: print("WARNING: FightNews failed - skipping")
 
     print("Merging and building calendar...")
-    events = build_calendar(bn24, bs, tbl, probox, dazn, past)
+    events = build_calendar(bn24, bs, tbl, probox, dazn, past, fightnews)
 
     if not events:
         print("WARNING: No events parsed from any source")
 
     cal = Calendar()
     cal.extra.append(ContentLine(name="CALSCALE", value="GREGORIAN"))
-    cal.extra.append(ContentLine(name="COMMENT", value="Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com + ProBoxTV.com + DAZN.com"))
+    cal.extra.append(ContentLine(name="COMMENT", value="Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com + ProBoxTV.com + DAZN.com + FightNews.com"))
     for ev in events:
         cal.events.add(ev)
 
