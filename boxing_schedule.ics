@@ -168,18 +168,18 @@ SUMMARY:Shauna Browne vs. Jade Burden
 UID:20261025-shauna-browne-jade-burden@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Wednesday\, October 21\, 2026\nLocation: Cabaret du Casino de Montréal\, Montreal\, Quebec\, Canada\nStart: 06:00 PM CT\nMain Event: Mazlum Akdeniz vs. TBA (Welterweight\, 10 rounds)\nUndercard:\n  * Alexis Barriere vs. Stan Surmacz (Heavyweight\, 12 rounds\, IBF North American Heavyweight\, WBO NABO Heavyweight)\n  * Derek Pomerleau vs. John Michael Bianco (Super Middleweight\, 10 rounds\, Canadian Super Middleweight)\n  * Marie Pier Houle vs. Maria Del Sol Moreno (Women'S Welterweight\, 10 rounds)\n  * Kirill Bazhenov vs. TBA (Junior Lightweight\, 6 rounds)\n  * Cedrick Belony Duliepre vs. TBA (Super Middleweight\, 4 rounds)\n  * Alessia Mansueto vs. TBA (Women'S Junior Lightweight\, 4 rounds)\nSource: FightNews.com
-DTEND:20261022T040000Z
-DTSTART:20261021T230000Z
-SUMMARY:Fight Fest / PAYMENT SPAYCE: Akdeniz + Barriere vs Surmacz
-UID:20261021-mazlum-akdeniz-tba@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 19\, 2026\nLocation: We-Ko-Pa Casino Resort\, 10438 Wekopa Way\, Fort McDowell\, AZ 85264\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260720T050000Z
 DTSTART:20260720T000000Z
 SUMMARY:Dallas Enforcers vs. Boston Butchers
 UID:20260719-dallas-enforcers-vs-boston-butchers-20260719@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Wednesday\, October 21\, 2026\nLocation: Cabaret du Casino de Montréal\, Montreal\, Quebec\, Canada\nStart: 06:00 PM CT\nMain Event: Alexis Barriere vs. Stan Surmacz (Heavyweight\, 12 rounds\, IBF North American Heavyweight\, WBO NABO Heavyweight)\nUndercard:\n  * Derek Pomerleau vs. John Michael Bianco (Super Middleweight\, 10 rounds\, Canadian Super Middleweight)\n  * Omar Zaatiti Alieh vs. Ivan Blazevic\n  * Loick Lahaie vs. Jamshid Nazari\n  * Junior Petanqui vs. Hakeem Dawodu\n  * Brandon Poulard vs. Yaya Kone\n  * Alessia Mansueto vs. Yulia Puchenia (Women'S Junior Lightweight\, 4 rounds)\n  * Cedrick Belony Duliepre vs. Savon Suroosh (Super Middleweight\, 4 rounds)\n  * Jerome Feujio vs. Danilo Miljevic (Heavyweight)\n  * Mazlum Akdeniz vs. TBA (Welterweight\, 10 rounds)\n  * Marie Pier Houle vs. Maria Del Sol Moreno (Women'S Welterweight\, 10 rounds)\n  * Kirill Bazhenov vs. TBA (Junior Lightweight\, 6 rounds)\nSource: FightNews.com
+DTEND:20261022T040000Z
+DTSTART:20261021T230000Z
+SUMMARY:Fight Fest / PAYMENT SPAYCE: Barrière vs Surmacz
+UID:20261021-alexis-barriere-stan-surmacz@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 13\, 2026\nLocation: Roadrunner Boston\, 89 Guest St\, Boston\, MA 02135\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -363,6 +363,13 @@ SUMMARY:Lauren Price vs. Michaela Kotaskova
 UID:20261120-lauren-price-michaela-kotaskova@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: BiYu Arena\, Houston\, Texas\, United States\nNetwork: Combat Vision TV\nStart: 08:00 PM CT\nMain Event: Jahyden Britton vs. Louis Hernandez (Super Middleweight\, 8 rounds\, WBA-NABA USA Super Middleweight)\nSource: FightNews.com
+DTEND:20261024T060000Z
+DTSTART:20261024T010000Z
+SUMMARY:Jahyden Britton vs Louis Hernandez
+UID:20261023-jahyden-britton-louis-hernandez@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nNetwork: DAZN\nStart: 09:00 PM CT\nSource: DAZN.com
 DTEND:20261018T070000Z
 DTSTART:20261018T020000Z
@@ -540,13 +547,6 @@ DTEND:20260425T050000Z
 DTSTART:20260425T000000Z
 SUMMARY:Boston Butchers vs. NYC Attitude
 UID:20260424-boston-butchers-vs-nyc-attitude-20260424@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: BiYu Arena\, Houston\, Texas\, United States\nNetwork: Combat Vision TV\nStart: 08:00 PM CT\nSource: FightNews.com
-DTEND:20261024T060000Z
-DTSTART:20261024T010000Z
-SUMMARY:BiYu Promotions: Ascension III
-UID:20261023-biyu-promotions-ascension-iii@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 12\, 2026\nLocation: Ekatirinburg\, Russia\nNetwork: DAZN\nStart: 11:00 PM CT\nMain Event: Dmitry Bivol vs. Callum Smith (12-round bout\, lineal/WBO/IBF/WBA light heavyweight championship held by Bivol)\nUndercard:\n  * Bakhram Murtazaliev vs. TBA (10-round bout\, junior middleweights)\nSource: BoxingNews24.com
@@ -748,6 +748,12 @@ DTEND:20260620T050000Z
 DTSTART:20260620T000000Z
 SUMMARY:Las Vegas Hustle vs. LA Elite
 UID:20260619-las-vegas-hustle-vs-la-elite-20260619@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261114
+DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: OVO Arena Wembley\, London\, England\, United Kingdom\nNetwork: DAZN (GB)\nStart: time TBC\nMain Event: Zelfa Barrett vs. Gavin Gwynne (Lightweight\, WBA Intercontinental Lightweight)\nUndercard:\n  * Yaser Al Ghena vs. Ben Marksby (Super Lightweight\, Commonwealth Super Lightweight\, WBO European Super Lightweight)\n  * Tom Welland vs. Jack Dillingham (Featherweight\, English Featherweight title eliminator)\nSource: FightNews.com
+SUMMARY:Zelfa Barrett vs Gavin Gwynne
+UID:20261114-zelfa-barrett-gavin-gwynne@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 10\, 2026\nLocation: Wintrust Arena\, Chicago\, Illinois\nStart: 07:00 PM CT\nResults:\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\nSource: BoxingScene.com
