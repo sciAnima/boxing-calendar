@@ -175,7 +175,7 @@ SUMMARY:Dallas Enforcers vs. Boston Butchers
 UID:20260719-dallas-enforcers-vs-boston-butchers-20260719@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Wednesday\, October 21\, 2026\nLocation: Cabaret du Casino de Montréal\, Montreal\, Quebec\, Canada\nStart: 06:00 PM CT\nMain Event: Alexis Barriere vs. Stan Surmacz (Heavyweight\, 12 rounds\, IBF North American Heavyweight\, WBO NABO Heavyweight)\nUndercard:\n  * Derek Pomerleau vs. John Michael Bianco (Super Middleweight\, 10 rounds\, Canadian Super Middleweight)\n  * Omar Zaatiti Alieh vs. Ivan Blazevic\n  * Loick Lahaie vs. Jamshid Nazari\n  * Junior Petanqui vs. Hakeem Dawodu\n  * Brandon Poulard vs. Yaya Kone\n  * Alessia Mansueto vs. Yulia Puchenia (Women'S Junior Lightweight\, 4 rounds)\n  * Cedrick Belony Duliepre vs. Savon Suroosh (Super Middleweight\, 4 rounds)\n  * Jerome Feujio vs. Danilo Miljevic (Heavyweight)\n  * Mazlum Akdeniz vs. TBA (Welterweight\, 10 rounds)\n  * Marie Pier Houle vs. Maria Del Sol Moreno (Women'S Welterweight\, 10 rounds)\n  * Kirill Bazhenov vs. TBA (Junior Lightweight\, 6 rounds)\nSource: FightNews.com
+DESCRIPTION:Date: Wednesday\, October 21\, 2026\nLocation: Cabaret du Casino de Montréal\, Montreal\, Quebec\, Canada\nStart: 06:00 PM CT\nMain Event: Alexis Barriere vs. Stan Surmacz (Heavyweight\, 12 rounds\, IBF North American Heavyweight\, WBO NABO Heavyweight)\nUndercard:\n  * Derek Pomerleau vs. John Michael Bianco (Super Middleweight\, 10 rounds\, Canadian Super Middleweight)\n  * Omar Zaatiti Alieh vs. Ivan Blazevic\n  * Loick Lahaie vs. Jamshid Nazari (Super Welterweight)\n  * Junior Petanqui vs. Hakeem Dawodu\n  * Brandon Poulard vs. Yaya Kone\n  * Alessia Mansueto vs. Yulia Puchenia (Women'S Junior Lightweight\, 4 rounds)\n  * Cedrick Belony Duliepre vs. Savon Suroosh (Super Middleweight\, 4 rounds)\n  * Jerome Feujio vs. Danilo Miljevic (Heavyweight)\n  * Mazlum Akdeniz vs. TBA (Welterweight\, 10 rounds)\n  * Marie Pier Houle vs. Maria Del Sol Moreno (Women'S Welterweight\, 10 rounds)\n  * Kirill Bazhenov vs. TBA (Junior Lightweight\, 6 rounds)\nSource: FightNews.com
 DTEND:20261022T040000Z
 DTSTART:20261021T230000Z
 SUMMARY:Fight Fest / PAYMENT SPAYCE: Barrière vs Surmacz
@@ -368,13 +368,6 @@ DTEND:20261121T000000Z
 DTSTART:20261120T190000Z
 SUMMARY:Lauren Price vs. Michaela Kotaskova
 UID:20261120-lauren-price-michaela-kotaskova@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: BiYu Arena\, Houston\, Texas\, United States\nNetwork: Combat Vision TV\nStart: 08:00 PM CT\nMain Event: Jahyden Britton vs. Louis Hernandez (Super Middleweight\, 8 rounds\, WBA-NABA USA Super Middleweight)\nSource: FightNews.com
-DTEND:20261024T060000Z
-DTSTART:20261024T010000Z
-SUMMARY:Jahyden Britton vs Louis Hernandez
-UID:20261023-jahyden-britton-louis-hernandez@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nNetwork: DAZN\nStart: 09:00 PM CT\nSource: DAZN.com
@@ -708,7 +701,7 @@ SUMMARY:Boston Butchers vs. Miami Assassins
 UID:20260509-boston-butchers-vs-miami-assassins-20260509@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nStart: 07:00 PM CT\nResults:\n  Henry Lebron DEF. Derlyn Hernandez-Gerarldo - KO In Round 8\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nStart: 07:00 PM CT\nResults:\n  Henry Lebron DEF. Derlyn Hernandez-Gerarldo - KO In Round 8\n  Henry Lebron DEF. Derlyn Hernandez-Gerarldo - KO In Round 8\nSource: BoxingScene.com
 DTEND:20260927T050000Z
 DTSTART:20260927T000000Z
 SUMMARY:Henry Lebron DEF. Derlyn Hernandez-Gerarldo
@@ -819,6 +812,13 @@ SUMMARY:Philadelphia Smoke vs. Boston Butchers
 UID:20260530-philadelphia-smoke-vs-boston-butchers-20260530@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: BiYu Arena\, Houston\, Texas\, United States\nNetwork: Combat Vision TV\nStart: 06:00 PM CT\nMain Event: Jahyden Britton vs. Gonzalo Andreasen (Super Middleweight\, 6 rounds)\nUndercard:\n  * Ty Cassell vs. Jorge Elias Garcia Manrriquez (Super Lightweight\, 6 rounds)\n  * Zachary Spiller vs. Zederic Stephenson (6 rounds)\n  * Martel Washpun vs. Rasuiod Hollie (4 rounds)\n  * Jared Phillips vs. Evans Norris (4 rounds)\n  * Frank Unachukwu vs. Roman Xavier Cordova (4 rounds)\n  * Clayton Ward vs. Jacobie Lichlyter (4 rounds)\nSource: FightNews.com
+DTEND:20261024T040000Z
+DTSTART:20261023T230000Z
+SUMMARY:Jahyden Britton vs Louis Hernandez
+UID:20261023-jahyden-britton-gonzalo-andreasen@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, October 30\, 2026\nLocation: Managua\, Nicaragua\nStart: time TBC\nMain Event: Bryan Blandon vs. Ronal Batista (10-round bout\, bantamweights)\nUndercard:\n  * Alma Meraz vs. Eveling Ortega (10-round bout\, WBA women’s interim junior flyweight championship held by Meraz)\n  * Kevin Vivas vs. Edwin Cano (8-round bout\, junior flyweights)\n  * Ricardo Blandon vs. Juan Mendoza (8-round bout\, junior lightweights)\n  * Yanior Vega vs. Isaac Berrios (6-round bout\, junior featherweights)\n  * Miguel Estrada vs. Larry Olivas (6-round bout\, junior flyweights)\n  * Alexander Hernandez vs. Felipe Larez (6-round bout\, junior middleweights)\n  * Miladae Santana-Rivera vs. TBA (6 or 8-round bout\, junior flyweights)\nSource: BoxingNews24.com
 DTEND:20261031T070000Z
 DTSTART:20261031T020000Z
@@ -826,7 +826,7 @@ SUMMARY:Bryan Blandon vs. Ronal Batista
 UID:20261030-bryan-blandon-ronal-batista@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20260926T211500Z
 DTSTART:20260926T161500Z
 SUMMARY:Johnny Fisher DEF. Michael Pirotton
