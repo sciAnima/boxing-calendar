@@ -224,13 +224,6 @@ SUMMARY:NYC Attitude vs. Las Vegas Hustle
 UID:20260516-nyc-attitude-vs-las-vegas-hustle-20260516@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, October 18\, 2026\nLocation: Hollywood\, Fla.\nStart: 06:00 PM CT\nMain Event: Gustavo Trujillo vs. Donald Haynesworth (10-round bout\, heavyweights)\nSource: BoxingNews24.com
-DTEND:20261019T040000Z
-DTSTART:20261018T230000Z
-SUMMARY:Gustavo Trujillo vs. Donald Haynesworth
-UID:20261018-gustavo-trujillo-donald-haynesworth@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, November 29\, 2026\nLocation: Tokyo\nStart: time TBC\nMain Event: David Jimenez vs. Seigo Yuri Akui (12-round bout\, WBA junior bantamweight championship held by Jimenez)\nSource: BoxingNews24.com
 DTEND:20261130T080000Z
 DTSTART:20261130T030000Z
@@ -329,7 +322,7 @@ SUMMARY:Labinot Xhoxhaj vs. Eduardo Giustini
 UID:20261121-labinot-xhoxhaj-eduardo-giustini@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Pechanga Arena\, San Diego\, California\nStart: 07:00 PM CT\nResults:\n  Isaac Cruz DEF. Nestor Bravo - KO In Round 6\n  Isaac Cruz DEF. Nestor Bravo - KO In Round 6\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Pechanga Arena\, San Diego\, California\nStart: 07:00 PM CT\nResults:\n  Isaac Cruz DEF. Nestor Bravo - KO In Round 6\nSource: BoxingScene.com
 DTEND:20260920T050000Z
 DTSTART:20260920T000000Z
 SUMMARY:Isaac Cruz DEF. Nestor Bravo
@@ -344,7 +337,7 @@ UID:20261219-anthony-cacace-nick-ball@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261024
-DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Yongin\, Gyeonggi\, South Korea\nStart: time TBC\nMain Event: Bo-Mi-Re Shin vs. Mandeep Kaur (Women'S Lightweight\, WBA Asia Female Lightweight)\nSource: FightNews.com
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Yongin University Gymnasium\, Yongin\, Gyeonggi\, South Korea\nStart: time TBC\nMain Event: Bo-Mi-Re Shin vs. Mandeep Kaur (Women'S Lightweight\, WBA Asia Female Lightweight)\nUndercard:\n  * Isroilzhon Sultonov vs. Hu Xiong (Super Lightweight\, WBA Asia East Super Lightweight)\nSource: FightNews.com
 SUMMARY:Bo-Mi-Re Shin vs Mandeep Kaur
 UID:20261024-bo-mi-re-shin-mandeep-kaur@boxing-calendar
 END:VEVENT
@@ -375,13 +368,6 @@ DTEND:20261018T070000Z
 DTSTART:20261018T020000Z
 SUMMARY:Volkovs vs. McIntyre
 UID:20261017-volkovs-vs-mcintyre@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The Cosmopolitan of Las Vegas\nNetwork: DAZN\, TNT\, truTV\nStart: 06:00 PM CT\nMain Event: Sebastian Fundora vs. Ermal Hadribeaj (12-round bout\, WBC junior middleweight championship held by Fundora)\nUndercard:\n  * Brandon Figueroa vs. Tomoki Kameda (12-round bout\, WBA featherweight championship held by Figueroa)\n  * Armando Resendiz vs. Koen Mazoudier (10-round bout\, super middleweights)\n  * Marco Romero vs. Brauli Ferreira (8-round bout\, super middleweights)\n  * Jaime Osuna vs. Cristian Cangelosi (8-round bout\, middleweights)\n  * Angel Barrientes vs. TBA (8-round bout\, junior featherweights)\n  * David Garcia vs. Angel Carrillo (6-round bout\, featherweights)\nSource: BoxingNews24.com
-DTEND:20261018T040000Z
-DTSTART:20261017T230000Z
-SUMMARY:Sebastian Fundora vs. Ermal Hadribeaj
-UID:20261017-sebastian-fundora-ermal-hadribeaj@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Ace Mission Studios\, Los Angeles\, California\, United States\nStart: 06:00 PM CT\nMain Event: Lawrence King vs. Jesse Hart (10-round bout\, light heavyweights)\nUndercard:\n  * Ruben Cazales vs. TBA (8-round bout\, super middleweights)\n  * Bernardo Marquez vs. TBA (6-round bout\, heavyweights)\n  * Nicolas Robledo vs. TBA (6-round bout\, junior lightweights)\n  * Peter Martinez vs. TBA (4-round bout\, featherweights)\n  * Jonathan Vasquez vs. TBA (4-round bout\, junior lightweights)\n  * Alejandro Alvarado vs. TBA (4-round bout\, junior lightweights)\nSource: BoxingNews24.com
@@ -501,10 +487,11 @@ SUMMARY:Dallas Enforcers vs. LA Elite
 UID:20260606-dallas-enforcers-vs-la-elite-20260606@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261024
-DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Yongin\, Gyeonggi\, South Korea\nStart: time TBC\nMain Event: Isroilzhon Sultonov vs. Hu Xiong (Super Lightweight\, WBA Asia East Super Lightweight)\nSource: FightNews.com
-SUMMARY:Isroilzhon Sultonov vs Hu Xiong
-UID:20261024-isroilzhon-sultonov-hu-xiong@boxing-calendar
+DESCRIPTION:Date: Friday\, December 11\, 2026\nLocation: Cardiff\, Wales\nNetwork: Netflix\nStart: 01:00 PM CT\nMain Event: Anthony Joshua vs. Tyson Fury (12-round bout\, vacant WBA “super” heavyweight championship at stake)\nSource: BoxingNews24.com
+DTEND:20261212T000000Z
+DTSTART:20261211T190000Z
+SUMMARY:Anthony Joshua vs. Tyson Fury
+UID:20261211-anthony-joshua-tyson-fury@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 28\, 2026\nLocation: Thunder Studios\, 20434 S Santa Fe Ave\, Long Beach\, CA 90810\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -512,13 +499,6 @@ DTEND:20260629T050000Z
 DTSTART:20260629T000000Z
 SUMMARY:Las Vegas Hustle vs. Phoenix Fury
 UID:20260628-las-vegas-hustle-vs-phoenix-fury-20260628@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, December 11\, 2026\nLocation: Cardiff\, Wales\nNetwork: Netflix\nStart: 01:00 PM CT\nMain Event: Anthony Joshua vs. Tyson Fury (12-round bout\, vacant WBA “super” heavyweight championship at stake)\nSource: BoxingNews24.com
-DTEND:20261212T000000Z
-DTSTART:20261211T190000Z
-SUMMARY:Anthony Joshua vs. Tyson Fury
-UID:20261211-anthony-joshua-tyson-fury@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, November 06\, 2026\nLocation: Sydney\, Australia\nStart: time TBC\nMain Event: Paul Gallen vs. Nelson Asofa-Solomona (5-round bout\, heavyweights)\nUndercard:\n  * Callum Peters vs. Juan Diego Ortiz (10-round bout\, middleweights)\n  * Ahmad Reda vs. Jake Wyllie (10-round bout\, lightweights)\n  * Paulo Aokuso vs. Mobin Khahrazeh (10-round bout\, light heavyweights)\n  * Dharringarra Trewhella vs. Jyl Wright (6-round bout\, welterweights)\n  * Kya Sparks vs. Zidane Semedo Tavares (5-round bout\, junior middleweights)\n  * Jayden Fadel vs. Rajesh Kumar (5-round bout\, junior welterweights)\nSource: BoxingNews24.com
@@ -671,13 +651,6 @@ DTEND:20260613T050000Z
 DTSTART:20260613T000000Z
 SUMMARY:Nashville Smash vs. Atlanta Attack
 UID:20260612-nashville-smash-vs-atlanta-attack-20260612@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: London\nNetwork: DAZN (PPV)\nStart: 01:00 PM CT\nMain Event: Daniel Dubois vs. Fabio Wardley (rematch\, 12-round bout\, Dubois’ WBO heavyweight championship at stake)\nUndercard:\n  * Louie O’Doherty vs. Michael Gomez Jr. (12-round bout\, British and Commonwealth lightweight championship held by O’Doherty)\n  * Adam Olaniyan vs. Dan Garber (4-round bout\, heavyweights)\n  * Bakhodir Jalolov vs. Solomon Dacres (10-round bout\, heavyweights)\n  * Nelson Birchall vs. Levi Giles (10-round bout\, junior lightweights)\n  * Tony Curtis vs. Kerim Agius (8-round bout\, junior bantamweights)\n  * Zayn Ahmed vs. Kasey Bradnum (4-round bout\, junior lightweights)\n  * Leighton Birchall vs. Alejandro Chazaro (6-round bout\, featherweights)\n  * Manny Safari vs. Jake Pollard (4-round bout\, featherweights)\n  * Fawas Aborode vs. Rashid Omar (6-round bout\, lightweights)\n  * Aaron Noriega vs. Leonardo Baez (4-round bout\, junior lightweights)\n  * Issiah Hamilton-Allen vs. Jensen Irving (4-round bout\, middleweights)\nSource: BoxingNews24.com
-DTEND:20261017T230000Z
-DTSTART:20261017T180000Z
-SUMMARY:Daniel Dubois vs. Fabio Wardley
-UID:20261017-daniel-dubois-fabio-wardley@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, April 19\, 2026\nLocation: Georgia International Convention Center\, 2000 Convention Center Concourse\, College Park\, GA 30337\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
