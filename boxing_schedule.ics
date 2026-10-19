@@ -322,7 +322,7 @@ SUMMARY:Labinot Xhoxhaj vs. Eduardo Giustini
 UID:20261121-labinot-xhoxhaj-eduardo-giustini@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Pechanga Arena\, San Diego\, California\nStart: 07:00 PM CT\nResults:\n  Isaac Cruz DEF. Nestor Bravo - KO In Round 6\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Pechanga Arena\, San Diego\, California\nStart: 07:00 PM CT\nResults:\n  Isaac Cruz DEF. Nestor Bravo - KO In Round 6\n  Isaac Cruz DEF. Nestor Bravo - KO In Round 6\nSource: BoxingScene.com
 DTEND:20260920T050000Z
 DTSTART:20260920T000000Z
 SUMMARY:Isaac Cruz DEF. Nestor Bravo
@@ -598,7 +598,7 @@ SUMMARY:Lucas Pontes Da Silva vs Abraham Tebes
 UID:20261025-lucas-pontes-da-silva-abraham-tebes@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: London\nNetwork: DAZN\nStart: 01:00 PM CT\nMain Event: Viddal Riley vs. Seydi Coupe (12-round bout\, European cruiserweight championship held by Riley)\nUndercard:\n  * Zelfa Barrett vs. Gavin Gwynne (12-round bout\, WBA Intercontinental lightweights)\n  * Yaser Al Ghena vs. Ben Marksby (12-round bout\, Commonwealth WBO and European junior welterweight championship held by Al Ghena)\n  * Dan Toward vs. Jak Corrie (10-round bout\, junior middleweights)\n  * Tom Welland vs. Jack Dillingham (10-round bout\, featherweights)\n  * Frankie Stringer vs. Kurt Jackson (8-round bout\, lightweights)\n  * Cameron Vuong vs. TBA (8-round bout\, lightweights)\n  * JP O’Meara vs. TBA (6-round bout\, junior lightweights)\nSource: BoxingNews24.com
+DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: OVO Arena Wembley\, London\, England\, United Kingdom\nNetwork: DAZN\nStart: 01:00 PM CT\nMain Event: Viddal Riley vs. Seydi Coupe (12-round bout\, European cruiserweight championship held by Riley)\nUndercard:\n  * Zelfa Barrett vs. Gavin Gwynne (12-round bout\, WBA Intercontinental lightweights)\n  * Yaser Al Ghena vs. Ben Marksby (12-round bout\, Commonwealth WBO and European junior welterweight championship held by Al Ghena)\n  * Dan Toward vs. Jak Corrie (10-round bout\, junior middleweights)\n  * Tom Welland vs. Jack Dillingham (10-round bout\, featherweights)\n  * Frankie Stringer vs. Kurt Jackson (8-round bout\, lightweights)\n  * Cameron Vuong vs. TBA (8-round bout\, lightweights)\n  * JP O’Meara vs. TBA (6-round bout\, junior lightweights)\nSource: BoxingNews24.com
 DTEND:20261115T000000Z
 DTSTART:20261114T190000Z
 SUMMARY:Viddal Riley vs. Seydi Coupe
@@ -723,13 +723,14 @@ SUMMARY:Las Vegas Hustle vs. LA Elite
 UID:20260619-las-vegas-hustle-vs-la-elite-20260619@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261114
-DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: OVO Arena Wembley\, London\, England\, United Kingdom\nNetwork: DAZN (GB)\nStart: time TBC\nMain Event: Zelfa Barrett vs. Gavin Gwynne (Lightweight\, WBA Intercontinental Lightweight)\nUndercard:\n  * Yaser Al Ghena vs. Ben Marksby (Super Lightweight\, Commonwealth Super Lightweight\, WBO European Super Lightweight)\n  * Tom Welland vs. Jack Dillingham (Featherweight\, English Featherweight title eliminator)\nSource: FightNews.com
-SUMMARY:Zelfa Barrett vs Gavin Gwynne
-UID:20261114-zelfa-barrett-gavin-gwynne@boxing-calendar
+DESCRIPTION:Date: Friday\, October 30\, 2026\nLocation: Centro de Convenciones Olof Palme\, Managua\, Managua\, Nicaragua\nStart: 08:00 PM CT\nMain Event: Alma Meraz vs. Eveling Ortega (Women'S Light Flyweight\, 10 rounds\, WBA Interim Women's Light Flyweight)\nUndercard:\n  * Bryan Blandón vs. Ronal Batista (Bantamweight\, 10 rounds)\n  * Kevin Vivas vs. Edwin Cano (Light Flyweight)\n  * Ricardo Blandón vs. Juan Mendoza (Featherweight\, 8 rounds)\n  * Yanior Vega vs. Isaac Berríos (Super Bantamweight)\n  * Miguel Estrada vs. Larry Olivas (Light Flyweight)\n  * Alexander Hernández vs. Felipe Larez (Super Welterweight)\nSource: FightNews.com
+DTEND:20261031T060000Z
+DTSTART:20261031T010000Z
+SUMMARY:Alma Meraz vs Eveling Ortega
+UID:20261030-alma-meraz-eveling-ortega@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 10\, 2026\nLocation: Wintrust Arena\, Chicago\, Illinois\nStart: 07:00 PM CT\nResults:\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, October 10\, 2026\nLocation: Wintrust Arena\, Chicago\, Illinois\nStart: 07:00 PM CT\nResults:\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\nSource: BoxingScene.com
 DTEND:20261011T050000Z
 DTSTART:20261011T000000Z
 SUMMARY:Floyd Schofield DEF. Lucas Bahdi
@@ -750,7 +751,7 @@ SUMMARY:Megan Redstall vs. Lauryne Brankaer
 UID:20261206-megan-redstall-lauryne-brankaer@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center\nNetwork: YouTube\nStart: 06:30 PM CT\nSource: BoxingScene.com
+DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center\nStart: 06:30 PM CT\nSource: BoxingScene.com
 DTEND:20261017T043000Z
 DTSTART:20261016T233000Z
 SUMMARY:Kevin Anton-Freudis Rojas
