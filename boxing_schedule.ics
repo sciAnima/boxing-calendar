@@ -322,13 +322,6 @@ SUMMARY:Labinot Xhoxhaj vs. Eduardo Giustini
 UID:20261121-labinot-xhoxhaj-eduardo-giustini@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 19\, 2026\nLocation: Pechanga Arena\, San Diego\, California\nStart: 07:00 PM CT\nResults:\n  Isaac Cruz DEF. Nestor Bravo - KO In Round 6\n  Isaac Cruz DEF. Nestor Bravo - KO In Round 6\nSource: BoxingScene.com
-DTEND:20260920T050000Z
-DTSTART:20260920T000000Z
-SUMMARY:Isaac Cruz DEF. Nestor Bravo
-UID:20260919-isaac-cruz-nestor-bravo@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 19\, 2026\nLocation: Belfast\, Northern Ireland\nNetwork: DAZN\nStart: 01:00 PM CT\nMain Event: Anthony Cacace vs. Nick Ball (12-round bout\, WBA junior lightweight championship held by Cacace)\nSource: BoxingNews24.com
 DTEND:20261220T000000Z
 DTSTART:20261219T190000Z
@@ -368,6 +361,13 @@ DTEND:20261018T070000Z
 DTSTART:20261018T020000Z
 SUMMARY:Volkovs vs. McIntyre
 UID:20261017-volkovs-vs-mcintyre@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The Cosmopolitan of Las Vegas\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Sebastian Fundora DEF. Ermal Hadribeaj - KO In Round 12\n  Sebastian Fundora DEF. Ermal Hadribeaj - KO In Round 12\nSource: BoxingScene.com
+DTEND:20261018T050000Z
+DTSTART:20261018T000000Z
+SUMMARY:Sebastian Fundora DEF. Ermal Hadribeaj
+UID:20261017-sebastian-fundora-ermal-hadribeaj@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Ace Mission Studios\, Los Angeles\, California\, United States\nStart: 06:00 PM CT\nMain Event: Lawrence King vs. Jesse Hart (10-round bout\, light heavyweights)\nUndercard:\n  * Ruben Cazales vs. TBA (8-round bout\, super middleweights)\n  * Bernardo Marquez vs. TBA (6-round bout\, heavyweights)\n  * Nicolas Robledo vs. TBA (6-round bout\, junior lightweights)\n  * Peter Martinez vs. TBA (4-round bout\, featherweights)\n  * Jonathan Vasquez vs. TBA (4-round bout\, junior lightweights)\n  * Alejandro Alvarado vs. TBA (4-round bout\, junior lightweights)\nSource: BoxingNews24.com
@@ -571,6 +571,13 @@ SUMMARY:Miami Assassins vs. Dallas Enforcers
 UID:20260328-miami-assassins-vs-dallas-enforcers-20260328@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Villas Teotihuacán\, Teotihuacán\, State of Mexico\, Mexico\nStart: 08:00 PM CT\nMain Event: Brianda Tamara Cruz vs. Lucía Pérez (Women'S Welterweight\, WBC Silver Women's Welterweight)\nSource: FightNews.com
+DTEND:20261025T060000Z
+DTSTART:20261025T010000Z
+SUMMARY:Brianda Tamara Cruz vs Lucía Pérez
+UID:20261024-brianda-tamara-cruz-luc-a-p-rez@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, July 31\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260801T050000Z
 DTSTART:20260801T000000Z
@@ -653,6 +660,13 @@ SUMMARY:Nashville Smash vs. Atlanta Attack
 UID:20260612-nashville-smash-vs-atlanta-attack-20260612@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The O2 Arena\, London\, United Kingdom\nStart: 01:00 PM CT\nResults:\n  Daniel Dubois DEF. Fabio Wardley - TKO In Round 2\n  Daniel Dubois DEF. Fabio Wardley - TKO In Round 2\nSource: BoxingScene.com
+DTEND:20261017T230000Z
+DTSTART:20261017T180000Z
+SUMMARY:Daniel Dubois DEF. Fabio Wardley
+UID:20261017-daniel-dubois-fabio-wardley@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, April 19\, 2026\nLocation: Georgia International Convention Center\, 2000 Convention Center Concourse\, College Park\, GA 30337\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260420T050000Z
 DTSTART:20260420T000000Z
@@ -674,7 +688,7 @@ SUMMARY:Boston Butchers vs. Miami Assassins
 UID:20260509-boston-butchers-vs-miami-assassins-20260509@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nStart: 07:00 PM CT\nResults:\n  Henry Lebron DEF. Derlyn Hernandez-Gerarldo - KO In Round 8\n  Henry Lebron DEF. Derlyn Hernandez-Gerarldo - KO In Round 8\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nStart: 07:00 PM CT\nResults:\n  Henry Lebron DEF. Derlyn Hernandez-Gerarldo - KO In Round 8\nSource: BoxingScene.com
 DTEND:20260927T050000Z
 DTSTART:20260927T000000Z
 SUMMARY:Henry Lebron DEF. Derlyn Hernandez-Gerarldo
@@ -751,13 +765,6 @@ SUMMARY:Megan Redstall vs. Lauryne Brankaer
 UID:20261206-megan-redstall-lauryne-brankaer@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center\nStart: 06:30 PM CT\nSource: BoxingScene.com
-DTEND:20261017T043000Z
-DTSTART:20261016T233000Z
-SUMMARY:Kevin Anton-Freudis Rojas
-UID:20261016-kevin-anton-freudis-rojas@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 21\, 2026\nLocation: Cowboys Dance Hall\, 3030 NE Interstate 410 Loop\, San Antonio\, TX 78218\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260622T050000Z
 DTSTART:20260622T000000Z
@@ -798,13 +805,6 @@ DTEND:20261031T070000Z
 DTSTART:20261031T020000Z
 SUMMARY:Bryan Blandon vs. Ronal Batista
 UID:20261030-bryan-blandon-ronal-batista@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
-DTEND:20260926T211500Z
-DTSTART:20260926T161500Z
-SUMMARY:Johnny Fisher DEF. Michael Pirotton
-UID:20260926-johnny-fisher-michael-pirotton@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, May 03\, 2026\nLocation: Hilton Houston North - Raphael Ballroom\, 12400 Greenspoint Dr\, Houston\, TX 77060\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
