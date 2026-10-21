@@ -10,6 +10,13 @@ SUMMARY:Yoni Valverde vs Aaron Garibay
 UID:20261107-yoni-valverde-aaron-garibay@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 30\, 2026\nLocation: Grand Kursaal\, Besançon\, Bourgogne-Franche-Comté\, France\nStart: 09:00 AM CT\nMain Event: Islem Merabet vs. Don Ives Mikael Taha (Super Lightweight\, Vacant IBF Mediterranean Super Lightweight)\nSource: FightNews.com
+DTEND:20261030T190000Z
+DTSTART:20261030T140000Z
+SUMMARY:Islem Merabet vs Don Ives Mikael Taha
+UID:20261030-islem-merabet-don-ives-mikael-taha@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, November 08\, 2026\nLocation: Arlington\, Texas\nNetwork: ESPN\, ESPN+\nStart: 06:00 PM CT\nMain Event: Elif Nur Turhan vs. Alycia Baumgardner (10-round bout\, IBF women’s lightweight championship held by Turhan)\nUndercard:\n  * Ramla Ali vs. Mikiah Kreps (10-round bout\, junior featherweight championship held by vacant WBO/IBF women)\n  * Skye Nicolson vs. Miyo Yoshida (10-round bout\, WBC women’s junior featherweight championship held by Nicolson)\n  * Irma Garcia vs. Nataly Delgado (10-round bout\, IBF/WBA women’s junior bantamweight unification)\n  * Brittany Sims vs. Shera Mae Patricio (10-round bout\, “regular” bantamweight championship held by vacant WBA women)\n  * Fernando Garcia vs. Alexander Castellano (6-round bout\, featherweights)\nSource: BoxingNews24.com
 DTEND:20261109T050000Z
 DTSTART:20261109T000000Z
@@ -154,6 +161,13 @@ SUMMARY:Abraham Perez vs. Yankiel Rivera
 UID:20261107-abraham-perez-yankiel-rivera@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: World Siam Stadium\, Bangkok\, Bangkok\, Thailand\nStart: 05:00 AM CT\nMain Event: Sirayakorn Chamjaiharn vs. Sukpraserd Ponpitak (Super Lightweight\, WBA Asia South Super Lightweight)\nSource: FightNews.com
+DTEND:20261023T150000Z
+DTSTART:20261023T100000Z
+SUMMARY:Sirayakorn Chamjaiharn vs Sukpraserd Ponpitak
+UID:20261023-sirayakorn-chamjaiharn-sukpraserd-ponpitak@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Sandton\, South Africa\nStart: time TBC\nMain Event: Kevin Lerena vs. Scott Forrest (10-round bout\, cruiserweights)\nUndercard:\n  * Jarred Silverman vs. Stephanus Pypers (8-round bout\, junior middleweights)\n  * Gary Van Staden vs. John Bopape (6-round bout\, super middleweights)\n  * Donjuan van Heerden vs. Betu Ndala (6-round bout\, super middleweights)\n  * Jason Medi vs. Douglas Ntounta (6-round bout\, super middleweights)\n  * Simnikiwe Bongco vs. Sivenathi Nolawu (4-round bout\, junior middleweights)\n  * Tumelo Mphahlele vs. Msawakhe Mncwabe (4-round bout\, junior lightweights)\nSource: BoxingNews24.com
 DTEND:20261108T080000Z
 DTSTART:20261108T030000Z
@@ -175,7 +189,7 @@ SUMMARY:Dallas Enforcers vs. Boston Butchers
 UID:20260719-dallas-enforcers-vs-boston-butchers-20260719@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Wednesday\, October 21\, 2026\nLocation: Cabaret du Casino de Montréal\, Montreal\, Quebec\, Canada\nStart: 06:00 PM CT\nMain Event: Alexis Barriere vs. Stan Surmacz (Heavyweight\, 12 rounds\, IBF North American Heavyweight\, WBO NABO Heavyweight)\nUndercard:\n  * Derek Pomerleau vs. John Michael Bianco (Super Middleweight\, 10 rounds\, Canadian Super Middleweight)\n  * Omar Zaatiti Alieh vs. Ivan Blazevic\n  * Loick Lahaie vs. Jamshid Nazari (Super Welterweight)\n  * Junior Petanqui vs. Hakeem Dawodu\n  * Brandon Poulard vs. Yaya Kone\n  * Alessia Mansueto vs. Yulia Puchenia (Women'S Junior Lightweight\, 4 rounds)\n  * Cedrick Belony Duliepre vs. Savon Suroosh (Super Middleweight\, 4 rounds)\n  * Jerome Feujio vs. Danilo Miljevic (Heavyweight)\n  * Mazlum Akdeniz vs. TBA (Welterweight\, 10 rounds)\n  * Marie Pier Houle vs. Maria Del Sol Moreno (Women'S Welterweight\, 10 rounds)\n  * Kirill Bazhenov vs. TBA (Junior Lightweight\, 6 rounds)\nSource: FightNews.com
+DESCRIPTION:Date: Wednesday\, October 21\, 2026\nLocation: Cabaret du Casino de Montréal\, Montreal\, Quebec\, Canada\nStart: 06:00 PM CT\nMain Event: Alexis Barriere vs. Stan Surmacz (Heavyweight\, 12 rounds\, IBF North American Heavyweight\, WBO NABO Heavyweight)\nUndercard:\n  * Derek Pomerleau vs. John Michael Bianco (Super Middleweight\, 10 rounds\, Canadian Super Middleweight)\n  * Omar Zaatiti Alieh vs. Ivan Blazevic\n  * Loick Lahaie vs. Jamshid Nazari (Super Welterweight)\n  * Junior Petanqui vs. Julius Rein\n  * Brandon Poulard vs. Edgars Berzins\n  * Alessia Mansueto vs. Yulia Puchenia (Women'S Junior Lightweight\, 4 rounds)\n  * Cedrick Belony Duliepre vs. Savon Suroosh (Super Middleweight\, 4 rounds)\n  * Jerome Feujio vs. Danilo Miljevic (Heavyweight)\n  * Mazlum Akdeniz vs. TBA (Welterweight\, 10 rounds)\n  * Marie Pier Houle vs. Maria Del Sol Moreno (Women'S Welterweight\, 10 rounds)\n  * Kirill Bazhenov vs. TBA (Junior Lightweight\, 6 rounds)\nSource: FightNews.com
 DTEND:20261022T040000Z
 DTSTART:20261021T230000Z
 SUMMARY:Fight Fest / PAYMENT SPAYCE: Barrière vs Surmacz
@@ -201,6 +215,13 @@ DTEND:20261114T223000Z
 DTSTART:20261114T173000Z
 SUMMARY:Bakary Samake vs Uisma Lima
 UID:20261114-bakary-samake-uisma-lima@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 30\, 2026\nLocation: ABA Stadium\, Auckland\, Auckland\, New Zealand\nStart: 12:00 AM CT\nMain Event: Sonny Morini vs. Jules Victoriano (Welterweight\, 10 rounds\, WBA Oceania Welterweight (vacant))\nUndercard:\n  * Shyah Hale vs. Kitana Auvaa\nSource: FightNews.com
+DTEND:20261030T100000Z
+DTSTART:20261030T050000Z
+SUMMARY:Sonny Morini vs Jules Victoriano
+UID:20261030-sonny-morini-jules-victoriano@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, May 24\, 2026\nLocation: Thunder Studios\, 20434 S Santa Fe Ave\, Long Beach\, CA 90810\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -356,13 +377,6 @@ SUMMARY:Lauren Price vs. Michaela Kotaskova
 UID:20261120-lauren-price-michaela-kotaskova@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 17\, 2026\nNetwork: DAZN\nStart: 09:00 PM CT\nSource: DAZN.com
-DTEND:20261018T070000Z
-DTSTART:20261018T020000Z
-SUMMARY:Volkovs vs. McIntyre
-UID:20261017-volkovs-vs-mcintyre@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The Cosmopolitan of Las Vegas\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Sebastian Fundora DEF. Ermal Hadribeaj - KO In Round 12\n  Sebastian Fundora DEF. Ermal Hadribeaj - KO In Round 12\nSource: BoxingScene.com
 DTEND:20261018T050000Z
 DTSTART:20261018T000000Z
@@ -432,6 +446,13 @@ SUMMARY:Christian Mbilli vs. Canelo Alvarez
 UID:20261031-christian-mbilli-canelo-alvarez@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: Messe Karlsruhe\, Karlsruhe\, Baden-Württemberg\, Germany\nStart: 01:00 PM CT\nMain Event: Sarah Bormann vs. Chaima Bounouar (Women'S Minimumweight\, 10 rounds\, WBA Women's Minimumweight\, WBO Women's Minimumweight)\nUndercard:\n  * Alex Alselo vs. José Muñoz (8 rounds)\n  * Sladjan Jananin vs. Mansoor Dilawar Zada (10 rounds\, International German Championship)\n  * Marko Zeljko vs. David Savic (6 rounds)\n  * Shaun Cooper vs. Wilhelm Hill (6 rounds)\n  * Katarina Tasic vs. Erna Okrugic (4 rounds)\n  * Dajana Rakovic vs. Deborah Melhorn (4 rounds)\n  * Nikola Mrdja vs. Mike Müller (4 rounds)\n  * Vanja Dujin vs. Finn Schmitt (4 rounds)\nSource: FightNews.com
+DTEND:20261031T230000Z
+DTSTART:20261031T180000Z
+SUMMARY:Sarah Bormann vs Chaima Bounouar
+UID:20261031-sarah-bormann-chaima-bounouar@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, May 10\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260511T050000Z
 DTSTART:20260511T000000Z
@@ -465,6 +486,12 @@ DTEND:20261206T000000Z
 DTSTART:20261205T190000Z
 SUMMARY:Conah Walker vs. Alexis Rocha
 UID:20261205-conah-walker-alexis-rocha@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261023
+DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: Crowne Plaza Glasgow\, Glasgow\, Scotland\, United Kingdom\nStart: time TBC\nMain Event: Sohaib Mohammed vs. Riad Kunushefci\nUndercard:\n  * Waseem Anaib vs. Dale Arrowsmith\n  * Frances Heath vs. Sydney Chambers\n  * Taylor Ryan vs. Jake Osgood\n  * Adian Williamson vs. Michael Mooney\n  * Ryan Irwin vs. Jake Pollard\nSource: FightNews.com
+SUMMARY:Kynoch Boxing: Momentum
+UID:20261023-sohaib-mohammed-riad-kunushefci@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261101
@@ -508,11 +535,10 @@ SUMMARY:Paul Gallen vs. Nelson Asofa-Solomona
 UID:20261106-paul-gallen-nelson-asofa-solomona@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, December 11\, 2026\nLocation: Principality Stadium\nNetwork: Netflix\nStart: 11:00 PM CT\nSource: BoxingScene.com
-DTEND:20261211T100000Z
-DTSTART:20261211T050000Z
-SUMMARY:Tyson Fury-Anthony Joshua
-UID:20261211-tyson-fury-anthony-joshua@boxing-calendar
+DTSTART;VALUE=DATE:20261023
+DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: Kings Hall Stoke-on-Trent\, Stoke-on-Trent\, Staffordshire\, United Kingdom\nStart: time TBC\nMain Event: Kyle Davies vs. Brandon Jones (Light Heavyweight\, Vacant Commonwealth Light Heavyweight)\nUndercard:\n  * Muhammad Ali Zahid vs. Leon Entwistle\n  * Marshall Meacock vs. Owen Durnan\n  * Lewis Proffitt vs. Nazeer Khan\n  * Armie Litherland vs. Fernando Joaquin Valdez\n  * Harvey Sturton vs. Jacob Marrer\nSource: FightNews.com
+SUMMARY:Kyle Davies vs Brandon Jones
+UID:20261023-kyle-davies-brandon-jones@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, November 13\, 2026\nLocation: County Coliseum in El Paso\, Texas\nNetwork: ProBoxTV\nStart: 06:00 PM CT\nMain Event: Bryan Flores vs. Jose Nunez (10-round bout\, junor welterweights)\nUndercard:\n  * Tsendbaatar Erdenebat vs. Muhammad Yaqubov (10-round bout\, junior lightweights)\n  * Ruben Eduardo Aguilar vs. Guido Emmanuel Schramm (10-round bout\, welterweights)\n  * Elijah Flores vs. Axl Melendez Salgado (8-round bout\, welterweights)\nSource: BoxingNews24.com
@@ -527,6 +553,13 @@ DTEND:20260425T050000Z
 DTSTART:20260425T000000Z
 SUMMARY:Boston Butchers vs. NYC Attitude
 UID:20260424-boston-butchers-vs-nyc-attitude-20260424@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, December 11\, 2026\nLocation: Principality Stadium\nNetwork: Netflix\nStart: 11:00 PM CT\nSource: BoxingScene.com
+DTEND:20261211T100000Z
+DTSTART:20261211T050000Z
+SUMMARY:Tyson Fury-Anthony Joshua
+UID:20261211-tyson-fury-anthony-joshua@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 12\, 2026\nLocation: Ekatirinburg\, Russia\nNetwork: DAZN\nStart: 11:00 PM CT\nMain Event: Dmitry Bivol vs. Callum Smith (12-round bout\, lineal/WBO/IBF/WBA light heavyweight championship held by Bivol)\nUndercard:\n  * Bakhram Murtazaliev vs. TBA (10-round bout\, junior middleweights)\nSource: BoxingNews24.com
@@ -555,6 +588,12 @@ DTEND:20261115T050000Z
 DTSTART:20261115T000000Z
 SUMMARY:Diego Pacheco vs. Darius Fulghum
 UID:20261114-diego-pacheco-darius-fulghum@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261023
+DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: Harrow Leisure Centre\, Harrow\, Greater London\, United Kingdom\nStart: time TBC\nMain Event: Hajji Muhis vs. Jack Swallow\nUndercard:\n  * Laura Pain vs. Antonella Shirley Molina\n  * Jake Henty vs. Alexeyv Mikhail Arellano Leon\n  * Joseph Abercrombie vs. Jorge Balmaceda\n  * Billy Underwood vs. Josh Cook\n  * John Cole vs. Nathan Darby\n  * Dre Patterson vs. Jorge Luis Huerta Balleza\n  * Matheo Manley vs. Mario Ramon Valenzuela Portillo\n  * Danny Pearce vs. Nabil Ahmed\n  * Adil Miah vs. Marcos Nicolas Karalitzky\nSource: FightNews.com
+SUMMARY:Hajji Muhis vs Jack Swallow
+UID:20261023-hajji-muhis-jack-swallow@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Manchester Arena\nNetwork: DAZN\nStart: 01:00 PM CT\nSource: BoxingScene.com
@@ -688,7 +727,7 @@ SUMMARY:Boston Butchers vs. Miami Assassins
 UID:20260509-boston-butchers-vs-miami-assassins-20260509@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nStart: 07:00 PM CT\nResults:\n  Henry Lebron DEF. Derlyn Hernandez-Gerarldo - KO In Round 8\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nStart: 07:00 PM CT\nResults:\n  Henry Lebron DEF. Derlyn Hernandez-Gerarldo - KO In Round 8\n  Henry Lebron DEF. Derlyn Hernandez-Gerarldo - KO In Round 8\nSource: BoxingScene.com
 DTEND:20260927T050000Z
 DTSTART:20260927T000000Z
 SUMMARY:Henry Lebron DEF. Derlyn Hernandez-Gerarldo
@@ -744,11 +783,18 @@ SUMMARY:Alma Meraz vs Eveling Ortega
 UID:20261030-alma-meraz-eveling-ortega@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 10\, 2026\nLocation: Wintrust Arena\, Chicago\, Illinois\nStart: 07:00 PM CT\nResults:\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, October 10\, 2026\nLocation: Wintrust Arena\, Chicago\, Illinois\nStart: 07:00 PM CT\nResults:\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\nSource: BoxingScene.com
 DTEND:20261011T050000Z
 DTSTART:20261011T000000Z
 SUMMARY:Floyd Schofield DEF. Lucas Bahdi
 UID:20261010-floyd-schofield-lucas-bahdi@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Rumours International\, Toowoomba\, Queensland\, Australia\nStart: 12:00 AM CT\nMain Event: Dylan Biggs vs. Kudratillo Abdukakhorov (Middleweight\, 10 rounds\, WBC Australasia Middleweight)\nSource: FightNews.com
+DTEND:20261107T110000Z
+DTSTART:20261107T060000Z
+SUMMARY:Dylan Biggs vs Kudratillo Abdukakhorov
+UID:20261107-dylan-biggs-kudratillo-abdukakhorov@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, August 30\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -796,7 +842,7 @@ BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: BiYu Arena\, Houston\, Texas\, United States\nNetwork: Combat Vision TV\nStart: 06:00 PM CT\nMain Event: Jahyden Britton vs. Gonzalo Andreasen (Super Middleweight\, 6 rounds)\nUndercard:\n  * Ty Cassell vs. Jorge Elias Garcia Manrriquez (Super Lightweight\, 6 rounds)\n  * Zachary Spiller vs. Zederic Stephenson (6 rounds)\n  * Martel Washpun vs. Rasuiod Hollie (4 rounds)\n  * Jared Phillips vs. Evans Norris (4 rounds)\n  * Frank Unachukwu vs. Roman Xavier Cordova (4 rounds)\n  * Clayton Ward vs. Jacobie Lichlyter (4 rounds)\nSource: FightNews.com
 DTEND:20261024T040000Z
 DTSTART:20261023T230000Z
-SUMMARY:Jahyden Britton vs Louis Hernandez
+SUMMARY:Jahyden Britton vs Gonzalo Andreasen
 UID:20261023-jahyden-britton-gonzalo-andreasen@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
