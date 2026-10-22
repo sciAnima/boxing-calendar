@@ -51,6 +51,13 @@ SUMMARY:Masamichi Yabuki vs. Miel Fajardo
 UID:20261126-masamichi-yabuki-miel-fajardo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Crowne Plaza Glasgow\, Glasgow\, Scotland\, United Kingdom\nStart: 01:00 PM CT\nMain Event: Sohaib Mohammed vs. Riad Kunushefci\nUndercard:\n  * Waseem Anaib vs. Dale Arrowsmith\n  * Frances Heath vs. Sydney Chambers\n  * Taylor Ryan vs. Jake Osgood\n  * Adian Williamson vs. Michael Mooney\n  * Ryan Irwin vs. Jake Pollard\nSource: FightNews.com
+DTEND:20261024T230000Z
+DTSTART:20261024T180000Z
+SUMMARY:Kynoch Boxing: Momentum
+UID:20261024-sohaib-mohammed-riad-kunushefci@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, April 10\, 2026\nLocation: GSH Event Center\, 9550 W Bellfort Ave\, Houston\, TX 77031\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260411T050000Z
 DTSTART:20260411T000000Z
@@ -187,13 +194,6 @@ DTEND:20260720T050000Z
 DTSTART:20260720T000000Z
 SUMMARY:Dallas Enforcers vs. Boston Butchers
 UID:20260719-dallas-enforcers-vs-boston-butchers-20260719@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Wednesday\, October 21\, 2026\nLocation: Cabaret du Casino de Montréal\, Montreal\, Quebec\, Canada\nStart: 06:00 PM CT\nMain Event: Alexis Barriere vs. Stan Surmacz (Heavyweight\, 12 rounds\, IBF North American Heavyweight\, WBO NABO Heavyweight)\nUndercard:\n  * Derek Pomerleau vs. John Michael Bianco (Super Middleweight\, 10 rounds\, Canadian Super Middleweight)\n  * Omar Zaatiti Alieh vs. Ivan Blazevic\n  * Loick Lahaie vs. Jamshid Nazari (Super Welterweight)\n  * Junior Petanqui vs. Julius Rein\n  * Brandon Poulard vs. Edgars Berzins\n  * Alessia Mansueto vs. Yulia Puchenia (Women'S Junior Lightweight\, 4 rounds)\n  * Cedrick Belony Duliepre vs. Savon Suroosh (Super Middleweight\, 4 rounds)\n  * Jerome Feujio vs. Danilo Miljevic (Heavyweight)\n  * Mazlum Akdeniz vs. TBA (Welterweight\, 10 rounds)\n  * Marie Pier Houle vs. Maria Del Sol Moreno (Women'S Welterweight\, 10 rounds)\n  * Kirill Bazhenov vs. TBA (Junior Lightweight\, 6 rounds)\nSource: FightNews.com
-DTEND:20261022T040000Z
-DTSTART:20261021T230000Z
-SUMMARY:Fight Fest / PAYMENT SPAYCE: Barrière vs Surmacz
-UID:20261021-alexis-barriere-stan-surmacz@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 13\, 2026\nLocation: Roadrunner Boston\, 89 Guest St\, Boston\, MA 02135\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -370,7 +370,7 @@ SUMMARY:Danny Garcia vs. Ruslan Provodnikov
 UID:20261107-danny-garcia-ruslan-provodnikov@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, November 20\, 2026\nLocation: Cardiff\, Wales\nStart: 01:00 PM CT\nMain Event: Lauren Price vs. Michaela Kotaskova (10-round bout\, WBC/IBF/WBA women’s welterweight championship held by Price)\nUndercard:\n  * Rhys Edwards vs. Lee McGregor (10-round bout\, featherweights)\n  * Kyran Jones vs. Sean Arkwright (10-round bout\, middleweights)\nSource: BoxingNews24.com
+DESCRIPTION:Date: Friday\, November 20\, 2026\nLocation: Utilita Arena Cardiff\, Cardiff\, Wales\, United Kingdom\nNetwork: BBC Two / BBC iPlayer (GB)\nStart: 01:00 PM CT\nMain Event: Lauren Price vs. Michaela Kotaskova (10-round bout\, WBC/IBF/WBA women’s welterweight championship held by Price)\nUndercard:\n  * Rhys Edwards vs. Lee McGregor (10-round bout\, featherweights)\n  * Kyran Jones vs. Sean Arkwright (10-round bout\, middleweights)\nSource: BoxingNews24.com
 DTEND:20261121T000000Z
 DTSTART:20261120T190000Z
 SUMMARY:Lauren Price vs. Michaela Kotaskova
@@ -488,16 +488,24 @@ SUMMARY:Conah Walker vs. Alexis Rocha
 UID:20261205-conah-walker-alexis-rocha@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261023
-DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: Crowne Plaza Glasgow\, Glasgow\, Scotland\, United Kingdom\nStart: time TBC\nMain Event: Sohaib Mohammed vs. Riad Kunushefci\nUndercard:\n  * Waseem Anaib vs. Dale Arrowsmith\n  * Frances Heath vs. Sydney Chambers\n  * Taylor Ryan vs. Jake Osgood\n  * Adian Williamson vs. Michael Mooney\n  * Ryan Irwin vs. Jake Pollard\nSource: FightNews.com
-SUMMARY:Kynoch Boxing: Momentum
-UID:20261023-sohaib-mohammed-riad-kunushefci@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261101
 DESCRIPTION:Date: Sunday\, November 01\, 2026\nStart: time TBC\nMain Event: Vergil Ortiz Jr. vs. TBA (Middleweight\, WBC interim junior-middleweight)\nSource: FightNews.com
 SUMMARY:Vergil Ortiz Jr. vs TBA
 UID:20261101-vergil-ortiz-jr-tba@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Palais des Sports de Bourgoin-Jallieu\, Bourgoin-Jallieu\, Auvergne-Rhône-Alpes\, France\nStart: 11:00 AM CT\nMain Event: Yanis Mehah vs. Younes Mehidi (Welterweight\, WBA International Welterweight)\nSource: FightNews.com
+DTEND:20261024T210000Z
+DTSTART:20261024T160000Z
+SUMMARY:Yanis Mehah vs Younes Mehidi
+UID:20261024-yanis-mehah-younes-mehidi@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: Casal de Cultura Sant Climent de Llobregat\, Sant Climent de Llobregat\, Catalonia\, Spain\nStart: 12:00 PM CT\nMain Event: Alejandro Moya vs. Cristian Malvitano (Super Lightweight\, WBC Latino Super Lightweight)\nUndercard:\n  * Albert Villa vs. Humberto Diaz (WBA Ibero-American)\nSource: FightNews.com
+DTEND:20261023T220000Z
+DTSTART:20261023T170000Z
+SUMMARY:Alejandro Moya vs Cristian Malvitano
+UID:20261023-alejandro-moya-cristian-malvitano@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, May 01\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -671,6 +679,13 @@ SUMMARY:Las Vegas Hustle vs. LA Elite
 UID:20260802-las-vegas-hustle-vs-la-elite-20260802@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, November 20\, 2026\nLocation: Fantasy Springs Resort Casino\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20261121T060000Z
+DTSTART:20261121T010000Z
+SUMMARY:Gabriela Fundora-Jasmina Zapotoczna
+UID:20261120-gabriela-fundora-jasmina-zapotoczna@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Brondby\, Denmark\nStart: time TBC\nMain Event: Mikkel Kessler vs. Bernard Joseph\nSource: BoxingNews24.com
 DTEND:20261129T080000Z
 DTSTART:20261129T030000Z
@@ -690,6 +705,12 @@ DTEND:20260321T050000Z
 DTSTART:20260321T000000Z
 SUMMARY:Philadelphia Smoke vs. NYC Attitude
 UID:20260320-philadelphia-smoke-vs-nyc-attitude-20260320@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261120
+DESCRIPTION:Date: Friday\, November 20\, 2026\nLocation: Plaza de Toros de Illescas\, Illescas\, Castilla-La Mancha\, Spain\nStart: time TBC\nMain Event: Isabel Rivero vs. Sumire Yamanaka (Women'S Atomweight\, WBA World Women's Atomweight\, IBF World Women's Atomweight)\nUndercard:\n  * Cristina Navarro vs. Cintia Sanchez (Women'S Minimumweight\, WBA Gold Women's Minimumweight)\nSource: FightNews.com
+SUMMARY:Isabel Rivero vs Sumire Yamanaka
+UID:20261120-isabel-rivero-sumire-yamanaka@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, June 12\, 2026\nLocation: Nashville Municipal Auditorium\, 417 4th Ave N\, Nashville\, TN 37201\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -760,6 +781,13 @@ DTEND:20260608T050000Z
 DTSTART:20260608T000000Z
 SUMMARY:Phoenix Fury vs. Houston Hitmen
 UID:20260607-phoenix-fury-vs-houston-hitmen-20260607@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, November 20\, 2026\nLocation: BiYu Arena\, Houston\, Texas\, United States\nStart: 06:00 PM CT\nMain Event: Jewry Rodriguez vs. Chantal Sumrall (Women'S Bantamweight\, 12 rounds)\nSource: FightNews.com
+DTEND:20261121T050000Z
+DTSTART:20261121T000000Z
+SUMMARY:Jewry Rodriguez vs Chantal Sumrall
+UID:20261120-jewry-rodriguez-chantal-sumrall@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, July 17\, 2026\nLocation: We-Ko-Pa Casino Resort\, 10438 Wekopa Way\, Fort McDowell\, AZ 85264\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
