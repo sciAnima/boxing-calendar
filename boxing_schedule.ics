@@ -149,8 +149,9 @@ SUMMARY:LA Elite vs. Houston Hitmen
 UID:20260627-la-elite-vs-houston-hitmen-20260627@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261024
-DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Namyangju City\, Gyeonggi\, South Korea\nStart: time TBC\nMain Event: Siro Choi vs. Keisham Luckysun Singh (Lightweight\, WBA Asia Lightweight)\nSource: FightNews.com
+DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Kukje University Changjo Hall\, Pyeongtaek\, Gyeonggi\, South Korea\nStart: 11:00 PM CT\nMain Event: Siro Choi vs. Keisham Luckysun Singh (Lightweight\, 12 rounds\, WBA Asia Lightweight)\nSource: FightNews.com
+DTEND:20261025T090000Z
+DTSTART:20261025T040000Z
 SUMMARY:Siro Choi vs Keisham Luckysun Singh
 UID:20261024-siro-choi-keisham-luckysun-singh@boxing-calendar
 END:VEVENT
@@ -260,13 +261,6 @@ SUMMARY:Joshua Buatsi vs. Willy Hutchinson
 UID:20261107-joshua-buatsi-willy-hutchinson@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: Tirana\, Albania\nStart: time TBC\nMain Event: Juergen Uldedaj vs. Blake Caparello (12-round bout\, cruiserweights)\nSource: BoxingNews24.com
-DTEND:20261024T070000Z
-DTSTART:20261024T020000Z
-SUMMARY:Juergen Uldedaj vs. Blake Caparello
-UID:20261023-juergen-uldedaj-blake-caparello@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Utilita Arena Sheffield\, Sheffield\, England\, United Kingdom\nNetwork: DAZN\nStart: 01:00 PM CT\nMain Event: Dalton Smith vs. Alberto Puello (12-round bout\, WBC junior welterweight championship held by Smith)\nUndercard:\n  * Giorgio Visioli vs. Maxi Hughes (10-round bout\, lightweights)\n  * Shannon Ryan vs. Emma Dolan (10-round bout\, female junior bantamweights)\n  * Edward Hardy vs. Diego Ruiz (10-round bout\, junior lightweights)\n  * Joe Hayden vs. Will Harrison (8-round bout\, welterweights)\n  * Leo Atang vs. Jonathan Exequiel Vergara (6-round bout\, heavyweights)\n  * Chris Mulunda vs. Harley Collison (6-round bout\, middleweights)\n  * Divine Omojor vs. Goran Kozul (4-round bout\, cruiserweights)\nSource: BoxingNews24.com
 DTEND:20261024T230000Z
 DTSTART:20261024T180000Z
@@ -337,13 +331,6 @@ SUMMARY:Anthony Cacace vs. Nick Ball
 UID:20261219-anthony-cacace-nick-ball@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Yongin University Gymnasium\, Yongin\, Gyeonggi\, South Korea\nStart: 01:00 AM CT\nMain Event: Bo-Mi-Re Shin vs. Mandeep Kaur (Women'S Lightweight\, WBA Asia Female Lightweight)\nUndercard:\n  * Isroilzhon Sultonov vs. Hu Xiong (Super Lightweight\, WBA Asia East Super Lightweight)\n  * Si Yeon Ryu vs. Li Li (Minimumweight\, 6 rounds)\n  * Won Jin Lee vs. Joo Hyun Park (Featherweight\, 4 rounds)\n  * Young Joon Jo vs. Sung Min Kim (Lightweight\, 4 rounds)\n  * Ho Jin Lee vs. Woo Sol Park (Super Welterweight\, 4 rounds)\nSource: FightNews.com
-DTEND:20261024T110000Z
-DTSTART:20261024T060000Z
-SUMMARY:Bo-Mi-Re Shin vs Mandeep Kaur
-UID:20261024-bo-mi-re-shin-mandeep-kaur@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: Magdeburg\, Germany\nStart: time TBC\nMain Event: Roman Fress vs. Armend Xhoxhaj (rematch\, 12-round bout\, cruiserweights)\nUndercard:\n  * Ole Raetzel vs. TBA (10-round bout\, junior middleweights)\n  * Sami Ahmeti vs. TBA (8-round bout\, welterweights)\n  * Moaed Azizieh vs. TBA (6-round bout\, welterweights)\n  * Paul Schmidt vs. TBA (4-round bout\, cruiserweights)\nSource: BoxingNews24.com
 DTEND:20261115T080000Z
 DTSTART:20261115T030000Z
@@ -370,13 +357,6 @@ DTEND:20261018T050000Z
 DTSTART:20261018T000000Z
 SUMMARY:Sebastian Fundora DEF. Ermal Hadribeaj
 UID:20261017-sebastian-fundora-ermal-hadribeaj@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Elorde Sports Center\, Parañaque\, Metro Manila\, Philippines\nStart: 04:00 AM CT\nMain Event: Arvin Magramo vs. Marco John Rementizo (Light Flyweight\, WBC International Light Flyweight)\nSource: FightNews.com
-DTEND:20261024T140000Z
-DTSTART:20261024T090000Z
-SUMMARY:Arvin Magramo vs Marco John Rementizo
-UID:20261024-arvin-magramo-marco-john-rementizo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 05\, 2026\nLocation: Decines\, France\nStart: time TBC\nMain Event: Leonardo Mosquea vs. Marco Calik (12-round bout\, cruiserweights)\nUndercard:\n  * Lilia Cherifi vs. Isis Pizagou Logerie (10-round bout\, female lightweights)\n  * Naim Bellahcene vs. Mouhib Alili (6-round bout\, welterweights)\n  * Ruben Hovakimyan vs. Noan Lecureur (6-round bout\, junior welterweights)\n  * Noah Perrin vs. Bilal Tchangodei (6-round bout\, junior welterweights)\nSource: BoxingNews24.com
@@ -481,13 +461,6 @@ DTEND:20261024T210000Z
 DTSTART:20261024T160000Z
 SUMMARY:Yanis Mehah vs Younes Mehidi
 UID:20261024-yanis-mehah-younes-mehidi@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: Casal de Cultura Sant Climent de Llobregat\, Sant Climent de Llobregat\, Catalonia\, Spain\nStart: 12:00 PM CT\nMain Event: Alejandro Moya vs. Cristian Malvitano (Super Lightweight\, WBC Latino Super Lightweight)\nUndercard:\n  * Albert Villa vs. Humberto Diaz (WBA Ibero-American)\nSource: FightNews.com
-DTEND:20261023T220000Z
-DTSTART:20261023T170000Z
-SUMMARY:Alejandro Moya vs Cristian Malvitano
-UID:20261023-alejandro-moya-cristian-malvitano@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, May 01\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -650,12 +623,6 @@ SUMMARY:Viddal Riley vs. Seydi Coupe
 UID:20261114-viddal-riley-seydi-coupe@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261024
-DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Istanbul\, Istanbul\, Turkey\nStart: time TBC\nMain Event: Killian Fenu vs. Mohd Azahar (Super Featherweight\, WBA Asia East Super Featherweight)\nSource: FightNews.com
-SUMMARY:Killian Fenu vs Mohd Azahar
-UID:20261024-killian-fenu-mohd-azahar@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, April 25\, 2026\nLocation: Hyatt Regency San Antonio Riverwalk\, 123 Losoya St\, San Antonio\, TX 78205\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260426T050000Z
 DTSTART:20260426T000000Z
@@ -709,19 +676,6 @@ DTEND:20260613T050000Z
 DTSTART:20260613T000000Z
 SUMMARY:Nashville Smash vs. Atlanta Attack
 UID:20260612-nashville-smash-vs-atlanta-attack-20260612@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261023
-DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: Kings Hall Stoke-on-Trent\, Stoke-on-Trent\, Staffordshire\, United Kingdom\nStart: time TBC\nMain Event: Kyle Davies vs. TBA (Light Heavyweight\, Vacant Commonwealth Light Heavyweight)\nUndercard:\n  * Muhammad Ali Zahid vs. Leon Entwistle\n  * Marshall Meacock vs. Owen Durnan\n  * Lewis Proffitt vs. Nazeer Khan\n  * Armie Litherland vs. Fernando Joaquin Valdez\n  * Harvey Sturton vs. Jacob Marrer\nSource: FightNews.com
-SUMMARY:Kyle Davies vs Brandon Jones
-UID:20261023-kyle-davies-tba@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: Arena Tecate\, Tijuana\, Baja California\, Mexico\nStart: 07:00 PM CT\nMain Event: Jose Guillermo Alvarado Rivera vs. Leobardo Quintana Sanchez (Super Featherweight\, WBA FEDELATIN Mexico Super Featherweight)\nUndercard:\n  * Dubiel Sánchez vs. Oliver Quintana (Super Welterweight\, 10 rounds)\n  * Noli Valenzuela vs. Adrián Montoya\n  * Jesús Sánchez vs. Ángel Méndez\n  * Ángel Hernández vs. TBA\n  * Marcos Martínez vs. Juan Carlos García\n  * Guillermo Pérez vs. Adolfo Rodríguez\n  * Juan Amarillas vs. Irvin García\n  * Isaí Peraza vs. Gustavo Nolasco\nSource: FightNews.com
-DTEND:20261024T050000Z
-DTSTART:20261024T000000Z
-SUMMARY:Jose Guillermo Alvarado Rivera vs Leobardo Quintana Sanchez
-UID:20261023-jose-guillermo-alvarado-rivera-leobardo-quintana-sanchez@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The O2 Arena\, London\, United Kingdom\nStart: 01:00 PM CT\nResults:\n  Daniel Dubois DEF. Fabio Wardley - TKO In Round 2\n  Daniel Dubois DEF. Fabio Wardley - TKO In Round 2\nSource: BoxingScene.com
@@ -871,11 +825,11 @@ SUMMARY:Philadelphia Smoke vs. Boston Butchers
 UID:20260530-philadelphia-smoke-vs-boston-butchers-20260530@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 23\, 2026\nLocation: BiYu Arena\, Houston\, Texas\, United States\nNetwork: Combat Vision TV\nStart: 06:00 PM CT\nMain Event: Jahyden Britton vs. Gonzalo Andreasen (Super Middleweight\, 6 rounds)\nUndercard:\n  * Ty Cassell vs. Jorge Elias Garcia Manrriquez (Super Lightweight\, 6 rounds)\n  * Zachary Spiller vs. Zederic Stephenson (6 rounds)\n  * Martel Washpun vs. Rasuiod Hollie (4 rounds)\n  * Jared Phillips vs. Evans Norris (4 rounds)\n  * Frank Unachukwu vs. Roman Xavier Cordova (4 rounds)\n  * Clayton Ward vs. Jacobie Lichlyter (4 rounds)\nSource: FightNews.com
-DTEND:20261024T040000Z
-DTSTART:20261023T230000Z
-SUMMARY:Jahyden Britton vs Gonzalo Andreasen
-UID:20261023-jahyden-britton-gonzalo-andreasen@boxing-calendar
+DESCRIPTION:Date: Thursday\, October 29\, 2026\nLocation: Radisson Blu Hotel Glasgow\, Glasgow\, Scotland\, United Kingdom\nStart: 05:00 PM CT\nMain Event: Bobby Morrell vs. Ryszard Lewicki\nUndercard:\n  * Charles McDonagh vs. TBA\n  * Jake Limond vs. TBA\n  * Liam Henry vs. TBA\nSource: FightNews.com
+DTEND:20261030T030000Z
+DTSTART:20261029T220000Z
+SUMMARY:St Andrew's Sporting Club October Boxing Dinner: Bobby Morrell vs Ryszard Lewicki
+UID:20261029-bobby-morrell-ryszard-lewicki@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, October 30\, 2026\nLocation: Managua\, Nicaragua\nStart: time TBC\nMain Event: Bryan Blandon vs. Ronal Batista (10-round bout\, bantamweights)\nUndercard:\n  * Alma Meraz vs. Eveling Ortega (10-round bout\, WBA women’s interim junior flyweight championship held by Meraz)\n  * Kevin Vivas vs. Edwin Cano (8-round bout\, junior flyweights)\n  * Ricardo Blandon vs. Juan Mendoza (8-round bout\, junior lightweights)\n  * Yanior Vega vs. Isaac Berrios (6-round bout\, junior featherweights)\n  * Miguel Estrada vs. Larry Olivas (6-round bout\, junior flyweights)\n  * Alexander Hernandez vs. Felipe Larez (6-round bout\, junior middleweights)\n  * Miladae Santana-Rivera vs. TBA (6 or 8-round bout\, junior flyweights)\nSource: BoxingNews24.com
