@@ -206,13 +206,6 @@ SUMMARY:Bakary Samake vs Uisma Lima
 UID:20261114-bakary-samake-uisma-lima@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 30\, 2026\nLocation: ABA Stadium\, Auckland\, Auckland\, New Zealand\nStart: 12:00 AM CT\nMain Event: Sonny Morini vs. Jules Victoriano (Welterweight\, 10 rounds\, WBA Oceania Welterweight (vacant))\nUndercard:\n  * Shyah Hale vs. Kitana Auvaa\nSource: FightNews.com
-DTEND:20261030T100000Z
-DTSTART:20261030T050000Z
-SUMMARY:Sonny Morini vs Jules Victoriano
-UID:20261030-sonny-morini-jules-victoriano@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Ülker Sports and Event Hall\, Istanbul\, Istanbul\, Turkey\nStart: 09:00 AM CT\nMain Event: Umut Camkiran vs. Mourad Aliev (Heavyweight\, 12 rounds\, Vacant WBC Silver Heavyweight)\nSource: FightNews.com
 DTEND:20261107T200000Z
 DTSTART:20261107T150000Z
@@ -267,6 +260,13 @@ DTEND:20261108T000000Z
 DTSTART:20261107T190000Z
 SUMMARY:Joshua Buatsi vs. Willy Hutchinson
 UID:20261107-joshua-buatsi-willy-hutchinson@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, November 27\, 2026\nLocation: Europa-Park Arena\, Rust\, Baden-Württemberg\, Germany\nStart: 12:00 PM CT\nMain Event: Emanuel Odiase vs. Mike Perez (Heavyweight\, 10 rounds\, IBF European Heavyweight\, WBA Continental Gold Heavyweight)\nUndercard:\n  * Labinot Xhoxhaj vs. Eduardo Giustini (Heavyweight\, 12 rounds\, EBU European Heavyweight)\n  * Karen Chukhadzhian vs. Luis Argañaraz (10 rounds)\n  * Elvin Sope vs. Jose Rivas\nSource: FightNews.com
+DTEND:20261127T230000Z
+DTSTART:20261127T180000Z
+SUMMARY:Emanuel Odiase vs Mike Perez
+UID:20261127-emanuel-odiase-mike-perez@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: USC Galen Center\, Los Angeles\, California\nStart: 04:30 PM CT\nResults:\n  Najee Lopez DEF. Juan Carrillo - KO In Round 9\n  Ramon Cardenas DEF. Leonardo Carrillo - Split Decision\n  Jordan White DEF. Luis Torres - KO In Round 9\n  Carlos Ocampo DEF. Weljon Mindoro - KO In Round 9\nSource: BoxingScene.com
@@ -358,6 +358,13 @@ DTEND:20261121T000000Z
 DTSTART:20261120T190000Z
 SUMMARY:Lauren Price vs. Michaela Kotaskova
 UID:20261120-lauren-price-michaela-kotaskova@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: Hard Rock Live Rockford\, Rockford\, Illinois\, United States\nStart: 06:00 PM CT\nMain Event: Deontae Pettigrew vs. Matthew McKinney (Heavyweight\, 10 rounds\, WBA Fedelatin USA Heavyweight)\nUndercard:\n  * Everett Olivares vs. Julian Smith (Welterweight\, 8 rounds\, Illinois State Welterweight)\n  * Eric Emery vs. Anthony Mancilla (Featherweight\, 6 rounds\, Illinois State Featherweight)\n  * Hunter Lee vs. Lane Hanlin (6 rounds)\n  * Seth Swinehart vs. Armondo Reeves (6 rounds)\n  * Mariano Sandoval vs. Jaylin Strong\n  * Laith Yass vs. Elijah Hasman (4 rounds)\n  * Julian Lugo vs. Anthony Steele (4 rounds)\nSource: FightNews.com
+DTEND:20261101T040000Z
+DTSTART:20261031T230000Z
+SUMMARY:Deontae Pettigrew vs Matthew McKinney
+UID:20261031-deontae-pettigrew-matthew-mckinney@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The Cosmopolitan of Las Vegas\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Sebastian Fundora DEF. Ermal Hadribeaj - KO In Round 12\nSource: BoxingScene.com
@@ -826,13 +833,6 @@ DTEND:20260531T050000Z
 DTSTART:20260531T000000Z
 SUMMARY:Philadelphia Smoke vs. Boston Butchers
 UID:20260530-philadelphia-smoke-vs-boston-butchers-20260530@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Thursday\, October 29\, 2026\nLocation: Radisson Blu Hotel Glasgow\, Glasgow\, Scotland\, United Kingdom\nStart: 05:00 PM CT\nMain Event: Bobby Morrell vs. Ryszard Lewicki\nUndercard:\n  * Charles McDonagh vs. TBA\n  * Jake Limond vs. TBA\n  * Liam Henry vs. TBA\nSource: FightNews.com
-DTEND:20261030T030000Z
-DTSTART:20261029T220000Z
-SUMMARY:St Andrew's Sporting Club October Boxing Dinner: Bobby Morrell vs Ryszard Lewicki
-UID:20261029-bobby-morrell-ryszard-lewicki@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, October 30\, 2026\nLocation: Managua\, Nicaragua\nStart: time TBC\nMain Event: Bryan Blandon vs. Ronal Batista (10-round bout\, bantamweights)\nUndercard:\n  * Alma Meraz vs. Eveling Ortega (10-round bout\, WBA women’s interim junior flyweight championship held by Meraz)\n  * Kevin Vivas vs. Edwin Cano (8-round bout\, junior flyweights)\n  * Ricardo Blandon vs. Juan Mendoza (8-round bout\, junior lightweights)\nSource: BoxingNews24.com
