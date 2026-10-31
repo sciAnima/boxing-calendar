@@ -11,13 +11,6 @@ SUMMARY:Yoni Valverde vs Aaron Garibay
 UID:20261107-yoni-valverde-aaron-garibay@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 30\, 2026\nLocation: Grand Kursaal\, Besançon\, Bourgogne-Franche-Comté\, France\nStart: 09:00 AM CT\nMain Event: Islem Merabet vs. Don Ives Mikael Taha (Super Lightweight\, Vacant IBF Mediterranean Super Lightweight)\nSource: FightNews.com
-DTEND:20261030T190000Z
-DTSTART:20261030T140000Z
-SUMMARY:Islem Merabet vs Don Ives Mikael Taha
-UID:20261030-islem-merabet-don-ives-mikael-taha@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, November 08\, 2026\nLocation: Arlington\, Texas\nNetwork: ESPN\, ESPN+\nStart: 06:00 PM CT\nMain Event: Elif Nur Turhan vs. Alycia Baumgardner (10-round bout\, IBF women’s lightweight championship held by Turhan)\nUndercard:\n  * Ramla Ali vs. Mikiah Kreps (10-round bout\, junior featherweight championship held by vacant WBO/IBF women)\n  * Skye Nicolson vs. Miyo Yoshida (10-round bout\, WBC women’s junior featherweight championship held by Nicolson)\n  * Irma Garcia vs. Nataly Delgado (10-round bout\, IBF/WBA women’s junior bantamweight unification)\n  * Brittany Sims vs. Shera Mae Patricio (10-round bout\, “regular” bantamweight championship held by vacant WBA women)\n  * Fernando Garcia vs. Alexander Castellano (6-round bout\, featherweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple Calendar / Outlook (.ics)\n  * Save to your calendar and check its alert setting. The .ics reminder requests an alert at card start. Google Calendar uses your calendar’s reminder settings. This start time is an estimate. Timings can change\; saved reminders do not update automatically.\nSource: BoxingNews24.com
 DTEND:20261109T050000Z
 DTSTART:20261109T000000Z
@@ -38,11 +31,11 @@ SUMMARY:Jhon Orobio vs. Hendri Cedeno
 UID:20261112-jhon-orobio-hendri-cedeno@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 30\, 2026\nLocation: Hard Rock Hotel & Casino Atlantic City\, Atlantic City\, New Jersey\, United States\nStart: 06:00 PM CT\nMain Event: Richard Johnson vs. Klisman Sabner Simao (Super Welterweight\, Vacant USBA Regional Junior Middleweight)\nUndercard:\n  * Chris Thomas vs. Russell Harris (Cruiserweight\, Vacant USBA Regional Cruiserweight)\n  * Jamshidbek Najmitdinov vs. Artem Dalakian\n  * Joana Nwamerue vs. Jaica Green (Women'S Lightweight)\n  * Jasai Kirkpatrick vs. Carlos Marrero (Super Lightweight)\n  * Justin Penaranda vs. Alvaro Huizar (Lightweight)\n  * Eduardo Corona vs. Jerson Estrada (Super Lightweight)\n  * Kahlim Mills vs. Jeremiah Robinson (Super Featherweight)\n  * Cali Box vs. Monreco Goldston (Super Middleweight)\nSource: FightNews.com
-DTEND:20261031T040000Z
-DTSTART:20261030T230000Z
-SUMMARY:Chris Thomas vs Russell Harris
-UID:20261030-richard-johnson-klisman-sabner-simao@boxing-calendar
+DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: Arena Stadium\, Les Sables-d'Olonne\, Pays de la Loire\, France\nStart: 01:00 PM CT\nMain Event: Enzo Grau vs. Christopher Mouafo (Lightweight\, 10 rounds\, WBC Francophone Lightweight)\nUndercard:\n  * Hugo Grau vs. Stiven Pena Esteban (Welterweight\, 6 rounds)\nSource: FightNews.com
+DTEND:20261031T230000Z
+DTSTART:20261031T180000Z
+SUMMARY:Enzo Grau vs Christopher Mouafo
+UID:20261031-enzo-grau-christopher-mouafo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Thursday\, November 26\, 2026\nLocation: EBARA WAVE Arena Ota\, Tokyo\, Tokyo\, Japan\nNetwork: NTT Docomo (JP)\nStart: 12:30 AM CT\nMain Event: Masamichi Yabuki vs. Miel Fajardo (12-round bout\, IBF flyweight championship held by Yabuki)\nUndercard:\n  * Takeshi Ishii vs. TBA (12-round bout\, WBA “regular” strawweight championship held by Ishii)\n  * Emma Nesbitt vs. Madoka Wada (10-round bout\, female atomweights)\n  * Seiya Nakayama vs. Vencent Lacar (8-round bout\, junior bantamweights)\n  * Masanori Rikiishi vs. Melchor Roda (8-round bout\, junior lightweights)\n  * Yuga Fujiki vs. Ronerick Ballesteros (8-round bout\, lightweights)\n  * Yoshiki Takei vs. Kenshin Oshima (8-round bout\, junior featherweights)\nSource: BoxingNews24.com
@@ -92,6 +85,13 @@ DTEND:20260516T050000Z
 DTSTART:20260516T000000Z
 SUMMARY:Dallas Enforcers vs. San Antonio Snipers
 UID:20260515-dallas-enforcers-vs-san-antonio-snipers-20260515@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Thursday\, November 12\, 2026\nLocation: Mundo Imperial\, Acapulco\, Guerrero\, Mexico\nNetwork: ESPN KnockOut (Mexico)\nStart: 06:00 PM CT\nMain Event: Camila Zamorano vs. Brenda Balderas (Women'S Atomweight\, WBC Women's Atomweight)\nUndercard:\n  * Jonathan Fierro vs. Martín Sosa\n  * Luis Nery vs. Sem Japet Enano (Featherweight\, 10 rounds)\nSource: FightNews.com
+DTEND:20261113T050000Z
+DTSTART:20261113T000000Z
+SUMMARY:Camila Zamorano vs Brenda Balderas
+UID:20261112-camila-zamorano-brenda-balderas@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 18\, 2026\nLocation: We-Ko-Pa Casino Resort\, 10438 Wekopa Way\, Fort McDowell\, AZ 85264\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -311,6 +311,12 @@ SUMMARY:Conner Kelsall vs. Liam Dring
 UID:20261120-conner-kelsall-liam-dring@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261128
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: São Paulo\, São Paulo\, Brazil\nStart: time TBC\nMain Event: Lucas Pontes Da Silva vs. Abraham Tebes (Cruiserweight\, WBA Fedelatin USA Cruiserweight)\nSource: FightNews.com
+SUMMARY:Lucas Pontes Da Silva vs Abraham Tebes
+UID:20261128-lucas-pontes-da-silva-abraham-tebes@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 14\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260615T050000Z
 DTSTART:20260615T000000Z
@@ -430,9 +436,9 @@ SUMMARY:Houston Hitmen vs. San Antonio Snipers
 UID:20260322-houston-hitmen-vs-san-antonio-snipers-20260322@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: Riyadh\, Saudi Arabia\nNetwork: DAZN (PPV)\nStart: 11:00 AM CT\nMain Event: Christian Mbilli vs. Canelo Alvarez (12-round bout\, WBC super middleweight championship held by Mbilli)\nUndercard:\n  * Jaime Munguia vs. Nikita Zon (12-round bout\, WBA super middleweight championship held by Munguia)\n  * Rafael Espinoza vs. Lorenzo Parra (12-round bout\, WBO featherweight championship held by Espinoza)\n  * Lindolfo Delgado vs. Arthur Biyarslanov (12-round bout\, vacant IBF junior welterweight championship at stake)\n  * David Picasso vs. Carl Martin (12-round bout\, junior featherweights)\n  * Reito Tsutsumi vs. Raymundo Rojas (10-round bout\, junior lightweights)\n  * Sultan Almohammed vs. Erick Jahir Villegas\n  * TBA rounds\, junior lightweights\n  * Bek Nurmaganbet vs. Marcos Vazquez\n  * TBA rounds\, middleweights\n  * Carlos Emiliano Rojo Vazquez vs. Flavius Biea\n  * TBA rounds\, middleweights\n  * Hector Aguirre vs. Brayan Leon Salgado\n  * TBA rounds\, super middleweights\nSource: BoxingNews24.com
-DTEND:20261031T210000Z
-DTSTART:20261031T160000Z
+DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: Riyadh\, Saudi Arabia\nNetwork: DAZN (PPV)\nStart: 09:00 AM CT\nMain Event: Christian Mbilli vs. Canelo Alvarez (12-round bout\, WBC super middleweight championship held by Mbilli)\nUndercard:\n  * Jaime Munguia vs. Nikita Zon (12-round bout\, WBA super middleweight championship held by Munguia)\n  * Rafael Espinoza vs. Ricardo Blandon (12-round bout\, WBO featherweight championship held by Espinoza)\n  * David Picasso vs. Carl Martin (12-round bout\, junior featherweights)\n  * Reito Tsutsumi vs. Raymundo Rojas (10-round bout\, junior lightweights)\n  * Sultan Almohammed vs. Erick Jahir Villegas (6-round bout\, junior lightweights)\n  * Bek Nurmaganbet vs. Marcos Vazquez (10-round bout\, middleweights)\n  * Carlos Emiliano Rojo Vazquez vs. Flavius Biea (8-round bout\, middleweights)\n  * Hector Aguirre vs. Brayan Leon (8-round bout\, super middleweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple Calendar / Outlook (.ics)\n  * Save to your calendar and check its alert setting. The .ics reminder requests an alert at card start. Google Calendar uses your calendar’s reminder settings. This start time is an estimate. Timings can change\; saved reminders do not update automatically.\nSource: BoxingNews24.com
+DTEND:20261031T190000Z
+DTSTART:20261031T140000Z
 SUMMARY:Christian Mbilli vs. Canelo Alvarez
 UID:20261031-christian-mbilli-canelo-alvarez@boxing-calendar
 END:VEVENT
@@ -484,6 +490,12 @@ DTEND:20261206T000000Z
 DTSTART:20261205T190000Z
 SUMMARY:Conah Walker vs. Alexis Rocha
 UID:20261205-conah-walker-alexis-rocha@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261107
+DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Rosarito\, Baja California\, Mexico\nStart: time TBC\nMain Event: Omar Valenzuela vs. Rodolfo Orozco (Middleweight\, WBA Fedelatin Mexico Middleweight)\nSource: FightNews.com
+SUMMARY:Omar Valenzuela vs Rodolfo Orozco
+UID:20261107-omar-valenzuela-rodolfo-orozco@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, August 29\, 2026\nLocation: The O2 Arena\, London\, United Kingdom\nStart: 11:00 AM CT\nResults:\n  Filip Hrgovic DEF. Moses Itauma - TKO In Round 9\n  Sam Noakes DEF. Denys Berinchyk - Unanimous Decision\nSource: BoxingScene.com
@@ -640,13 +652,6 @@ SUMMARY:Las Vegas Hustle vs. LA Elite
 UID:20260802-las-vegas-hustle-vs-la-elite-20260802@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: Pullman Cairns International\, Cairns\, Queensland\, Australia\nStart: 02:00 AM CT\nMain Event: Quinton Smith vs. Geoff Matthews (Middleweight\, 8 rounds\, Vacant ANBF Queensland Middleweight)\nUndercard:\n  * Caden Russo vs. Chaiwat Mueanphong (Middleweight\, 6 rounds)\n  * Lekaysha Woodbridge vs. Panumad Bubpamalo (Women'S Flyweight\, WBA Asia Female Flyweight)\n  * Ricky Sandral vs. Jonty Ivey (Heavyweight\, 4 rounds)\n  * Joshua Shannon vs. Kieran Scott (Super Middleweight\, 4 rounds)\nSource: FightNews.com
-DTEND:20261031T120000Z
-DTSTART:20261031T070000Z
-SUMMARY:Lekaysha Woodbridge vs Panumad Bubpamalo
-UID:20261031-quinton-smith-geoff-matthews@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, November 20\, 2026\nLocation: Fantasy Springs Resort Casino\nNetwork: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
 DTEND:20261121T060000Z
 DTSTART:20261121T010000Z
@@ -772,13 +777,6 @@ SUMMARY:Las Vegas Hustle vs. LA Elite
 UID:20260619-las-vegas-hustle-vs-la-elite-20260619@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 30\, 2026\nLocation: Centro de Convenciones Olof Palme\, Managua\, Managua\, Nicaragua\nNetwork: ESPN KnockOut\nStart: 08:00 PM CT\nMain Event: Alma Meraz vs. Eveling Ortega (Women'S Light Flyweight\, 10 rounds\, WBA Interim Women's Light Flyweight)\nUndercard:\n  * Bryan Blandón vs. Ronal Batista (Bantamweight\, 10 rounds)\n  * Kevin Vivas vs. Edwin Cano (Light Flyweight)\n  * Ricardo Blandón vs. Juan Mendoza (Featherweight\, 8 rounds)\n  * Yanior Vega vs. Isaac Berríos (Super Bantamweight)\n  * Miguel Estrada vs. Larry Olivas (Light Flyweight)\n  * Alexander Hernández vs. Felipe Larez (Super Welterweight)\nSource: FightNews.com
-DTEND:20261031T060000Z
-DTSTART:20261031T010000Z
-SUMMARY:Alma Meraz vs Eveling Ortega
-UID:20261030-alma-meraz-eveling-ortega@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 10\, 2026\nLocation: Wintrust Arena\, Chicago\, Illinois\nStart: 07:00 PM CT\nResults:\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\nSource: BoxingScene.com
 DTEND:20261011T050000Z
 DTSTART:20261011T000000Z
@@ -833,13 +831,6 @@ DTEND:20260531T050000Z
 DTSTART:20260531T000000Z
 SUMMARY:Philadelphia Smoke vs. Boston Butchers
 UID:20260530-philadelphia-smoke-vs-boston-butchers-20260530@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 30\, 2026\nLocation: Managua\, Nicaragua\nStart: time TBC\nMain Event: Bryan Blandon vs. Ronal Batista (10-round bout\, bantamweights)\nUndercard:\n  * Alma Meraz vs. Eveling Ortega (10-round bout\, WBA women’s interim junior flyweight championship held by Meraz)\n  * Kevin Vivas vs. Edwin Cano (8-round bout\, junior flyweights)\n  * Ricardo Blandon vs. Juan Mendoza (8-round bout\, junior lightweights)\nSource: BoxingNews24.com
-DTEND:20261031T070000Z
-DTSTART:20261031T020000Z
-SUMMARY:Bryan Blandon vs. Ronal Batista
-UID:20261030-bryan-blandon-ronal-batista@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
