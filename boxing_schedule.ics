@@ -25,8 +25,9 @@ SUMMARY:Las Vegas Hustle vs. Atlanta Attack
 UID:20260529-las-vegas-hustle-vs-atlanta-attack-20260529@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261112
-DESCRIPTION:Date: Thursday\, November 12\, 2026\nLocation: Cabaret du Casino de Montréal\, Montreal\, Quebec\, Canada\nNetwork: DAZN\nStart: time TBC\nMain Event: Jhon Orobio vs. Hendri Cedeno (10-round bout\, junior welterweights)\nUndercard:\n  * Lenar Perez vs. TBA (10-round bout\, cruiserweights)\n  * Steven Butler vs. Erik Bazinyan (10-round bout\, super middleweights)\n  * Avery Martin Duval vs. TBA (10-round bout\, lightweights)\n  * Wyatt Sanford vs. TBA (8-round bout\, lightweights)\n  * Keven Beausejour vs. TBA (4-round bout\, super middleweights)\n  * Nickenson Denis vs. TBA (4-round bout\, super middleweights)\nSource: BoxingNews24.com
+DESCRIPTION:Date: Thursday\, November 12\, 2026\nLocation: Cabaret du Casino de Montréal\, Montreal\, Quebec\, Canada\nNetwork: DAZN\nStart: 05:30 PM CT\nMain Event: Jhon Orobio vs. Hendri Cedeno (10-round bout\, junior welterweights)\nUndercard:\n  * Lenar Perez vs. TBA (10-round bout\, cruiserweights)\n  * Steven Butler vs. Erik Bazinyan (10-round bout\, super middleweights)\n  * Avery Martin Duval vs. TBA (10-round bout\, lightweights)\n  * Wyatt Sanford vs. TBA (8-round bout\, lightweights)\n  * Keven Beausejour vs. TBA (4-round bout\, super middleweights)\n  * Nickenson Denis vs. TBA (4-round bout\, super middleweights)\nSource: BoxingNews24.com
+DTEND:20261113T043000Z
+DTSTART:20261112T233000Z
 SUMMARY:Jhon Orobio vs. Hendri Cedeno
 UID:20261112-jhon-orobio-hendri-cedeno@boxing-calendar
 END:VEVENT
@@ -241,7 +242,7 @@ SUMMARY:Chris Billam-Smith vs. Chev Clarke
 UID:20261107-chris-billam-smith-chev-clarke@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: AO Arena\, Manchester\, England\, United Kingdom\nNetwork: DAZN\nStart: 01:00 PM CT\nMain Event: Joshua Buatsi vs. Willy Hutchinson (rematch\, 12-round bout\, vacant WBC light heavyweight championship at stake)\nUndercard:\n  * Jack Rafferty vs. Hovhannes Martirosyan (12-round bout\, welterweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Save to your calendar and check its alert setting. The .ics reminder requests an alert at card start. Google Calendar uses your calendar’s reminder settings. This start time is an estimate. Timings can change\; saved reminders do not update automatically.\nSource: BoxingNews24.com
+DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: AO Arena\, Manchester\, England\, United Kingdom\nNetwork: DAZN\nStart: 01:00 PM CT\nMain Event: Joshua Buatsi vs. Willy Hutchinson (rematch\, 12-round bout\, vacant WBC light heavyweight championship at stake)\nUndercard:\n  * Jack Rafferty vs. Hovhannes Martirosyan (12-round bout\, welterweights)\n  * Zak Miller vs. Gully Powar (12-round bout\, featherweights)\n  * Bradley Rea vs. Ezra Taylor (10-round bout\, light heavyweights)\n  * Stephen Clarke vs. Harley Collison (8-round bout\, middleweights)\n  * John Joe Carrigan vs. Cheikh Diop (6-round bout\, junior middleweights)\n  * Javokhir Ummataliev vs. Atacayte Santana (6-round bout\, super middleweights)\n  * Alex Arthur Jr. vs. Luis Montelongo Morales (6-round bout\, super middleweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Save to your calendar and check its alert setting. The .ics reminder requests an alert at card start. Google Calendar uses your calendar’s reminder settings. This start time is an estimate. Timings can change\; saved reminders do not update automatically.\nSource: BoxingNews24.com
 DTEND:20261108T000000Z
 DTSTART:20261107T190000Z
 SUMMARY:Joshua Buatsi vs. Willy Hutchinson
@@ -267,6 +268,12 @@ DTEND:20260418T050000Z
 DTSTART:20260418T000000Z
 SUMMARY:Nashville Smash vs. Phoenix Fury
 UID:20260417-nashville-smash-vs-phoenix-fury-20260417@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261128
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Newark\, New Jersey\, United States\nStart: time TBC\nMain Event: Nimal Farmer vs. Ghandi Romain (Welterweight\, USBA Welterweight)\nSource: FightNews.com
+SUMMARY:Nimal Farmer vs Ghandi Romain
+UID:20261128-nimal-farmer-ghandi-romain@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, May 02\, 2026\nLocation: Sheraton Philadelphia Downtown - Liberty Ballroom\, 201 N 17th St\, Philadelphia\, PA 19103\, Philadelphia\, PA 19103\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -295,6 +302,12 @@ DTEND:20261121T000000Z
 DTSTART:20261120T190000Z
 SUMMARY:Conner Kelsall vs. Liam Dring
 UID:20261120-conner-kelsall-liam-dring@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261201
+DESCRIPTION:Date: Tuesday\, December 01\, 2026\nLocation: General Santos\, South Cotabato\, Philippines\nStart: time TBC\nMain Event: Lienard Sarcon vs. Leboy Atencio (Featherweight\, IBF Pan Pacific Featherweight)\nSource: FightNews.com
+SUMMARY:Lienard Sarcon vs Leboy Atencio
+UID:20261201-lienard-sarcon-leboy-atencio@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261128
@@ -505,7 +518,7 @@ SUMMARY:Las Vegas Hustle vs. Phoenix Fury
 UID:20260628-las-vegas-hustle-vs-phoenix-fury-20260628@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, November 06\, 2026\nLocation: Sydney\, Australia\nStart: time TBC\nMain Event: Paul Gallen vs. Nelson Asofa-Solomona (5-round bout\, heavyweights)\nUndercard:\n  * Callum Peters vs. Juan Diego Ortiz (10-round bout\, middleweights)\n  * Ahmad Reda vs. Jake Wyllie (10-round bout\, lightweights)\n  * Paulo Aokuso vs. Mobin Khahrazeh (10-round bout\, light heavyweights)\nSource: BoxingNews24.com
+DESCRIPTION:Date: Friday\, November 06\, 2026\nLocation: Sydney\, Australia\nStart: time TBC\nMain Event: Paul Gallen vs. Nelson Asofa-Solomona (5-round bout\, heavyweights)\nUndercard:\n  * Callum Peters vs. Juan Diego Ortiz (10-round bout\, middleweights)\nSource: BoxingNews24.com
 DTEND:20261107T080000Z
 DTSTART:20261107T030000Z
 SUMMARY:Paul Gallen vs. Nelson Asofa-Solomona
@@ -739,6 +752,13 @@ DTEND:20260620T050000Z
 DTSTART:20260620T000000Z
 SUMMARY:Las Vegas Hustle vs. LA Elite
 UID:20260619-las-vegas-hustle-vs-la-elite-20260619@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, November 13\, 2026\nLocation: South Dakota Military Heritage Alliance\, Sioux Falls\, South Dakota\, United States\nStart: 07:00 PM CT\nMain Event: Deonte Walker vs. Arnold Gonzalez (Welterweight\, WBA NABA Gold Welterweight)\nSource: FightNews.com
+DTEND:20261114T060000Z
+DTSTART:20261114T010000Z
+SUMMARY:Deonte Walker vs Arnold Gonzalez
+UID:20261113-deonte-walker-arnold-gonzalez@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 10\, 2026\nLocation: Wintrust Arena\, Chicago\, Illinois\nStart: 07:00 PM CT\nResults:\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\nSource: BoxingScene.com
