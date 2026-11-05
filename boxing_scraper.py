@@ -477,6 +477,12 @@ def parse_bs(html: str, label: str = "BoxingScene") -> dict[str, dict]:
             elif part and not venue and len(part) > 5:
                 venue = part
 
+        # The broadcaster follows "in <city>": read it by position so channels outside the
+        # keyword list above (e.g. "Wynn Records Network") aren't dropped
+        if "in" in parts:
+            tail = parts[parts.index("in") + 2:]
+            network = next((p for p in tail if not re.search(r"ring walk", p, re.I)), "") or network
+
         dm = BS_DT_RE.search(datetime_str)
         if not dm:
             continue
@@ -766,6 +772,7 @@ def load_previous_dazn(path: str) -> dict[str, dict]:
             continue
         name = (fields.get("SUMMARY", "")
                 .replace("\\,", ",").replace("\\;", ";").replace("\\\\", "\\"))
+        name = re.sub(r"\s*\[(?:TV|Stream): [^\]]*\]$", "", name)  # tag added by build_calendar
         if name:
             events[make_slug(name)] = {"name": name, "start_utc": start_utc}
     return events
@@ -909,6 +916,17 @@ SOURCE_RANK = {
     "BoxingScene.com": 4,
     "BoxingNews24.com": 5,
 }
+STREAM_ONLY = {"youtube", "proboxtv", "probox tv"}
+
+
+def tv_label(network: str) -> str:
+    """Short title tag: 'TV: DAZN', 'Stream: YouTube'; long lists are trimmed ('+2')."""
+    services = [x.strip() for x in network.split(",") if x.strip()]
+    word = "Stream" if services and all(x.lower() in STREAM_ONLY for x in services) else "TV"
+    extra = f" +{len(services) - 2}" if len(services) > 2 else ""
+    return f"{word}: {', '.join(services[:2])}{extra}"
+
+
 NAME_SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "2", "3", "tba", "tbd"}
 
 
@@ -927,21 +945,24 @@ def match_surnames(name: str) -> set[str] | None:
 
 def drop_duplicate_events(merged: dict[str, dict]) -> None:
     """Sources name the same fight differently ("Whittaker vs. Wallace" vs
-    "Ben Whittaker vs. Conor Wallace"), so their slugs don't match. Drop an
-    "A vs. B" event when a higher-priority source lists both surnames within a
-    day, keeping any fuller venue/network the dropped one had."""
-    entries = [
-        (slug, ev["date_obj"], SOURCE_RANK.get(ev["source"], 0),
-         set(make_slug(ev.get("match_name") or ev["name"]).split("-")))
-        for slug, ev in merged.items()
-    ]
-    for slug, ev in list(merged.items()):
-        surnames = match_surnames(ev.get("match_name") or ev["name"])
-        if not surnames:
-            continue
-        rank = SOURCE_RANK.get(ev["source"], 0)
-        for other_slug, date_obj, other_rank, tokens in entries:
-            if other_rank > rank and abs((date_obj - ev["date_obj"]).days) <= 1 and surnames <= tokens:
+    "Ben Whittaker vs. Conor Wallace" vs "Joshua Buatsi-Willy Hutchinson 2"), so
+    their slugs don't match. Drop an event when a higher-priority source lists the
+    same two surnames within a day, keeping any fuller venue/network it had.
+    Surnames can only be read from "A vs. B" names, so the check runs both ways:
+    the dropped event's surnames in the other's name, or the other's in its own."""
+    entries = []
+    for slug, ev in merged.items():
+        name = ev.get("match_name") or ev["name"]
+        entries.append((
+            slug, ev["date_obj"], SOURCE_RANK.get(ev["source"], 0),
+            match_surnames(name), set(make_slug(name).split("-")),
+        ))
+    for slug, date_obj, rank, surnames, tokens in entries:
+        ev = merged[slug]
+        for other_slug, other_date, other_rank, other_surnames, other_tokens in entries:
+            if other_rank <= rank or abs((other_date - date_obj).days) > 1:
+                continue
+            if (surnames and surnames <= other_tokens) or (other_surnames and other_surnames <= tokens):
                 keep = merged[other_slug]
                 if ev["location"] and (not keep["location"] or keep["location"] in ev["location"]):
                     keep["location"] = ev["location"]  # "Utilita Arena Sheffield" over "Sheffield"
@@ -967,25 +988,32 @@ def build_calendar(
         for slug, ev in past.items():
             merged[slug] = ev
 
+    def put(slug: str, ev: dict) -> None:
+        """Higher-priority sources override, but never erase a known broadcaster."""
+        prev = merged.get(slug, {})
+        merged[slug] = ev
+        if prev.get("network") and not ev.get("network"):
+            merged[slug] = {**ev, "network": prev["network"]}
+
     # Priority (lowest to highest): FightNews < DAZN < TBL = ProBox < BS < BN24
     for slug, ev in (fightnews or {}).items():
         existing_results = merged.get(slug, {}).get("results", [])
-        merged[slug] = {**ev, "results": existing_results or ev.get("results", [])}
+        put(slug, {**ev, "results": existing_results or ev.get("results", [])})
 
     # (DAZN has exact start times but no venue, so richer sources override it)
     for slug, ev in (dazn or {}).items():
-        merged[slug] = ev
+        put(slug, ev)
 
     for slug, ev in tbl.items():
-        merged[slug] = ev
+        put(slug, ev)
 
     for slug, ev in probox.items():
-        merged[slug] = ev
+        put(slug, ev)
 
     for slug, ev in bs.items():
         # Preserve results if past dict had them for this slug
         existing_results = merged.get(slug, {}).get("results", [])
-        merged[slug] = {**ev, "results": existing_results or ev.get("results", [])}
+        put(slug, {**ev, "results": existing_results or ev.get("results", [])})
 
     # BN24 overrides BS but preserve bs_slug and results, and don't let a bare
     # "Broadcast unconfirmed" entry erase a time/network/venue another source has
@@ -1058,11 +1086,11 @@ def build_calendar(
             print(f"  + {uid_date} | {cal_ev.name[:45]} | RESULT [{ev['source'][:3]}]")
         else:
             undercard_str = "\n".join(f"  * {f}" for f in ev["fights"][1:])
-            cal_ev.name = ev["name"]
+            cal_ev.name = f"{ev['name']} [{tv_label(ev['network'])}]" if ev["network"] else ev["name"]
             cal_ev.description = "\n".join(filter(None, [
                 f"Date: {ev['date_obj'].strftime('%A, %B %d, %Y')}",
                 f"Location: {ev['location']}" if ev["location"] else "",
-                f"Network: {ev['network']}" if ev["network"] else "",
+                f"Televised on: {ev['network'] or 'not announced yet'}",
                 start_text,
                 "",
                 f"Main Event: {ev['fights'][0]}" if ev["fights"] else "",
