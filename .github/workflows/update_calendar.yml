@@ -52,4 +52,15 @@ jobs:
 
       - name: Push changes
         run: |
-          git push
+          # GitHub occasionally rejects a push with a transient 5xx, and main can move
+          # while the scraper runs (e.g. a PR merges). Retry, rebasing onto the latest
+          # main each time; on a calendar conflict our freshly generated file wins.
+          for attempt in 1 2 3 4; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push failed (attempt $attempt of 4); retrying"
+            sleep $((attempt * 10))
+            git pull --rebase -X theirs origin main || git rebase --abort || true
+          done
+          exit 1

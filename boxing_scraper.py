@@ -927,21 +927,24 @@ def match_surnames(name: str) -> set[str] | None:
 
 def drop_duplicate_events(merged: dict[str, dict]) -> None:
     """Sources name the same fight differently ("Whittaker vs. Wallace" vs
-    "Ben Whittaker vs. Conor Wallace"), so their slugs don't match. Drop an
-    "A vs. B" event when a higher-priority source lists both surnames within a
-    day, keeping any fuller venue/network the dropped one had."""
-    entries = [
-        (slug, ev["date_obj"], SOURCE_RANK.get(ev["source"], 0),
-         set(make_slug(ev.get("match_name") or ev["name"]).split("-")))
-        for slug, ev in merged.items()
-    ]
-    for slug, ev in list(merged.items()):
-        surnames = match_surnames(ev.get("match_name") or ev["name"])
-        if not surnames:
-            continue
-        rank = SOURCE_RANK.get(ev["source"], 0)
-        for other_slug, date_obj, other_rank, tokens in entries:
-            if other_rank > rank and abs((date_obj - ev["date_obj"]).days) <= 1 and surnames <= tokens:
+    "Ben Whittaker vs. Conor Wallace" vs "Joshua Buatsi-Willy Hutchinson 2"), so
+    their slugs don't match. Drop an event when a higher-priority source lists the
+    same two surnames within a day, keeping any fuller venue/network it had.
+    Surnames can only be read from "A vs. B" names, so the check runs both ways:
+    the dropped event's surnames in the other's name, or the other's in its own."""
+    entries = []
+    for slug, ev in merged.items():
+        name = ev.get("match_name") or ev["name"]
+        entries.append((
+            slug, ev["date_obj"], SOURCE_RANK.get(ev["source"], 0),
+            match_surnames(name), set(make_slug(name).split("-")),
+        ))
+    for slug, date_obj, rank, surnames, tokens in entries:
+        ev = merged[slug]
+        for other_slug, other_date, other_rank, other_surnames, other_tokens in entries:
+            if other_rank <= rank or abs((other_date - date_obj).days) > 1:
+                continue
+            if (surnames and surnames <= other_tokens) or (other_surnames and other_surnames <= tokens):
                 keep = merged[other_slug]
                 if ev["location"] and (not keep["location"] or keep["location"] in ev["location"]):
                     keep["location"] = ev["location"]  # "Utilita Arena Sheffield" over "Sheffield"
