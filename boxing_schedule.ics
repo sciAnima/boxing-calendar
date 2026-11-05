@@ -4,11 +4,24 @@ COMMENT:Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com + Pr
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261205
+DESCRIPTION:Date: Saturday\, December 05\, 2026\nLocation: Estadio de Béisbol Hermanos Serdán\, Puebla\, Puebla\, Mexico\nStart: time TBC\nMain Event: Mariana Juarez vs. Gabriela Sanchez (Women'S Super Flyweight\, 10 rounds)\nSource: FightNews.com
+SUMMARY:Mariana Juarez vs Gabriela Sanchez
+UID:20261205-mariana-juarez-gabriela-sanchez@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Arena de Charleville-Mézières\, Charleville-Mézières\, Grand Est\, France\nStart: 11:30 AM CT\nMain Event: Yoni Valverde vs. Aaron Garibay (Junior Lightweight\, IBF International\, Vacant)\nSource: FightNews.com
 DTEND:20261107T223000Z
 DTSTART:20261107T173000Z
 SUMMARY:Yoni Valverde vs Aaron Garibay
 UID:20261107-yoni-valverde-aaron-garibay@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, December 04\, 2026\nLocation: Watsco Center\, Coral Gables\, Florida\, United States\nStart: 04:00 PM CT\nMain Event: Danny Garcia vs. Ruslan Provodnikov\nUndercard:\n  * Jose Zepeda vs. Alberto Machado (Super Welterweight\, 10 rounds\, WBC Silver Super Welterweight)\n  * Yokasta Valle vs. Maria Luz Peral (Women'S Strawweight\, 10 rounds\, WBC Women's Strawweight)\n  * Andreii Novytskyi vs. Norman Neely (Heavyweight\, 10 rounds\, WBC Inter-Continental Heavyweight)\n  * Naomi Valle vs. Jadalie Medeiros (Women'S Minimumweight\, 8 rounds)\n  * Mario Herrera vs. Guillermo Alvizures (Middleweight\, 6 rounds)\nSource: FightNews.com
+DTEND:20261205T030000Z
+DTSTART:20261204T220000Z
+SUMMARY:Rumble in Miami: Danny Garcia vs Ruslan Provodnikov
+UID:20261204-danny-garcia-ruslan-provodnikov@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, November 08\, 2026\nLocation: Arlington\, Texas\nNetwork: ESPN\, ESPN+\nStart: 06:00 PM CT\nMain Event: Elif Nur Turhan vs. Alycia Baumgardner (10-round bout\, IBF women’s lightweight championship held by Turhan)\nUndercard:\n  * Ramla Ali vs. Mikiah Kreps (10-round bout\, junior featherweight championship held by vacant WBO/IBF women)\n  * Skye Nicolson vs. Miyo Yoshida (10-round bout\, WBC women’s junior featherweight championship held by Nicolson)\n  * Irma Garcia vs. Nataly Delgado (10-round bout\, IBF/WBA women’s junior bantamweight unification)\n  * Brittany Sims vs. Shera Mae Patricio (10-round bout\, “regular” bantamweight championship held by vacant WBA women)\n  * Fernando Garcia vs. Alexander Castellano (6-round bout\, featherweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Save to your calendar and check its alert setting. The .ics reminder requests an alert at card start. Google Calendar uses your calendar’s reminder settings. This start time is an estimate. Timings can change\; saved reminders do not update automatically.\nSource: BoxingNews24.com
@@ -179,6 +192,12 @@ SUMMARY:Dallas Enforcers vs. Boston Butchers
 UID:20260719-dallas-enforcers-vs-boston-butchers-20260719@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261205
+DESCRIPTION:Date: Saturday\, December 05\, 2026\nLocation: Phoenix\, Arizona\, United States\nStart: time TBC\nMain Event: Luis Reynaldo Nunez vs. Toshiki Shimomachi (Featherweight\, 12 rounds\, IBF Featherweight Eliminator)\nSource: FightNews.com
+SUMMARY:Luis Reynaldo Nunez vs Toshiki Shimomachi
+UID:20261205-luis-reynaldo-nunez-toshiki-shimomachi@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 13\, 2026\nLocation: Roadrunner Boston\, 89 Guest St\, Boston\, MA 02135\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260614T050000Z
 DTSTART:20260614T000000Z
@@ -200,9 +219,9 @@ SUMMARY:Bakary Samake vs Uisma Lima
 UID:20261114-bakary-samake-uisma-lima@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Ülker Sports and Event Hall\, Istanbul\, Istanbul\, Turkey\nStart: 09:00 AM CT\nMain Event: Umut Camkiran vs. Mourad Aliev (Heavyweight\, 12 rounds\, Vacant WBC Silver Heavyweight)\nSource: FightNews.com
-DTEND:20261107T200000Z
-DTSTART:20261107T150000Z
+DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Ülker Sports and Event Hall\, Istanbul\, Istanbul\, Turkey\nStart: 08:00 AM CT\nMain Event: Umut Camkiran vs. Mourad Aliev (Heavyweight\, 12 rounds\, Vacant WBC Silver Heavyweight)\nSource: FightNews.com
+DTEND:20261107T190000Z
+DTSTART:20261107T140000Z
 SUMMARY:Umut Camkiran vs Mourad Aliev
 UID:20261107-umut-camkiran-mourad-aliev@boxing-calendar
 END:VEVENT
@@ -291,8 +310,9 @@ SUMMARY:Nashville Smash vs. Phoenix Fury
 UID:20260417-nashville-smash-vs-phoenix-fury-20260417@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261128
-DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Newark\, New Jersey\, United States\nStart: time TBC\nMain Event: Nimal Farmer vs. Ghandi Romain (Welterweight\, USBA Welterweight)\nSource: FightNews.com
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Robert Treat Hotel\, Newark\, New Jersey\, United States\nStart: 05:00 PM CT\nMain Event: Nimal Farmer vs. Ghandi Romain (Welterweight\, USBA Welterweight)\nSource: FightNews.com
+DTEND:20261129T040000Z
+DTSTART:20261128T230000Z
 SUMMARY:Nimal Farmer vs Ghandi Romain
 UID:20261128-nimal-farmer-ghandi-romain@boxing-calendar
 END:VEVENT
@@ -326,7 +346,7 @@ UID:20261120-conner-kelsall-liam-dring@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261201
-DESCRIPTION:Date: Tuesday\, December 01\, 2026\nLocation: General Santos\, South Cotabato\, Philippines\nStart: time TBC\nMain Event: Lienard Sarcon vs. Leboy Atencio (Featherweight\, IBF Pan Pacific Featherweight)\nSource: FightNews.com
+DESCRIPTION:Date: Tuesday\, December 01\, 2026\nLocation: General Santos\, South Cotabato\, Philippines\nStart: time TBC\nMain Event: Lienard Sarcon vs. Leboy Atencio (Featherweight\, Vacant IBF Pan Pacific Featherweight)\nUndercard:\n  * Tom Mizokoshi vs. Mark Sabang (Super Bantamweight\, Vacant IBF Pan Pacific Super Bantamweight)\n  * Yeerzhati Baihazhati vs. Lourinz Biasong (Flyweight\, Vacant IBF Youth Flyweight)\nSource: FightNews.com
 SUMMARY:Lienard Sarcon vs Leboy Atencio
 UID:20261201-lienard-sarcon-leboy-atencio@boxing-calendar
 END:VEVENT
@@ -442,6 +462,12 @@ SUMMARY:Philadelphia Smoke vs. NYC Attitude
 UID:20260726-philadelphia-smoke-vs-nyc-attitude-20260726@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261205
+DESCRIPTION:Date: Saturday\, December 05\, 2026\nLocation: Desert Diamond Arena\, Glendale\, Arizona\, United States\nNetwork: Prime Video\, DAZN\nStart: time TBC\nMain Event: David Benavidez vs. Michal Cieslak (Cruiserweight\, 12 rounds\, WBA World Cruiserweight\, WBO World Cruiserweight\, WBC World Cruiserweight)\nUndercard:\n  * Vergil Ortiz Jr. vs. Keith Thurman (Middleweight\, 12 rounds)\n  * Emiliano Vargas vs. Omar Juarez (Super Lightweight\, 10 rounds)\n  * Marco Romero vs. Cruse Stewart (Middleweight\, 8 rounds)\n  * Nikita Tszyu vs. Roberto Valenzuela Jr. (Super Welterweight\, 10 rounds)\nSource: FightNews.com
+SUMMARY:David Benavidez vs Michal Cieslak
+UID:20261205-david-benavidez-michal-cieslak@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, March 22\, 2026\nLocation: Pontchartrain Center\, 4545 Williams Blvd\, Kenner\, LA 70065\nNetwork: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260323T050000Z
 DTSTART:20260323T000000Z
@@ -518,9 +544,9 @@ SUMMARY:Sacha Morice vs Hasna Tebse
 UID:20261114-sacha-morice-hasna-tebse@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, November 06\, 2026\nLocation: Deportivo Ferrocarrilero\, Aguascalientes\, Aguascalientes\, Mexico\nNetwork: ESPN KnockOut (Mexico)\nStart: 08:00 PM CT\nMain Event: Damian Arce vs. Mario Gutierrez (Flyweight\, 10 rounds)\nUndercard:\n  * Francisco Vital vs. Isaac Aranda (Super Featherweight)\nSource: FightNews.com
-DTEND:20261107T070000Z
-DTSTART:20261107T020000Z
+DESCRIPTION:Date: Friday\, November 06\, 2026\nLocation: Deportivo Ferrocarrilero\, Aguascalientes\, Aguascalientes\, Mexico\nNetwork: ESPN KnockOut (Mexico)\nStart: 07:00 PM CT\nMain Event: Damian Arce vs. Mario Gutierrez (Flyweight\, 10 rounds)\nUndercard:\n  * Francisco Vital vs. Isaac Aranda (Super Featherweight\, 8 rounds)\n  * Luis Rodriguez vs. Juan Diego Lopez (Featherweight\, 8 rounds)\n  * Alexis Cerecero vs. Aldo Cedeno (Super Bantamweight\, 6 rounds)\n  * Roberto Carbajal vs. Yahir Alexis Maya (Super Bantamweight\, 4 rounds)\n  * Edson Camarena vs. Jorge Martinez (Middleweight\, 4 rounds)\n  * Maria Flores vs. Judith Duron Esparza (Women'S Bantamweight\, 4 rounds)\nSource: FightNews.com
+DTEND:20261107T060000Z
+DTSTART:20261107T010000Z
 SUMMARY:Damian Arce vs Mario Gutierrez II
 UID:20261106-damian-arce-mario-gutierrez@boxing-calendar
 END:VEVENT
