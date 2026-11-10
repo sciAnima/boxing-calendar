@@ -372,6 +372,12 @@ SUMMARY:Lauren Price vs. Michaela Kotaskova [TV: BBC Two / BBC iPlayer (GB)]
 UID:20261120-lauren-price-michaela-kotaskova@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261205
+DESCRIPTION:Date: Saturday\, December 05\, 2026\nLocation: Rosarito\, Baja California\, Mexico\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Omar Valenzuela vs. Rodolfo Orozco (Middleweight\, WBA Fedelatin Mexico Middleweight)\nSource: FightNews.com
+SUMMARY:Omar Valenzuela vs Rodolfo Orozco
+UID:20261205-omar-valenzuela-rodolfo-orozco@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Thursday\, October 08\, 2026\nStart: 07:00 PM CT\nResults:\n  Osleys Iglesias DEF. Oliver Zaren - TKO In Round 7\n  Wilkens Mathieu DEF. Vladimir Shishkin - Split Decision\n  Dzmitry Asanau DEF. Luis Santana - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20261009T050000Z
 DTSTART:20261009T000000Z
@@ -608,7 +614,7 @@ SUMMARY:Miami Assassins vs. Atlanta Attack [Stream: YouTube]
 UID:20260731-miami-assassins-vs-atlanta-attack-20260731@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Wednesday\, November 18\, 2026\nLocation: Pullman Melbourne Albert Park\, Melbourne\, Victoria\, Australia\nTelevised on: Fox Sports (AU)\, Kayo Sports (AU)\nStart: 01:30 AM CT\nMain Event: Teremoana Teremoana vs. Hemi Ahio (Heavyweight\, 10 rounds)\nUndercard:\n  * Mitchell Leek vs. Joel Camilleri (Middleweight\, WBA Oceania Middleweight)\n  * Ky Hodgson vs. Matt Faron (Super Welterweight\, Australian Super Welterweight (vacant))\n  * Omar El-Abdallah vs. Lilo Telepe (Middleweight)\nSource: FightNews.com
+DESCRIPTION:Date: Wednesday\, November 18\, 2026\nLocation: Pullman Melbourne Albert Park\, Melbourne\, Victoria\, Australia\nTelevised on: Fox Sports (AU)\, Kayo Sports (AU)\nStart: 01:30 AM CT\nMain Event: Teremoana Teremoana vs. Hemi Ahio (Heavyweight\, 10 rounds)\nUndercard:\n  * Mitchell Leek vs. Joel Camilleri (Middleweight\, WBA Oceania Middleweight)\n  * Ky Hodgson vs. Victor Adis-Iosifidis (Super Welterweight\, Australian Super Welterweight (vacant))\n  * Omar El-Abdallah vs. Nicholas Benn (Super Middleweight\, 8 rounds)\n  * James Noonan vs. Matt Faron (Middleweight\, 4 rounds)\nSource: FightNews.com
 DTEND:20261118T123000Z
 DTSTART:20261118T073000Z
 SUMMARY:Teremoana Teremoana vs Hemi Ahio [TV: Fox Sports (AU)\, Kayo Sports (AU)]
