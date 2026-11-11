@@ -20,6 +20,7 @@ TBL_URL        = "https://www.teamboxingleague.com/pages/events"
 PROBOX_URL     = "https://proboxtv.com/tickets/"
 DAZN_URL       = "https://www.dazn.com/en-US/schedule"
 FIGHTNEWS_URL  = "https://schedule.fightnews.com/fight-cards.ics"
+ZUFFA_WIKI_URL = "https://en.wikipedia.org/w/index.php?title={year}_in_Zuffa_Boxing&action=raw"
 
 CT_ZONE = ZoneInfo("America/Chicago")
 ET_ZONE = ZoneInfo("America/New_York")
@@ -907,15 +908,131 @@ def parse_fightnews(ics_text: str) -> dict[str, dict]:
     return events
 
 
+# == Source 7: Zuffa Boxing (Wikipedia "<year> in Zuffa Boxing") ================
+# zuffaboxing.com is only an email sign-up page, so the card list comes from the
+# community-maintained Wikipedia article: one numbered section per card with the
+# headliner, date, venue, the full card, and the service carrying it. It has no
+# start times, so this source is lowest priority and mainly adds the "Zuffa
+# Boxing N" name and the Paramount+ broadcaster to fights other sources list.
+
+def wiki_clean(text: str) -> str:
+    text = re.sub(r"<ref[^>/]*/>|<ref[^>]*>.*?</ref>", "", text, flags=re.S)
+    text = re.sub(r"\{\{[^{}]*\}\}", "", text)
+    text = re.sub(r"\[\[(?:[^\]|]*\|)?([^\]]*)\]\]", r"\1", text)   # [[Target|Label]] -> Label
+    text = re.sub(r"<[^>]+>|'{2,}", "", text)
+    return re.sub(r"\s+", " ", text).replace(" ,", ",").strip(" ,")
+
+
+def fetch_zuffa_wiki(year: int) -> str | None:
+    url = ZUFFA_WIKI_URL.format(year=year)
+    try:
+        resp = requests.get(
+            url,
+            headers={"User-Agent": "boxing-calendar/1.0 (+https://github.com/sciAnima/boxing-calendar)"},
+            timeout=30,
+        )
+    except requests.RequestException as e:
+        print(f"  WARNING: Could not fetch {url}: {e}")
+        return None
+    print(f"  HTTP {resp.status_code} - {url}")
+    if resp.status_code == 404:     # next year's page may not exist yet
+        return None
+    if not resp.ok:
+        print(f"  WARNING: Zuffa Boxing wiki page unavailable ({resp.status_code})")
+        return None
+    return resp.text
+
+
+def parse_zuffa(wikitext: str) -> dict[str, dict]:
+    events = {}
+    # Level-2 sections ("==Zuffa Boxing 01==" spacing varies) that hold a fight infobox; numbered
+    # cards are labelled "Zuffa Boxing N", one-off specials just "Zuffa Boxing"
+    for m in re.finditer(r"^==[ \t]*([^=\n][^\n]*?)[ \t]*==[ \t]*\n(.*?)(?=^==[^=]|\Z)", wikitext, re.S | re.M):
+        heading, body = m.group(1), m.group(2)
+        if "infobox boxingmatch" not in body.lower():
+            continue
+        promotion = heading if re.fullmatch(r"Zuffa Boxing \d+", heading) else "Zuffa Boxing"
+
+        def field(*names: str) -> str:
+            for name in names:
+                fm = re.search(rf"^\|\s*{name}\s*=\s*(.*)$", body, re.I | re.M)
+                if fm and fm.group(1).strip():
+                    return wiki_clean(fm.group(1))
+            return ""
+
+        try:
+            date_obj = datetime.strptime(field("fight date", "date"), "%B %d, %Y")
+        except ValueError:
+            continue
+
+        # Card table: rows of [weight class | fighter | vs. | fighter | method | round | time | notes]
+        bouts: list[tuple[str, str]] = []
+        network = ""
+        card = re.search(r"^\{\|.*?^\|\}", body, re.S | re.M)
+        for row in re.split(r"^\|-", card.group(0), flags=re.M) if card else []:
+            header = re.search(r"^!.*?\|\s*(.*(?:Card|Prelims?).*)$", row, re.M | re.I)
+            if header and not network:
+                nm = re.search(r"\(\[\[([^\]|]+)", header.group(1))
+                network = nm.group(1).strip() if nm else ""
+            cells = []
+            for line in row.splitlines():
+                if line.startswith("|") and not line.startswith(("|}", "|+")):
+                    cell = line[1:]
+                    if "|" in cell and "[[" not in cell.split("|", 1)[0]:
+                        cell = cell.split("|", 1)[1]          # drop 'align="center"|' attributes
+                    cells.append(wiki_clean(cell))
+            if len(cells) >= 4 and cells[2].lower().startswith("vs"):
+                rounds = re.search(r"\((\d+)\)", cells[5]) if len(cells) > 5 else None
+                detail = ", ".join(filter(None, [cells[0], f"{rounds.group(1)} rounds" if rounds else ""]))
+                bouts.append((f"{cells[1]} vs. {cells[3]}", detail))
+
+        fighter1, fighter2 = field("fighter1"), field("fighter2")
+        if fighter1 and fighter2:
+            headliner = f"{fighter1} vs. {fighter2}"
+        elif bouts:
+            headliner = bouts[0][0]
+        else:
+            continue
+
+        fights = [headliner] + [f"{b} ({d})" if d else b for b, d in bouts if b != headliner]
+        slug = make_slug(re.sub(r"\s+vs\.?\s+", " ", headliner, flags=re.I))
+        events[slug] = {
+            "name":        headliner,
+            "match_name":  headliner,
+            "promotion":   promotion,
+            "date_obj":    date_obj,
+            "location":    field("location"),
+            "network":     network,
+            "start_ct":    datetime(date_obj.year, date_obj.month, date_obj.day, 21, 0, tzinfo=CT_ZONE),
+            "start_known": False,
+            "all_day":     True,
+            "fights":      fights,
+            "source":      "Wikipedia.org",
+            "bs_slug":     "",
+            "results":     [],
+        }
+
+    print(f"  Zuffa Boxing: {len(events)} cards parsed")
+    return events
+
+
 # == Merge + build calendar =====================================================
 
 SOURCE_RANK = {
+    "Wikipedia.org": 0,
     "FightNews.com": 1,
     "DAZN.com": 2,
     "TeamBoxingLeague.com": 3, "ProBoxTV.com": 3,
     "BoxingScene.com": 4,
     "BoxingNews24.com": 5,
 }
+def with_promotion(promotion: str | None, title: str) -> str:
+    """'Zuffa Boxing 13: A vs. B' - unless the title already says so."""
+    if promotion and promotion.lower() not in title.lower():
+        return f"{promotion}: {title}"
+    return title
+
+
 STREAM_ONLY = {"youtube", "proboxtv", "probox tv"}
 
 
@@ -968,6 +1085,8 @@ def drop_duplicate_events(merged: dict[str, dict]) -> None:
                     keep["location"] = ev["location"]  # "Utilita Arena Sheffield" over "Sheffield"
                 if ev["network"] and not keep["network"]:
                     keep["network"] = ev["network"]
+                if ev.get("promotion") and not keep.get("promotion"):
+                    keep["promotion"] = ev["promotion"]       # e.g. "Zuffa Boxing 12"
                 del merged[slug]
                 break
 
@@ -980,6 +1099,7 @@ def build_calendar(
     dazn: dict | None = None,
     past: dict | None = None,
     fightnews: dict | None = None,
+    zuffa: dict | None = None,
 ) -> list[Event]:
     merged: dict[str, dict] = {}
 
@@ -994,8 +1114,15 @@ def build_calendar(
         merged[slug] = ev
         if prev.get("network") and not ev.get("network"):
             merged[slug] = {**ev, "network": prev["network"]}
+        if prev.get("promotion") and not ev.get("promotion"):
+            merged[slug] = {**merged[slug], "promotion": prev["promotion"]}
+        if prev.get("results") and not ev.get("results"):
+            merged[slug] = {**merged[slug], "results": prev["results"]}   # never lose a result
 
-    # Priority (lowest to highest): FightNews < DAZN < TBL = ProBox < BS < BN24
+    # Priority (lowest to highest): Zuffa wiki < FightNews < DAZN < TBL = ProBox < BS < BN24
+    for slug, ev in (zuffa or {}).items():
+        put(slug, ev)
+
     for slug, ev in (fightnews or {}).items():
         existing_results = merged.get(slug, {}).get("results", [])
         put(slug, {**ev, "results": existing_results or ev.get("results", [])})
@@ -1030,10 +1157,19 @@ def build_calendar(
             merged[slug]["all_day"] = prev.get("all_day", False)
         if prev.get("network") and not ev["network"]:
             merged[slug]["network"] = prev["network"]
+        if prev.get("promotion"):
+            merged[slug]["promotion"] = prev["promotion"]
         if prev.get("location") and (not ev["location"] or ev["location"] in prev["location"]):
             merged[slug]["location"] = prev["location"]  # e.g. "Utilita Arena Sheffield" over "Sheffield"
 
     drop_duplicate_events(merged)
+
+    # The wiki also lists every past card; they only matter for labelling fights other
+    # sources already have, so don't add old ones that nothing else listed
+    cutoff = datetime.now(CT_ZONE).replace(tzinfo=None) - timedelta(days=3)
+    for slug, ev in list(merged.items()):
+        if ev["source"] == "Wikipedia.org" and ev["date_obj"] < cutoff and not ev.get("results"):
+            del merged[slug]
 
     events = []
     seen_uids: set[str] = set()
@@ -1067,7 +1203,7 @@ def build_calendar(
 
         if fight_results:
             main_r = fight_results[0]
-            cal_ev.name = f"{main_r['winner']} DEF. {main_r['loser']}"
+            cal_ev.name = with_promotion(ev.get("promotion"), f"{main_r['winner']} DEF. {main_r['loser']}")
             results_lines = "\n".join(
                 f"  {f['winner']} DEF. {f['loser']}" + (f" - {f['method']}" if f["method"] else "")
                 for f in fight_results
@@ -1086,7 +1222,8 @@ def build_calendar(
             print(f"  + {uid_date} | {cal_ev.name[:45]} | RESULT [{ev['source'][:3]}]")
         else:
             undercard_str = "\n".join(f"  * {f}" for f in ev["fights"][1:])
-            cal_ev.name = f"{ev['name']} [{tv_label(ev['network'])}]" if ev["network"] else ev["name"]
+            title = with_promotion(ev.get("promotion"), ev["name"])
+            cal_ev.name = f"{title} [{tv_label(ev['network'])}]" if ev["network"] else title
             cal_ev.description = "\n".join(filter(None, [
                 f"Date: {ev['date_obj'].strftime('%A, %B %d, %Y')}",
                 f"Location: {ev['location']}" if ev["location"] else "",
@@ -1132,6 +1269,10 @@ def main():
     print("Fetching FightNews calendar feed...")
     fightnews_ics = fetch_fightnews(FIGHTNEWS_URL)
 
+    print("Fetching Zuffa Boxing card list (Wikipedia)...")
+    now_ct = datetime.now(CT_ZONE)
+    zuffa_pages = [fetch_zuffa_wiki(y) for y in ([now_ct.year] + ([now_ct.year + 1] if now_ct.month >= 10 else []))]
+
     print("Fetching BoxingScene past event results...")
     past = fetch_bs_past_events(BS_RESULTS_URL)
 
@@ -1143,8 +1284,9 @@ def main():
     probox = parse_probox(probox_html)                if probox_html  else {}
     dazn   = carry_forward_dazn(parse_dazn(dazn_raw) if dazn_raw else {})
     fightnews = parse_fightnews(fightnews_ics)        if fightnews_ics else {}
+    zuffa  = {k: v for page in zuffa_pages if page for k, v in parse_zuffa(page).items()}
 
-    if not bn24 and not bs and not tbl and not probox and not dazn and not fightnews and not past:
+    if not bn24 and not bs and not tbl and not probox and not dazn and not fightnews and not zuffa and not past:
         print("ERROR: All sources failed - no events to write")
         sys.exit(1)
 
@@ -1154,16 +1296,17 @@ def main():
     if not probox: print("WARNING: ProBox TV failed - skipping")
     if not dazn:   print("WARNING: DAZN failed - skipping")
     if not fightnews: print("WARNING: FightNews failed - skipping")
+    if not zuffa:  print("WARNING: Zuffa Boxing wiki failed - skipping")
 
     print("Merging and building calendar...")
-    events = build_calendar(bn24, bs, tbl, probox, dazn, past, fightnews)
+    events = build_calendar(bn24, bs, tbl, probox, dazn, past, fightnews, zuffa)
 
     if not events:
         print("WARNING: No events parsed from any source")
 
     cal = Calendar()
     cal.extra.append(ContentLine(name="CALSCALE", value="GREGORIAN"))
-    cal.extra.append(ContentLine(name="COMMENT", value="Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com + ProBoxTV.com + DAZN.com + FightNews.com"))
+    cal.extra.append(ContentLine(name="COMMENT", value="Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com + ProBoxTV.com + DAZN.com + FightNews.com + Wikipedia (Zuffa Boxing)"))
     for ev in events:
         cal.events.add(ev)
 
