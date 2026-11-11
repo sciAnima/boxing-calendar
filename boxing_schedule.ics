@@ -184,6 +184,13 @@ SUMMARY:Boston Butchers vs. Philadelphia Smoke [Stream: YouTube]
 UID:20260613-boston-butchers-vs-philadelphia-smoke-20260613@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, December 12\, 2026\nLocation: Cbus Super Stadium\nTelevised on: DAZN\nStart: 05:30 PM CT\nSource: BoxingScene.com
+DTEND:20261213T043000Z
+DTSTART:20261212T233000Z
+SUMMARY:Tim Tszyu vs. Erislandy Lara [TV: DAZN]
+UID:20261212-tim-tszyu-vs-erislandy-lara@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 11\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260712T050000Z
 DTSTART:20260712T000000Z
@@ -289,10 +296,10 @@ SUMMARY:NYC Attitude vs. Philadelphia Smoke [Stream: YouTube]
 UID:20260502-nyc-attitude-vs-philadelphia-smoke-20260502@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Amsterdam\, Netherlands\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Gradus Kraus vs. Adam Deines (10-round bout\, light heavyweights)\nSource: BoxingNews24.com
-DTEND:20261129T080000Z
-DTSTART:20261129T030000Z
-SUMMARY:Gradus Kraus vs. Adam Deines
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Amsterdam\, Netherlands\nTelevised on: DAZN (United States)\nStart: 11:00 AM CT\nMain Event: Gradus Kraus vs. Adam Deines (10-round bout\, light heavyweights)\nSource: BoxingNews24.com
+DTEND:20261128T220000Z
+DTSTART:20261128T170000Z
+SUMMARY:Gradus Kraus vs. Adam Deines [TV: DAZN (United States)]
 UID:20261128-gradus-kraus-adam-deines@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
@@ -404,6 +411,12 @@ DTEND:20260523T050000Z
 DTSTART:20260523T000000Z
 SUMMARY:Houston Hitmen vs. San Antonio Snipers [Stream: YouTube]
 UID:20260522-houston-hitmen-vs-san-antonio-snipers-20260522@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261210
+DESCRIPTION:Date: Thursday\, December 10\, 2026\nLocation: Caribe Royale Orlando\, Orlando\, Florida\, United States\nTelevised on: DAZN\nStart: time TBC\nMain Event: Christopher Diaz vs. Alan Chaves (Lightweight\, WBO International Lightweight)\nUndercard:\n  * Angel Barrientes vs. Alex Vallecillo (Super Bantamweight\, 10 rounds\, WBO Latino Super Bantamweight\, IBF Latino Super Bantamweight)\n  * Roberto Gomez vs. Jeremy Adorno (Super Featherweight\, 8 rounds\, WBO Super Featherweight World Class Prospects Medal)\n  * Quincey Williams vs. Eric Sanchez (Super Welterweight\, 8 rounds)\n  * Pedro Veitia vs. Willie Jones (Middleweight\, 6 rounds)\n  * Brandon Ortiz vs. Martel Washpun (Super Bantamweight\, 4 rounds)\nSource: FightNews.com
+SUMMARY:Christopher Diaz vs Alan Chaves [TV: DAZN]
+UID:20261210-christopher-diaz-alan-chaves@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, July 10\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -539,7 +552,7 @@ UID:20260628-las-vegas-hustle-vs-phoenix-fury-20260628@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261121
-DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: Pabellón de Combate\, Centro Olímpico Juan Pablo Duarte\, Santo Domingo\, Distrito Nacional\, Dominican Republic\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Pablo Valdez vs. Andres Perez (Welterweight\, WBA NABA Silver Welterweight (vacant))\nUndercard:\n  * Junior Younan vs. Jonathan Gonzalez-Ortiz (Super Middleweight\, WBA Continental USA Gold Super Middleweight)\nSource: FightNews.com
+DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: Coliseo Carlos "Teo" Cruz\, Santo Domingo\, Distrito Nacional\, Dominican Republic\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Pablo Valdez vs. Andres Perez (Welterweight\, WBA NABA Silver Welterweight (vacant))\nUndercard:\n  * Feudri Franco vs. Juan González (Welterweight\, WBA Fedelatin Welterweight)\n  * Junior Younan vs. Jonathan Gonzalez-Ortiz (Super Middleweight\, WBA Continental USA Gold Super Middleweight)\nSource: FightNews.com
 SUMMARY:Shuan Boxing: Pablo Valdez vs Andres Perez
 UID:20261121-pablo-valdez-andres-perez@boxing-calendar
 END:VEVENT
@@ -600,11 +613,25 @@ SUMMARY:Isabel Rivero vs Sumire Yamanaka
 UID:20261121-isabel-rivero-sumire-yamanaka@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Edge Centre South C\, Nairobi\, Nairobi\, Kenya\nTelevised on: not announced yet\nStart: 06:00 AM CT\nMain Event: Javan Buyu vs. Kamran Abdul Wahab (Lightweight\, Vacant UBO World Lightweight)\nUndercard:\n  * Aldana Florencia Lopez vs. Sibulele Amber Soboois (Women'S Light Minimumweight\, WBA Gold International Light Minimumweight)\n  * Baltazar Noria vs. Musah Lawson (Super Welterweight\, WBA Gold International Super Welterweight)\n  * Nathaniel Kobina Anane Suppey vs. Rayton Okwiri (Middleweight\, WBA Africa Middleweight)\n  * Catherine Nanziri vs. Halima Vunjabei (Super Bantamweight\, WBA Africa Super Bantamweight)\n  * Tunde Olojede vs. Dago Jose Valdez (Bantamweight\, WBA Gold World Bantamweight)\n  * Ivan Magumba vs. Solomon Adebayo (Heavyweight\, WBA Africa Heavyweight)\n  * James Mugeni vs. Frank Bichahugae (Super Bantamweight\, WBA Africa Super Bantamweight)\nSource: FightNews.com
+DTEND:20261128T170000Z
+DTSTART:20261128T120000Z
+SUMMARY:SportPesa Boxing Night: Javan Buyu vs Kamran Abdul Wahab
+UID:20261128-javan-buyu-kamran-abdul-wahab@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, March 28\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260329T050000Z
 DTSTART:20260329T000000Z
 SUMMARY:Miami Assassins vs. Dallas Enforcers [Stream: YouTube]
 UID:20260328-miami-assassins-vs-dallas-enforcers-20260328@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, November 27\, 2026\nLocation: Wrestling Palace\, Ufa\, Bashkortostan\, Russia\nTelevised on: not announced yet\nStart: 07:00 AM CT\nMain Event: Andy Cruz vs. Artur Subkhankulov (Lightweight\, 12 rounds\, Vacant IBF Lightweight)\nSource: FightNews.com
+DTEND:20261127T180000Z
+DTSTART:20261127T130000Z
+SUMMARY:Andy Cruz vs Artur Subkhankulov
+UID:20261127-andy-cruz-artur-subkhankulov@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, July 31\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
