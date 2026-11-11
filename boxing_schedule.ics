@@ -1,6 +1,6 @@
 BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
-COMMENT:Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com + ProBoxTV.com + DAZN.com + FightNews.com
+COMMENT:Data from BoxingNews24.com + BoxingScene.com + TeamBoxingLeague.com + ProBoxTV.com + DAZN.com + FightNews.com + Wikipedia (Zuffa Boxing)
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
@@ -150,10 +150,10 @@ SUMMARY:LA Elite vs. Houston Hitmen [Stream: YouTube]
 UID:20260627-la-elite-vs-houston-hitmen-20260627@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 01:00 PM CT\nResults:\n  Cheavon Clarke DEF. Chris Billam-Smith - TKO In Round 7\n  Denzel Bentley DEF. Shane Mosley Jr. - Unanimous Decision\n  Da’Mazion Vanhouter DEF. Ivan Balaz - TKO In Round 1\n  Sam Hickey DEF. Amaury Massenaux - TKO In Round 5\n  Kayla Allen DEF. Julia Igel - Won on points\, 58-56.\n  Lucas Roehrig DEF. Connal McDonald - TKO In Round 7\n  Umar Dzambekov DEF. Zach Parker - KO In Round 4\n  Vinnie Kemp DEF. Liam McElhinney - TKO In Round 1\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nNetwork: Paramount+\nStart: 01:00 PM CT\nResults:\n  Cheavon Clarke DEF. Chris Billam-Smith - TKO In Round 7\n  Denzel Bentley DEF. Shane Mosley Jr. - Unanimous Decision\n  Da’Mazion Vanhouter DEF. Ivan Balaz - TKO In Round 1\n  Sam Hickey DEF. Amaury Massenaux - TKO In Round 5\n  Kayla Allen DEF. Julia Igel - Won on points\, 58-56.\n  Lucas Roehrig DEF. Connal McDonald - TKO In Round 7\n  Umar Dzambekov DEF. Zach Parker - KO In Round 4\n  Vinnie Kemp DEF. Liam McElhinney - TKO In Round 1\nSource: BoxingScene.com
 DTEND:20261108T000000Z
 DTSTART:20261107T190000Z
-SUMMARY:Cheavon Clarke DEF. Chris Billam-Smith
+SUMMARY:Zuffa Boxing 12: Cheavon Clarke DEF. Chris Billam-Smith
 UID:20261107-chris-billam-smith-vs-cheavon-clarke@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
@@ -236,7 +236,7 @@ BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: The Venue\, Riyadh\, Riyadh Province\, Saudi Arabia\nTelevised on: Sky Sports\, Paramount+\nStart: 10:00 AM CT\nSource: BoxingScene.com
 DTEND:20261114T210000Z
 DTSTART:20261114T160000Z
-SUMMARY:Carlos Adames vs. Gerome Warburton [TV: Sky Sports\, Paramount+]
+SUMMARY:Zuffa Boxing 13: Carlos Adames vs. Gerome Warburton [TV: Sky Sports\, Paramount+]
 UID:20261114-carlos-adames-vs-gerome-warburton@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
@@ -844,10 +844,10 @@ SUMMARY:19. Bounce Fight Night: Edin Avdic vs Adrian Juventino Duenas
 UID:20261121-edin-avdic-adrian-juventino-duenas@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nStart: 11:15 AM CT\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: BoxingScene.com
-DTEND:20260926T211500Z
-DTSTART:20260926T161500Z
-SUMMARY:Johnny Fisher DEF. Michael Pirotton
+DESCRIPTION:Date: Saturday\, September 26\, 2026\nLocation: Copper Box Arena\, London\, England\, U.K.\nNetwork: Paramount+\nStart: time TBC\nResults:\n  Johnny Fisher DEF. Michael Pirotton - Majority Decision\n  Radivoje Kalajdzic DEF. Craig Richards - Unanimous Decision\n  Lee Cutler DEF. Louis Greene - Unanimous Decision\nSource: Wikipedia.org
+DTEND:20260927T070000Z
+DTSTART:20260927T020000Z
+SUMMARY:Zuffa Boxing 11: Johnny Fisher DEF. Michael Pirotton
 UID:20260926-johnny-fisher-michael-pirotton@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
