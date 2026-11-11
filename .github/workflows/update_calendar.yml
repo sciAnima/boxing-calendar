@@ -31,18 +31,30 @@ jobs:
 
       - name: Install Playwright browser
         run: |
-          # --with-deps downloads system packages from Ubuntu's mirrors, which occasionally
-          # fail to resolve (it burned 10 minutes and failed the 2026-11-11 run). Retry with
-          # a per-attempt cap. No fallback to a deps-less install: a half-working browser
-          # would make the scraper drop sources and overwrite the calendar with fewer events.
-          for attempt in 1 2 3; do
+          # --with-deps also downloads system packages (fonts etc.) from Ubuntu's mirrors, which
+          # have failed to resolve for 10+ minutes (the 2026-11-11 run). Try it twice with a
+          # per-attempt cap, then fall back to the browser alone (it downloads from Playwright's
+          # own CDN) and PROVE it works before scraping. If the smoke test fails the job fails,
+          # leaving the previous calendar intact rather than scraping with a broken browser.
+          for attempt in 1 2; do
             if timeout 240 python -m playwright install --with-deps chromium; then
               exit 0
             fi
-            echo "Playwright install failed (attempt $attempt of 3); retrying"
+            echo "Playwright install --with-deps failed (attempt $attempt of 2)"
             sleep $((attempt * 20))
           done
-          exit 1
+          echo "Falling back to a browser-only install"
+          python -m playwright install chromium
+          python - <<'PY'
+          from playwright.sync_api import sync_playwright
+          with sync_playwright() as p:
+              browser = p.chromium.launch()
+              page = browser.new_page()
+              page.set_content("<p>smoke test</p>")
+              assert page.inner_text("p") == "smoke test"
+              browser.close()
+          print("Browser smoke test passed")
+          PY
 
       - name: Run scraper
         run: |
