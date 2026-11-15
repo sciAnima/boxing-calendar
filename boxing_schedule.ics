@@ -115,6 +115,13 @@ SUMMARY:Philadelphia Smoke vs. Miami Assassins [Stream: YouTube]
 UID:20260517-philadelphia-smoke-vs-miami-assassins-20260517@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Date: Friday\, November 20\, 2026\nLocation: Fantasy Springs Resort Casino\nTelevised on: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
+DTEND:20261121T060000Z
+DTSTART:20261121T010000Z
+SUMMARY:Gabriela Fundora vs. Jasmina Zapotoczna [TV: DAZN]
+UID:20261120-gabriela-fundora-vs-jasmina-zapotoczna@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, May 08\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260509T050000Z
 DTSTART:20260509T000000Z
@@ -129,18 +136,18 @@ SUMMARY:Philadelphia Smoke vs. San Antonio Snipers [Stream: YouTube]
 UID:20260712-philadelphia-smoke-vs-san-antonio-snipers-20260712@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, November 20\, 2026\nLocation: Fantasy Springs Resort Casino\nTelevised on: DAZN\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20261121T060000Z
-DTSTART:20261121T010000Z
-SUMMARY:Gabriela Fundora vs. Jasmina Zapotoczna [TV: DAZN]
-UID:20261120-gabriela-fundora-vs-jasmina-zapotoczna@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, June 27\, 2026\nLocation: Thunder Studios\, 20434 S Santa Fe Ave\, Long Beach\, CA 90810\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260628T050000Z
 DTSTART:20260628T000000Z
 SUMMARY:LA Elite vs. Houston Hitmen [Stream: YouTube]
 UID:20260627-la-elite-vs-houston-hitmen-20260627@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: Maritim Hotel Ingolstadt\, Ingolstadt\, Bavaria\, Germany\nTelevised on: DAZN (Germany)\nStart: 11:00 AM CT\nMain Event: Granit Stein vs. Marius Antonietti (Super Middleweight\, 10 rounds\, Vacant WBA Continental Europe Super Middleweight\, IBO International Super Middleweight)\nSource: FightNews.com
+DTEND:20261121T220000Z
+DTSTART:20261121T170000Z
+SUMMARY:Fides Sports: The Show Must Go On VII [TV: DAZN (Germany)]
+UID:20261121-granit-stein-marius-antonietti@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nNetwork: Paramount+\nStart: 01:00 PM CT\nResults:\n  Cheavon Clarke DEF. Chris Billam-Smith - TKO In Round 7\n  Denzel Bentley DEF. Shane Mosley Jr. - Unanimous Decision\n  Da’Mazion Vanhouter DEF. Ivan Balaz - TKO In Round 1\n  Sam Hickey DEF. Amaury Massenaux - TKO In Round 5\n  Kayla Allen DEF. Julia Igel - Won on points\, 58-56.\n  Lucas Roehrig DEF. Connal McDonald - TKO In Round 7\n  Umar Dzambekov DEF. Zach Parker - KO In Round 4\n  Vinnie Kemp DEF. Liam McElhinney - TKO In Round 1\n  Masood Abdulah DEF. Adan Palma - Unanimous Decision\nSource: BoxingScene.com
@@ -195,13 +202,6 @@ DTEND:20260712T050000Z
 DTSTART:20260712T000000Z
 SUMMARY:Atlanta Attack vs. Dallas Enforcers [Stream: YouTube]
 UID:20260711-atlanta-attack-vs-dallas-enforcers-20260711@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: Palais des Sports Marcel-Cerdan\, Levallois-Perret\, Hauts-de-Seine\, France\nTelevised on: not announced yet\nStart: 11:30 AM CT\nMain Event: Bakary Samake vs. Uisma Lima (Super Welterweight\, 10 rounds\, WBC International Super Welterweight)\nUndercard:\n  * Mustapha Zaouche vs. Mbemba Miesi (Light Heavyweight\, 10 rounds)\n  * Henry Lontchedji vs. James Londiniere (Welterweight\, 6 rounds)\n  * Axel Yoka vs. Pedro Cuca (Super Middleweight\, 6 rounds)\n  * Kpassagnon Boli vs. Tamaz Berikashvili (Middleweight\, 6 rounds)\n  * Morad Maizou vs. Luka Barnovi (Super Featherweight\, 6 rounds)\n  * Sacha Morice vs. Hasna Tebsi (Women'S Featherweight\, 10 rounds\, WBC International Francophone Women's Featherweight)\nSource: FightNews.com
-DTEND:20261114T223000Z
-DTSTART:20261114T173000Z
-SUMMARY:Bakary Samake vs Uisma Lima
-UID:20261114-bakary-samake-uisma-lima@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, November 27\, 2026\nLocation: Pechanga Resort Casino\, Temecula\, California\, United States\nTelevised on: not announced yet\nStart: 08:00 PM CT\nMain Event: Lazaro Lorenzana vs. Ronald Ellis (Super Middleweight\, 10 rounds)\nUndercard:\n  * Kingsley Ibeh vs. Andrii Novytskyi (Heavyweight\, 10 rounds\, WBA Continental Americas Heavyweight)\n  * Luis Lopez vs. Semajay Thomas (Super Welterweight\, 8 rounds)\n  * Ruben Cazales vs. Andres Martinez (Lightweight\, 6 rounds)\n  * Hector Oros vs. Jose Silva Gonzales (Super Bantamweight\, 6 rounds)\n  * Oscar Trujillo vs. Angel Estrada (Welterweight\, 6 rounds)\n  * Paolo Barredo vs. Pedro Juarez (Lightweight\, 6 rounds)\n  * Angel Valenzuela vs. Narek Taverdyan (Super Bantamweight\, 4 rounds)\n  * Zimbry Pedraza Esquivel vs. Wendy Villegas (Lightweight\, 6 rounds)\nSource: FightNews.com
@@ -371,24 +371,11 @@ SUMMARY:Miami Assassins vs. NYC Attitude [Stream: YouTube]
 UID:20260614-miami-assassins-vs-nyc-attitude-20260614@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: Randy's Ballroom\, San Antonio\, Texas\, United States\nTelevised on: not announced yet\nStart: 07:00 PM CT\nMain Event: Javier Vargas vs. Rodrigo Octavio Gonzalez (Super Welterweight\, WBA NABA Silver Super Welterweight)\nSource: FightNews.com
-DTEND:20261115T060000Z
-DTSTART:20261115T010000Z
-SUMMARY:Fists & Glory: The Takeover
-UID:20261114-javier-vargas-rodrigo-octavio-gonzalez@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The O2 Arena\, London\, United Kingdom\nStart: 01:00 PM CT\nResults:\n  Daniel Dubois DEF. Fabio Wardley - TKO In Round 2\n  Bakhodir Jalolov DEF. Solomon Dacres - Unanimous Decision\n  Nelson Birchall DEF. Levi Giles - TKO In Round 11\n  Fawas Aborode DEF. Rashid Omar - TKO In Round 11\n  Aaron Noriega DEF. Leonardo Baez - TKO In Round 4\n  Leighton Birchall DEF. Alejandro Morales Chazaro\n  Tony Curtis DEF. Kerim Agius\n  Manny Safari DEF. Jake Pollard\nSource: BoxingScene.com
 DTEND:20261017T230000Z
 DTSTART:20261017T180000Z
 SUMMARY:Daniel Dubois DEF. Fabio Wardley
 UID:20261017-daniel-dubois-vs-fabio-wardley@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261121
-DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: George R. Brown Convention Center\, Houston\, Texas\, United States\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Oscar Alan Perez vs. Joshua Draughter (Lightweight\, WBA NABA Gold Lightweight)\nUndercard:\n  * Marlen Esparza vs. Maribel Ramirez (Women'S Bantamweight\, 8 rounds\, Vacant WBA NABA Gold Women's Bantamweight)\nSource: FightNews.com
-SUMMARY:Texas Takeover
-UID:20261121-oscar-alan-perez-joshua-draughter@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 19\, 2026\nLocation: Belfast\, Northern Ireland\nTelevised on: DAZN\nStart: 01:00 PM CT\nMain Event: Anthony Cacace vs. Nick Ball (12-round bout\, WBA junior lightweight championship held by Cacace)\nUndercard:\n  * Lewis Crocker vs. Owen Cooper (10-round bout\, welterweights)\n  * Henry Turner vs. Tyrone McKenna (10-round bout\, welterweights)\n  * Steven Cairns vs. Josh Blenkiron (10-round bout\, lightweights)\n  * Eoghan Lavin vs. Graham McCormack (8-round bout\, middleweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Save to your calendar and check its alert setting. The .ics reminder requests an alert at card start. Google Calendar uses your calendar’s reminder settings. This start time is an estimate. Timings can change\; saved reminders do not update automatically.\nSource: BoxingNews24.com
@@ -410,13 +397,6 @@ DTEND:20270110T080000Z
 DTSTART:20270110T030000Z
 SUMMARY:Amanda Serrano vs. Skye Falzon [TV: DAZN]
 UID:20270109-amanda-serrano-skye-falzon@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: Magdeburg\, Germany\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Roman Fress vs. Armend Xhoxhaj (rematch\, 12-round bout\, cruiserweights)\nUndercard:\n  * Ole Raetzel vs. Ilias Kallouch (10-round bout\, junior middleweights)\n  * Ilias Essaoudi vs. Slavi Haralambov (8-round bout\, junior middleweights)\n  * Sami Ahmeti vs. Dominik Prchal (6-round bout\, junior middleweights)\n  * Moaed Azizieh vs. Patrik Velky (6-round bout\, welterweights)\n  * Paul Schmidt vs. Bernard Plavec (4-round bout\, cruiserweights)\n  * Tatjana Genrich vs. Andrea Hajnal (4-round bout\, female atomweights)\n  * Alexander Fadejew vs. Patrick Jaeger (4-round bout\, middleweights)\nSource: BoxingNews24.com
-DTEND:20261115T080000Z
-DTSTART:20261115T030000Z
-SUMMARY:Roman Fress vs. Armend Xhoxhaj
-UID:20261114-roman-fress-armend-xhoxhaj@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, November 20\, 2026\nLocation: Utilita Arena Cardiff\, Cardiff\, Wales\, United Kingdom\nTelevised on: BBC Two / BBC iPlayer (GB)\nStart: 01:00 PM CT\nMain Event: Lauren Price vs. Michaela Kotaskova (10-round bout\, WBC/IBF/WBA women’s welterweight championship held by Price)\nUndercard:\n  * Rhys Edwards vs. Lee McGregor (10-round bout\, featherweights)\n  * Kyran Jones vs. Sean Arkwright (10-round bout\, middleweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Save to your calendar and check its alert setting. The .ics reminder requests an alert at card start. Google Calendar uses your calendar’s reminder settings. This start time is an estimate. Timings can change\; saved reminders do not update automatically.\nSource: BoxingNews24.com
@@ -495,9 +475,8 @@ SUMMARY:NYC Attitude vs. San Antonio Snipers [Stream: YouTube]
 UID:20260605-nyc-attitude-vs-san-antonio-snipers-20260605@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: Riyadh\, Saudi Arabia\nTelevised on: Paramount+\nStart: 07:00 AM CT\nMain Event: Carlos Adames vs. Gerome Warburton (10-round bout\, super middleweights)\nUndercard:\n  * Jason Moloney vs. Andres Teran (10-round bout\, bantamweights)\n  * Bruno Surace vs. Kamil Bednarek (10-round bout\, super middleweights)\n  * Ivan Ortiz vs. Dariial Kuchmenov (8-round bout\, lightweights)\n  * Jakhongir Zokirov vs. Brandon Colantonio (6-round bout\, heavyweights)\nSource: BoxingNews24.com
-DTEND:20261114T180000Z
-DTSTART:20261114T130000Z
+DTSTART;VALUE=DATE:20261114
+DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: The Venue\, Riyadh\, Saudi Arabia\nTelevised on: Paramount+\nStart: time TBC\nMain Event: Carlos Adames vs. Gerome Warburton\nSource: Wikipedia.org
 SUMMARY:Zuffa Boxing 13: Carlos Adames vs. Gerome Warburton [TV: Paramount+]
 UID:20261114-carlos-adames-gerome-warburton@boxing-calendar
 END:VEVENT
@@ -551,11 +530,11 @@ SUMMARY:San Antonio Snipers vs. Phoenix Fury [Stream: YouTube]
 UID:20260801-san-antonio-snipers-vs-phoenix-fury-20260801@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: Guidonia Montecelio\, Italy\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Luca D’Ortenzi vs. Eros Seghetti (12-round bout\, D’Ortenzi European light heavyweight championship at stake)\nUndercard:\n  * Gloria Peritore vs. Karla Merida (10-round bout\, European women’s bantamweight championship held by Peritore)\nSource: BoxingNews24.com
-DTEND:20261115T080000Z
-DTSTART:20261115T030000Z
-SUMMARY:Luca D’Ortenzi vs. Eros Seghetti
-UID:20261114-luca-d-ortenzi-eros-seghetti@boxing-calendar
+DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: George R. Brown Convention Center\, Houston\, Texas\, United States\nTelevised on: not announced yet\nStart: 06:00 PM CT\nMain Event: Miguel Flores vs. Ismael Garnica Gordillo (Featherweight\, 8 rounds)\nUndercard:\n  * Marlen Esparza vs. Maribel Ramirez (Women'S Bantamweight\, 8 rounds\, Vacant WBA NABA Gold Women's Bantamweight)\n  * Oscar Alan Perez vs. Joshua Draughter (Lightweight\, WBA NABA Gold Lightweight)\n  * Giovanni Marquez vs. Dennis Contrera (Super Lightweight\, 8 rounds)\n  * Fabian Arredondo vs. Armando Frausto (Bantamweight\, 6 rounds)\n  * Benjamin Mares vs. TBA (Super Lightweight\, 6 rounds)\n  * Christopher S. Gonzalez vs. Lev Jackson (Super Featherweight\, 6 rounds)\n  * Ivan Vazquez vs. Gilbert Venegas Jr. (Super Welterweight\, 6 rounds)\n  * Raynard Talib Jr. vs. TBA (Super Welterweight\, 6 rounds)\n  * Ryan Silva vs. TBA (Middleweight\, 4 rounds)\n  * Bret Hightower vs. TBA (Welterweight\, 4 rounds)\nSource: FightNews.com
+DTEND:20261122T050000Z
+DTSTART:20261122T000000Z
+SUMMARY:Texas Combat Sports: Texas Takeover
+UID:20261121-miguel-flores-ismael-garnica-gordillo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Thursday\, December 24\, 2026\nLocation: Coca-Cola Arena\nTelevised on: not announced yet\nStart: 08:00 AM CT\nSource: BoxingScene.com
@@ -584,6 +563,12 @@ DTEND:20261206T000000Z
 DTSTART:20261205T190000Z
 SUMMARY:Conah Walker vs. Alexis Rocha [TV: DAZN]
 UID:20261205-conah-walker-alexis-rocha@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261203
+DESCRIPTION:Date: Thursday\, December 03\, 2026\nLocation: The Venue\, Riyadh\, Riyadh Province\, Saudi Arabia\nTelevised on: Paramount+\, Sky Sports (IE)\, Sky Sports (GB)\, Paramount+ (CA)\nStart: time TBC\nMain Event: Aaron McKenna vs. Jevgenijs Aleksejevs (Middleweight\, 12 rounds\, IBF Middleweight)\nUndercard:\n  * Jack Massey vs. Andrew Tabiti (Cruiserweight\, 10 rounds)\n  * Zak Chelli vs. Jesse Hart (Light Heavyweight\, 10 rounds)\n  * Ryan Rozicki vs. Gaetan NTambwe (Cruiserweight\, 10 rounds)\n  * Vladyslav Sirenko vs. Charles Martin (Heavyweight\, 10 rounds)\n  * Artjom Kasparian vs. Suray Mahmutovic (Light Heavyweight\, 8 rounds)\n  * Jamar Talley vs. Sherif Musah (Cruiserweight\, 8 rounds)\n  * Alex MacMillan vs. TBA (Welterweight\, 6 rounds)\n  * Raheem Animashaun vs. TBA (Welterweight\, 6 rounds)\nSource: FightNews.com
+SUMMARY:Riyadh Season Zuffa Boxing 14: Aaron McKenna vs Jevgenijs Aleksejevs [TV: Paramount+\, Sky Sports (IE) +2]
+UID:20261203-aaron-mckenna-jevgenijs-aleksejevs@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 12\, 2026\nLocation: Gold Coast\, Australia\nTelevised on: DAZN\nStart: time TBC\nMain Event: Erislandy Lara vs. Tim Tszyu (12-round bout\, WBA middleweight championship held by Lara)\nUndercard:\n  * Jermell Charlo vs. Brock Jarvis (10-round bout\, middleweights)\n  * Elnur Samedov vs. Liam Wilson (12-round bout\, WBA “regular” junior lightweight championship held by Samedov)\n  * Callum Peters vs. Saulo Morales Saldivar (10-round bout\, middleweights)\n  * Demsey McKean vs. TBA\n  * 10\, rounds\, heavyweights\n  * Kirra Ruston vs. Sanderson Diaz (10-round bout\, light heavyweights)\nSource: BoxingNews24.com
@@ -674,13 +659,6 @@ SUMMARY:LA Elite vs. Las Vegas Hustle [Stream: YouTube]
 UID:20260321-la-elite-vs-las-vegas-hustle-20260321@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: Carson\, Calif.\nTelevised on: DAZN\, TNT\, truTV\nStart: 06:00 PM CT\nMain Event: Diego Pacheco vs. Darius Fulghum (12-round bout\, super middleweights)\nUndercard:\n  * Anthony Olascuaga vs. Yuberjen Martinez (12-round bout\, WBO flyweight championship held by Olascuaga)\n  * Charlie Sheehy vs. Jose Matias Romero (10-round bout\, lightweights)\n  * David Adeleye vs. Alexander Flores (10-round bout\, heavyweights)\n  * Zaquin Moses vs. Manuel Valentine Lerma (8-round bout\, junior lightweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Save to your calendar and check its alert setting. The .ics reminder requests an alert at card start. Google Calendar uses your calendar’s reminder settings. This start time is an estimate. Timings can change\; saved reminders do not update automatically.\nSource: BoxingNews24.com
-DTEND:20261115T050000Z
-DTSTART:20261115T000000Z
-SUMMARY:Diego Pacheco vs. Darius Fulghum [TV: DAZN\, TNT +1]
-UID:20261114-diego-pacheco-darius-fulghum@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The Cosmopolitan of Las Vegas\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Sebastian Fundora DEF. Ermal Hadribeaj - KO In Round 12\n  Jose Armando Resendiz DEF. Koen Mazoudier - Unanimous Decision\n  Jaime Enrique Osuna Diaz DEF. Cristian Cangelosi - Majority Decision\n  David Garcia DEF. Angel Carrillo - KO In Round 2\nSource: BoxingScene.com
 DTEND:20261018T050000Z
 DTSTART:20261018T000000Z
@@ -758,13 +736,6 @@ SUMMARY:San Antonio Snipers vs. LA Elite [Stream: YouTube]
 UID:20260412-san-antonio-snipers-vs-la-elite-20260412@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: OVO Arena Wembley\, London\, England\, United Kingdom\nTelevised on: DAZN\nStart: 01:00 PM CT\nMain Event: Viddal Riley vs. Seydi Coupe (12-round bout\, European cruiserweight championship held by Riley)\nUndercard:\n  * Zelfa Barrett vs. Gavin Gwynne (12-round bout\, lightweights)\n  * Yaser Al Ghena vs. Ben Marksby (12-round bout\, Commonwealth junior welterweight championship held by Al Ghena)\n  * Dan Toward vs. Jak Corrie (10-round bout\, junior middleweights)\n  * Tom Welland vs. Jack Dillingham (10-round bout\, featherweights)\n  * Frankie Stringer vs. Kurt Jackson (8-round bout\, lightweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Save to your calendar and check its alert setting. The .ics reminder requests an alert at card start. Google Calendar uses your calendar’s reminder settings. This start time is an estimate. Timings can change\; saved reminders do not update automatically.\nSource: BoxingNews24.com
-DTEND:20261115T000000Z
-DTSTART:20261114T190000Z
-SUMMARY:Viddal Riley vs. Seydi Coupe [TV: DAZN]
-UID:20261114-viddal-riley-seydi-coupe@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, April 25\, 2026\nLocation: Hyatt Regency San Antonio Riverwalk\, 123 Losoya St\, San Antonio\, TX 78205\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260426T050000Z
 DTSTART:20260426T000000Z
@@ -832,13 +803,6 @@ DTEND:20260510T050000Z
 DTSTART:20260510T000000Z
 SUMMARY:Boston Butchers vs. Miami Assassins [Stream: YouTube]
 UID:20260509-boston-butchers-vs-miami-assassins-20260509@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: Halle Monconseil\, Tours\, Centre-Val de Loire\, France\nTelevised on: not announced yet\nStart: 11:30 AM CT\nSource: FightNews.com
-DTEND:20261114T223000Z
-DTSTART:20261114T173000Z
-SUMMARY:Les Princes du Ring 2026
-UID:20261114-les-princes-du-ring-2026@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, May 23\, 2026\nLocation: Nashville Municipal Auditorium\, 417 4th Ave N\, Nashville\, TN 37201\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
