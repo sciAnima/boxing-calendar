@@ -200,7 +200,7 @@ SUMMARY:Phoenix Fury vs. Atlanta Attack [Stream: YouTube]
 UID:20260620-phoenix-fury-vs-atlanta-attack-20260620@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, November 13\, 2026\nLocation: El Paso County Coliseum\, El Paso\, Texas\nNetwork: YouTube\nStart: 07:00 PM CT\nResults:\n  Jose Nunez DEF. Bryan Flores - Unanimous Decision\n  Tsendbaatar Erdenebat DEF. Muhammad Yaqubov - Unanimous Decision\n  Ruben Aguilar DEF. Guido Schramm - TKO In Round 3\n  Elijah Flores DEF. Axl Melendez Salgado - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Friday\, November 13\, 2026\nLocation: El Paso County Coliseum\, El Paso\, Texas\nStart: 07:00 PM CT\nResults:\n  Jose Nunez DEF. Bryan Flores - Unanimous Decision\n  Tsendbaatar Erdenebat DEF. Muhammad Yaqubov - Unanimous Decision\n  Ruben Aguilar DEF. Guido Schramm - TKO In Round 3\n  Elijah Flores DEF. Axl Melendez Salgado - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20261114T060000Z
 DTSTART:20261114T010000Z
 SUMMARY:Jose Nunez DEF. Bryan Flores
@@ -422,12 +422,6 @@ DTEND:20260606T050000Z
 DTSTART:20260606T000000Z
 SUMMARY:NYC Attitude vs. San Antonio Snipers [Stream: YouTube]
 UID:20260605-nyc-attitude-vs-san-antonio-snipers-20260605@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261114
-DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: The Venue\, Riyadh\, Saudi Arabia\nTelevised on: Paramount+\nStart: time TBC\nMain Event: Carlos Adames vs. Gerome Warburton\nSource: Wikipedia.org
-SUMMARY:Zuffa Boxing 13: Carlos Adames vs. Gerome Warburton [TV: Paramount+]
-UID:20261114-carlos-adames-gerome-warburton@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, July 26\, 2026\nLocation: The 2300 Arena\, 2300 S Swanson St\, Philadelphia\, PA  19148\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
