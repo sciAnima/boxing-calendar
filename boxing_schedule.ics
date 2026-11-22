@@ -44,7 +44,7 @@ SUMMARY:Luis Alberto Lopez vs. Angel Garcia [Stream: ProBoxTV]
 UID:20261212-luis-alberto-lopez-angel-garcia@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Thursday\, November 26\, 2026\nLocation: EBARA WAVE Arena Ota\, Tokyo\, Tokyo\, Japan\nTelevised on: NTT Docomo (JP)\nStart: 12:30 AM CT\nMain Event: Masamichi Yabuki vs. Miel Fajardo (12-round bout\, IBF flyweight championship held by Yabuki)\nUndercard:\n  * Takeshi Ishii vs. Zyvyr John Medecilo (12-round bout\, WBA “regular” strawweight championship held by Ishii)\n  * Madoka Wada vs. Watcharaporn Namphon (10-round bout\, female atomweights)\n  * Seiya Nakayama vs. Vencent Lacar (8-round bout\, junior bantamweights)\n  * Masanori Rikiishi vs. Melchor Roda (8-round bout\, junior lightweights)\nSource: BoxingNews24.com
+DESCRIPTION:Date: Thursday\, November 26\, 2026\nLocation: EBARA WAVE Arena Ota\, Tokyo\, Tokyo\, Japan\nTelevised on: NTT Docomo (JP)\nStart: 12:30 AM CT\nMain Event: Masamichi Yabuki vs. Miel Fajardo (12-round bout\, IBF flyweight championship held by Yabuki)\nUndercard:\n  * Takeshi Ishii vs. Zyvyr John Medecilo (12-round bout\, WBA “regular” strawweight championship held by Ishii)\n  * Madoka Wada vs. Watcharaporn Namphon (10-round bout\, female atomweights)\nSource: BoxingNews24.com
 DTEND:20261126T113000Z
 DTSTART:20261126T063000Z
 SUMMARY:Masamichi Yabuki vs. Miel Fajardo [TV: NTT Docomo (JP)]
@@ -167,20 +167,6 @@ SUMMARY:LA Elite vs. Houston Hitmen [Stream: YouTube]
 UID:20260627-la-elite-vs-houston-hitmen-20260627@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Copper Box Arena\, London\, United Kingdom\nNetwork: Paramount+\nStart: 01:00 PM CT\nResults:\n  Cheavon Clarke DEF. Chris Billam-Smith - TKO In Round 7\n  Denzel Bentley DEF. Shane Mosley Jr. - Unanimous Decision\n  Da’Mazion Vanhouter DEF. Ivan Balaz - TKO In Round 1\n  Sam Hickey DEF. Amaury Massenaux - TKO In Round 5\n  Kayla Allen DEF. Julia Igel - Won on points\, 58-56.\n  Lucas Roehrig DEF. Connal McDonald - TKO In Round 7\n  Umar Dzambekov DEF. Zach Parker - KO In Round 4\n  Vinnie Kemp DEF. Liam McElhinney - TKO In Round 1\n  Masood Abdulah DEF. Adan Palma - Unanimous Decision\nSource: BoxingScene.com
-DTEND:20261108T000000Z
-DTSTART:20261107T190000Z
-SUMMARY:Zuffa Boxing 12: Cheavon Clarke DEF. Chris Billam-Smith
-UID:20261107-chris-billam-smith-vs-cheavon-clarke@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: Dignity Health Sports Park\, Carson\, California\nStart: 06:30 PM CT\nResults:\n  Darius Fulghum DEF. Diego Pacheco - Unanimous Decision\n  David Adeleye DEF. Alexander Flores - Unanimous Decision\n  Frank Espinoza DEF. Abisai Torres Diaz - TKO In Round 2\n  Anthony Olascuaga DEF. Yuberjen Martinez - Unanimous Decision\n  Nishant Dev DEF. Sona Akale - TKO In Round 3\nSource: BoxingScene.com
-DTEND:20261115T053000Z
-DTSTART:20261115T003000Z
-SUMMARY:Darius Fulghum DEF. Diego Pacheco
-UID:20261114-diego-pacheco-vs-darius-fulghum@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Thursday\, December 24\, 2026\nLocation: Dubai\, United Arab Emirates\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Jake Paul vs. Cedric Doumbe (8-round bout\, cruiserweights)\nSource: BoxingNews24.com
 DTEND:20261225T080000Z
 DTSTART:20261225T030000Z
@@ -229,18 +215,17 @@ SUMMARY:Atlanta Attack vs. Dallas Enforcers [Stream: YouTube]
 UID:20260711-atlanta-attack-vs-dallas-enforcers-20260711@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261128
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Newark Showground\, Newark-on-Trent\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Logan Clouthier vs. TBA (Lightweight)\nUndercard:\n  * Martin John Ward vs. Jacob Marrer\n  * Shaun Simpson vs. Joe Hardy\n  * Ryan Hearst vs. Connor Meanwell\n  * Sonny Steele vs. Josh Cook\n  * Erik Rubanov vs. Dale Arrowsmith\n  * Danny Steele vs. Dan Belcher\n  * Tom Pogson vs. Dylan Courtney\n  * Richard Smith vs. Owen Durnan\n  * Lennon Hage vs. TBA\nSource: FightNews.com
+SUMMARY:Logan Clouthier vs TBA
+UID:20261128-logan-clouthier-tba@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, November 27\, 2026\nLocation: Pechanga Resort Casino\, Temecula\, California\, United States\nTelevised on: not announced yet\nStart: 08:00 PM CT\nMain Event: Lazaro Lorenzana vs. Ronald Ellis (Super Middleweight\, 10 rounds)\nUndercard:\n  * Kingsley Ibeh vs. Andrii Novytskyi (Heavyweight\, 10 rounds\, WBA Continental Americas Heavyweight)\n  * Luis Lopez vs. Semajay Thomas (Super Welterweight\, 8 rounds)\n  * Ruben Cazales vs. Andres Martinez (Lightweight\, 6 rounds)\n  * Hector Oros vs. Jose Silva Gonzales (Super Bantamweight\, 6 rounds)\n  * Oscar Trujillo vs. Angel Estrada (Welterweight\, 6 rounds)\n  * Paolo Barredo vs. Pedro Juarez (Lightweight\, 6 rounds)\n  * Angel Valenzuela vs. Narek Taverdyan (Super Bantamweight\, 4 rounds)\n  * Zimbry Pedraza Esquivel vs. Wendy Villegas (Lightweight\, 6 rounds)\nSource: FightNews.com
 DTEND:20261128T070000Z
 DTSTART:20261128T020000Z
 SUMMARY:Lazaro Lorenzana vs Ronald Ellis
 UID:20261127-lazaro-lorenzana-ronald-ellis@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: Bolton Whites Hotel\, Bolton\, England\, United Kingdom\nTelevised on: not announced yet\nStart: 01:00 PM CT\nMain Event: Corey Scott vs. Caine Singh (Super Bantamweight)\nUndercard:\n  * Sean McManus vs. Garth Noot (Super Lightweight)\n  * Yousif Saeed vs. Benito Sanchez Garcia (Welterweight)\n  * Molly Maher vs. Sydney Chambers (Women'S Super Flyweight)\n  * Kai Fenton vs. Josh Cook (Super Middleweight)\n  * William Tyers vs. Karl Sampson (Lightweight)\n  * Nial Moran vs. Owen Durnan (Welterweight)\n  * Ryan Haythornthwaite vs. Dale Arrowsmith (Super Welterweight)\nSource: FightNews.com
-DTEND:20261122T000000Z
-DTSTART:20261121T190000Z
-SUMMARY:Corey Scott vs Caine Singh
-UID:20261121-corey-scott-caine-singh@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, May 24\, 2026\nLocation: Thunder Studios\, 20434 S Santa Fe Ave\, Long Beach\, CA 90810\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -264,13 +249,6 @@ SUMMARY:Phoenix Fury vs. Atlanta Attack [Stream: YouTube]
 UID:20260620-phoenix-fury-vs-atlanta-attack-20260620@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, November 13\, 2026\nLocation: El Paso County Coliseum\, El Paso\, Texas\nStart: 07:00 PM CT\nResults:\n  Jose Nunez DEF. Bryan Flores - Unanimous Decision\n  Tsendbaatar Erdenebat DEF. Muhammad Yaqubov - Unanimous Decision\n  Ruben Aguilar DEF. Guido Schramm - TKO In Round 3\n  Elijah Flores DEF. Axl Melendez Salgado - Unanimous Decision\nSource: BoxingScene.com
-DTEND:20261114T060000Z
-DTSTART:20261114T010000Z
-SUMMARY:Jose Nunez DEF. Bryan Flores
-UID:20261113-bryan-flores-vs-jose-nunez@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 19\, 2026\nLocation: Bilbao\, Spain\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Jokin Garcia vs. Laid Douadi (12-round bout\, Euopean lightweight championship held by Garcia)\nSource: BoxingNews24.com
 DTEND:20261220T080000Z
 DTSTART:20261220T030000Z
@@ -278,11 +256,10 @@ SUMMARY:Jokin Garcia vs. Laid Douadi
 UID:20261219-jokin-garcia-laid-douadi@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: Los Angeles\nTelevised on: not announced yet\nStart: 06:00 PM CT\nMain Event: Art Barrera Jr. vs. Louis Hernandez (8-round bout\, junior middleweights)\nUndercard:\n  * Dedrick Crocklem vs. William King (6-round bout\, junior lightweights)\n  * Deni Davtian vs. Renny Viamonte Mastrapa (8-round bout\, junior welterweights)\n  * Emiliano Cardenas vs. Mario Hernandez\n  * 6 round\, bantamweights\n  * Emiliano Alvarado vs. Josaphat Navarro (6-round bout\, featherweights)\n  * Julian Montalvo vs. Eloy Secundino Tello (6-round bout\, lightweights)\n  * Carson Crawford vs. Destiny Jones (6-round bout\, female junior lightweights)\n  * Jesse Daniel Mendoza vs. Edwin Cortes (6-round bout\, junior bantamweights)\n  * Criztec Bazaldua vs. Jose Zaragoza (6-round bout\, junior welterweights)\n  * Antonio Mireles vs. Zederic Stephenson (6-round bout\, heavyweights)\n  * Luis Coria vs. TBA (6-round bout\, junior bantamweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Estimated card start. Saved reminders do not update automatically. Reminder help\nSource: BoxingNews24.com
-DTEND:20261122T050000Z
-DTSTART:20261122T000000Z
-SUMMARY:Art Barrera Jr. vs. Louis Hernandez
-UID:20261121-art-barrera-jr-louis-hernandez@boxing-calendar
+DTSTART;VALUE=DATE:20261128
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Beach Ballroom\, Aberdeen\, Scotland\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Fraser Wilkinson vs. Lewis Booth (Welterweight)\nUndercard:\n  * Ben Bartlett vs. TBA\n  * Jimmy Laing vs. Josue Bendana\n  * Stephen Donald vs. TBA\n  * Marc Johnstone vs. TBA\n  * James Paterson vs. Nazeer Khan\nSource: FightNews.com
+SUMMARY:Fraser Wilkinson vs Lewis Booth
+UID:20261128-fraser-wilkinson-lewis-booth@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, February 20\, 2027\nLocation: El Paso\, Texas\nTelevised on: ESPN+\nStart: 06:00 PM CT\nMain Event: Caroline Dubois vs. Stephanie Han (10-round bout\, WBC/WBO/WBA women’s lightweight title unification)\nSource: BoxingNews24.com
@@ -292,11 +269,11 @@ SUMMARY:Caroline Dubois vs. Stephanie Han [TV: ESPN+]
 UID:20270220-caroline-dubois-stephanie-han@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 14\, 2026\nLocation: The Venue\, Riyadh\, Saudi Arabia\nNetwork: Paramount+\nStart: 10:00 AM CT\nResults:\n  Carlos Adames DEF. Gerome Warburton - Unanimous Decision\nSource: BoxingScene.com
-DTEND:20261114T210000Z
-DTSTART:20261114T160000Z
-SUMMARY:Zuffa Boxing 13: Carlos Adames DEF. Gerome Warburton
-UID:20261114-carlos-adames-vs-gerome-warburton@boxing-calendar
+DESCRIPTION:Date: Saturday\, January 23\, 2027\nLocation: Horsens\, Denmark\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Janibek Alimkhanuly vs. Jacob Bank (12-round bout\, vacant WBO super middleweight championship at stake)\nSource: BoxingNews24.com
+DTEND:20270124T080000Z
+DTSTART:20270124T030000Z
+SUMMARY:Janibek Alimkhanuly vs. Jacob Bank
+UID:20270123-janibek-alimkhanuly-jacob-bank@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Thursday\, November 26\, 2026\nLocation: The Premier Suite\, Cannock\, England\, United Kingdom\nTelevised on: not announced yet\nStart: 01:00 PM CT\nMain Event: Jessica Barry vs. Ingrid Brodu\nUndercard:\n  * Danny Quartermaine vs. TBA\n  * Shabir Haidary vs. TBA\nSource: FightNews.com
@@ -306,21 +283,7 @@ SUMMARY:Excelsior Sporting Club St Andrews Night: Jessica Barry vs Ingrid Brodu
 UID:20261126-jessica-barry-ingrid-brodu@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, January 23\, 2027\nLocation: Horsens\, Denmark\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Janibek Alimkhanuly vs. Jacob Bank (12-round bout\, vacant WBO super middleweight championship at stake)\nSource: BoxingNews24.com
-DTEND:20270124T080000Z
-DTSTART:20270124T030000Z
-SUMMARY:Janibek Alimkhanuly vs. Jacob Bank
-UID:20270123-janibek-alimkhanuly-jacob-bank@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 10\, 2026\nLocation: Wintrust Arena\, Chicago\, Illinois\nStart: 07:00 PM CT\nResults:\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\n  Grant Flores DEF. Mikey Dahlman - TKO In Round 2\n  Cristian Williams DEF. Asa Stevens - Unanimous Decision\n  Jahmal Harvey DEF. Pedro Castaneda - KO In Round 11\n  Jan Paul Rivera DEF. Abraham Perfecto Valdez - Unanimous Decision\nSource: BoxingScene.com
-DTEND:20261011T050000Z
-DTSTART:20261011T000000Z
-SUMMARY:Floyd Schofield DEF. Lucas Bahdi
-UID:20261010-floyd-schofield-vs-lucas-bahdi@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, November 27\, 2026\nLocation: Rust\, Germany\nTelevised on: not announced yet\nStart: 12:00 PM CT\nMain Event: Emanuel Odiase vs. Mike Perez (10-round bout\, heavyweights)\nUndercard:\n  * Labinot Xhoxhaj vs. Eduardo Giustini (12-round bout\, European heavyweight championship held by Xhoxhaj)\n  * Karen Chukhadzhian vs. Luis Arganaraz (10-round bout\, welterweights)\n  * Altin Zogaj vs. Kudra Jumanne (6-round bout\, light heavyweights)\n  * Granit Sope vs. Istvan Kiss (6-round bout\, heavyweights)\n  * Elvin Sope vs. Jose Rivas (6-round bout\, light heavyweights)\n  * Ismet Ademi vs. TBA (6-round bout\, heavyweights)\n  * Meryem Sarah Binbir vs. TBA (4-round bout\, female featherweights)\n  * Slawa Spomer vs. Eddy Colmenares (8 or 10-round bout\, welterweights)\nSource: BoxingNews24.com
+DESCRIPTION:Date: Friday\, November 27\, 2026\nLocation: Rust\, Germany\nTelevised on: not announced yet\nStart: 12:00 PM CT\nMain Event: Emanuel Odiase vs. Mike Perez (10-round bout\, heavyweights)\nUndercard:\n  * Labinot Xhoxhaj vs. Eduardo Giustini (12-round bout\, European heavyweight championship held by Xhoxhaj)\n  * Karen Chukhadzhian vs. Luis Arganaraz (10-round bout\, welterweights)\n  * Altin Zogaj vs. Kudra Jumanne (6-round bout\, light heavyweights)\n  * Granit Sope vs. Istvan Kiss (6-round bout\, heavyweights)\nSource: BoxingNews24.com
 DTEND:20261127T230000Z
 DTSTART:20261127T180000Z
 SUMMARY:Emanuel Odiase vs. Mike Perez
@@ -346,13 +309,6 @@ DTEND:20260418T050000Z
 DTSTART:20260418T000000Z
 SUMMARY:Nashville Smash vs. Phoenix Fury [Stream: YouTube]
 UID:20260417-nashville-smash-vs-phoenix-fury-20260417@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: AO Arena\, Manchester\, United Kingdom\nStart: 01:00 PM CT\nResults:\n  Willy Hutchinson DEF. Joshua Buatsi - Unanimous Decision\n  Gully Powar DEF. Zak Miller - Unanimous Technical Decision\n  Brad Rea DEF. Ezra Taylor - TKO In Round 2\n  John Joe Carrigan DEF. Cheikh Diop - Knockout\nSource: BoxingScene.com
-DTEND:20261108T000000Z
-DTSTART:20261107T190000Z
-SUMMARY:Willy Hutchinson DEF. Joshua Buatsi
-UID:20261107-joshua-buatsi-vs-willy-hutchinson-2@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Robert Treat Hotel\, Newark\, New Jersey\, United States\nTelevised on: not announced yet\nStart: 05:00 PM CT\nMain Event: Nimal Farmer vs. Ghandi Romain (Welterweight\, USBA Welterweight)\nSource: FightNews.com
@@ -383,20 +339,6 @@ SUMMARY:Atlanta Attack vs. Nashville Smash [Stream: YouTube]
 UID:20260327-atlanta-attack-vs-nashville-smash-20260327@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Frost Bank Center\, San Antonio\, Texas\nStart: 07:00 PM CT\nResults:\n  O'Shaquie Foster DEF. Emanuel Navarrete - Unanimous Decision\n  Albert Gonzalez DEF. Edward Vazquez - KO In Round 2\n  Frank Martin DEF. Tarik Zaina - KO In Round 7\nSource: BoxingScene.com
-DTEND:20261025T050000Z
-DTSTART:20261025T000000Z
-SUMMARY:O'Shaquie Foster DEF. Emanuel Navarrete
-UID:20261024-emanuel-navarrete-vs-o-shaquie-foster@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, November 20\, 2026\nLocation: Rotherham\, England\nTelevised on: not announced yet\nStart: 01:00 PM CT\nMain Event: Conner Kelsall vs. Liam Dring (12-round bout\, European flyweight championship held by Kelsall)\nUndercard:\n  * Charlie Ellis vs. Jake Smith (6-round bout\, welterwights)\n  * Mykyle Ahmed vs. Nicolas Abalos (6-round bout\, bantamweights)\n  * Alin Cuzea vs. Jacob Marrer (6-round bout\, junior middleweights)\nSource: BoxingNews24.com
-DTEND:20261121T000000Z
-DTSTART:20261120T190000Z
-SUMMARY:Conner Kelsall vs. Liam Dring
-UID:20261120-conner-kelsall-liam-dring@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261201
 DESCRIPTION:Date: Tuesday\, December 01\, 2026\nLocation: General Santos\, South Cotabato\, Philippines\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Lienard Sarcon vs. Leboy Atencio (Featherweight\, Vacant IBF Pan Pacific Featherweight)\nUndercard:\n  * Tom Mizokoshi vs. Mark Sabang (Super Bantamweight\, Vacant IBF Pan Pacific Super Bantamweight)\n  * Yeerzhati Baihazhati vs. Lourinz Biasong (Flyweight\, Vacant IBF Youth Flyweight)\nSource: FightNews.com
 SUMMARY:Lienard Sarcon vs Leboy Atencio
@@ -415,13 +357,6 @@ DTEND:20260615T050000Z
 DTSTART:20260615T000000Z
 SUMMARY:Miami Assassins vs. NYC Attitude [Stream: YouTube]
 UID:20260614-miami-assassins-vs-nyc-attitude-20260614@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The O2 Arena\, London\, United Kingdom\nStart: 01:00 PM CT\nResults:\n  Daniel Dubois DEF. Fabio Wardley - TKO In Round 2\n  Bakhodir Jalolov DEF. Solomon Dacres - Unanimous Decision\n  Nelson Birchall DEF. Levi Giles - TKO In Round 11\n  Fawas Aborode DEF. Rashid Omar - TKO In Round 11\n  Aaron Noriega DEF. Leonardo Baez - TKO In Round 4\n  Leighton Birchall DEF. Alejandro Morales Chazaro\n  Tony Curtis DEF. Kerim Agius\n  Manny Safari DEF. Jake Pollard\nSource: BoxingScene.com
-DTEND:20261017T230000Z
-DTSTART:20261017T180000Z
-SUMMARY:Daniel Dubois DEF. Fabio Wardley
-UID:20261017-daniel-dubois-vs-fabio-wardley@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 19\, 2026\nLocation: The O2 Belfast\, Belfast\, Northern Ireland\, United Kingdom\nTelevised on: DAZN\nStart: 01:00 PM CT\nMain Event: Anthony Cacace vs. Nick Ball (12-round bout\, WBA junior lightweight championship held by Cacace)\nUndercard:\n  * Lewis Crocker vs. Owen Cooper (10-round bout\, welterweights)\n  * Henry Turner vs. Tyrone McKenna (10-round bout\, welterweights)\n  * Steven Cairns vs. Josh Blenkiron (10-round bout\, lightweights)\n  * Eoghan Lavin vs. Graham McCormack (8-round bout\, middleweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Estimated card start. Saved reminders do not update automatically. Reminder help\nSource: BoxingNews24.com
@@ -452,13 +387,6 @@ SUMMARY:Amanda Serrano vs. Skye Falzon [TV: DAZN]
 UID:20270109-amanda-serrano-skye-falzon@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, November 20\, 2026\nLocation: Cardiff\, Wales\nTelevised on: not announced yet\nStart: 01:00 PM CT\nMain Event: Lauren Price vs. Michaela Kotaskova (10-round bout\, WBC/IBF/WBA women’s welterweight championship held by Price)\nUndercard:\n  * Rhys Edwards vs. Lee McGregor (10-round bout\, featherweights)\n  * Kyran Jones vs. Sean Arkwright (10-round bout\, middleweights)\nSource: BoxingNews24.com
-DTEND:20261121T000000Z
-DTSTART:20261120T190000Z
-SUMMARY:Lauren Price vs. Michaela Kotaskova
-UID:20261120-lauren-price-michaela-kotaskova@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261205
 DESCRIPTION:Date: Saturday\, December 05\, 2026\nLocation: Rosarito\, Baja California\, Mexico\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Omar Valenzuela vs. Rodolfo Orozco (Middleweight\, WBA Fedelatin Mexico Middleweight)\nSource: FightNews.com
 SUMMARY:Omar Valenzuela vs Rodolfo Orozco
@@ -470,20 +398,6 @@ DTEND:20270110T000000Z
 DTSTART:20270109T190000Z
 SUMMARY:Ryan Garner vs. James “Jazza” Dickens [TV: DAZN]
 UID:20270109-ryan-garner-james-jazza-dickens@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Thursday\, October 08\, 2026\nStart: 07:00 PM CT\nResults:\n  Osleys Iglesias DEF. Oliver Zaren - TKO In Round 7\n  Wilkens Mathieu DEF. Vladimir Shishkin - Split Decision\n  Dzmitry Asanau DEF. Luis Santana - Unanimous Decision\nSource: BoxingScene.com
-DTEND:20261009T050000Z
-DTSTART:20261009T000000Z
-SUMMARY:Osleys Iglesias DEF. Oliver Zaren
-UID:20261008-osleys-iglesias-oliver-zaren@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: Kempton Park\, South Africa\nTelevised on: AWE\nStart: time TBC\nMain Event: Charlton Malajika vs. Landile Ngxeke (12-round bout\, bantamweights)\nUndercard:\n  * Roarke Knapp vs. Phikelani Khumalo (12-round bout\, middleweights)\n  * Juan Alberts vs. Shaun Potgieter (10-round bout\, heavyweights)\n  * Tuvia Wewege vs. Bryan Thysse (10-round bout\, light heavyweights)\n  * Liam Fox vs. Tebelo Seleho (4-round bout\, junior welterweights)\nSource: BoxingNews24.com
-DTEND:20261122T080000Z
-DTSTART:20261122T030000Z
-SUMMARY:Charlton Malajika vs. Landile Ngxeke [TV: AWE]
-UID:20261121-charlton-malajika-landile-ngxeke@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 05\, 2026\nLocation: Decines\, France\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Leonardo Mosquea vs. Marco Calik (12-round bout\, cruiserweights)\nUndercard:\n  * Lilia Cherifi vs. Isis Pizagou Logerie (10-round bout\, female lightweights)\n  * Naim Bellahcene vs. Mouhib Alili (6-round bout\, welterweights)\n  * Ruben Hovakimyan vs. Noan Lecureur (6-round bout\, junior welterweights)\n  * Noah Perrin vs. Bilal Tchangodei (6-round bout\, junior welterweights)\nSource: BoxingNews24.com
@@ -542,25 +456,11 @@ SUMMARY:David Benavidez vs. Michal Cieslak [TV: DAZN (PPV)]
 UID:20261205-david-benavidez-michal-cieslak@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 24\, 2026\nLocation: Utilita Arena Sheffield\, Sheffield\, United Kingdom\nStart: 01:00 PM CT\nResults:\n  Dalton Smith DEF. Alberto Puello - Split Decision\n  Leo Atang DEF. Jonathan Exequiel Vergara - TKO In Round 1\n  Giorgio Visioli DEF. Maxi Hughes - Majority Decision\n  Shannon Ryan DEF. Emma Dolan\nSource: BoxingScene.com
-DTEND:20261024T230000Z
-DTSTART:20261024T180000Z
-SUMMARY:Dalton Smith DEF. Alberto Puello
-UID:20261024-smith-vs-puello@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, March 22\, 2026\nLocation: Pontchartrain Center\, 4545 Williams Blvd\, Kenner\, LA 70065\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260323T050000Z
 DTSTART:20260323T000000Z
 SUMMARY:Houston Hitmen vs. San Antonio Snipers [Stream: YouTube]
 UID:20260322-houston-hitmen-vs-san-antonio-snipers-20260322@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 07\, 2026\nLocation: Ülker Arena\, Istanbul\nStart: 12:30 PM CT\nResults:\n  Mourad Aliev DEF. Umut Camkiran - Unanimous Decision\n  Luis Vela DEF. Fuad Tarverdi - KO In Round 8\nSource: BoxingScene.com
-DTEND:20261107T233000Z
-DTSTART:20261107T183000Z
-SUMMARY:Mourad Aliev DEF. Umut Camkiran
-UID:20261107-mourad-aliev-vs-umut-amk-ran@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, May 10\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -577,13 +477,6 @@ SUMMARY:San Antonio Snipers vs. Phoenix Fury [Stream: YouTube]
 UID:20260801-san-antonio-snipers-vs-phoenix-fury-20260801@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: George R. Brown Convention Center\, Houston\, Texas\, United States\nTelevised on: not announced yet\nStart: 06:00 PM CT\nMain Event: Miguel Flores vs. Ismael Garnica Gordillo (Featherweight\, 8 rounds)\nUndercard:\n  * Marlen Esparza vs. Maribel Ramirez (Women'S Bantamweight\, 8 rounds\, Vacant WBA NABA Gold Women's Bantamweight)\n  * Oscar Alan Perez vs. Joshua Draughter (Lightweight\, WBA NABA Gold Lightweight)\n  * Giovanni Marquez vs. Dennis Contrera (Super Lightweight\, 8 rounds)\n  * Fabian Arredondo vs. Armando Frausto (Bantamweight\, 6 rounds)\n  * Benjamin Mares vs. Eduardo Tarango (Super Lightweight\, 6 rounds)\n  * Christopher S. Gonzalez vs. Lev Jackson (Super Featherweight\, 6 rounds\, Texas State Super Featherweight (vacant))\n  * Ivan Vazquez vs. Gilbert Venegas Jr. (Super Welterweight\, 6 rounds)\n  * Raynard Talib Jr. vs. Rudy Montenegro (Super Welterweight\, 6 rounds\, Texas State Super Welterweight (vacant))\n  * Ryan Silva vs. Damon Pittman (Middleweight\, 4 rounds)\n  * Bret Hightower vs. Jshon Miller (Welterweight\, 4 rounds)\n  * Kevin Eguiluz vs. Bruce Foreman (Super Featherweight\, 4 rounds)\nSource: FightNews.com
-DTEND:20261122T050000Z
-DTSTART:20261122T000000Z
-SUMMARY:Texas Combat Sports: Texas Takeover
-UID:20261121-miguel-flores-ismael-garnica-gordillo@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Thursday\, December 24\, 2026\nLocation: Coca-Cola Arena\nTelevised on: not announced yet\nStart: 08:00 AM CT\nSource: BoxingScene.com
 DTEND:20261224T190000Z
 DTSTART:20261224T140000Z
@@ -596,6 +489,12 @@ DTEND:20260412T050000Z
 DTSTART:20260412T000000Z
 SUMMARY:Las Vegas Hustle vs. Philadelphia Smoke [Stream: YouTube]
 UID:20260411-las-vegas-hustle-vs-philadelphia-smoke-20260411@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261128
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Caledonia Gladiators Arena\, East Kilbride\, Scotland\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Tysie Gallagher vs. Cassidy Todd (Women'S Super Bantamweight\, Commonwealth Women's Super Bantamweight)\nUndercard:\n  * Martin Crossan vs. Charles Mcdonagh\n  * Stephen Black vs. TBA\n  * Reagan Black vs. TBA\n  * Taylor Coyle vs. TBA\n  * Andrew Meichan vs. TBA\n  * Nathan Lundie vs. TBA\n  * Harley Boal vs. TBA\n  * Isa Akram vs. TBA\nSource: FightNews.com
+SUMMARY:Tysie Gallagher vs Cassidy Todd
+UID:20261128-tysie-gallagher-cassidy-todd@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 05\, 2026\nLocation: Wolverhampton\, England\nTelevised on: DAZN\nStart: 01:00 PM CT\nMain Event: Conah Walker vs. Alexis Rocha (12-round bout\, WBA welterweight eliminator)\nUndercard:\n  * Galal Yafai vs. TBA (10-round bout\, flyweights)\n  * Tiah Mai Ayton vs. Tori-Ellis Willetts (10-round bout\, women’s Commonwealth and vacant British featherweight championship held by Ayton)\n  * William Crolla vs. Billy Stanbury (10-round bout\, junior middleweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Estimated card start. Saved reminders do not update automatically. Reminder help\nSource: BoxingNews24.com
@@ -624,13 +523,6 @@ SUMMARY:Imane Khelif vs Clarida Sarabia
 UID:20261214-imane-khelif-clarida-sarabia@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 31\, 2026\nLocation: Kingdom Arena\, Riyadh\, Saudi Arabia\nStart: 12:00 PM CT\nResults:\n  Saul "Canelo" Alvarez DEF. Christian Mbilli - Unanimous Decision\n  Jaime Munguia DEF. Nikita Zon - Unanimous Decision\n  Rafael Espinoza DEF. Ricardo Blandon - TKO In Round 3\n  Carl Jammes Martin DEF. Alan David Picasso - Split Decision\n  Emiliano Rojo DEF. Flavius Biea\n  Sultan Almohammed DEF. Erick Jahir Urvina Villegas - Unanimous Decision\n  Reito Tsutsumi DEF. Raymundo Rojas Garcia - Unanimous Decision\n  Bek Nurmaganbet DEF. Marcos Vazquez - Knockout\nSource: BoxingScene.com
-DTEND:20261031T220000Z
-DTSTART:20261031T170000Z
-SUMMARY:Saul "Canelo" Alvarez DEF. Christian Mbilli
-UID:20261031-alvarez-vs-mbilli@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, May 01\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260502T050000Z
 DTSTART:20260502T000000Z
@@ -652,11 +544,10 @@ SUMMARY:Las Vegas Hustle vs. Phoenix Fury [Stream: YouTube]
 UID:20260628-las-vegas-hustle-vs-phoenix-fury-20260628@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: Coliseo Carlos "Teo" Cruz\, Santo Domingo\, Distrito Nacional\, Dominican Republic\nTelevised on: not announced yet\nStart: 05:00 PM CT\nMain Event: Pablo Valdez vs. Andres Perez (Welterweight\, WBA NABA Silver Welterweight (vacant))\nUndercard:\n  * Feudri Franco vs. Juan González (Welterweight\, WBA Fedelatin Welterweight)\n  * Junior Younan vs. Jonathan Gonzalez-Ortiz (Super Middleweight\, WBA Continental USA Gold Super Middleweight)\nSource: FightNews.com
-DTEND:20261122T040000Z
-DTSTART:20261121T230000Z
-SUMMARY:Shuan Boxing: Pablo Valdez vs Andres Perez
-UID:20261121-pablo-valdez-andres-perez@boxing-calendar
+DTSTART;VALUE=DATE:20261128
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Skate Central\, Sheffield\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Mikey Harrison vs. Harley Collison (Super Middleweight)\nUndercard:\n  * Dylan Trevor vs. Kieran Holmes (Super Welterweight)\n  * Jacob Spauls vs. Sam Kirk (Super Welterweight)\n  * Charlie Ellis vs. Jake Smith\n  * Alfie Thomas vs. Lakshmy Zaragoza Contreras (Bantamweight)\n  * Ahmed Jama vs. Liam Macmillan (Welterweight)\n  * Florence Inett vs. Kira Carter (Women'S Bantamweight)\n  * Haris Aftab vs. Jake Osgood (Welterweight)\nSource: FightNews.com
+SUMMARY:Mikey Harrison vs Harley Collison
+UID:20261128-mikey-harrison-harley-collison@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, December 11\, 2026\nLocation: Cardiff\, Wales\nTelevised on: Netflix\nStart: 01:00 PM CT\nMain Event: Tyson Fury vs. Anthony Joshua (12-round bout\, vacant WBA “super” heavyweight championship at stake)\nUndercard:\n  * Deontay Wilder vs. Jai Opetaia (12-round bout\, heavyweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Estimated card start. Saved reminders do not update automatically. Reminder help\nSource: BoxingNews24.com
@@ -671,13 +562,6 @@ DTEND:20260425T050000Z
 DTSTART:20260425T000000Z
 SUMMARY:Boston Butchers vs. NYC Attitude [Stream: YouTube]
 UID:20260424-boston-butchers-vs-nyc-attitude-20260424@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, November 08\, 2026\nLocation: College Park Center\, Arlington\, Texas\nStart: 07:30 PM CT\nResults:\n  Alycia Baumgardner DEF. Elif Nur Turhan - Unanimous Decision\n  Ramla Ali DEF. Mikiah Kreps - Split Decision\n  Skye Nicolson DEF. Miyo Yoshida - Unanimous Decision\n  Irma Garcia DEF. Nataly Delgado - Unanimous Decision\n  Albina Moldazhanova DEF. Kirstie Bavington - TKO In Round 1\n  Fernando Garcia DEF. Alexander Castellano - Unanimous Decision\n  Nayeli Rodriguez DEF. Natalie Dove - Split Decision\n  Javier Guerrero DEF. Aiden Anderson - TKO In Round 1\n  Jocelyn Camarillo DEF. Nazarena Serra - Unanimous Decision\nSource: BoxingScene.com
-DTEND:20261109T063000Z
-DTSTART:20261109T013000Z
-SUMMARY:Alycia Baumgardner DEF. Elif Nur Turhan
-UID:20261108-elif-nur-turhan-vs-alycia-baumgardner@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261212
@@ -706,31 +590,10 @@ SUMMARY:LA Elite vs. Las Vegas Hustle [Stream: YouTube]
 UID:20260321-la-elite-vs-las-vegas-hustle-20260321@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The Cosmopolitan of Las Vegas\, Las Vegas\, Nevada\nStart: 07:00 PM CT\nResults:\n  Sebastian Fundora DEF. Ermal Hadribeaj - KO In Round 12\n  Jose Armando Resendiz DEF. Koen Mazoudier - Unanimous Decision\n  Jaime Enrique Osuna Diaz DEF. Cristian Cangelosi - Majority Decision\n  David Garcia DEF. Angel Carrillo - KO In Round 2\nSource: BoxingScene.com
-DTEND:20261018T050000Z
-DTSTART:20261018T000000Z
-SUMMARY:Sebastian Fundora DEF. Ermal Hadribeaj
-UID:20261017-sebastian-fundora-vs-ermal-hadribeaj@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261215
 DESCRIPTION:Date: Tuesday\, December 15\, 2026\nLocation: Johannesburg\, Gauteng\, South Africa\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Saarah Karriem vs. Samkelo Mbambo (Women'S Super Featherweight\, 8 rounds\, Vacant WBC Youth Women's Super Featherweight)\nSource: FightNews.com
 SUMMARY:Saarah Karriem vs Samkelo Mbambo
 UID:20261215-saarah-karriem-samkelo-mbambo@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: Plaza de Toros de Illescas\, Illescas\, Castilla-La Mancha\, Spain\nTelevised on: not announced yet\nStart: 10:00 AM CT\nMain Event: Isabel Rivero vs. Sumire Yamanaka (Women'S Atomweight\, WBA World Women's Atomweight\, IBF World Women's Atomweight)\nUndercard:\n  * Cristina Navarro vs. Cintia Sanchez (Women'S Minimumweight\, WBA Gold Women's Minimumweight)\n  * Jose Gabriel Carfunjol vs. Bernard Angelo Torres (Lightweight\, 10 rounds\, WBA Gold Lightweight)\n  * Sheila Martinez vs. Mayerlin Rivas (Women'S Featherweight\, 10 rounds\, WBA International Women's Featherweight)\n  * Oier Ibarreche vs. Ricardo Carpio (Super Lightweight\, 6 rounds)\nSource: FightNews.com
-DTEND:20261121T210000Z
-DTSTART:20261121T160000Z
-SUMMARY:Isabel Rivero vs Sumire Yamanaka
-UID:20261121-isabel-rivero-sumire-yamanaka@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: MECA Swindon\, Swindon\, England\, United Kingdom\nTelevised on: not announced yet\nStart: 11:00 AM CT\nMain Event: Amelia Barker vs. Angelika Oles\nUndercard:\n  * Brad Ingram vs. Artem Pugach\n  * Tom Brennan vs. Nathan Darby\n  * Muhammad Akram vs. Sam Kirk\n  * Lewis Oakford vs. Dylan Courtney\n  * Elaine Harrison vs. Antonella Shirley Molina\n  * Luke Williamson vs. Kieran Holmes\n  * Matheo Manley vs. Rashid Omar\n  * Klayson Young vs. Jose Exequiel Sanchez\n  * Shaq Marks vs. Jose Maria Pombo\n  * David Angebode vs. Vaidas Balciauskas\nSource: FightNews.com
-DTEND:20261121T220000Z
-DTSTART:20261121T170000Z
-SUMMARY:Amelia Barker vs Angelika Oles
-UID:20261121-amelia-barker-angelika-oles@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261218
@@ -746,7 +609,7 @@ SUMMARY:SportPesa Boxing Night: Javan Buyu vs Kamran Abdul Wahab
 UID:20261128-javan-buyu-kamran-abdul-wahab@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: Maritim Hotel Ingolstadt\, Ingolstadt\, Bavaria\, Germany\nTelevised on: DAZN\nStart: 09:00 PM CT\nSource: DAZN.com
+DESCRIPTION:Date: Saturday\, November 21\, 2026\nTelevised on: DAZN\nStart: 09:00 PM CT\nSource: DAZN.com
 DTEND:20261122T080000Z
 DTSTART:20261122T030000Z
 SUMMARY:Stein vs. Antonietti [TV: DAZN]
@@ -823,13 +686,6 @@ SUMMARY:Mikkel Kessler vs. Bernard Joseph
 UID:20261128-mikkel-kessler-bernard-joseph@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, November 20\, 2026\nLocation: Indio\, Calif.\nTelevised on: DAZN\nStart: 06:00 PM CT\nMain Event: Amari Jones vs. DeAundre Pettus (12-round bout\, middleweights)\nUndercard:\n  * Gabriela Fundora vs. Jasmina Zapotoczna (10-round bout\, women’s undisputed flyweight championship held by Fundora)\n  * Joel Iriarte vs. TBA (8-round bout\, welterweights)\n  * Ruslan Abdullaev vs. TBA (8-round bout\, junior welterweights)\n  * Demler Zamora vs. Ruben Garcia (10-round bout\, lightweights)\n  * Manuel Flores vs. Rashib Valadez (10-round bout\, junior featherweights)\n  * Cayden Griffiths vs. Jean Rivera Pacheco (8-round bout\, junior middleweights)\n  * Victor Morales vs. Leonardo Sanchez (8-round bout\, lightweights)\n  * Javier Meza vs. Jonathan Figueroa (6-round bout\, junior welterweights)\n  * Sebastian Mitry vs. Anthony Alvarado (6-round bout\, middleweights)\n  * Amir Anderson vs. TBA (8-round bout\, middleweights)\n  * David Lopez vs. Jose Chollet (8-round bout\, welterweights)\nSource: BoxingNews24.com
-DTEND:20261121T050000Z
-DTSTART:20261121T000000Z
-SUMMARY:Amari Jones vs. DeAundre Pettus [TV: DAZN]
-UID:20261120-amari-jones-deaundre-pettus@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, March 20\, 2026\nLocation: Fillmore\, 29 E Allen St\, Philadelphia\, PA 19123\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260321T050000Z
 DTSTART:20260321T000000Z
@@ -842,6 +698,18 @@ DTEND:20260613T050000Z
 DTSTART:20260613T000000Z
 SUMMARY:Nashville Smash vs. Atlanta Attack [Stream: YouTube]
 UID:20260612-nashville-smash-vs-atlanta-attack-20260612@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261127
+DESCRIPTION:Date: Friday\, November 27\, 2026\nLocation: The Devenish\, Belfast\, Northern Ireland\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: John Boyd vs. David Kuehnl\nUndercard:\n  * Kurt Walker vs. Reuquen Cona Facundo Arce\n  * Hijjah Mcmahon vs. Danny Costello\n  * Kelsey Leonard vs. TBA\n  * Edward Donovan vs. Zayn Khan\n  * Senan Kelly vs. Jakub Laskowski\n  * Zara Breslin vs. TBA\n  * John Paul Hale vs. TBA\nSource: FightNews.com
+SUMMARY:John Boyd vs David Kuehnl
+UID:20261127-john-boyd-david-kuehnl@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261128
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Park Inn Hotel Northampton\, Northampton\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Kieron Conway vs. Grant Dennis (Super Middleweight)\nUndercard:\n  * Ben Vaughan vs. TBA\n  * Callum Latimer vs. TBA\n  * Yousuf Ibrahim vs. TBA\n  * Kyle Norfolk vs. TBA\n  * Ben Ahlijah vs. TBA\nSource: FightNews.com
+SUMMARY:Kieron Conway vs Grant Dennis
+UID:20261128-kieron-conway-grant-dennis@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, April 19\, 2026\nLocation: Georgia International Convention Center\, 2000 Convention Center Concourse\, College Park\, GA 30337\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -878,13 +746,6 @@ SUMMARY:Phoenix Fury vs. Houston Hitmen [Stream: YouTube]
 UID:20260607-phoenix-fury-vs-houston-hitmen-20260607@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, November 20\, 2026\nLocation: Houston\nTelevised on: CombatVisionTV\nStart: 06:00 PM CT\nMain Event: Jewry Rodriguez vs. Chantal Sumrall (6-round bout\, female bantamweights)\nUndercard:\n  * Azariah Cottrell vs. Erika Abarca (6-round bout\, female junior featherweights)\n  * Stephanie Simon vs. Susana Bolanos Lopez (6-round bout\, female junior welterweights)\n  * Yuliahn Luna Avila vs. Thalia Joseline Limon (8-round bout\, female junior featherweights)\n  * Issabel Vasquez vs. Yadira Alonso (4-round bout\, female junior bantamweights)\n  * Jennifer Nicole Morales vs. Karen Moreno (4-round bout\, female flyweights)\n  * Nathalia Dinis vs. Leanne Calderon (4-round bout\, female junior lightweights)\n  * Samantha Ginithan vs. Brittney Cloudy (4-round bout\, female lightweights)\n  * Shanecqua Paisley Davis vs. Nicole Porter (4-round bout\, female lightweights)\nSource: BoxingNews24.com
-DTEND:20261121T050000Z
-DTSTART:20261121T000000Z
-SUMMARY:Jewry Rodriguez vs. Chantal Sumrall [TV: CombatVisionTV]
-UID:20261120-jewry-rodriguez-chantal-sumrall@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, July 17\, 2026\nLocation: We-Ko-Pa Casino Resort\, 10438 Wekopa Way\, Fort McDowell\, AZ 85264\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260718T050000Z
 DTSTART:20260718T000000Z
@@ -911,13 +772,6 @@ DTEND:20261207T000000Z
 DTSTART:20261206T190000Z
 SUMMARY:Megan Redstall vs. Lauryne Brankaer [TV: DAZN]
 UID:20261206-megan-redstall-lauryne-brankaer@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Friday\, October 16\, 2026\nLocation: Rawhide Western Town & Event Center\, Phoenix\, Arizona\nStart: 06:30 PM CT\nResults:\n  Joshua Kevin Anton DEF. Freudis Rojas - TKO In Round 4\n  Justin Pauldo DEF. Rene Tellez Giron - Split Decision\n  Charles Harris Jr. DEF. Misael Cabrera\n  Carlos Orona DEF. Bryan Acosta - KO In Round 4\n  Heidan Martinez Morillo DEF. Willmank Brito\nSource: BoxingScene.com
-DTEND:20261017T043000Z
-DTSTART:20261016T233000Z
-SUMMARY:Joshua Kevin Anton DEF. Freudis Rojas
-UID:20261016-kevin-anton-freudis-rojas@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 21\, 2026\nLocation: Cowboys Dance Hall\, 3030 NE Interstate 410 Loop\, San Antonio\, TX 78218\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -954,11 +808,10 @@ SUMMARY:Victoire Piteau vs Silvia Bortot
 UID:20261211-victoire-piteau-silvia-bortot@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 21\, 2026\nLocation: Sport Arena Wien\, Vienna\, Vienna\, Austria\nTelevised on: not announced yet\nStart: 10:00 AM CT\nMain Event: Edin Avdic vs. Adrian Juventino Duenas (Super Middleweight\, 10 rounds\, IBF International Super Middleweight\, WBA International Super Middleweight)\nUndercard:\n  * Mansur Elsaev vs. TBA (8 rounds)\nSource: FightNews.com
-DTEND:20261121T210000Z
-DTSTART:20261121T160000Z
-SUMMARY:19. Bounce Fight Night: Edin Avdic vs Adrian Juventino Duenas
-UID:20261121-edin-avdic-adrian-juventino-duenas@boxing-calendar
+DTSTART;VALUE=DATE:20261202
+DESCRIPTION:Date: Wednesday\, December 02\, 2026\nLocation: Korakuen Hall\, Tokyo\, Tokyo\, Japan\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Kazuki Nakajima vs. Ryuto Owan (Featherweight\, 10 rounds\, Vacant OPBF Featherweight)\nUndercard:\n  * Takero Kitano vs. Joseph Sumabong (Minimumweight\, 10 rounds\, OPBF Minimumweight\, WBO Asia Pacific Minimumweight)\nSource: FightNews.com
+SUMMARY:Kazuki Nakajima vs Ryuto Owan
+UID:20261202-kazuki-nakajima-ryuto-owan@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, December 04\, 2026\nLocation: London\nTelevised on: DAZN\nStart: 01:00 PM CT\nMain Event: Adam Azim vs. Gabriel Gollaz Valenzuela (12-round bout\, IBF junior welterweight eliminator)\nUndercard:\n  * Francesca Hennessy vs. Johanna Wonyou (10-round bout\, interim bantamweight championship held by vacant WBC women)\n  * Elliot Whale vs. Bobby Faulkner (10-round bout\, welterweights)\n  * Frazer Clarke vs. TBA (8 or 10-round bout\, heavyweights)\n  * Hassan Azim vs. Ruben Torres (8-round bout\, junior middleweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Estimated card start. Saved reminders do not update automatically. Reminder help\nSource: BoxingNews24.com
