@@ -51,18 +51,17 @@ SUMMARY:Masamichi Yabuki vs. Miel Fajardo [TV: NTT Docomo (JP)]
 UID:20261126-masamichi-yabuki-miel-fajardo@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Sunday\, November 22\, 2026\nLocation: The Premier Suite\, Cannock\, England\, United Kingdom\nTelevised on: not announced yet\nStart: 08:00 AM CT\nMain Event: Scott Melvin vs. TBA\nUndercard:\n  * Brad Willetts vs. TBA\n  * Luke Neale vs. TBA\n  * Mia Hull vs. TBA\n  * Omar Davis vs. TBA\nSource: FightNews.com
-DTEND:20261122T190000Z
-DTSTART:20261122T140000Z
-SUMMARY:Sunday Afternoon Professional Boxing in The Nock: Scott Melvin vs TBA
-UID:20261122-scott-melvin-tba@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, April 10\, 2026\nLocation: GSH Event Center\, 9550 W Bellfort Ave\, Houston\, TX 77031\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260411T050000Z
 DTSTART:20260411T000000Z
 SUMMARY:Houston Hitmen vs. NYC Attitude [Stream: YouTube]
 UID:20260410-houston-hitmen-vs-nyc-attitude-20260410@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261128
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Newark Showground\, Newark-on-Trent\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Logan Clouthier vs. Jorge Luis Huerta Balleza (Lightweight)\nUndercard:\n  * Martin John Ward vs. Jacob Marrer\n  * Shaun Simpson vs. Joe Hardy\n  * Ryan Hearst vs. Connor Meanwell\n  * Sonny Steele vs. Josh Cook\n  * Erik Rubanov vs. Dale Arrowsmith\n  * Danny Steele vs. Nathan Darby\n  * Tom Pogson vs. Dylan Courtney\n  * Richard Smith vs. Owen Durnan\n  * Lennon Hage vs. Michael Mooney\nSource: FightNews.com
+SUMMARY:Logan Clouthier vs TBA
+UID:20261128-logan-clouthier-jorge-luis-huerta-balleza@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 05\, 2026\nLocation: Bayamon\, Puerto Rico\nTelevised on: Wynn Records Network\nStart: time TBC\nMain Event: Litzy Vazquez vs. Stephanie Pineiro (10-round bout\, junior welterweight championship held by vacant WBC/WBA women)\nUndercard:\n  * Joshua Pagan vs. Orlando Gonzalez (10-round bout\, lightweights)\n  * Ashleyann Lozada vs. Veronica Tosi (10-round bout\, for WBA women’s junior featherweight eliminator)\n  * Juliam Ortiz vs. TBA (4-round bout\, lightweights)\n  * Yandiel Lozano vs. TBA (4-round bout\, featherweights)\nSource: BoxingNews24.com
@@ -215,12 +214,6 @@ SUMMARY:Atlanta Attack vs. Dallas Enforcers [Stream: YouTube]
 UID:20260711-atlanta-attack-vs-dallas-enforcers-20260711@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261128
-DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Newark Showground\, Newark-on-Trent\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Logan Clouthier vs. TBA (Lightweight)\nUndercard:\n  * Martin John Ward vs. Jacob Marrer\n  * Shaun Simpson vs. Joe Hardy\n  * Ryan Hearst vs. Connor Meanwell\n  * Sonny Steele vs. Josh Cook\n  * Erik Rubanov vs. Dale Arrowsmith\n  * Danny Steele vs. Dan Belcher\n  * Tom Pogson vs. Dylan Courtney\n  * Richard Smith vs. Owen Durnan\n  * Lennon Hage vs. TBA\nSource: FightNews.com
-SUMMARY:Logan Clouthier vs TBA
-UID:20261128-logan-clouthier-tba@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, November 27\, 2026\nLocation: Pechanga Resort Casino\, Temecula\, California\, United States\nTelevised on: not announced yet\nStart: 08:00 PM CT\nMain Event: Lazaro Lorenzana vs. Ronald Ellis (Super Middleweight\, 10 rounds)\nUndercard:\n  * Kingsley Ibeh vs. Andrii Novytskyi (Heavyweight\, 10 rounds\, WBA Continental Americas Heavyweight)\n  * Luis Lopez vs. Semajay Thomas (Super Welterweight\, 8 rounds)\n  * Ruben Cazales vs. Andres Martinez (Lightweight\, 6 rounds)\n  * Hector Oros vs. Jose Silva Gonzales (Super Bantamweight\, 6 rounds)\n  * Oscar Trujillo vs. Angel Estrada (Welterweight\, 6 rounds)\n  * Paolo Barredo vs. Pedro Juarez (Lightweight\, 6 rounds)\n  * Angel Valenzuela vs. Narek Taverdyan (Super Bantamweight\, 4 rounds)\n  * Zimbry Pedraza Esquivel vs. Wendy Villegas (Lightweight\, 6 rounds)\nSource: FightNews.com
 DTEND:20261128T070000Z
 DTSTART:20261128T020000Z
@@ -343,13 +336,6 @@ DTSTART;VALUE=DATE:20261201
 DESCRIPTION:Date: Tuesday\, December 01\, 2026\nLocation: General Santos\, South Cotabato\, Philippines\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Lienard Sarcon vs. Leboy Atencio (Featherweight\, Vacant IBF Pan Pacific Featherweight)\nUndercard:\n  * Tom Mizokoshi vs. Mark Sabang (Super Bantamweight\, Vacant IBF Pan Pacific Super Bantamweight)\n  * Yeerzhati Baihazhati vs. Lourinz Biasong (Flyweight\, Vacant IBF Youth Flyweight)\nSource: FightNews.com
 SUMMARY:Lienard Sarcon vs Leboy Atencio
 UID:20261201-lienard-sarcon-leboy-atencio@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, December 05\, 2026\nLocation: Desert Diamond Arena\nTelevised on: DAZN & Prime Video\nStart: 07:00 PM CT\nSource: BoxingScene.com
-DTEND:20261206T060000Z
-DTSTART:20261206T010000Z
-SUMMARY:David Benavidez vs. Michał Cieślak [TV: DAZN & Prime Video]
-UID:20261205-david-benavidez-vs-micha-cie-lak@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 14\, 2026\nLocation: FTL War Memorial Auditorium\, 800 NE 8th St\, Fort Lauderdale\, FL 33304\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -477,13 +463,6 @@ SUMMARY:San Antonio Snipers vs. Phoenix Fury [Stream: YouTube]
 UID:20260801-san-antonio-snipers-vs-phoenix-fury-20260801@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Thursday\, December 24\, 2026\nLocation: Coca-Cola Arena\nTelevised on: not announced yet\nStart: 08:00 AM CT\nSource: BoxingScene.com
-DTEND:20261224T190000Z
-DTSTART:20261224T140000Z
-SUMMARY:Jake Paul vs. Cédric Doumbé
-UID:20261224-jake-paul-vs-c-dric-doumb@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, April 11\, 2026\nLocation: Harrah's Philadelphia Casino\, 777 Harrah's Blvd\, Chester\, PA 19013\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260412T050000Z
 DTSTART:20260412T000000Z
@@ -545,7 +524,7 @@ UID:20260628-las-vegas-hustle-vs-phoenix-fury-20260628@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261128
-DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Skate Central\, Sheffield\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Mikey Harrison vs. Harley Collison (Super Middleweight)\nUndercard:\n  * Dylan Trevor vs. Kieran Holmes (Super Welterweight)\n  * Jacob Spauls vs. Sam Kirk (Super Welterweight)\n  * Charlie Ellis vs. Jake Smith\n  * Alfie Thomas vs. Lakshmy Zaragoza Contreras (Bantamweight)\n  * Ahmed Jama vs. Liam Macmillan (Welterweight)\n  * Florence Inett vs. Kira Carter (Women'S Bantamweight)\n  * Haris Aftab vs. Jake Osgood (Welterweight)\nSource: FightNews.com
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Skate Central\, Sheffield\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Mikey Harrison vs. Harley Collison (Super Middleweight)\nUndercard:\n  * Dylan Trevor vs. TBA (Super Welterweight)\n  * Jacob Spauls vs. Sam Kirk (Super Welterweight)\n  * Charlie Ellis vs. Jake Smith\n  * Alfie Thomas vs. Lakshmy Zaragoza Contreras (Bantamweight)\n  * Ahmed Jama vs. Liam Macmillan (Welterweight)\n  * Florence Inett vs. Kira Carter (Women'S Bantamweight)\n  * Haris Aftab vs. Jake Osgood (Welterweight)\nSource: FightNews.com
 SUMMARY:Mikey Harrison vs Harley Collison
 UID:20261128-mikey-harrison-harley-collison@boxing-calendar
 END:VEVENT
@@ -588,6 +567,12 @@ DTEND:20260322T050000Z
 DTSTART:20260322T000000Z
 SUMMARY:LA Elite vs. Las Vegas Hustle [Stream: YouTube]
 UID:20260321-la-elite-vs-las-vegas-hustle-20260321@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261128
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Estadio FAB\, Buenos Aires\, CABA\, Argentina\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Alan David Crenz vs. Jonathan Mena (Super Lightweight\, 10 rounds\, IBF Latino Super Lightweight)\nSource: FightNews.com
+SUMMARY:Alan David Crenz vs Jonathan Mena
+UID:20261128-alan-david-crenz-jonathan-mena@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261215
