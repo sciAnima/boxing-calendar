@@ -58,8 +58,9 @@ SUMMARY:Houston Hitmen vs. NYC Attitude [Stream: YouTube]
 UID:20260410-houston-hitmen-vs-nyc-attitude-20260410@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261128
-DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Newark Showground\, Newark-on-Trent\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Logan Clouthier vs. Jorge Luis Huerta Balleza (Lightweight)\nUndercard:\n  * Martin John Ward vs. Jacob Marrer\n  * Shaun Simpson vs. Joe Hardy\n  * Ryan Hearst vs. Connor Meanwell\n  * Sonny Steele vs. Josh Cook\n  * Erik Rubanov vs. Dale Arrowsmith\n  * Danny Steele vs. Nathan Darby\n  * Tom Pogson vs. Dylan Courtney\n  * Richard Smith vs. Owen Durnan\n  * Lennon Hage vs. Michael Mooney\nSource: FightNews.com
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Newark Showground\, Newark-on-Trent\, England\, United Kingdom\nTelevised on: not announced yet\nStart: 01:00 PM CT\nMain Event: Logan Clouthier vs. Jorge Luis Huerta Balleza (Lightweight)\nUndercard:\n  * Martin John Ward vs. Jacob Marrer\n  * Shaun Simpson vs. Joe Hardy\n  * Ryan Hearst vs. Connor Meanwell\n  * Sonny Steele vs. Josh Cook\n  * Erik Rubanov vs. Dale Arrowsmith\n  * Danny Steele vs. Nathan Darby\n  * Tom Pogson vs. Dylan Courtney\n  * Richard Smith vs. Owen Durnan\n  * Lennon Hage vs. Mark Butler\nSource: FightNews.com
+DTEND:20261129T000000Z
+DTSTART:20261128T190000Z
 SUMMARY:Logan Clouthier vs TBA
 UID:20261128-logan-clouthier-jorge-luis-huerta-balleza@boxing-calendar
 END:VEVENT
@@ -304,7 +305,7 @@ SUMMARY:Janibek Alimkhanuly vs. Jacob Bank
 UID:20270123-janibek-alimkhanuly-jacob-bank@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, October 10\, 2026\nLocation: Wintrust Arena\, Chicago\, Illinois\nStart: 07:00 PM CT\nResults:\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\n  Grant Flores DEF. Mikey Dahlman - TKO In Round 2\n  Cristian Williams DEF. Asa Stevens - Unanimous Decision\n  Jahmal Harvey DEF. Pedro Castaneda - KO In Round 11\n  Jan Paul Rivera DEF. Abraham Perfecto Valdez - Unanimous Decision\nSource: BoxingScene.com
+DESCRIPTION:Date: Saturday\, October 10\, 2026\nLocation: Wintrust Arena\, Chicago\, Illinois\nStart: 07:00 PM CT\nResults:\n  Floyd Schofield DEF. Lucas Bahdi - Unanimous Decision\n  Sergio Mendoza DEF. Ricardo Sandoval - TKO In Round 5\n  Grant Flores DEF. Mikey Dahlman - TKO In Round 2\n  Cristian Williams DEF. Asa Stevens - Unanimous Decision\n  Jahmal Harvey DEF. Pedro Castaneda - KO In Round 11\n  Jan Paul Rivera-Pizarro DEF. Abraham Perfecto Valdez - Unanimous Decision\nSource: BoxingScene.com
 DTEND:20261011T050000Z
 DTSTART:20261011T000000Z
 SUMMARY:Floyd Schofield DEF. Lucas Bahdi
@@ -712,13 +713,6 @@ SUMMARY:SportPesa Boxing Night: Javan Buyu vs Kamran Abdul Wahab
 UID:20261128-javan-buyu-kamran-abdul-wahab@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 21\, 2026\nTelevised on: DAZN\nStart: 09:00 PM CT\nSource: DAZN.com
-DTEND:20261122T080000Z
-DTSTART:20261122T030000Z
-SUMMARY:Stein vs. Antonietti [TV: DAZN]
-UID:20261121-stein-vs-antonietti@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, January 23\, 2027\nLocation: TBA\, India\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Neeraj Goyat vs. Anthony Pettis (6-round bout\, junior middleweights)\nSource: BoxingNews24.com
 DTEND:20270124T080000Z
 DTSTART:20270124T030000Z
@@ -804,7 +798,7 @@ UID:20260612-nashville-smash-vs-atlanta-attack-20260612@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261127
-DESCRIPTION:Date: Friday\, November 27\, 2026\nLocation: The Devenish\, Belfast\, Northern Ireland\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: John Boyd vs. David Kuehnl\nUndercard:\n  * Kurt Walker vs. Reuquen Cona Facundo Arce\n  * Hijjah Mcmahon vs. Danny Costello\n  * Kelsey Leonard vs. TBA\n  * Edward Donovan vs. Zayn Khan\n  * Senan Kelly vs. Jakub Laskowski\n  * Zara Breslin vs. TBA\n  * John Paul Hale vs. TBA\nSource: FightNews.com
+DESCRIPTION:Date: Friday\, November 27\, 2026\nLocation: The Devenish\, Belfast\, Northern Ireland\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: John Boyd vs. David Kuehnl\nUndercard:\n  * Kurt Walker vs. Reuquen Cona Facundo Arce\n  * Hijjah Mcmahon vs. Ezequiel Gregores\n  * Kelsey Leonard vs. TBA\n  * Edward Donovan vs. Zayn Khan\n  * Senan Kelly vs. Jakub Laskowski\n  * Zara Breslin vs. TBA\n  * John Paul Hale vs. Les Urry\nSource: FightNews.com
 SUMMARY:John Boyd vs David Kuehnl
 UID:20261127-john-boyd-david-kuehnl@boxing-calendar
 END:VEVENT
