@@ -44,6 +44,12 @@ SUMMARY:Devin Haney vs. Liam Paro [TV: DAZN (PPV)]
 UID:20261219-devin-haney-liam-paro@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261204
+DESCRIPTION:Date: Friday\, December 04\, 2026\nLocation: The Hideout\, Farnworth\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Levi Barnes vs. Artem Pugach\nUndercard:\n  * Dan Meadows vs. Robbie Chapman\n  * Hamzah Rehman vs. Fernando Joaquin Valdez\n  * Jaylan Roye vs. Marian Wesolowski\n  * Ebony Carlin vs. Alisha Lewis\nSource: FightNews.com
+SUMMARY:Levi Barnes vs Artem Pugach
+UID:20261204-levi-barnes-artem-pugach@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, December 12\, 2026\nLocation: Kissimmee\, Fla.\nTelevised on: ProBoxTV\nStart: 06:00 PM CT\nMain Event: Luis Alberto Lopez vs. Angel Garcia (10-round bout\, junior lightweights)\nUndercard:\n  * Dominic Valle vs. Frency Fortunato Saya (10-round bout\, lightweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Estimated card start. Saved reminders do not update automatically. Reminder help\nSource: BoxingNews24.com
 DTEND:20261213T050000Z
 DTSTART:20261213T000000Z
@@ -51,11 +57,24 @@ SUMMARY:Luis Alberto Lopez vs. Angel Garcia [Stream: ProBoxTV]
 UID:20261212-luis-alberto-lopez-angel-garcia@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261204
+DESCRIPTION:Date: Friday\, December 04\, 2026\nLocation: Fusion Nightclub\, Liverpool\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Safiullah Sediqi vs. Nabil Ahmed\nUndercard:\n  * Charlotte Powell vs. Sydney Chambers\n  * Maaz Bin Saud vs. TBA\n  * Christopher Roberts vs. Bahadur Karami\n  * Abbie Mckay vs. Klaudia Ferenczi\n  * Tam Darkes-Seddon vs. Luke Thomas\n  * Joseph Walker vs. Ricky Leach\nSource: FightNews.com
+SUMMARY:Safiullah Sediqi vs Nabil Ahmed
+UID:20261204-safiullah-sediqi-nabil-ahmed@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, April 10\, 2026\nLocation: GSH Event Center\, 9550 W Bellfort Ave\, Houston\, TX 77031\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260411T050000Z
 DTSTART:20260411T000000Z
 SUMMARY:Houston Hitmen vs. NYC Attitude [Stream: YouTube]
 UID:20260410-houston-hitmen-vs-nyc-attitude-20260410@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Palazzetto dello Sport di Scandicci\, Scandicci\, Tuscany\, Italy\nTelevised on: not announced yet\nStart: 01:00 PM CT\nMain Event: Simone Rao vs. Nicolo Setaro (Featherweight\, WBA Mediterranean Featherweight)\nSource: FightNews.com
+DTEND:20261129T000000Z
+DTSTART:20261128T190000Z
+SUMMARY:WASB XXV: Simone Rao vs Nicolo Setaro
+UID:20261128-simone-rao-nicolo-setaro@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Newark Showground\, Newark-on-Trent\, England\, United Kingdom\nTelevised on: not announced yet\nStart: 01:00 PM CT\nMain Event: Logan Clouthier vs. Jorge Luis Huerta Balleza (Lightweight)\nUndercard:\n  * Martin John Ward vs. Jacob Marrer\n  * Shaun Simpson vs. Joe Hardy\n  * Ryan Hearst vs. Connor Meanwell\n  * Sonny Steele vs. Josh Cook\n  * Erik Rubanov vs. Dale Arrowsmith\n  * Danny Steele vs. Nathan Darby\n  * Tom Pogson vs. Dylan Courtney\n  * Richard Smith vs. Owen Durnan\n  * Lennon Hage vs. Mark Butler\nSource: FightNews.com
@@ -79,7 +98,7 @@ SUMMARY:Kenta Lee vs. Masahiro Suzuki
 UID:20261205-kenta-lee-masahiro-suzuki@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Dusseldorf\, Germany\nTelevised on: DAZN\nStart: 11:00 AM CT\nMain Event: Agit Kabayel vs. Nelson Hysa (12-round bout\, WBC heavyweight championship held by Kabayel)\nUndercard:\n  * Aloys Junior vs. Arthur Mann (10-round bout\, cruiserweights)\n  * Gleb Bakshi vs. Serhat Parlak (10-round bout\, middleweights)\n  * Granit Shala vs. Kolbeinn Kristinsson (8-round bout\, heavyweights)\n  * Simon Zachenhuber vs. Alexander Rigas (10-round bout\, super middleweights)\n  * Serkay Comart vs. Willi Knorpp (6-round bout\, middleweights)\n  * Charlie Senior vs. James Chereji (8-round bout\, junior lightweights)\n  * Arbnor Jashari vs. Yoel Rivas Perez (8-round bout\, junior lightweights)\n  * Daniel Baer vs. Arman Khudoyan (6 or 8-round bout\, heavyweights)\n  * Kevin Saszik vs. Patrick Korte (6 or 8-round bout\, heavyweights)\nSource: BoxingNews24.com
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Dusseldorf\, Germany\nTelevised on: DAZN\nStart: 11:00 AM CT\nMain Event: Agit Kabayel vs. Nelson Hysa (12-round bout\, WBC heavyweight championship held by Kabayel)\nUndercard:\n  * Aloys Junior vs. Arthur Mann (10-round bout\, cruiserweights)\n  * Gleb Bakshi vs. Serhat Parlak (10-round bout\, middleweights)\n  * Granit Shala vs. Kolbeinn Kristinsson (8-round bout\, heavyweights)\n  * Simon Zachenhuber vs. Alexander Rigas (10-round bout\, super middleweights)\n  * Serkay Comart vs. Willi Knorpp (6-round bout\, middleweights)\n  * Charlie Senior vs. James Chereji (8-round bout\, junior lightweights)\n  * Arbnor Jashari vs. Yoel Rivas Perez (8-round bout\, junior lightweights)\n  * Daniel Baer vs. Arman Khudoyan (6 or 8-round bout\, heavyweights)\n  * Kevin Saszik vs. Patrick Korte (6 or 8-round bout\, heavyweights)\n  * Alert me\n  * estimated card start\n  * Google Calendar\n  * Apple / Outlook\n  * Estimated card start. Saved reminders do not update automatically. Reminder help\nSource: BoxingNews24.com
 DTEND:20261128T220000Z
 DTSTART:20261128T170000Z
 SUMMARY:Agit Kabayel vs. Nelson Hysa [TV: DAZN]
@@ -117,12 +136,6 @@ DTEND:20260516T050000Z
 DTSTART:20260516T000000Z
 SUMMARY:Dallas Enforcers vs. San Antonio Snipers [Stream: YouTube]
 UID:20260515-dallas-enforcers-vs-san-antonio-snipers-20260515@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261127
-DESCRIPTION:Date: Friday\, November 27\, 2026\nLocation: Palazzetto dello Sport di Scandicci\, Scandicci\, Tuscany\, Italy\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Simone Rao vs. Nicolo Setaro (Featherweight\, WBA Mediterranean Featherweight)\nSource: FightNews.com
-SUMMARY:WASB XXV: Simone Rao vs Nicolo Setaro
-UID:20261127-simone-rao-nicolo-setaro@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 18\, 2026\nLocation: We-Ko-Pa Casino Resort\, 10438 Wekopa Way\, Fort McDowell\, AZ 85264\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
@@ -215,6 +228,12 @@ SUMMARY:Boston Butchers vs. Philadelphia Smoke [Stream: YouTube]
 UID:20260613-boston-butchers-vs-philadelphia-smoke-20260613@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261204
+DESCRIPTION:Date: Friday\, December 04\, 2026\nLocation: Sunderland Live Arena\, Houghton-le-Spring\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Lee Rogers vs. Calum Turnbull\nUndercard:\n  * Adam Olaore vs. TBA\n  * Dylan Phoenix-Morrison vs. TBA\n  * Jason Cumming vs. Mark Butler\n  * Kevin Richardson vs. TBA\n  * Lewis Ginnelly vs. Mike Byles\n  * Joe Hodgkinson vs. Marcos Nicolas Karalitzky\n  * Luke Foster vs. Billy Gayles\n  * Rhys Barber vs. Jose Exequiel Sanchez\nSource: FightNews.com
+SUMMARY:Lee Rogers vs Calum Turnbull
+UID:20261204-lee-rogers-calum-turnbull@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, July 11\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260712T050000Z
 DTSTART:20260712T000000Z
@@ -265,8 +284,8 @@ UID:20261219-jokin-garcia-laid-douadi@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261128
-DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Beach Ballroom\, Aberdeen\, Scotland\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Fraser Wilkinson vs. Lewis Booth (Welterweight)\nUndercard:\n  * Ben Bartlett vs. TBA\n  * Jimmy Laing vs. Josue Bendana\n  * Stephen Donald vs. TBA\n  * Marc Johnstone vs. TBA\n  * James Paterson vs. Nazeer Khan\nSource: FightNews.com
-SUMMARY:Fraser Wilkinson vs Lewis Booth
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Beach Ballroom\, Aberdeen\, Scotland\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Fraser Wilkinson vs. Lewis Booth (Welterweight\, 8 rounds\, Commonwealth International Welterweight Championship)\nUndercard:\n  * Ben Bartlett vs. TBA\n  * Jimmy Laing vs. Josue Bendana\n  * Stephen Donald vs. TBA\n  * Marc Johnstone vs. TBA\n  * James Paterson vs. Nazeer Khan\nSource: FightNews.com
+SUMMARY:Warriors: Fraser Wilkinson vs Lewis Booth
 UID:20261128-fraser-wilkinson-lewis-booth@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
@@ -282,13 +301,6 @@ DTEND:20261114T210000Z
 DTSTART:20261114T160000Z
 SUMMARY:Zuffa Boxing 13: Carlos Adames DEF. Gerome Warburton
 UID:20261114-carlos-adames-vs-gerome-warburton@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Thursday\, November 26\, 2026\nLocation: The Premier Suite\, Cannock\, England\, United Kingdom\nTelevised on: not announced yet\nStart: 01:00 PM CT\nMain Event: Jessica Barry vs. Ingrid Brodu\nUndercard:\n  * Danny Quartermaine vs. TBA\n  * Shabir Haidary vs. TBA\nSource: FightNews.com
-DTEND:20261127T000000Z
-DTSTART:20261126T190000Z
-SUMMARY:Excelsior Sporting Club St Andrews Night: Jessica Barry vs Ingrid Brodu
-UID:20261126-jessica-barry-ingrid-brodu@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, January 23\, 2027\nLocation: Horsens\, Denmark\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Janibek Alimkhanuly vs. Jacob Bank (12-round bout\, vacant WBO super middleweight championship at stake)\nSource: BoxingNews24.com
@@ -393,13 +405,6 @@ DTEND:20260615T050000Z
 DTSTART:20260615T000000Z
 SUMMARY:Miami Assassins vs. NYC Attitude [Stream: YouTube]
 UID:20260614-miami-assassins-vs-nyc-attitude-20260614@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Date: Thursday\, November 26\, 2026\nLocation: Radisson Blu Hotel Glasgow\, Glasgow\, Scotland\, United Kingdom\nTelevised on: not announced yet\nStart: 12:30 PM CT\nMain Event: Aston Brown vs. Bahadur Karami\nUndercard:\n  * Jack Turner vs. Cesar Ignacio Paredes\n  * Matty Mcdonald vs. Andrew Kikonyogo\n  * Lewis Kerr vs. TBA\nSource: FightNews.com
-DTEND:20261126T233000Z
-DTSTART:20261126T183000Z
-SUMMARY:Aston Brown vs Bahadur Karami
-UID:20261126-aston-brown-bahadur-karami@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Saturday\, October 17\, 2026\nLocation: The O2 Arena\, London\, United Kingdom\nStart: 01:00 PM CT\nResults:\n  Daniel Dubois DEF. Fabio Wardley - TKO In Round 2\n  Bakhodir Jalolov DEF. Solomon Dacres - Unanimous Decision\n  Nelson Birchall DEF. Levi Giles - TKO In Round 11\n  Fawas Aborode DEF. Rashid Omar - TKO In Round 11\n  Aaron Noriega DEF. Leonardo Baez - TKO In Round 4\n  Leighton Birchall DEF. Alejandro Morales Chazaro\n  Tony Curtis DEF. Kerim Agius\n  Manny Safari DEF. Jake Pollard\nSource: BoxingScene.com
@@ -562,8 +567,8 @@ UID:20260411-las-vegas-hustle-vs-philadelphia-smoke-20260411@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261128
-DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Caledonia Gladiators Arena\, East Kilbride\, Scotland\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Tysie Gallagher vs. Cassidy Todd (Women'S Super Bantamweight\, Commonwealth Women's Super Bantamweight)\nUndercard:\n  * Martin Crossan vs. Charles Mcdonagh\n  * Stephen Black vs. TBA\n  * Reagan Black vs. TBA\n  * Taylor Coyle vs. TBA\n  * Andrew Meichan vs. TBA\n  * Nathan Lundie vs. TBA\n  * Harley Boal vs. TBA\n  * Isa Akram vs. TBA\nSource: FightNews.com
-SUMMARY:Tysie Gallagher vs Cassidy Todd
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Caledonia Gladiators Arena\, East Kilbride\, Scotland\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Tysie Gallagher vs. Cassidy Todd (Women'S Super Bantamweight\, 10 rounds\, Commonwealth Super Bantamweight Title)\nUndercard:\n  * Isa Akram vs. TBA\n  * Stephen Black vs. TBA\n  * Harley Boal vs. TBA\n  * Taylor Coyle vs. TBA\n  * Nathan Lundie vs. TBA\n  * Andrew Meichan vs. TBA\n  * Reagan Black vs. TBA\n  * Martin Crossan vs. Charles Mcdonagh\nSource: FightNews.com
+SUMMARY:Gladiators IV: Tysie Gallagher vs Cassidy Todd
 UID:20261128-tysie-gallagher-cassidy-todd@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
@@ -585,6 +590,12 @@ DTEND:20261213T080000Z
 DTSTART:20261213T030000Z
 SUMMARY:Erislandy Lara vs. Tim Tszyu [TV: DAZN]
 UID:20261212-erislandy-lara-tim-tszyu@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261204
+DESCRIPTION:Date: Friday\, December 04\, 2026\nLocation: Fiducial Astéria\, Décines-Charpieu\, Auvergne-Rhône-Alpes\, France\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Leonardo Mosquea vs. Marko Calic (Cruiserweight\, WBA Gold International Cruiserweight)\nSource: FightNews.com
+SUMMARY:RS & Sécurité Boxing Night: Leonardo Mosquea vs Marko Calic
+UID:20261204-leonardo-mosquea-marko-calic@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261214
@@ -778,15 +789,9 @@ SUMMARY:Nashville Smash vs. Atlanta Attack [Stream: YouTube]
 UID:20260612-nashville-smash-vs-atlanta-attack-20260612@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261127
-DESCRIPTION:Date: Friday\, November 27\, 2026\nLocation: The Devenish\, Belfast\, Northern Ireland\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: John Boyd vs. David Kuehnl\nUndercard:\n  * Kurt Walker vs. Reuquen Cona Facundo Arce\n  * Hijjah Mcmahon vs. Ezequiel Gregores\n  * Edward Donovan vs. Zayn Khan\n  * Senan Kelly vs. Jakub Laskowski\n  * Zara Breslin vs. TBA\n  * John Paul Hale vs. Les Urry\n  * Kelsey Leonard vs. TBA\nSource: FightNews.com
-SUMMARY:John Boyd vs David Kuehnl
-UID:20261127-john-boyd-david-kuehnl@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261128
 DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Mercure Northampton Town Centre\, Northampton\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Kieron Conway vs. Grant Dennis (Super Middleweight)\nUndercard:\n  * Ben Vaughan vs. TBA\n  * Callum Latimer vs. TBA\n  * Yousuf Ibrahim vs. TBA\n  * Kyle Norfolk vs. TBA\n  * Ben Ahlijah vs. TBA\nSource: FightNews.com
-SUMMARY:Kieron Conway vs Grant Dennis
+SUMMARY:Back Home: Kieron Conway vs Grant Dennis
 UID:20261128-kieron-conway-grant-dennis@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
@@ -817,17 +822,17 @@ SUMMARY:Nashville Smash vs. Boston Butchers [Stream: YouTube]
 UID:20260523-nashville-smash-vs-boston-butchers-20260523@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261128
+DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Skate Central\, Sheffield\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Mikey Harrison vs. Courtney Walcott (Super Middleweight\, 6 rounds)\nUndercard:\n  * Dylan Trevor vs. Jake Osgood (Super Welterweight\, 4 rounds)\n  * Jacob Spauls vs. Sam Kirk (Super Welterweight)\n  * Charlie Ellis vs. Jake Smith\n  * Alfie Thomas vs. Lakshmy Zaragoza Contreras (Bantamweight)\n  * Ahmed Jama vs. Liam Macmillan (Welterweight)\n  * Florence Inett vs. Kira Carter (Women'S Bantamweight)\n  * Kelsey Leonard vs. Linzi Buczynskyj\n  * Haris Aftab vs. Jake Osgood (Welterweight)\nSource: FightNews.com
+SUMMARY:Mikey Harrison vs Courtney Walcott
+UID:20261128-mikey-harrison-courtney-walcott@boxing-calendar
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Date: Sunday\, June 07\, 2026\nLocation: Shriners\, 400 Ponce De Leon Ave NE\, Atlanta\, GA 30308\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
 DTEND:20260608T050000Z
 DTSTART:20260608T000000Z
 SUMMARY:Phoenix Fury vs. Houston Hitmen [Stream: YouTube]
 UID:20260607-phoenix-fury-vs-houston-hitmen-20260607@boxing-calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261128
-DESCRIPTION:Date: Saturday\, November 28\, 2026\nLocation: Skate Central\, Sheffield\, England\, United Kingdom\nTelevised on: not announced yet\nStart: time TBC\nMain Event: Mikey Harrison vs. Courtney Walcott (Super Middleweight\, 6 rounds)\nUndercard:\n  * Dylan Trevor vs. Jake Osgood (Super Welterweight\, 4 rounds)\n  * Jacob Spauls vs. Sam Kirk (Super Welterweight)\n  * Charlie Ellis vs. Jake Smith\n  * Alfie Thomas vs. Lakshmy Zaragoza Contreras (Bantamweight)\n  * Ahmed Jama vs. Liam Macmillan (Welterweight)\n  * Florence Inett vs. Kira Carter (Women'S Bantamweight)\n  * Kelsey Leonard vs. Linzi Buczynskyj\n  * Haris Aftab vs. Jake Osgood (Welterweight)\nSource: FightNews.com
-SUMMARY:Mikey Harrison vs Courtney Walcott
-UID:20261128-mikey-harrison-courtney-walcott@boxing-calendar
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Date: Friday\, July 17\, 2026\nLocation: We-Ko-Pa Casino Resort\, 10438 Wekopa Way\, Fort McDowell\, AZ 85264\nTelevised on: YouTube\nStart: 07:00 PM CT\nSource: TeamBoxingLeague.com
